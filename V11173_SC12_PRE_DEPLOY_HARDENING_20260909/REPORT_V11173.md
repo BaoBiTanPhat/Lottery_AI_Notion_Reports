@@ -41,7 +41,7 @@ bảng**. `systemctl restart lottery` sẽ **giết nó giữa chừng**.
 
 ---
 
-## 3 · Q0 — LÀM CỨNG VÀ ĐÓNG BĂNG
+## 3 · ĐÀO BỚI / PHÁT HIỆN — Q0 · LÀM CỨNG VÀ ĐÓNG BĂNG RUNBOOK
 
 ### 3.1 · Runbook đã chuyển khỏi Windows Temp
 
@@ -98,7 +98,30 @@ và **không có bẫy áp hai lần** (khối `SAU_JOIN` cũ chứa nguyên vă
 
 ---
 
-## 4 · Q1 — XÁC MINH TRÊN EXACT CURRENT STATE
+## 4 · HƯỚNG XỬ LÝ VÀ VÌ SAO CHỌN
+
+**Không chạy nguyên văn runbook cũ.** §IV cấm tường minh, và hoá ra lệnh đó đúng: bước
+`--cai-dat` của VA-h12 là no-op (mục 6.2). Nếu chạy, phiên này đã kết thúc bằng một báo cáo
+deploy giả.
+
+**Đổi `LEFT JOIN` → `NOT EXISTS`** thay vì giữ JOIN rồi dựa vào phép đo "0 cặp trùng". Đo đúng
+hôm nay không bảo đảm đúng mai; vị từ thuần thì **không bao giờ** nhân bản dòng, bất kể dữ liệu.
+
+**Chốt fail-closed theo sha256 nguồn** thay vì theo số dòng. Vá theo số dòng mù là thứ §V.5 cấm,
+và tệp đích còn có bản CRLF ở local — chốt bằng hash loại hẳn rủi ro áp nhầm bản.
+
+**Dừng ở cổng idle thay vì deploy cho kịp giờ.** §IV nói rõ 20:30 là mốc sớm nhất được xét. Đo ra
+không có khoảng trống ≥30 phút nào trong ngày ⇒ dừng, không co kiểm tra lại cho vừa cửa sổ.
+
+**Cho một lớp phản biện độc lập soi trước khi deploy.** Bốn góc chạy song song, chỉ đọc. Chính
+lớp này bắt được blocker P0 mà agent chính bỏ sót — đó là lý do nó tồn tại.
+
+**Không tự quyết câu hỏi phạm vi `final_bundles`.** Owner khoá "CẤM sửa Combo/FINAL"; VA-1/VA-2
+ghi vào `final_bundles`. Agent **không** được tự diễn giải cho qua.
+
+---
+
+## 5 · ĐÃ LÀM GÌ — Q1 · XÁC MINH TRÊN EXACT CURRENT STATE
 
 **Receipt tươi, đo 20:05:26 ICT / 13:05:26 UTC:**
 
@@ -133,9 +156,9 @@ Thước đúng — so hash VPS với kho local HEAD `20140b6`:
 
 ---
 
-## 5 · Q2 — QUERY / COHORT / DB PROOF
+## 6 · CỔNG KIỂM — Q2 · QUERY / COHORT / DB PROOF
 
-### 5.1 · Bốn kịch bản, `as_of=2026-09-09`, tái lập độc lập
+### 6.1 · Bốn kịch bản, `as_of=2026-09-09`, tái lập độc lập
 
 | kịch bản | dòng | ngày | MT | MN | MB |
 |---|---|---|---|---|---|
@@ -154,7 +177,7 @@ Thước đúng — so hash VPS với kho local HEAD `20140b6`:
 
 handoff `112/82 · MB 21` → live `113/83 · MB 22`. Mọi ô khác **y hệt**.
 
-### 5.2 · Kiểm bắt buộc theo §VII
+### 6.2 · Kiểm bắt buộc theo §VII
 
 | # | phép kiểm | kết quả |
 |---|---|---|
@@ -167,7 +190,7 @@ handoff `112/82 · MB 21` → live `113/83 · MB 22`. Mọi ô khác **y hệt**
 | 7 | `days_back=90` loại 0 dòng backfill | ✅ **0** — mốc chặn 90 ngày đã tự bỏ qua backfill 28/02–29/03 |
 | 8 | `days_back=9999` → 375→335, loại 40 | ✅ **376 → 336, loại 40** (376 chứ không 375: +1 dòng ngày 09/09) |
 | 9 | MT `wr7` đang dùng 19/06–25/06 | ✅ **tái lập đúng** — 7 lượt gần nhất: 25/06 · 24/06 · 23/06 · 22/06 · 21/06 · 20/06 · **19/06** |
-| 10 | 7 ngày MT hợp lệ sau vá gộp | ⛔ **chưa xuất được** — xem 6.3, con số này **không tự xuất hiện** từ deploy |
+| 10 | 7 ngày MT hợp lệ sau vá gộp | ⛔ **chưa xuất được** — xem 6b.3, con số này **không tự xuất hiện** từ deploy |
 
 **Kế hoạch truy vấn (`EXPLAIN QUERY PLAN`, phản biện chạy độc lập):** bản SAU dùng
 `SEARCH p (date>?)` + tra 1 điểm trên `UNIQUE index` của `final_bundles` — **không sinh
@@ -178,9 +201,9 @@ full-table-scan**, và **RẺ HƠN** bản TRƯỚC (bản cũ phải `SCAN` to�
 
 ---
 
-## 6 · Q3 — CỔNG PRE-DEPLOY: KHÔNG PASS
+## 6b · Q3 — CỔNG PRE-DEPLOY: KHÔNG PASS
 
-### 6.1 · Blocker A — cửa sổ không chứng minh được idle
+### 6b.1 · Blocker A — cửa sổ không chứng minh được idle
 
 Đo lúc **20:14:46 ICT**:
 
@@ -202,7 +225,7 @@ full-table-scan**, và **RẺ HƠN** bản TRƯỚC (bản cũ phải `SCAN` to�
 Khung 00:00–05:00 ngày 08/09 chỉ có **1 dòng log**. ⇒ **Cửa sổ khả thi duy nhất: 00:35–04:45**
 (sau `rule_key_registry` 00:30, trước `free_predict` 05:00).
 
-### 6.2 · Blocker B — VA-h12 KHÔNG CÀI ĐƯỢC (P0)
+### 6b.2 · Blocker B — VA-h12 KHÔNG CÀI ĐƯỢC (P0)
 
 Bằng chứng đọc thẳng từ `v11165_h12_patch.py`:
 
@@ -233,7 +256,7 @@ cho cả ba miền** tại `auto_verify` (`scheduler.py:1670/1739/1811`).
 **③ `--replay` không tái lập được nữa.** Clone `artifacts/v11165_immutable.db` mà nó tham chiếu
 **đã bị xoá** (đợt dọn đĩa V11166). Mọi con số «replay lịch sử» của VA-h12 hiện là **NOT PROVEN**.
 
-### 6.3 · Blocker B phụ — thiếu bước backfill, số «161/86/MT 61» sẽ KHÔNG xuất hiện
+### 6b.3 · Blocker B phụ — thiếu bước backfill, số «161/86/MT 61» sẽ KHÔNG xuất hiện
 
 `classify_day_status` chỉ được gọi với **`today`**:
 
@@ -248,7 +271,7 @@ offline** áp logic mới cho toàn bộ 156 ngày lịch sử. Muốn nó thàn
 **`web/backend/backfill_day_governance.py`** (tệp **có tồn tại**, 1.713 byte) — và **runbook 6 bước
 của em KHÔNG có bước này**. ⇒ Nếu deploy rồi công bố 161/86, đó sẽ là **con số sai**.
 
-### 6.4 · Blocker B phụ — câu hỏi phạm vi cần owner phân xử
+### 6b.4 · Blocker B phụ — câu hỏi phạm vi cần owner phân xử
 
 VA-1/VA-2 nằm trong `generate_final_bundle()` và **ghi 6–7 khoá mới** vào
 `final_bundles.source_predictions_json`, đồng thời **đổi giá trị `incomplete_bundle`** cho ngày MT
