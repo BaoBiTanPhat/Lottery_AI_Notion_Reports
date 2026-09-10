@@ -1,0 +1,86 @@
+============================================================================
+TEST V11174-VAh12-ZEROWRITE   ICT 2026-09-10 10:36:30 | UTC 2026-09-10 03:36:30
+============================================================================
+
+=== A · FAIL-CLOSED: chi ap len source DA NHAN DIEN ===
+  DAT  A-database.py hash khop preimage  fd3d2349ab917c6f36ee8d0a...
+  DAT  A-database.py chua tung ap va  
+  DAT  A-main.py hash khop preimage  4ed5fd7ebaee8d232177df2e...
+  DAT  A-main.py chua tung ap va  
+  DAT  A-preimage «VA-3a helper doc model bi tran» khop DUNG 1 lan  dem=1
+  DAT  A-preimage «VA-3b effective = voters + capped» khop DUNG 1 lan  dem=1
+  DAT  A-preimage «VA-3c reason gan o MOI nhanh» khop DUNG 1 lan  dem=1
+  DAT  A-preimage «VA-2' taxonomy phia DOC» khop DUNG 1 lan  dem=1
+  DAT  A KHONG co dau '...' trong bat ky khoi SAU nao  
+
+=== B · SAU KHI AP ===
+  DAT  B-database.py AST hop le  
+  DAT  B-database.py dai ra  208725 -> 211239
+  DAT  B-database.py marker dung so du kien  dem=3 du kien=3
+  DAT  B-database.py ap lai lan hai KHONG doi  
+  DAT  B-main.py AST hop le  
+  DAT  B-main.py dai ra  992982 -> 994031
+  DAT  B-main.py marker dung so du kien  dem=1 du kien=1
+  DAT  B-main.py ap lai lan hai KHONG doi  
+  DAT  B so khoi thay the = 4  
+
+=== C · FINAL_BUNDLES_ZERO_WRITE ===
+  DAT  C-database.py KHONG them «INSERT INTO final_bundles»  1 -> 1
+  DAT  C-database.py KHONG them «UPDATE final_bundles»  1 -> 1
+  DAT  C-database.py KHONG them «DELETE FROM final_bundles»  0 -> 0
+  DAT  C-database.py KHONG them «REPLACE INTO final_bundles»  0 -> 0
+  DAT  C-main.py KHONG them «INSERT INTO final_bundles»  0 -> 0
+  DAT  C-main.py KHONG them «UPDATE final_bundles»  0 -> 0
+  DAT  C-main.py KHONG them «DELETE FROM final_bundles»  0 -> 0
+  DAT  C-main.py KHONG them «REPLACE INTO final_bundles»  0 -> 0
+  DAT  C khoi va KHONG chua lenh ghi final_bundles nao  
+  DAT  C khoi va chi SELECT tu final_bundles  
+
+=== D · VUNG CAM (forbidden-surface diff) ===
+  DAT  D-database.py «ranked_numbers» khong doi  0 -> 0
+  DAT  D-database.py «_CANONICAL_OUTPUT_MODELS» khong doi  0 -> 0
+  DAT  D-database.py «strength_weight» khong doi  0 -> 0
+  DAT  D-database.py «run_combo_super» khong doi  0 -> 0
+  DAT  D-database.py «SYSTEM_PROMPT» khong doi  0 -> 0
+  DAT  D-database.py «output_counterfactual_rank» khong doi  1 -> 1
+  DAT  D-database.py «lo3_status» khong doi  18 -> 18
+  DAT  D-database.py «save_final_bundle» khong doi  1 -> 1
+  DAT  D-database.py «bach_thu =» khong doi  2 -> 2
+  DAT  D-main.py «ranked_numbers» khong doi  9 -> 9
+  DAT  D-main.py «_CANONICAL_OUTPUT_MODELS» khong doi  3 -> 3
+  DAT  D-main.py «strength_weight» khong doi  5 -> 5
+  DAT  D-main.py «run_combo_super» khong doi  2 -> 2
+  DAT  D-main.py «SYSTEM_PROMPT» khong doi  2 -> 2
+  DAT  D-main.py «output_counterfactual_rank» khong doi  0 -> 0
+  DAT  D-main.py «lo3_status» khong doi  10 -> 10
+  DAT  D-main.py «save_final_bundle» khong doi  2 -> 2
+  DAT  D-main.py «bach_thu =» khong doi  8 -> 8
+
+=== E · reason GAN O MOI NHANH ===
+  DAT  E co 3 nhanh gan reason  dem=3
+  DAT  E nhanh COMPLETE co gan reason  
+  DAT  E nhanh INCOMPLETE co gan reason  
+  DAT  E nhanh DEGRADED co gan reason  
+
+=== F · GOI HAM PRODUCTION THAT tren DB that (CHI DOC) ===
+  DAT  F1 MT 08/09 tra dung 2 model bi tran  ['claude-opus-4-6', 'claude-sonnet-4-6']
+  DAT  F2 MN 08/09 KHONG co model bi tran  []
+  DAT  F3 MT 06/09 cung co 2 model (doi theo ngay)  ['meta-learning', 'smart-ensemble']
+  DAT  F4 ngay khong ton tai => [] (fail-safe)  []
+  DAT  F5 mien khong ton tai => [] (fail-safe)  []
+  DAT  F6 hai ngay khac nhau cat model KHAC nhau  ['claude-opus-4-6', 'claude-sonnet-4-6'] vs ['meta-learning', 'smart-ensemble']
+
+=== G · TAC DONG PHAN LOAI tren du lieu THAT (chi doc, khong ghi) ===
+     doi phan loai: 48 · giu nguyen: 352
+       2026-09-08 MT: 13+2=15
+       2026-09-06 MT: 13+2=15
+       2026-09-05 MT: 13+2=15
+       2026-09-04 MT: 13+2=15
+       2026-09-03 MT: 13+2=15
+  DAT  G1 co ngay doi phan loai (va co tac dung)  48 ngay
+  DAT  G2 phan lon ngay KHONG doi (khong noi long bua)  352 giu
+
+============================================================================
+TONG: 58/58 DAT
+============================================================================
+GHI: /tmp/v11174_repro/v11174_vah12_kq_TAILAP.json

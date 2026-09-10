@@ -1,21 +1,117 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-06 09:14:32",
- "tong_thu_muc": 443,
- "latest_version": "V11166",
+ "_sinh_luc_vn": "2026-09-10 10:45:57",
+ "tong_thu_muc": 452,
+ "latest_version": "V11174",
  "latest": {
-  "version": "V11166",
-  "ngay": "2026-09-05",
-  "chu_de": "TONG LUC VA DON DEP",
-  "thu_muc": "V11166_TONG_LUC_VA_DON_DEP_20260905",
+  "version": "V11174",
+  "ngay": "2026-09-10",
+  "chu_de": "SC12 DEPLOY ZEROWRITE",
+  "thu_muc": "V11174_SC12_DEPLOY_ZEROWRITE_20260910",
   "bao_cao": [
-   "V11166_TONG_LUC_VA_DON_DEP_20260905/REPORT_V11166.md"
+   "V11174_SC12_DEPLOY_ZEROWRITE_20260910/REPORT_V11174.md"
   ],
   "ngu_canh": [
-   "V11166_TONG_LUC_VA_DON_DEP_20260905/CONVERSATION_CONTEXT_V11166_20260906.md"
+   "V11174_SC12_DEPLOY_ZEROWRITE_20260910/CONVERSATION_CONTEXT_V11174_20260910.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11174",
+   "ngay": "2026-09-10",
+   "chu_de": "SC12 DEPLOY ZEROWRITE",
+   "thu_muc": "V11174_SC12_DEPLOY_ZEROWRITE_20260910",
+   "bao_cao": [
+    "V11174_SC12_DEPLOY_ZEROWRITE_20260910/REPORT_V11174.md"
+   ],
+   "ngu_canh": [
+    "V11174_SC12_DEPLOY_ZEROWRITE_20260910/CONVERSATION_CONTEXT_V11174_20260910.md"
+   ]
+  },
+  {
+   "version": "V11173",
+   "ngay": "2026-09-09",
+   "chu_de": "SC12 PRE DEPLOY HARDENING",
+   "thu_muc": "V11173_SC12_PRE_DEPLOY_HARDENING_20260909",
+   "bao_cao": [
+    "V11173_SC12_PRE_DEPLOY_HARDENING_20260909/REPORT_V11173.md"
+   ],
+   "ngu_canh": [
+    "V11173_SC12_PRE_DEPLOY_HARDENING_20260909/CONVERSATION_CONTEXT_V11173_20260909.md"
+   ]
+  },
+  {
+   "version": "V11172",
+   "ngay": "2026-09-08",
+   "chu_de": "TONG LUC NGAY LIVE",
+   "thu_muc": "V11172_TONG_LUC_NGAY_LIVE_20260908",
+   "bao_cao": [
+    "V11172_TONG_LUC_NGAY_LIVE_20260908/REPORT_V11172.md"
+   ],
+   "ngu_canh": [
+    "V11172_TONG_LUC_NGAY_LIVE_20260908/CONVERSATION_CONTEXT_V11172_20260908.md"
+   ]
+  },
+  {
+   "version": "V11171",
+   "ngay": "2026-09-07",
+   "chu_de": "CHUYEN KHO SANG TO CHUC",
+   "thu_muc": "V11171_CHUYEN_KHO_SANG_TO_CHUC_20260907",
+   "bao_cao": [
+    "V11171_CHUYEN_KHO_SANG_TO_CHUC_20260907/REPORT_V11171.md"
+   ],
+   "ngu_canh": [
+    "V11171_CHUYEN_KHO_SANG_TO_CHUC_20260907/CONVERSATION_CONTEXT_V11171_20260907.md"
+   ]
+  },
+  {
+   "version": "V11170",
+   "ngay": "2026-09-06",
+   "chu_de": "MO XE NGAY LIVE",
+   "thu_muc": "V11170_MO_XE_NGAY_LIVE_20260906",
+   "bao_cao": [
+    "V11170_MO_XE_NGAY_LIVE_20260906/REPORT_V11170.md"
+   ],
+   "ngu_canh": [
+    "V11170_MO_XE_NGAY_LIVE_20260906/CONVERSATION_CONTEXT_V11170_20260906.md"
+   ]
+  },
+  {
+   "version": "V11169",
+   "ngay": "2026-09-06",
+   "chu_de": "GOI SUA THUOC DO",
+   "thu_muc": "V11169_GOI_SUA_THUOC_DO_20260906",
+   "bao_cao": [
+    "V11169_GOI_SUA_THUOC_DO_20260906/REPORT_V11169.md"
+   ],
+   "ngu_canh": [
+    "V11169_GOI_SUA_THUOC_DO_20260906/CONVERSATION_CONTEXT_V11169_20260906.md"
+   ]
+  },
+  {
+   "version": "V11168",
+   "ngay": "2026-09-06",
+   "chu_de": "DONG VIEC DANG DO",
+   "thu_muc": "V11168_DONG_VIEC_DANG_DO_20260906",
+   "bao_cao": [
+    "V11168_DONG_VIEC_DANG_DO_20260906/REPORT_V11168.md"
+   ],
+   "ngu_canh": [
+    "V11168_DONG_VIEC_DANG_DO_20260906/CONVERSATION_CONTEXT_V11168_20260906.md"
+   ]
+  },
+  {
+   "version": "V11167",
+   "ngay": "2026-09-06",
+   "chu_de": "DON NO VA DONG VIEC DANG DO",
+   "thu_muc": "V11167_DON_NO_VA_DONG_VIEC_DANG_DO_20260906",
+   "bao_cao": [
+    "V11167_DON_NO_VA_DONG_VIEC_DANG_DO_20260906/REPORT_V11167.md"
+   ],
+   "ngu_canh": [
+    "V11167_DON_NO_VA_DONG_VIEC_DANG_DO_20260906/CONVERSATION_CONTEXT_V11167_20260906.md"
+   ]
+  },
   {
    "version": "V11166",
    "ngay": "2026-09-05",
@@ -98,102 +194,6 @@
    ],
    "ngu_canh": [
     "V11160_VA_LO_RO_PROMPT_VAO_OFFICIAL_20260904/CONVERSATION_CONTEXT_V11160_20260904.md"
-   ]
-  },
-  {
-   "version": "V11159",
-   "ngay": "2026-09-03",
-   "chu_de": "COUNTERFACTUAL RANK REPAIR OFFLINE FIRST",
-   "thu_muc": "V11159_COUNTERFACTUAL_RANK_REPAIR_OFFLINE_FIRST_20260903",
-   "bao_cao": [
-    "V11159_COUNTERFACTUAL_RANK_REPAIR_OFFLINE_FIRST_20260903/REPORT_V11159.md"
-   ],
-   "ngu_canh": [
-    "V11159_COUNTERFACTUAL_RANK_REPAIR_OFFLINE_FIRST_20260903/CONVERSATION_CONTEXT_V11159_20260903.md"
-   ]
-  },
-  {
-   "version": "V11158",
-   "ngay": "2026-09-03",
-   "chu_de": "ROLE AT TIME PRODUCTION VA HAI MODEL KHONG RA OUTPUT",
-   "thu_muc": "V11158_ROLE_AT_TIME_PRODUCTION_VA_HAI_MODEL_KHONG_RA_OUTPUT_20260903",
-   "bao_cao": [
-    "V11158_ROLE_AT_TIME_PRODUCTION_VA_HAI_MODEL_KHONG_RA_OUTPUT_20260903/REPORT_V11158.md"
-   ],
-   "ngu_canh": [
-    "V11158_ROLE_AT_TIME_PRODUCTION_VA_HAI_MODEL_KHONG_RA_OUTPUT_20260903/CONVERSATION_CONTEXT_V11158_20260903.md"
-   ]
-  },
-  {
-   "version": "V11157",
-   "ngay": "2026-09-03",
-   "chu_de": "RUT LAI 3CANG VA VA LO HONG QUAN SAT",
-   "thu_muc": "V11157_RUT_LAI_3CANG_VA_VA_LO_HONG_QUAN_SAT_20260903",
-   "bao_cao": [
-    "V11157_RUT_LAI_3CANG_VA_VA_LO_HONG_QUAN_SAT_20260903/REPORT_V11157.md"
-   ],
-   "ngu_canh": [
-    "V11157_RUT_LAI_3CANG_VA_VA_LO_HONG_QUAN_SAT_20260903/CONVERSATION_CONTEXT_V11157_20260903.md"
-   ]
-  },
-  {
-   "version": "V11155",
-   "ngay": "2026-09-02",
-   "chu_de": "DEPLOY DAU TIEN GRAND OVERHAUL",
-   "thu_muc": "V11155_DEPLOY_DAU_TIEN_GRAND_OVERHAUL_20260902",
-   "bao_cao": [
-    "V11155_DEPLOY_DAU_TIEN_GRAND_OVERHAUL_20260902/REPORT_V11155.md"
-   ],
-   "ngu_canh": [
-    "V11155_DEPLOY_DAU_TIEN_GRAND_OVERHAUL_20260902/CONVERSATION_CONTEXT_V11155_20260902.md"
-   ]
-  },
-  {
-   "version": "V11154",
-   "ngay": "2026-09-02",
-   "chu_de": "RUT LAI XEP HANG VA CONG THUC TOTAL",
-   "thu_muc": "V11154_RUT_LAI_XEP_HANG_VA_CONG_THUC_TOTAL_20260902",
-   "bao_cao": [
-    "V11154_RUT_LAI_XEP_HANG_VA_CONG_THUC_TOTAL_20260902/REPORT_V11154.md"
-   ],
-   "ngu_canh": [
-    "V11154_RUT_LAI_XEP_HANG_VA_CONG_THUC_TOTAL_20260902/CONVERSATION_CONTEXT_V11154_20260902.md"
-   ]
-  },
-  {
-   "version": "V11153",
-   "ngay": "2026-09-02",
-   "chu_de": "KHOA NGUONG CHAP NHAN",
-   "thu_muc": "V11153_KHOA_NGUONG_CHAP_NHAN_20260902",
-   "bao_cao": [
-    "V11153_KHOA_NGUONG_CHAP_NHAN_20260902/REPORT_V11153.md"
-   ],
-   "ngu_canh": [
-    "V11153_KHOA_NGUONG_CHAP_NHAN_20260902/CONVERSATION_CONTEXT_V11153_20260902.md"
-   ]
-  },
-  {
-   "version": "V11152",
-   "ngay": "2026-09-02",
-   "chu_de": "CO NGU CANH THUAN THEO LANE",
-   "thu_muc": "V11152_CO_NGU_CANH_THUAN_THEO_LANE_20260902",
-   "bao_cao": [
-    "V11152_CO_NGU_CANH_THUAN_THEO_LANE_20260902/REPORT_V11152.md"
-   ],
-   "ngu_canh": [
-    "V11152_CO_NGU_CANH_THUAN_THEO_LANE_20260902/CONVERSATION_CONTEXT_V11152_20260902.md"
-   ]
-  },
-  {
-   "version": "V11151",
-   "ngay": "2026-09-02",
-   "chu_de": "ARENA POOL SHADOW BOUNDARY",
-   "thu_muc": "V11151_ARENA_POOL_SHADOW_BOUNDARY_20260902",
-   "bao_cao": [
-    "V11151_ARENA_POOL_SHADOW_BOUNDARY_20260902/REPORT_V11151.md"
-   ],
-   "ngu_canh": [
-    "V11151_ARENA_POOL_SHADOW_BOUNDARY_20260902/CONVERSATION_CONTEXT_V11151_20260902.md"
    ]
   }
  ]

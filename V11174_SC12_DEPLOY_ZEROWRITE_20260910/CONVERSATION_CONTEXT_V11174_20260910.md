@@ -1,5 +1,15 @@
 # CONVERSATION CONTEXT — V11174 · 10/09/2026
 
+> 🔴 **ĐÃ ĐÍNH CHÍNH — đọc `V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/REPORT_V11175.md` trước.**
+> Ngày 10/09/2026, owner hỏi *«đã báo cáo đầy đủ chưa em?»*. Một lớp kiểm chéo 12 tác nhân độc lập
+> tìm ra **29 chỗ thiếu đã được xác nhận**, trong đó **hai lỗi P0**: ① tệp bằng chứng gắn nhãn
+> «58/58» thực tế ghi `dat: false` *(số 58/58 ĐÚNG và đã tái lập, nhưng tệp thì sai)*;
+> ② digest **`396c7559…` KHÔNG tái lập được** — và tiêu chí «digest toàn bảng không đổi» **sai từ
+> thiết kế** vì `final_bundles` tăng tự nhiên mỗi ngày. Tiêu chí đúng: **`0c5f84f8…`** trên
+> **582 dòng `date ≤ 2026-09-09`**. Thêm nữa **VA-2′ mới `PARTIAL`**, không phải đã đóng
+> (`A58_VIOLATION_HALF_DONE`). Rút lại đầy đủ: `RL-026`…`RL-032`.
+
+
 > Nguyên văn lời owner · agent làm gì · vấp ở đâu (§57.2). Giờ **Việt Nam (UTC+07:00)**.
 > `CURRENT_ACTOR = CLAUDE_CODE` · **Prompt 43 R1 giữ `PARTIAL` — không mở Prompt 44.**
 > **Trạng thái kết thúc: SC-12 `DEPLOYED_PENDING_SCHEDULED_PROOF` · Pure Context `PURE_CONTEXT_PARTIAL`**
