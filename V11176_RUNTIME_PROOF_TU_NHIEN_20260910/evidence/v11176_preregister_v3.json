@@ -1,0 +1,71 @@
+{
+ "MN": [
+  {
+   "date": "2026-09-10",
+   "region": "MN",
+   "model_count": 15,
+   "capped": [],
+   "effective": 15,
+   "expected": 15,
+   "EXPECTED_CLASSIFICATION": "VALID_LIVE_DAY",
+   "EXPECTED_BUNDLE_QUALITY": "COMPLETE",
+   "EXPECTED_EVAL_POLICY": "INCLUDE",
+   "EXPECTED_REASON": null,
+   "EXPECTED_failed_model_count": 0,
+   "EXPECTED_completeness_ratio": 1.0,
+   "INPUT_HASH": "73e9441ff2b723204ae17ceb5b4e1777e0eae0251d5210fca6af4f62ea8b3c63",
+   "CODE_HASH": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+   "NIEM_PHONG_LUC": "2026-09-10T16:13:58.285386+07:00",
+   "day_governance_luc_niem_phong": null,
+   "TRUOC_KHI_CO_OUTPUT": true,
+   "bundle_created_at": "2026-09-10 05:26:43"
+  }
+ ],
+ "MT": [
+  {
+   "date": "2026-09-10",
+   "region": "MT",
+   "model_count": 13,
+   "capped": [
+    "claude-opus-4-6",
+    "claude-sonnet-4-6"
+   ],
+   "effective": 15,
+   "expected": 15,
+   "EXPECTED_CLASSIFICATION": "VALID_LIVE_DAY",
+   "EXPECTED_BUNDLE_QUALITY": "COMPLETE",
+   "EXPECTED_EVAL_POLICY": "INCLUDE",
+   "EXPECTED_REASON": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-opus-4-6, claude-sonnet-4-6",
+   "EXPECTED_failed_model_count": 0,
+   "EXPECTED_completeness_ratio": 1.0,
+   "INPUT_HASH": "194834a9c6c765117ccc1a070be0a675c6b78e213cace327d2248de7cd459ed5",
+   "CODE_HASH": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+   "NIEM_PHONG_LUC": "2026-09-10T16:41:00.243338+07:00",
+   "day_governance_luc_niem_phong": null,
+   "TRUOC_KHI_CO_OUTPUT": true,
+   "bundle_created_at": "2026-09-10 16:40:46"
+  }
+ ],
+ "MB": [
+  {
+   "date": "2026-09-10",
+   "region": "MB",
+   "model_count": 15,
+   "capped": [],
+   "effective": 15,
+   "expected": 15,
+   "EXPECTED_CLASSIFICATION": "VALID_LIVE_DAY",
+   "EXPECTED_BUNDLE_QUALITY": "COMPLETE",
+   "EXPECTED_EVAL_POLICY": "INCLUDE",
+   "EXPECTED_REASON": null,
+   "EXPECTED_failed_model_count": 0,
+   "EXPECTED_completeness_ratio": 1.0,
+   "INPUT_HASH": "e2214abf96c5473f3cab74c0b0ff30b7472c20005c2bd940738466c2e8b5876c",
+   "CODE_HASH": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+   "NIEM_PHONG_LUC": "2026-09-10T17:36:34.137007+07:00",
+   "day_governance_luc_niem_phong": null,
+   "TRUOC_KHI_CO_OUTPUT": true,
+   "bundle_created_at": "2026-09-10 17:36:19"
+  }
+ ]
+}

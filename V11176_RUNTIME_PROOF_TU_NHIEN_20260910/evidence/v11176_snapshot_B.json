@@ -1,0 +1,118 @@
+{
+ "nhan": "B",
+ "ICT": "2026-09-10T16:12:16.253760+07:00",
+ "UTC": "2026-09-10T09:12:16.253775+00:00",
+ "A_runtime": {
+  "MainPID": "3870722",
+  "NRestarts": "0",
+  "ActiveState": "active",
+  "SubState": "running",
+  "ExecMainStartTimestamp": "Thu 2026-09-10 02:00:19 +07",
+  "health_http": "200",
+  "hash": {
+   "main.py": "d59a6ae94f9c3666eace95d2e772ed39e761a1711cb726b601d753d5d8f2f4ca",
+   "database.py": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+   "daily_evaluation.py": "dab6bf149c46ed55661f9016050752ff8c7cc3bd1df6e2348e46b69750696fbd",
+   "scheduler.py": "2961987d8c3a6e27a962cd3bf3f76c023eebd3a224d13789117edac2b47a9e63"
+  },
+  "marker": {
+   "V11174_database": "3",
+   "V11174_main": "1",
+   "V11173_daily_eval": "3",
+   "JOIN_final_bundles_daily_eval": "0"
+  },
+  "proc_start": "Thu Sep 10 02:00:19 2026",
+  "cwd_of_proc": "/root/Lottery_AI_Test/web/backend",
+  "maps_backend_files": "/root/Lottery_AI_Test/venv/bin/python3\nmain.py",
+  "open_db_fd": "0",
+  "wal_3_mau": [
+   "khong-co",
+   "khong-co",
+   "khong-co"
+  ],
+  "ACTIVE_WRITER_W1": "WAL_PRESENT_KHONG_DOI",
+  "fuser_db": "",
+  "auto_verify_cfg": "1325:async def _run_auto_update(region: str):\n1345:            log_level='WARNING', job_name='auto_update', region=region, date_str=today\n1362:            log_level='WARNING', job_name='auto_update', region=region, date_str=today\n1368:        log_level='INFO', job_name='auto_update', region=region, date_str=today\n1398:                    log_level='INFO', job_name='auto_update', region=region, date_str=today\n1479:                    log_level='WARNING', job_name='auto_update', region=region, date_str=today\n1486:                        log_level='WARNING', job_name='auto_update', region=region, date_str=today\n1579:                log_level='WARNING', job_name='auto_update', region=region, date_str=today\n1626:                log_level='WARNING', job_name='auto_update', region=region, date_str=today\n1637:                log_level='INFO', job_name='auto_update', region=region, date_str=today\n1670:                    _cds(today, \"MN\", source='auto_verify')\n1709:                    log_level='WARNING', job_name='auto_update', region='MN', date_str=today",
+  "journal_tail": "Sep 10 15:45:00 lotteryai-aulb python3[3870722]: 2026-09-10 15:45:00,004 - INFO - Running job \"🐶 V10785 Watchdog heartbeat (15m) (trigger: cron[minute='*/15'], next run at: 2026-09-10 16:00:00 +07)\" (scheduled at 2026-09-10 15:45:00+07:00)\nSep 10 15:45:00 lotteryai-aulb python3[3870722]: 2026-09-10 15:45:00,079 - INFO - Job \"🐶 V10785 Watchdog heartbeat (15m) (trigger: cron[minute='*/15'], next run at: 2026-09-10 16:00:00 +07)\" executed successfully\nSep 10 15:45:00 lotteryai-aulb python3[3870722]: 2026-09-10 15:45:00,084 - INFO - Job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 15:50:00 +07)\" executed successfully\nSep 10 15:50:00 lotteryai-aulb python3[3870722]: 2026-09-10 15:50:00,002 - INFO - Running job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 15:55:00 +07)\" (scheduled at 2026-09-10 15:50:00+07:00)\nSep 10 15:50:00 lotteryai-aulb python3[3870722]: 2026-09-10 15:50:00,028 - INFO - Job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 15:55:00 +07)\" executed successfully\nSep 10 15:55:00 lotteryai-aulb python3[3870722]: 2026-09-10 15:55:00,003 - INFO - Running job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:00:00 +07)\" (scheduled at 2026-09-10 15:55:00+07:00)\nSep 10 15:55:00 lotteryai-aulb python3[3870722]: 2026-09-10 15:55:00,029 - INFO - Job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:00:00 +07)\" executed successfully\nSep 10 16:00:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:00:00,002 - INFO - Running job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:05:00 +07)\" (scheduled at 2026-09-10 16:00:00+07:00)\nSep 10 16:00:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:00:00,003 - INFO - Running job \"🐶 V10785 Watchdog heartbeat (15m) (trigger: cron[minute='*/15'], next run at: 2026-09-10 16:15:00 +07)\" (scheduled at 2026-09-10 16:00:00+07:00)\nSep 10 16:00:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:00:00,055 - INFO - Job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:05:00 +07)\" executed successfully\nSep 10 16:00:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:00:00,127 - INFO - Job \"🐶 V10785 Watchdog heartbeat (15m) (trigger: cron[minute='*/15'], next run at: 2026-09-10 16:15:00 +07)\" executed successfully\nSep 10 16:05:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:05:00,001 - INFO - Running job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:10:00 +07)\" (scheduled at 2026-09-10 16:05:00+07:00)\nSep 10 16:05:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:05:00,032 - INFO - Job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:10:00 +07)\" executed successfully\nSep 10 16:10:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:10:00,002 - INFO - Running job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:15:00 +07)\" (scheduled at 2026-09-10 16:10:00+07:00)\nSep 10 16:10:00 lotteryai-aulb python3[3870722]: 2026-09-10 16:10:00,028 - INFO - Job \"🧪 /du-doan-test pre-result readiness trigger (5m) (trigger: cron[minute='*/5'], next run at: 2026-09-10 16:15:00 +07)\" executed successfully",
+  "journal_err_count": "2"
+ },
+ "D_db": {
+  "final_bundles_rows": 583,
+  "final_bundles_max_created": "2026-09-10 05:26:43",
+  "day_governance_rows": 581,
+  "day_governance_max_classified": "2026-09-09 18:32:34",
+  "daily_eval_log_rows": 432,
+  "lottery_results_rows": 15449,
+  "model_daily_eval_rows": 14469,
+  "predictions_rows": 14646,
+  "scorecard_rows": 17526,
+  "output_counterfactual_rank_NOTNULL": 0,
+  "_ghi_chu": "output_counterfactual_rank la COT cua shadow_model_promotion_scorecard_daily, KHONG phai bang",
+  "MT_EXCLUDE_PRIMARY": 98
+ },
+ "C_no_drift": {
+  "SQL": "SELECT * FROM final_bundles WHERE date<='2026-09-09' ORDER BY 1",
+  "serialization": "sha256 cap nhat lien tiep bang repr(row) cua sqlite3.Row-tuple, khong phan cach",
+  "sort_order": "ORDER BY 1 (cot dau tien = id)",
+  "column_order": "SELECT * — thu tu cot theo schema hien hanh",
+  "row_count": 582,
+  "scoped_digest": "0c5f84f8de9bbada94abe2b665dc53c5ab4044f07e64f2ebe796efff6278ffb2",
+  "ids_sha256": "e53316e2004841d8b8ce34ebea3504831bb8d01b2568e97f3547e0e201dccfe8",
+  "id_min": 1,
+  "id_max": 858,
+  "rows_tu_10_09_TACH_RIENG": [
+   [
+    860,
+    "2026-09-10",
+    "MN",
+    "ACTIVE",
+    "2026-09-10 05:26:43",
+    15
+   ]
+  ]
+ },
+ "B_preregister": {
+  "EXPECTED_MODEL_COUNT": 15,
+  "code_hash_database_py": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+  "MT": {
+   "date": "2026-09-10",
+   "trang_thai": "EXPECTATION_PENDING_INPUT",
+   "ly_do": "chua co bundle ACTIVE cho ngay/mien nay",
+   "model_count": null,
+   "capped": []
+  },
+  "MN": {
+   "date": "2026-09-10",
+   "region": "MN",
+   "model_count": 15,
+   "capped": [],
+   "effective": 15,
+   "expected": 15,
+   "EXPECTED_CLASSIFICATION": "VALID_LIVE_DAY",
+   "EXPECTED_BUNDLE_QUALITY": "COMPLETE",
+   "EXPECTED_EVAL_POLICY": "INCLUDE",
+   "EXPECTED_REASON": null,
+   "EXPECTED_failed_model_count": 0,
+   "EXPECTED_completeness_ratio": 1.0,
+   "INPUT_HASH": "73e9441ff2b723204ae17ceb5b4e1777e0eae0251d5210fca6af4f62ea8b3c63",
+   "CALCULATED_AT": "2026-09-10T16:12:16.253760+07:00",
+   "day_governance_HIEN_TAI": null
+  },
+  "MB": {
+   "date": "2026-09-10",
+   "trang_thai": "EXPECTATION_PENDING_INPUT",
+   "ly_do": "chua co bundle ACTIVE cho ngay/mien nay",
+   "model_count": null,
+   "capped": []
+  }
+ },
+ "E_consumer": {
+  "CLASSIFIER": "database.py::classify_day_status (V11174 marker=3)",
+  "WRITER": "database.py::classify_day_status -> INSERT day_governance (ON CONFLICT UPDATE)",
+  "BACKEND_COHORT": "daily_evaluation.py::_get_combo_super_predictions (V11173 marker=3)",
+  "API_READER": "main.py::_quality_filtered_models_from_source_meta (VA-2')",
+  "UI_READER_fallback_lines": "1354:      if (!filteredModels.length && sourcePreds && sourcePreds.wr_gate_filtered) filteredModels = sourcePreds.wr_gate_filtered;\n1438:      if (!qualityFilteredModels.length && sourcePreds && sourcePreds.wr_gate_filtered) {\n1439:        qualityFilteredModels = sourcePreds.wr_gate_filtered;\n1443:      } else if (sourcePreds && sourcePreds.wr_gate_filtered && sourcePreds.wr_gate_filtered.length > 0) {\n1444:        filteredNames = ' (' + sourcePreds.wr_gate_filtered.join(', ') + ')';",
+  "UI_count_field": "652:        \"quality_filtered_model_count\": non_scoreable_count,\n10505:        'quality_filtered_model_count': max(\n11050:            \"quality_filtered_model_count\": publish_meta.get(\"quality_filtered_model_count\", 0),\n11145:            \"quality_filtered_model_count\": publish_meta.get(\"quality_filtered_model_count\", 0),",
+  "NHAN_TRUOC_RUN": "CONSUMER_UI = KNOWN_PARTIAL"
+ }
+}

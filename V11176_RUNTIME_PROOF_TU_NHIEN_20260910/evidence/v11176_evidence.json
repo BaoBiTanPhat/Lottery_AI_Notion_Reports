@@ -1,0 +1,211 @@
+{
+ "ICT": "2026-09-10T18:41:06.817193+07:00",
+ "UTC": "2026-09-10T11:41:06.817247+00:00",
+ "T1_scheduler": {
+  "journal_auto_verify": "Sep 10 16:36:37 lotteryai-aulb python3[3870722]: [SCHEDULER] 🔄 Bắt đầu auto-update MN cho ngày 2026-09-10\nSep 10 16:36:40 lotteryai-aulb python3[3870722]: [DAY-GOV] MN 2026-09-10: VALID_LIVE_DAY | COMPLETE | 15/15 | eval=INCLUDE",
+  "journal_job_executed": "",
+  "PID_trong_journal": "python3[3870722]"
+ },
+ "T5_runtime": {
+  "MainPID": "3870722",
+  "NRestarts": "0",
+  "ActiveState": "active",
+  "SubState": "running",
+  "ExecMainStartTimestamp": "Thu 2026-09-10 02:00:19 +07",
+  "health": "200",
+  "hash": {
+   "main.py": "d59a6ae94f9c3666eace95d2e772ed39e761a1711cb726b601d753d5d8f2f4ca",
+   "database.py": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+   "daily_evaluation.py": "dab6bf149c46ed55661f9016050752ff8c7cc3bd1df6e2348e46b69750696fbd"
+  },
+  "marker_V11174_db": "3",
+  "marker_V11174_main": "1",
+  "marker_V11173_de": "3",
+  "journal_loi_tu_16h": "23",
+  "journal_restart": "0",
+  "proc_start": "Thu Sep 10 02:00:19 2026"
+ },
+ "T3_writer": {
+  "day_governance_10_09": {
+   "MN": [
+    "VALID_LIVE_DAY",
+    "INCLUDE",
+    "COMPLETE",
+    15,
+    15,
+    0,
+    1.0,
+    null,
+    "auto_verify",
+    "2026-09-10 16:36:37"
+   ],
+   "MT": [
+    "VALID_LIVE_DAY",
+    "INCLUDE",
+    "COMPLETE",
+    15,
+    13,
+    0,
+    1.0,
+    "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-opus-4-6, claude-sonnet-4-6",
+    "auto_verify",
+    "2026-09-10 17:30:01"
+   ],
+   "MB": [
+    "VALID_LIVE_DAY",
+    "INCLUDE",
+    "COMPLETE",
+    15,
+    15,
+    0,
+    1.0,
+    null,
+    "auto_verify",
+    "2026-09-10 18:31:03"
+   ]
+  },
+  "tong": [
+   584,
+   "2026-09-10 18:31:03"
+  ]
+ },
+ "T2_classifier_input": {
+  "MN": {
+   "model_count": 15,
+   "created_at": "2026-09-10 05:26:43",
+   "capped": [],
+   "effective": 15
+  },
+  "MT": {
+   "model_count": 13,
+   "created_at": "2026-09-10 16:40:46",
+   "capped": [
+    "claude-opus-4-6",
+    "claude-sonnet-4-6"
+   ],
+   "effective": 15
+  },
+  "MB": {
+   "model_count": 15,
+   "created_at": "2026-09-10 17:36:19",
+   "capped": [],
+   "effective": 15
+  }
+ },
+ "T5_no_drift": {
+  "SQL": "SELECT * FROM final_bundles WHERE date<='2026-09-09' ORDER BY 1",
+  "row_count": 582,
+  "scoped_digest": "0c5f84f8de9bbada94abe2b665dc53c5ab4044f07e64f2ebe796efff6278ffb2",
+  "KY_VONG": "0c5f84f8de9bbada94abe2b665dc53c5ab4044f07e64f2ebe796efff6278ffb2",
+  "KHOP": true,
+  "rows_tu_10_09": [
+   [
+    860,
+    "2026-09-10",
+    "MN",
+    "ACTIVE",
+    "2026-09-10 05:26:43",
+    15
+   ],
+   [
+    862,
+    "2026-09-10",
+    "MT",
+    "ACTIVE",
+    "2026-09-10 16:40:46",
+    13
+   ],
+   [
+    864,
+    "2026-09-10",
+    "MB",
+    "ACTIVE",
+    "2026-09-10 17:36:19",
+    15
+   ]
+  ]
+ },
+ "T5_bang_khoa": {
+  "final_bundles": 585,
+  "predictions": 14686,
+  "lottery_results": 15456,
+  "model_daily_eval": 14523,
+  "daily_eval_log": 435,
+  "scorecard_rows": 17607,
+  "output_counterfactual_rank_NOTNULL": 0,
+  "MT_EXCLUDE_PRIMARY": 98
+ },
+ "T4_consumer": {
+  "daily_eval_log_10_09": [
+   [
+    "2026-09-10",
+    "MB",
+    1
+   ],
+   [
+    "2026-09-10",
+    "MN",
+    1
+   ],
+   [
+    "2026-09-10",
+    "MT",
+    1
+   ]
+  ],
+  "daily_eval_log_max_date": "2026-09-10",
+  "api_MT": "{\"detail\":\"Not authenticated\"}",
+  "api_MN": "{\"detail\":\"Not authenticated\"}",
+  "ui_fallback_lines": "1354:      if (!filteredModels.length && sourcePreds && sourcePreds.wr_gate_filtered) filteredModels = sourcePreds.wr_gate_filtered;\n1438:      if (!qualityFilteredModels.length && sourcePreds && sourcePreds.wr_gate_filtered) {\n1439:        qualityFilteredModels = sourcePreds.wr_gate_filtered;\n1443:      } else if (sourcePreds && sourcePreds.wr_gate_filtered && sourcePreds.wr_gate_filtered.length > 0) {\n1444:        filteredNames = ' (' + sourcePreds.wr_gate_filtered.join(', ') + ')';"
+ },
+ "forbidden_surface": {
+  "ranked_numbers": {
+   "tep": "main.py",
+   "hien_tai": "9",
+   "preimage": "9",
+   "KHONG_DOI": true
+  },
+  "_CANONICAL_OUTPUT_MODELS": {
+   "tep": "main.py",
+   "hien_tai": "3",
+   "preimage": "3",
+   "KHONG_DOI": true
+  },
+  "run_combo_super": {
+   "tep": "main.py",
+   "hien_tai": "2",
+   "preimage": "2",
+   "KHONG_DOI": true
+  },
+  "save_final_bundle": {
+   "tep": "database.py",
+   "hien_tai": "1",
+   "preimage": "1",
+   "KHONG_DOI": true
+  },
+  "bach_thu =": {
+   "tep": "main.py",
+   "hien_tai": "8",
+   "preimage": "8",
+   "KHONG_DOI": true
+  },
+  "output_counterfactual_rank": {
+   "tep": "main.py",
+   "hien_tai": "0",
+   "preimage": "0\nn/a",
+   "KHONG_DOI": false
+  },
+  "INTO final_bundles": {
+   "tep": "database.py",
+   "hien_tai": "1",
+   "preimage": "1",
+   "KHONG_DOI": true
+  },
+  "UPDATE final_bundles": {
+   "tep": "database.py",
+   "hien_tai": "1",
+   "preimage": "1",
+   "KHONG_DOI": true
+  }
+ }
+}
