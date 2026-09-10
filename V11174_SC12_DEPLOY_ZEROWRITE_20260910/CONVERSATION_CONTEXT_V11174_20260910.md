@@ -57,7 +57,7 @@ viết sẵn** — và thiết kế đó hoá ra thừa. Nếu owner cho phép g
 
 | em từng nói | sự thật đo được |
 |---|---|
-| `-shm` 32 KB ⇒ có writer | `-shm` **luôn tồn tại** khi có kết nối mở. Tiêu chí đúng là **WAL size > 0** — và WAL đang **0 byte** |
+| ~~`-shm` 32 KB ⇒ có writer~~ | `-shm` **luôn tồn tại** khi có kết nối mở. ~~*«Tiêu chí đúng là WAL size > 0»*~~ — 🔴 CÂU NÀY ĐÃ RÚT — `RL-033`: WAL **giữ nguyên kích thước** sau commit cho tới checkpoint, nên `size > 0` cũng chỉ là phép đo **tĩnh**. Hợp đồng đúng: **`ACTIVE_WRITER_PROOF`** (W1 WAL size/mtime **tăng giữa các mẫu** · W2 process/FD/lock · W3 job in-flight · W4 journal) — xem `docs/SC12_RUNBOOK_V11173.md` mục 4.3 |
 | Auto Retrain 02:00 hằng đêm | journal ghi rõ **`🧠 Auto Retrain (sun 02:00)`** — **`day_of_week=sun`**. Hôm nay **Thứ Năm** ⇒ không chạy |
 
 Nếu giữ hai tiêu chí sai đó, em đã **tự chặn mình khỏi cửa sổ 02:00 hợp lệ** và lại báo BLOCKED
@@ -128,10 +128,24 @@ runtime nào. `day_governance` vẫn **581 dòng**, `classified_at` mới nhất
 **Đừng coi đây là cải thiện chất lượng dự đoán.** Đây là **sửa phép đo** và **tăng độ tin cậy**.
 Kết luận V11170 *«hệ không hơn ngẫu nhiên»* **vẫn đứng nguyên** — phiên này không đo lại nó.
 
-**Con số đứng vững:** V11174 **58/58** · V11173 **43/43** sau tích hợp · dry-run **49 ngày, tất cả
-MT** · `final_bundles` **582 dòng, digest `396c7559…` không đổi** · `output_counterfactual_rank`
-**0 ghi** · **DB MUTATIONS = 0**.
+> 🔴 **CÂU DƯỚI ĐÂY ĐÃ RÚT LẠI MỘT PHẦN — `RL-026` · `RL-027` (10/09/2026, V11175).**
+> ~~*«`final_bundles` **582 dòng, digest `396c7559…` không đổi**»*~~ — **SAI HAI LẦN**:
+> ① `396c7559…` **không tái lập được** bằng bất kỳ công thức nào trong sáu công thức đã thử;
+> ② tiêu chí *«digest toàn bảng không đổi»* **sai từ thiết kế** — `final_bundles` **tăng tự nhiên
+> mỗi ngày** (10/09 đã **583 dòng**, dòng mới `id=860 · MN · 05:26:43`), nên tiêu chí ấy sẽ báo
+> **drift giả**.
+> **Điều đúng:** digest **phạm vi khoá** `0c5f84f8de9bbada94abe2b665dc53c5ab4044f07e64f2ebe796efff6278ffb2`
+> trên **đúng 582 dòng `date ≤ 2026-09-09`**, sinh bằng
+> `SELECT * FROM final_bundles WHERE date<='2026-09-09' ORDER BY 1` + `sha256(repr(row))` nối tiếp.
+> Thêm nữa **«58/58»** đúng về số nhưng ở bản đầu **gắn nhầm artifact** (`RL-027`) — nay đã tái lập,
+> chứng cứ `evidence/v11174_vah12_test_stdout.txt`.
+
+**Con số đứng vững (đã sửa):** V11174 **58/58** *(đã tái lập 10/09 10:36 — `TONG: 58/58 DAT`)* ·
+V11173 **43/43** sau tích hợp *(artifact có `dat: true` nhưng **không chứa số đếm**)* · dry-run
+**49 ngày, tất cả MT** · `final_bundles` **582 dòng `date ≤ 2026-09-09`, digest phạm vi khoá
+`0c5f84f8…` không đổi** · `output_counterfactual_rank` *(là **CỘT**, không phải bảng)* **0 ghi** ·
+**DB MUTATIONS = 0**.
 
 ---
 
-TanPhatAI cần làm: ghi **`V11174`** — công khai bản này cùng `REPORT_V11174.md`. Ghi **SC-12 = `DEPLOYED_PENDING_SCHEDULED_PROOF`** và **Pure Context = `PURE_CONTEXT_PARTIAL`** — **hai dòng riêng, cấm gộp**. Ghi **deploy 02:00:19 ICT 10/09, PID 3370750 → 3870722, NRestarts 0→0, health 200, journal 0 lỗi, DB MUTATIONS = 0, 13/13 cổng PASS**. Ghi **blocker P0 «VA-h12 không có installer thật» ĐÃ ĐÓNG** bằng `v11174_vah12_zerowrite_installer.py` (58/58, test gọi hàm production thật trên DB thật). Ghi **VA-1/VA-2 bị BỎ HẲN** vì chúng ghi `final_bundles` — vi phạm khoá `FINAL_BUNDLES_ZERO_WRITE`; **bằng chứng cho phép bỏ: `model_exclusion_reasons` ĐÃ ghi sẵn `reason='max_voters_cap'`**, chỉ cần ĐỌC. Ghi **vá KHÔNG tẩy trắng**: 25/07 MT `11+2=13` vẫn `EXCLUDE_PRIMARY`. Ghi **dry-run 49 ngày = 46 (đến 04/09) + 3 ngày mới; +1 lệch so với mốc 45 là `INDETERMINATE`, xung đột `RL-014`, KHÔNG ép số**. Ghi **hai tiêu chí idle cũ của agent là SAI đã sửa**: retrain là `day_of_week=sun`; tiêu chí đúng là **WAL size > 0**. Ghi **`evaluate_all_history` CÔ LẬP THẬT** — chỉ trong `__main__` dưới `--backfill`, 0 cron 0 route. Ghi **R6 · R7 · R8 KHÔNG THỰC HIỆN trong phiên này** — agent **không tuyên bố "đã kiểm tra toàn bộ"**. Ghi **backfill lịch sử CHƯA chạy, mới dry-run** — 49 dòng MT vẫn `EXCLUDE_PRIMARY`. Ghi **việc kế tiếp DUY NHẤT: chờ `auto_verify` 16:37–18:34 hôm nay rồi thu bằng chứng runtime**. **Không mở Prompt 44. Không mở Plan mới. Không mở FU mới. Không trộn ERP.**
+TanPhatAI cần làm: ghi **`V11174`** — công khai bản này cùng `REPORT_V11174.md`. Ghi **SC-12 = `DEPLOYED_PENDING_SCHEDULED_PROOF`** và **Pure Context = `PURE_CONTEXT_PARTIAL`** — **hai dòng riêng, cấm gộp**. Ghi **deploy 02:00:19 ICT 10/09, PID 3370750 → 3870722, NRestarts 0→0, health 200, journal 0 lỗi, DB MUTATIONS = 0, 13/13 cổng PASS**. Ghi **blocker P0 «VA-h12 không có installer thật» ĐÃ ĐÓNG** bằng `v11174_vah12_zerowrite_installer.py` (58/58, test gọi hàm production thật trên DB thật). Ghi **VA-1/VA-2 bị BỎ HẲN** vì chúng ghi `final_bundles` — vi phạm khoá `FINAL_BUNDLES_ZERO_WRITE`; **bằng chứng cho phép bỏ: `model_exclusion_reasons` ĐÃ ghi sẵn `reason='max_voters_cap'`**, chỉ cần ĐỌC. Ghi **vá KHÔNG tẩy trắng**: 25/07 MT `11+2=13` vẫn `EXCLUDE_PRIMARY`. Ghi **dry-run 49 ngày = 46 (đến 04/09) + 3 ngày mới; +1 lệch so với mốc 45 là `INDETERMINATE`, xung đột `RL-014`, KHÔNG ép số**. Ghi **hai tiêu chí idle cũ của agent là SAI đã sửa**: retrain là `day_of_week=sun`; ~~*«tiêu chí đúng là WAL size > 0»*~~ **ĐÃ RÚT — `RL-033`** (V11176), hợp đồng đúng là **`ACTIVE_WRITER_PROOF`** (W1 WAL tăng giữa các mẫu · W2 process/FD/lock · W3 job in-flight · W4 journal). Ghi **`evaluate_all_history` CÔ LẬP THẬT** — chỉ trong `__main__` dưới `--backfill`, 0 cron 0 route. Ghi **R6 · R7 · R8 KHÔNG THỰC HIỆN trong phiên này** — agent **không tuyên bố "đã kiểm tra toàn bộ"**. Ghi **backfill lịch sử CHƯA chạy, mới dry-run** — 49 dòng MT vẫn `EXCLUDE_PRIMARY`. Ghi **việc kế tiếp DUY NHẤT: chờ `auto_verify` 16:37–18:34 hôm nay rồi thu bằng chứng runtime**. **Không mở Prompt 44. Không mở Plan mới. Không mở FU mới. Không trộn ERP.**

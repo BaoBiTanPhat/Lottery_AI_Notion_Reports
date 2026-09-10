@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-10 10:45:57 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-10 13:52:43 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -38,7 +38,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11174` — SC12 DEPLOY ZEROWRITE (2026-09-10)
+**Báo cáo mới nhất:** `V11175` — KIEM CHEO DINH CHINH V11174 (2026-09-10)
 
 ---
 

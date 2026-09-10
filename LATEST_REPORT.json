@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-10 10:45:57",
- "tong_thu_muc": 452,
- "latest_version": "V11174",
+ "_sinh_luc_vn": "2026-09-10 13:52:43",
+ "tong_thu_muc": 453,
+ "latest_version": "V11175",
  "latest": {
-  "version": "V11174",
+  "version": "V11175",
   "ngay": "2026-09-10",
-  "chu_de": "SC12 DEPLOY ZEROWRITE",
-  "thu_muc": "V11174_SC12_DEPLOY_ZEROWRITE_20260910",
+  "chu_de": "KIEM CHEO DINH CHINH V11174",
+  "thu_muc": "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910",
   "bao_cao": [
-   "V11174_SC12_DEPLOY_ZEROWRITE_20260910/REPORT_V11174.md"
+   "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/REPORT_V11175.md"
   ],
   "ngu_canh": [
-   "V11174_SC12_DEPLOY_ZEROWRITE_20260910/CONVERSATION_CONTEXT_V11174_20260910.md"
+   "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/CONVERSATION_CONTEXT_V11175_20260910.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11175",
+   "ngay": "2026-09-10",
+   "chu_de": "KIEM CHEO DINH CHINH V11174",
+   "thu_muc": "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910",
+   "bao_cao": [
+    "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/REPORT_V11175.md"
+   ],
+   "ngu_canh": [
+    "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/CONVERSATION_CONTEXT_V11175_20260910.md"
+   ]
+  },
   {
    "version": "V11174",
    "ngay": "2026-09-10",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11161_KHU_TRUNG_V2_VA_DANG_KY_TRUOC_MT_20260904/CONVERSATION_CONTEXT_V11161_20260904.md"
-   ]
-  },
-  {
-   "version": "V11160",
-   "ngay": "2026-09-04",
-   "chu_de": "VA LO RO PROMPT VAO OFFICIAL",
-   "thu_muc": "V11160_VA_LO_RO_PROMPT_VAO_OFFICIAL_20260904",
-   "bao_cao": [
-    "V11160_VA_LO_RO_PROMPT_VAO_OFFICIAL_20260904/REPORT_V11160.md"
-   ],
-   "ngu_canh": [
-    "V11160_VA_LO_RO_PROMPT_VAO_OFFICIAL_20260904/CONVERSATION_CONTEXT_V11160_20260904.md"
    ]
   }
  ]

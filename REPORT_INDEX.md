@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-09-10 10:45:57 (giờ VN) · **452 thư mục báo cáo**
+**Sinh lúc:** 2026-09-10 13:52:43 (giờ VN) · **453 thư mục báo cáo**
 
-**Mới nhất: `V11174`** — SC12 DEPLOY ZEROWRITE · 2026-09-10
+**Mới nhất: `V11175`** — KIEM CHEO DINH CHINH V11174 · 2026-09-10
 
-- [REPORT_V11174.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11174_SC12_DEPLOY_ZEROWRITE_20260910/REPORT_V11174.md)
-- [CONVERSATION_CONTEXT_V11174_20260910.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11174_SC12_DEPLOY_ZEROWRITE_20260910/CONVERSATION_CONTEXT_V11174_20260910.md)
+- [REPORT_V11175.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/REPORT_V11175.md)
+- [CONVERSATION_CONTEXT_V11175_20260910.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/CONVERSATION_CONTEXT_V11175_20260910.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11175` | 2026-09-10 | KIEM CHEO DINH CHINH V11174 | [REPORT_V11175.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/REPORT_V11175.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/CONVERSATION_CONTEXT_V11175_20260910.md) | — |
 | `V11174` | 2026-09-10 | SC12 DEPLOY ZEROWRITE | [REPORT_V11174.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11174_SC12_DEPLOY_ZEROWRITE_20260910/REPORT_V11174.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11174_SC12_DEPLOY_ZEROWRITE_20260910/CONVERSATION_CONTEXT_V11174_20260910.md) | ✓ |
 | `V11173` | 2026-09-09 | SC12 PRE DEPLOY HARDENING | [REPORT_V11173.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11173_SC12_PRE_DEPLOY_HARDENING_20260909/REPORT_V11173.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11173_SC12_PRE_DEPLOY_HARDENING_20260909/CONVERSATION_CONTEXT_V11173_20260909.md) | ✓ |
 | `V11172` | 2026-09-08 | TONG LUC NGAY LIVE | [REPORT_V11172.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11172_TONG_LUC_NGAY_LIVE_20260908/REPORT_V11172.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11172_TONG_LUC_NGAY_LIVE_20260908/CONVERSATION_CONTEXT_V11172_20260908.md) | ✓ |
