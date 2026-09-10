@@ -112,15 +112,15 @@ bị sửa.
 | 4 | *«V11173 không ghi DB»* | docstring V11173 (em viết) | `daily_evaluation.py:419` `INSERT OR REPLACE INTO daily_eval_log`; `run_daily_eval` gọi ở `scheduler.py:1836`/`:9264` | **là thay đổi DỮ LIỆU**; rollback code **không** hoàn tác. Đã đính chính trong tệp |
 | 5 | *«WAL/SHM tồn đọng = có writer»* | cổng idle V11173 của em | WAL **0 byte**; `-shm` **luôn tồn tại** khi có kết nối mở | ~~*«tiêu chí đúng là WAL size > 0»*~~ — 🔴 CÂU NÀY ĐÃ RÚT — `RL-033`, **cũng sai**: WAL giữ nguyên kích thước sau commit. Đúng: **`ACTIVE_WRITER_PROOF`** (W1–W4) |
 | 6 | *«Auto Retrain 02:00 hằng đêm»* | giả định của em | journal: **`🧠 Auto Retrain (sun 02:00)`** | **`day_of_week=sun`** — hôm nay Thứ Năm ⇒ không chạy |
-| 7 | *«replay VA-h12 đổi đúng 45 dòng»* | `FOLLOW_UP_TRACKER:183` + `RL-014` | dry-run độc lập: **46** dòng tính đến 04/09 | 🔴 **`INDETERMINATE`** — xem mục 4.4 |
+| 7 | ~~*«replay VA-h12 đổi đúng 45 dòng»*~~ | `FOLLOW_UP_TRACKER:183` + `RL-014` | ~~dry-run độc lập: **46** dòng tính đến 04/09~~ | 🟢 🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)** — **CÂU CŨ ĐÚNG, phép bác bỏ này SAI.** Audit §S7 đối chiếu từng dòng: dry-run **đếm dư một dòng**. Số đúng **48 = 45 + 3** ⇒ **«45» đúng từ đầu**, `RL-014` đúng, `INDETERMINATE` **đã gỡ** |
 
 *(Bốn phần bắt buộc của `PRJ-RETRACTION-001` — chỗ gốc · nguyên văn câu sai · điều đúng kèm phép
 đo · quyết định nào đã dựa trên số sai — nằm đủ trong bảng trên cộng mục 4.4.)*
 
 ### 3.3 · Phép đo KHÔNG kết luận được — ghi thẳng, không giấu
 
-- **Lệch +1 so với mốc 45**: không tái lập được ⇒ `INDETERMINATE` (mục 4.4).
-- **`07/09 MT` và `09/09 MT` KHÔNG nằm trong danh sách 49 ngày đổi** — chưa truy nguyên nhân.
+- ~~*«Lệch +1 so với mốc 45: không tái lập được ⇒ `INDETERMINATE`»*~~ — 🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**: **đã tái lập**, dry-run đếm dư 1 dòng (`2026-07-25 MT`, không đổi gì). Số đúng **48 = 45 + 3**.
+- ~~*«`07/09 MT` và `09/09 MT` không nằm trong danh sách — chưa truy nguyên nhân»*~~ — 🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**: **đã truy ra**. `07/09 MT` có **`cap = 0`** (không model nào bị trần ⇒ không phải ứng viên); `09/09 MT` có `cap = 2` nhưng `mc = 12` ⇒ `eff = 14 < 15` ⇒ vẫn `INCOMPLETE` ⇒ **không đổi phân loại**. Cả hai **không phải bí ẩn**.
 - **Nhánh `fb.status != 'ACTIVE'`** chưa từng được dữ liệu thật đi qua (582/582 đều `ACTIVE`) ⇒
   đường đó **chưa có bằng chứng runtime**.
 
@@ -190,9 +190,25 @@ Khối `SAU` của VA-3 gốc kết thúc bằng `...  # reason ghi ro phan nao 
 gán**. Chép tay sẽ làm `classify_day_status` **nổ cho cả ba miền** tại `auto_verify`. V11174 gán
 `reason` ở **cả ba nhánh**, kể cả nhánh `COMPLETE` (ghi rõ model nào bị trần).
 
-### 4.4 · 🔴 CHƯA ĐÓNG — lệch +1 so với mốc 45 (`INDETERMINATE`)
+### 4.4 · 🟢 ĐÃ ĐÓNG — lệch +1 đã truy ra, «45» ĐÚNG (🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**)
 
-Dry-run: **49 ngày đổi, tất cả MT, 0 MN, 0 MB**, trải 26/06 → 08/09. Phân rã:
+> **Toàn bộ mục 4.4 dưới đây là bản gốc ngày 10/09 02:20 và ĐÃ BỊ RÚT LẠI** bởi audit §S7
+> lúc 15:25 cùng ngày. Giữ nguyên văn để truy vết, **không xoá**.
+>
+> **Điều đúng:** dry-run **đếm dư đúng một dòng** — `2026-07-25 MT`, mà **chính tệp dry-run**
+> ghi `cu_status = moi_status = DEGRADED_LIVE_DAY` và `cu_policy = moi_policy = EXCLUDE_PRIMARY`,
+> tức **không đổi gì**. Số đúng: **48 ngày thật sự đổi = 45 (đến 04/09) + 3 (05, 06, 08/09)**.
+> ⇒ **«45» trong `FOLLOW_UP_TRACKER` ĐÚNG TỪ ĐẦU · `RL-014` ĐÚNG · `INDETERMINATE` ĐÃ GỠ.**
+> Mỉa mai: dòng thừa chính là ca `25/07 MT` mà bản này đem ra làm bằng chứng *«không tẩy trắng»* —
+> **bằng chứng đó vẫn đúng**, chỉ **cách ĐẾM** là sai.
+>
+> Tệp dry-run còn một lỗi số học nội bộ cùng gốc: `giu 532 + doi 49 = 581` trong khi
+> `tong_bundle = 582` — **lệch đúng 1**.
+>
+> Phép tái lập: `s7_diff.py` — đối chiếu từng dòng dry-run × tính lại trên DB (`mode=ro`);
+> hiệu = `{('2026-07-25','MT')}`; «có thật sự đổi nhưng thiếu trong dry-run» = **rỗng**.
+
+~~Dry-run: **49 ngày đổi, tất cả MT, 0 MN, 0 MB**, trải 26/06 → 08/09. Phân rã:~~ *(bản gốc — **ĐÃ RÚT**, `RL-034`; số đúng là **48**, xem khung ngay trên)*
 
 | thành phần | số |
 |---|---|
@@ -204,9 +220,14 @@ Dry-run: **49 ngày đổi, tất cả MT, 0 MN, 0 MB**, trải 26/06 → 08/09.
 **+3 giải thích được** (tăng tự nhiên). **+1 thì KHÔNG** — cùng mốc 04/09 mà em ra 46, sổ ghi 45.
 Nặng hơn: **`RL-014` chính là mục đã rút lại đúng con số này** (46 → 45).
 
-**Vì sao chọn ghi `INDETERMINATE` thay vì chọn một số:** em **không có script gốc để tái lập**.
+~~**Vì sao chọn ghi `INDETERMINATE` thay vì chọn một số:** em **không có script gốc để tái lập**.
 `RM-11`/`RM-17` cấm dùng số không tái lập làm căn cứ — và cũng cấm làm nó biến mất. Ép cho khớp 45
-là `pass-washing`; im lặng lấy 49 là che một xung đột với sổ rút lại.
+là `pass-washing`; im lặng lấy 49 là che một xung đột với sổ rút lại.~~
+
+> 🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)** — **cách xử lý lúc đó ĐÚNG NGUYÊN TẮC** (không ép số), nhưng tiền đề *«không có
+> script gốc để tái lập»* là **sai**: không cần script gốc, chỉ cần **đối chiếu từng dòng** giữa
+> tệp dry-run và một phép tính lại độc lập trên DB. Làm đúng một lần là ra ngay. Bài học: `INDETERMINATE`
+> phải kèm **đúng phép đo nào đã thử và thử thế nào**, nếu không nó thành chỗ trú cho việc chưa đo đủ.
 
 ---
 
@@ -290,7 +311,7 @@ lên `SC12_RUNTIME_PROVEN` (mục 9.6). Điều kiện đó nay thay bằng `0c5
 | 3 | actual production-function tests | ✅ mục F gọi hàm thật trên DB thật |
 | 4 | V11173 43/43 sau tích hợp | ✅ **43/43** |
 | 5 | `FINAL_BUNDLES_ZERO_WRITE` proven | ✅ 0 lệnh ghi thêm, 1 SELECT |
-| 6 | backfill dry-run accepted | ⚠️ **✅ CÓ BẢO LƯU** — 49 dòng, row-level diff, +3 giải thích, nhưng **+1 vẫn `INDETERMINATE`** chưa gỡ (mục 4.4) |
+| 6 | backfill dry-run accepted | ✅ **ĐẠT, bảo lưu ĐÃ GỠ** (🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**) — số đúng **48 = 45 + 3**; dry-run đếm dư 1 dòng `25/07 MT`; `INDETERMINATE` đã gỡ |
 | 7 | transaction/backup/restore tested | ⚠️ **✅ CÓ BẢO LƯU** — snapshot 581+432 dòng, khôi phục thử khớp; `day_governance` snapshot **nay đã đưa vào `evidence/`**, `daily_eval_log` snapshot (1,8 MB) **vẫn chỉ nằm trên VPS** |
 | 8 | all-history fixed **hoặc explicitly isolated** | ✅ **isolated** (CLI-only, 0 cron/route) |
 | 9 | no output/model/TOTAL/prompt/Combo/FINAL/3-càng drift | ✅ forbidden-surface diff sạch |
@@ -307,7 +328,11 @@ lên `SC12_RUNTIME_PROVEN` (mục 9.6). Điều kiện đó nay thay bằng `0c5
 >
 > 🔴 **ĐÍNH CHÍNH D-4:** bản đầu ghi «13/13 XÁC MINH» — mạnh hơn nội dung bên trong. **Cổng 6**
 > mang một `INDETERMINATE` chưa gỡ và **cổng 7** có một snapshot không công bố được. Nhãn đúng
-> là **11 ✅ · 2 ✅ có bảo lưu**.
+> lúc đó là **11 ✅ · 2 ✅ có bảo lưu**.
+>
+> 🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)** — **hai bảo lưu nay đều đã gỡ**: cổng 6 (`INDETERMINATE` truy ra, số đúng **48 = 45 + 3**)
+> và cổng 7 (snapshot `day_governance` đã đưa vào `evidence/`). Nhãn hiện tại: **13 ✅**, nhưng
+> **vẫn chỉ nói về MỘT LẦN DEPLOY**, không phải về hệ thống.
 
 **Cổng cấp kho — kết quả THẬT, cả phần không đạt:**
 
@@ -516,8 +541,8 @@ thủ, và nay **đã ghi thành quyết định** trong `docs/OWNER_DECISION_LE
 | P3 | nhánh `fb.status != 'ACTIVE'` chưa từng được dữ liệu thật đi qua (582/582 ACTIVE) |
 | P3 | clone `v11165_immutable.db` đã xoá ⇒ số replay cũ của VA-h12 `NOT PROVEN` |
 | 🔴 | **backfill lịch sử CHƯA chạy** — mới dry-run; 49 dòng MT lịch sử **vẫn** `EXCLUDE_PRIMARY` |
-| 🔴 | **lệch +1 `INDETERMINATE`**, xung đột `RL-014` |
-| 🔴 | `07/09 MT` và `09/09 MT` vắng khỏi danh sách đổi — chưa truy nguyên nhân |
+| 🟢 | ~~lệch +1 `INDETERMINATE`, xung đột `RL-014`~~ — **ĐÃ ĐÓNG** (🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**): số đúng **48 = 45 + 3**; `RL-014` được **xác nhận ĐÚNG** |
+| 🟢 | ~~`07/09 MT` và `09/09 MT` vắng khỏi danh sách đổi — chưa truy nguyên nhân~~ — **ĐÃ TRUY RA** (🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**): `07/09` có `cap = 0`; `09/09` có `eff = 14 < 15` |
 
 ---
 
@@ -549,7 +574,9 @@ thủ, và nay **đã ghi thành quyết định** trong `docs/OWNER_DECISION_LE
 **LỆCH BA LỚP — báo bắt buộc:**
 1. `DOC_SAID` ≠ `CODE_DID`: sổ ghi VA-h12 *«đã có vá, chờ ký»*; mã cho thấy **không có installer**.
    ⇒ reclassify `DESIGN_HELPER_TESTED · REAL_INSTALLER_MISSING`.
-2. `DOC_SAID` ≠ `CODE_DID`: sổ ghi replay **45**; đo độc lập ra **46** cùng mốc ⇒ `INDETERMINATE`.
+2. ~~`DOC_SAID` ≠ `CODE_DID`: sổ ghi replay **45**; đo độc lập ra **46** ⇒ `INDETERMINATE`.~~
+   🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)** — **KHÔNG hề lệch**: sổ ghi **45**, đo lại đúng cách cũng ra **45**. Chỗ lệch
+   là **phép đếm của agent**, không phải giữa hai lớp nguồn.
 3. `OWNER_SAID` = `CODE_DID`: khoá `FINAL_BUNDLES_ZERO_WRITE` **đã thi hành đủ** — 0 lệnh ghi
    `final_bundles`, digest bảng không đổi.
 

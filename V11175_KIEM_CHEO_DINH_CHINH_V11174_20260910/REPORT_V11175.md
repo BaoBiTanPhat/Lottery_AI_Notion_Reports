@@ -138,7 +138,7 @@ nhiễm mà VA-2′ vừa bỏ**. Thêm nữa `quality_filtered_model_count` (`m
 | G1-03 | P2 | **361 đường raw** vẫn trỏ chủ cũ `irissnss` sau khi chuyển tổ chức (V11171) |
 | G2-01 | P2 | Cổng toàn dải **KHÔNG ĐẠT 39/251** — V11174 **không ghi** kết quả này |
 | G5-03 | P1 | `output_counterfactual_rank` bị gọi là **BẢNG** (thật: **CỘT** trong `shadow_model_promotion_scorecard_daily`); số TRƯỚC lấy mốc **06/09** |
-| G6-08 | P3 | «13/13 XÁC MINH» mạnh hơn nội dung — cổng 6 mang `INDETERMINATE`, cổng 7 không có artifact công bố |
+| G6-08 | P3 | «13/13 XÁC MINH» mạnh hơn nội dung — cổng 6 mang `INDETERMINATE`, cổng 7 không có artifact công bố · 🟢 **cả hai bảo lưu nay ĐÃ GỠ** (🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**) |
 | G5-06 | P3 | «worktree sạch» — thật ra **208 tệp untracked** (đều trong `backups/`) |
 | G4-08 | P2 | Snapshot dùng để **hoàn nguyên dữ liệu** lại **chỉ nằm trên chính VPS phải hoàn nguyên** |
 | G6-06 | P2 | CONVERSATION_CONTEXT **bỏ mất vấp đáng giá nhất** — lần thứ **ba** mắc lỗi khung `FU-447` |
@@ -277,7 +277,7 @@ Mọi phép ghi JSON đều **kiểm độ dài trước/sau và huỷ nếu t�
 | 🔴 P1 | **VA-2′ nửa chừng** — `du-doan.html:1354,1438-1444` + `quality_filtered_model_count`. Cần một lượt quét ngược **có phân loại** theo trục WRITER / READER_API / READER_UI (`RL-029`) |
 | 🔴 P1 | **Cổng báo cáo toàn dải 39/251 KHÔNG ĐẠT** — 22 bản thiếu hẳn báo cáo, tất cả **≤ V11087B** |
 | 🔴 P1 | **R6 · R7 · R8 vẫn `NOT_PERFORMED_THIS_SESSION`** — phiên này **không** đụng tới |
-| P1 | **Backfill lịch sử chưa chạy** — 49 dòng MT vẫn `EXCLUDE_PRIMARY`; **+1 vẫn `INDETERMINATE`** |
+| P1 | **Backfill lịch sử chưa chạy** — **48** dòng MT vẫn `EXCLUDE_PRIMARY` *(số cũ «49» đếm dư 1 — 🔴 **ĐÍNH CHÍNH D-8 (`RL-034`)**)*; 🟢 **`INDETERMINATE` ĐÃ GỠ**: đúng **48 = 45 + 3**, `RL-014` được xác nhận **ĐÚNG** |
 | P2 | `--out` của installer **không ghi số test** và **ghi đè** artifact cũ — chính khiếm khuyết đẻ ra P0-1 |
 | P2 | Snapshot `daily_eval_log` (1,8 MB) vẫn chỉ trên VPS |
 | P2 | Bộ sinh điều hướng **không nằm trong chuỗi hoàn tất 12 bước** ⇒ sẽ lại lạc hậu |
