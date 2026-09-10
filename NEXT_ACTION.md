@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-10 18:53:07 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-10 20:45:46 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -38,7 +38,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11176` — RUNTIME PROOF TU NHIEN (2026-09-10)
+**Báo cáo mới nhất:** `V11177` — DONG SC12 VA CHALLENGER (2026-09-10)
 
 ---
 

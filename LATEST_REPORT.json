@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-10 18:53:07",
- "tong_thu_muc": 454,
- "latest_version": "V11176",
+ "_sinh_luc_vn": "2026-09-10 20:45:46",
+ "tong_thu_muc": 455,
+ "latest_version": "V11177",
  "latest": {
-  "version": "V11176",
+  "version": "V11177",
   "ngay": "2026-09-10",
-  "chu_de": "RUNTIME PROOF TU NHIEN",
-  "thu_muc": "V11176_RUNTIME_PROOF_TU_NHIEN_20260910",
+  "chu_de": "DONG SC12 VA CHALLENGER",
+  "thu_muc": "V11177_DONG_SC12_VA_CHALLENGER_20260910",
   "bao_cao": [
-   "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/REPORT_V11176.md"
+   "V11177_DONG_SC12_VA_CHALLENGER_20260910/REPORT_V11177.md"
   ],
   "ngu_canh": [
-   "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/CONVERSATION_CONTEXT_V11176_20260910.md"
+   "V11177_DONG_SC12_VA_CHALLENGER_20260910/CONVERSATION_CONTEXT_V11177_20260910.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11177",
+   "ngay": "2026-09-10",
+   "chu_de": "DONG SC12 VA CHALLENGER",
+   "thu_muc": "V11177_DONG_SC12_VA_CHALLENGER_20260910",
+   "bao_cao": [
+    "V11177_DONG_SC12_VA_CHALLENGER_20260910/REPORT_V11177.md"
+   ],
+   "ngu_canh": [
+    "V11177_DONG_SC12_VA_CHALLENGER_20260910/CONVERSATION_CONTEXT_V11177_20260910.md"
+   ]
+  },
   {
    "version": "V11176",
    "ngay": "2026-09-10",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11163_DIEN_TAP_MIGRATION_20260904/CONVERSATION_CONTEXT_V11163_20260904.md"
-   ]
-  },
-  {
-   "version": "V11162",
-   "ngay": "2026-09-04",
-   "chu_de": "TANG GHI VET 3CANG",
-   "thu_muc": "V11162_TANG_GHI_VET_3CANG_20260904",
-   "bao_cao": [
-    "V11162_TANG_GHI_VET_3CANG_20260904/REPORT_V11162.md"
-   ],
-   "ngu_canh": [
-    "V11162_TANG_GHI_VET_3CANG_20260904/CONVERSATION_CONTEXT_V11162_20260904.md"
    ]
   }
  ]
