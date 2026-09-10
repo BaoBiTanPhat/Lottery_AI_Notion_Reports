@@ -1,0 +1,151 @@
+{
+ "ICT": "2026-09-11T01:56:31.792143+07:00",
+ "date": "2026-09-11",
+ "stage": "BASE_D1",
+ "regions": {
+  "MN": {
+   "payload_fingerprint": "a9e6c14dc70d1128504aa9f1ce560fb7f31de84fef53211d6c6b333bada8602c",
+   "n_candidates": 2,
+   "deterministic_topk": [
+    {
+     "tail": "40",
+     "rank": 1,
+     "score": 0.05202666666666667,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "15",
+     "rank": 2,
+     "score": -0.01464,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    }
+   ],
+   "current_official_topk": [],
+   "trung_nhau": []
+  },
+  "MT": {
+   "payload_fingerprint": "116c967b102fc08ea77068ee43f61e646ece3b3ea29753e43e56bd21d0266b03",
+   "n_candidates": 3,
+   "deterministic_topk": [
+    {
+     "tail": "67",
+     "rank": 1,
+     "score": 0.03928,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "72",
+     "rank": 2,
+     "score": 0.005946666666666667,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "74",
+     "rank": 3,
+     "score": 0.00016999999999999999,
+     "labels": [
+      "VALIDATED_ON_HOLDOUT"
+     ]
+    }
+   ],
+   "current_official_topk": [],
+   "trung_nhau": []
+  },
+  "MB": {
+   "payload_fingerprint": "65815ef4be6b428411c8ab3acdac7ba0dfbf6e950e3bc67624b74ef7122fd055",
+   "n_candidates": 17,
+   "deterministic_topk": [
+    {
+     "tail": "95",
+     "rank": 1,
+     "score": 0.09563999999999999,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "45",
+     "rank": 2,
+     "score": 0.07018666666666666,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "03",
+     "rank": 3,
+     "score": 0.03685333333333333,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "87",
+     "rank": 4,
+     "score": 0.03685333333333333,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "89",
+     "rank": 5,
+     "score": 0.03685333333333333,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "36",
+     "rank": 6,
+     "score": 0.00704,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "17",
+     "rank": 7,
+     "score": 0.00352,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "88",
+     "rank": 8,
+     "score": 0.00352,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "42",
+     "rank": 9,
+     "score": -0.00438,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    },
+    {
+     "tail": "10",
+     "rank": 10,
+     "score": -0.02981333333333333,
+     "labels": [
+      "DISCOVERY_ONLY"
+     ]
+    }
+   ],
+   "current_official_topk": [],
+   "trung_nhau": []
+  }
+ }
+}

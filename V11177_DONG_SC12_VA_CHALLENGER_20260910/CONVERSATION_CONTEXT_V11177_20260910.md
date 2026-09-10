@@ -110,3 +110,44 @@ sống sót.
 ---
 
 TanPhatAI cần làm: ghi **`V11177`** — công khai bản này cùng `REPORT_V11177.md`. Ghi **bốn trạng thái kết thúc RIÊNG**: `SC12_LIVE_PATH_RUNTIME_PROVEN` · `SC12_HISTORICAL_REPAIR_COMPLETE` · `DEFAULT_BRANCH_STATE_CONFLICT_RESOLVED` · `CONTEXT_ONLY_SHADOW_READY_FOR_NEXT_LIVE`. Ghi **10/09 THUA cả ba bạch thủ** (`95`/`34`/`01`), **lô2 MN PARTIAL** (`82`); root cause **`RANKING_MISS` cả ba** (số trúng hạng 2/4/3 trên 10, hệ chọn đúng #1 của chính nó). Ghi **ranked 36,7% vs nền 37,0% = −0,3 điểm — ĐÚNG BẰNG NGẪU NHIÊN**, n=3 nên **chưa được phép kết luận**. Ghi **UI sạch**: `76599f6a`→`23f1ca69`, **10/10 assertion JS thật trên bytes đang phục vụ**, **0 restart**. Ghi **backfill đúng 48 dòng**, `MT EXCLUDE_PRIMARY` **98→50**, digest lịch sử **không đổi**; **cohort sạch cho tin xấu**: `wr7` MT **14,3%** vs nền **35,2%**, và **dự báo `→0,0%` trong sổ cũng sai**. Ghi **`evaluate_all_history` = `RETIRED_FAIL_CLOSED`**. Ghi **`master` fast-forward `a4d6636`→`d2a6586`, không force**. Ghi **challenger chạy thật, cron 13:30, 8.676 phép thử, ngưỡng Bonferroni z≥4,53, 0 điều kiện sống sót cả ba miền ⇒ `abstain` là output ĐÚNG**. Ghi **nền đo độc lập khớp V11170**. Ghi **`PREDICTIVE_LIFT = NOT_PROVEN`, `POOL_VERDICT` HOLD**. Ghi **agent sai BA LẦN LIÊN TIẾP về cùng một ngày, cả ba do dùng SAI THƯỚC ĐO**. **Không mở Prompt 44. Không mở Plan mới. Không mở FU mới. Không trộn ERP.**
+
+---
+
+## 🔴 ĐÍNH CHÍNH APPEND-ONLY — V11178 §U1 (11/09/2026 ~01:35 ICT)
+
+**Trạng thái `CONTEXT_ONLY_SHADOW_READY_FOR_NEXT_LIVE` công bố ở bản này ĐÃ BỊ HẠ.**
+
+```
+CONTEXT_ONLY_SHADOW_READY_FOR_NEXT_LIVE
+        ↓  hạ xuống
+CONTEXT_ONLY_STRUCTURAL_PROTOTYPE · LIVE_PREDICTIVE_OUTPUT_NOT_PROVEN
+```
+
+**Vì sao** — kiểm bằng lệnh trên **chính tệp payload** mà bản này đã sinh
+(`/tmp/v11177_payload_MB_2026-09-11.json`): một `condition` **không chứa một giá trị quan sát
+nào** — không `source_date`, không `observed_raw_value`, không `observed_tail`, không
+`available_at`, không `source_row_id`; **không trường nào** tên `*tail*` / `*value*` /
+`*observ*` / `*number*`.
+
+Model được cho biết *«có một cell `MT.Đà Nẵng.Giải sáu[1]` lag=1, stability 0,45 trên 40 mẫu»*
+nhưng **không bao giờ được cho biết SỐ NÀO đã ra ở cell đó**. Vì vậy nó **không thể** suy ra bất
+kỳ đuôi 2 chữ số nào — **`abstain` là output DUY NHẤT CÓ THỂ**, bất kể bằng chứng mạnh hay yếu.
+Ngay cả khi một điều kiện có `z=10`, model vẫn không thể gọi tên một đuôi.
+
+⇒ Câu *«abstain là câu trả lời trung thực duy nhất vì không đủ bằng chứng»* trong bản này là
+**SAI NHÂN QUẢ**: đó không phải lựa chọn dựa trên bằng chứng, mà là **hệ quả của một payload
+thiếu cấu trúc**. Cách diễn giải cũ **có lợi cho chính agent** — nó biến một khiếm khuyết thiết kế
+thành một «kết luận trung thực». `RL-035`.
+
+**Ba trạng thái còn lại của bản này KHÔNG bị ảnh hưởng** — `SC12_LIVE_PATH_RUNTIME_PROVEN` ·
+`SC12_HISTORICAL_REPAIR_COMPLETE` · `DEFAULT_BRANCH_STATE_CONFLICT_RESOLVED` đều dựa trên bằng
+chứng khác và **vẫn đứng**.
+
+**Kết quả `0/8.676 điều kiện sống sót` VẪN ĐÚNG** nhưng chỉ áp cho **họ điều kiện `identity-lag`
+đã đào**, và còn thiếu **holdout độc lập** (H7 — cửa sổ 28/56/84/140 **lồng nhau**, discovery và
+validation dùng **cùng dữ liệu**).
+
+**Bằng chứng bổ sung:** bản này chỉ ghi **đúng MỘT dòng** shadow —
+`2026-09-11 | MB | deepseek-chat | abstain` — **không phải** ba miền × roster (H3).
+
+*Bản gốc phía trên được giữ nguyên, không xoá một chữ nào.*

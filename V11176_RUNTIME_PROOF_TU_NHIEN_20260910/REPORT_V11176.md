@@ -367,3 +367,28 @@ Ba dòng `day_governance` mới **KHÔNG do agent ghi** — do `auto_verify` t�
 ---
 
 TanPhatAI cần làm: ghi **`V11176`** — `governance_seq 491`, công khai bản này cùng `CONVERSATION_CONTEXT_V11176_20260910.md`. Ghi **BỐN DÒNG TRẠNG THÁI RIÊNG, CẤM GỘP**: `SC12_LIVE_PATH_STATUS = DEPLOYED_PENDING_CONSUMER_UI_PROOF` · `SC12_HISTORICAL_STATUS = SC12_HISTORICAL_REPAIR_PENDING` · `PURE_CONTEXT_STATUS = PURE_CONTEXT_PARTIAL` · `PREDICTIVE_LIFT_STATUS = NOT_PROVEN`. Ghi **lượt `auto_verify` chạy TỰ NHIÊN cho cả ba miền, `classification_source = auto_verify`, 0 lệnh tay**, agent freeze từ **16:16:01**. Ghi **BẰNG CHỨNG QUYẾT ĐỊNH: cùng `completed=13`, MT ngày 05–08/09 đều `EXCLUDE_PRIMARY`, ngày 10/09 ra `INCLUDE`** — bản vá sống trong production. Ghi **kỳ vọng NIÊM PHONG TRƯỚC OUTPUT**: MT seal **16:41:00** (`mc=13 cap=2 eff=15` → `INCLUDE`), output ghi **17:30:01** — **cách 49 phút**, `TRUOC_KHI_CO_OUTPUT: true`. Ghi **`reason` nhánh `COMPLETE` — dòng VA-h12 gốc BỎ SÓT — nay chạy thật**: *«Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu»*. Ghi **backend consumer ĐÃ CHỨNG MINH**: `daily_eval_log` **432 → 435**, `MAX(date) = 2026-09-10`. Ghi **API: endpoint trả 401 nên không đọc payload trực tiếp; thay vì bịa, trích NGUYÊN VĂN hàm từ `main.py` đang chạy (`d59a6ae9…`) và chạy trên dữ liệu thật → MT trả `[]` trong khi DB thô có 2 model**. Ghi **`CONSUMER_UI_PARTIAL` — MT hôm nay CHÍNH LÀ ca kích hoạt lỗi**: API `[]` + `wr_gate_filtered` 2 phần tử ⇒ `du-doan.html:1438` rơi ngược ⇒ **UI hiện đúng hai model bị trần như «trượt quality»**; **KHÔNG vá** vì ngoài phạm vi và sẽ trộn evidence epoch. Ghi **no-drift**: digest phạm vi khoá `0c5f84f8…` trên **582 dòng KHỚP**; ba dòng 10/09 là **tăng trưởng tự nhiên**; **0 bề mặt cấm nào đổi**; PID `3870722` NRestarts **0**, health 200, **0 Traceback/CRITICAL/ERROR**, **0 restart**. Ghi **`MT EXCLUDE_PRIMARY` vẫn 98 — backfill CHƯA chạy, đúng lệnh**. Ghi **§S7 GỠ `INDETERMINATE`: đúng 48 = 45 + 3; dòng thừa là `25/07 MT` mà chính dry-run ghi `cu_status = moi_status`; «45» trong sổ ĐÚNG TỪ ĐẦU; `RL-014` ĐÚNG; bản rút lại mà agent viết ở V11175 là bản rút lại SAI, nay rút lại chính nó (`RL-034`)**. Ghi **`FU-451` KHÔNG được tạo** — append `FU_451_INVALID_REFERENCE`, giữ 4 dòng HISTORY, ánh xạ về §R/§S + SC-12. Ghi **cổng mới `PRJ-FU-REFERENCE-001` (8/8) sẽ chặn từ V11170**. Ghi **CHẶN Ở OWNER: `DEFAULT_BRANCH_STATE_CONFLICT`** — `master` ở **V11123**, sau `fu438` **54 commit**; owner chọn (a) fast-forward, (b) đổi default branch, hay (c) giữ nguyên có chủ ý. Ghi **bảy vấp, năm trong đó là PHÉP ĐO CỦA AGENT SAI** — hai báo động giả (`RM-09` lần hai), `QD-074` sai schema làm chết cổng, niêm phong trên input chưa hoàn chỉnh, `dau_hieu` không dấu. **Không mở Prompt 44. Không mở Plan mới. Không mở FU mới. Không trộn ERP. Notion KHÔNG cập nhật trong lượt này.**
+
+---
+
+## 🔴 ĐÍNH CHÍNH APPEND-ONLY — V11178 §U13-1 (11/09/2026)
+
+**Ba row ID ở mục 5.3 bị CHÉP SAI.** Bản gốc ghi `860 / 861 / 862`; **ID thật là
+`860 / 862 / 864`**.
+
+```sql
+SELECT id,date,region,status,created_at,model_count
+  FROM final_bundles WHERE date>='2026-09-10' ORDER BY id;
+-- 860 | 2026-09-10 | MN | ACTIVE | 05:26:43 | 15
+-- 862 | 2026-09-10 | MT | ACTIVE | 16:40:46 | 13
+-- 864 | 2026-09-10 | MB | ACTIVE | 17:36:19 | 15
+```
+
+**Tệp `evidence/v11176_evidence.json` kèm theo bản này GHI ĐÚNG từ đầu**
+(`T5_no_drift.rows_tu_10_09` = `860 / 862 / 864`). ⇒ Lỗi nằm ở **văn bản báo cáo**, không nằm ở
+dữ liệu hay ở phép đo. Mọi trường khác (`date`, `region`, `status`, `created_at`,
+`model_count`) đều đúng.
+
+**Kết luận không bị lật:** ba dòng này vẫn là **tăng trưởng tự nhiên** và vẫn nằm **ngoài** phạm
+vi digest khoá (`date ≤ 2026-09-09`) — điều đó dựa vào `date`, không dựa vào giá trị ID. `RL-036`.
+
+*Bản gốc phía trên giữ nguyên, không xoá.*

@@ -1,0 +1,318 @@
+{
+ "ICT": "2026-09-11T01:44:37.526165+07:00",
+ "date": "2026-09-11",
+ "stage": "BASE_D1",
+ "regions": {
+  "MN": {
+   "stations": [
+    "Bình Dương",
+    "Gia Lai",
+    "Ninh Thuận",
+    "Trà Vinh",
+    "Vĩnh Long"
+   ],
+   "station_set_source": "INFERRED_FROM_SAME_WEEKDAY",
+   "n_conditions": 2,
+   "n_live_facts": 486,
+   "n_candidates": 2,
+   "n_distinct_derived": 2,
+   "payload_fingerprint": "a9e6c14dc70d1128504aa9f1ce560fb7f31de84fef53211d6c6b333bada8602c",
+   "prompt_fingerprint": "85b062c40acbe78a9197d30aa3156e4bb4252736b25a46e8439c76ea92911ec0",
+   "payload_bytes": 219526,
+   "contamination_errors": [],
+   "catalog_meta": {
+    "discovery_window": [
+     "2026-01-14",
+     "2026-07-12"
+    ],
+    "holdout_window": [
+     "2026-07-13",
+     "2026-09-10"
+    ],
+    "windows_overlap": false,
+    "baseline": 0.4299,
+    "n_cells_tested_discovery": 12672,
+    "fdr_alpha": 0.1,
+    "fdr_survivors": 2,
+    "transforms_frozen_at": "2026-09-11T01:45:00+07:00",
+    "transform_ids": [
+     "T1_identity",
+     "T2_reverse",
+     "T3_complement",
+     "T4_plus1"
+    ],
+    "ghi_chu": "FDR chi dung o DISCOVERY. Holdout la khoang thoi gian KHONG chong lan, khong duoc dung de chon dieu kien. Neu fdr_survivors=0 thi catalog nay la DISCOVERY_ONLY va KHONG duoc doc thanh bang chung."
+   },
+   "models": {
+    "claude-opus-4-6": {
+     "decision": "ABSTAIN",
+     "n_ranked": 2,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "claude-sonnet-4-6": {
+     "decision": "ABSTAIN",
+     "n_ranked": 2,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "deepseek-reasoner": {
+     "decision": "ABSTAIN",
+     "n_ranked": 2,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gemini-2.5-flash": {
+     "decision": "ABSTAIN",
+     "n_ranked": 2,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gemini-2.5-pro": {
+     "decision": "ERROR",
+     "error_code": "Gemini API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please ch"
+    },
+    "glm-5.1": {
+     "decision": "ABSTAIN",
+     "n_ranked": 2,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gpt-5.4": {
+     "decision": "ABSTAIN",
+     "n_ranked": 2,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gpt-oss-120b": {
+     "decision": "RANKED",
+     "n_ranked": 2,
+     "contract_errors": [],
+     "uncertainty": "medium",
+     "diagnostic_label": "ACTIONABLE",
+     "completed_before_cutoff": true
+    }
+   },
+   "n_runs_written": 8,
+   "n_rows_written": 14
+  },
+  "MT": {
+   "stations": [
+    "Gia Lai",
+    "Ninh Thuận"
+   ],
+   "station_set_source": "INFERRED_FROM_SAME_WEEKDAY",
+   "n_conditions": 5,
+   "n_live_facts": 486,
+   "n_candidates": 3,
+   "n_distinct_derived": 3,
+   "payload_fingerprint": "116c967b102fc08ea77068ee43f61e646ece3b3ea29753e43e56bd21d0266b03",
+   "prompt_fingerprint": "85b062c40acbe78a9197d30aa3156e4bb4252736b25a46e8439c76ea92911ec0",
+   "payload_bytes": 221847,
+   "contamination_errors": [],
+   "catalog_meta": {
+    "discovery_window": [
+     "2026-01-14",
+     "2026-07-12"
+    ],
+    "holdout_window": [
+     "2026-07-13",
+     "2026-09-10"
+    ],
+    "windows_overlap": false,
+    "baseline": 0.3527,
+    "n_cells_tested_discovery": 12672,
+    "fdr_alpha": 0.1,
+    "fdr_survivors": 5,
+    "transforms_frozen_at": "2026-09-11T01:45:00+07:00",
+    "transform_ids": [
+     "T1_identity",
+     "T2_reverse",
+     "T3_complement",
+     "T4_plus1"
+    ],
+    "ghi_chu": "FDR chi dung o DISCOVERY. Holdout la khoang thoi gian KHONG chong lan, khong duoc dung de chon dieu kien. Neu fdr_survivors=0 thi catalog nay la DISCOVERY_ONLY va KHONG duoc doc thanh bang chung."
+   },
+   "models": {
+    "claude-opus-4-6": {
+     "decision": "ABSTAIN",
+     "n_ranked": 3,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "claude-sonnet-4-6": {
+     "decision": "ABSTAIN",
+     "n_ranked": 3,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "deepseek-reasoner": {
+     "decision": "ABSTAIN",
+     "n_ranked": 3,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gemini-2.5-flash": {
+     "decision": "ABSTAIN",
+     "n_ranked": 3,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gemini-2.5-pro": {
+     "decision": "ERROR",
+     "error_code": "Gemini API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please ch"
+    },
+    "glm-5.1": {
+     "decision": "ABSTAIN",
+     "n_ranked": 3,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gpt-5.4": {
+     "decision": "ABSTAIN",
+     "n_ranked": 3,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gpt-oss-120b": {
+     "decision": "ERROR",
+     "error_code": "⚠️ Model gpt-oss-120b: đang trong thời gian chờ (440s còn lại). Lý do: Chi phí cao: $0.0848/call"
+    }
+   },
+   "n_runs_written": 8,
+   "n_rows_written": 18
+  },
+  "MB": {
+   "stations": [
+    "Hải Phòng"
+   ],
+   "station_set_source": "INFERRED_FROM_SAME_WEEKDAY",
+   "n_conditions": 30,
+   "n_live_facts": 486,
+   "n_candidates": 17,
+   "n_distinct_derived": 16,
+   "payload_fingerprint": "65815ef4be6b428411c8ab3acdac7ba0dfbf6e950e3bc67624b74ef7122fd055",
+   "prompt_fingerprint": "85b062c40acbe78a9197d30aa3156e4bb4252736b25a46e8439c76ea92911ec0",
+   "payload_bytes": 244427,
+   "contamination_errors": [],
+   "catalog_meta": {
+    "discovery_window": [
+     "2026-01-14",
+     "2026-07-12"
+    ],
+    "holdout_window": [
+     "2026-07-13",
+     "2026-09-10"
+    ],
+    "windows_overlap": false,
+    "baseline": 0.2368,
+    "n_cells_tested_discovery": 12672,
+    "fdr_alpha": 0.1,
+    "fdr_survivors": 0,
+    "transforms_frozen_at": "2026-09-11T01:45:00+07:00",
+    "transform_ids": [
+     "T1_identity",
+     "T2_reverse",
+     "T3_complement",
+     "T4_plus1"
+    ],
+    "ghi_chu": "FDR chi dung o DISCOVERY. Holdout la khoang thoi gian KHONG chong lan, khong duoc dung de chon dieu kien. Neu fdr_survivors=0 thi catalog nay la DISCOVERY_ONLY va KHONG duoc doc thanh bang chung."
+   },
+   "models": {
+    "claude-opus-4-6": {
+     "decision": "ABSTAIN",
+     "n_ranked": 10,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "claude-sonnet-4-6": {
+     "decision": "ABSTAIN",
+     "n_ranked": 10,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "deepseek-reasoner": {
+     "decision": "ABSTAIN",
+     "n_ranked": 10,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gemini-2.5-flash": {
+     "decision": "ABSTAIN",
+     "n_ranked": 10,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gemini-2.5-pro": {
+     "decision": "ERROR",
+     "error_code": "Gemini API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please ch"
+    },
+    "glm-5.1": {
+     "decision": "ABSTAIN",
+     "n_ranked": 10,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gpt-5.4": {
+     "decision": "ABSTAIN",
+     "n_ranked": 10,
+     "contract_errors": [],
+     "uncertainty": "high",
+     "diagnostic_label": "NON_ACTIONABLE_LOW_EVIDENCE",
+     "completed_before_cutoff": true
+    },
+    "gpt-oss-120b": {
+     "decision": "ERROR",
+     "error_code": "⚠️ Model gpt-oss-120b: đang trong thời gian chờ (245s còn lại). Lý do: Chi phí cao: $0.0848/call"
+    }
+   },
+   "n_runs_written": 8,
+   "n_rows_written": 60
+  }
+ },
+ "roster": [
+  "claude-opus-4-6",
+  "claude-sonnet-4-6",
+  "deepseek-reasoner",
+  "gemini-2.5-flash",
+  "gemini-2.5-pro",
+  "glm-5.1",
+  "gpt-5.4",
+  "gpt-oss-120b"
+ ],
+ "roster_size": 8
+}
