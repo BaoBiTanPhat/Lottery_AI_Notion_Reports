@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-10 13:52:43",
- "tong_thu_muc": 453,
- "latest_version": "V11175",
+ "_sinh_luc_vn": "2026-09-10 18:53:07",
+ "tong_thu_muc": 454,
+ "latest_version": "V11176",
  "latest": {
-  "version": "V11175",
+  "version": "V11176",
   "ngay": "2026-09-10",
-  "chu_de": "KIEM CHEO DINH CHINH V11174",
-  "thu_muc": "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910",
+  "chu_de": "RUNTIME PROOF TU NHIEN",
+  "thu_muc": "V11176_RUNTIME_PROOF_TU_NHIEN_20260910",
   "bao_cao": [
-   "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/REPORT_V11175.md"
+   "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/REPORT_V11176.md"
   ],
   "ngu_canh": [
-   "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/CONVERSATION_CONTEXT_V11175_20260910.md"
+   "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/CONVERSATION_CONTEXT_V11176_20260910.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11176",
+   "ngay": "2026-09-10",
+   "chu_de": "RUNTIME PROOF TU NHIEN",
+   "thu_muc": "V11176_RUNTIME_PROOF_TU_NHIEN_20260910",
+   "bao_cao": [
+    "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/REPORT_V11176.md"
+   ],
+   "ngu_canh": [
+    "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/CONVERSATION_CONTEXT_V11176_20260910.md"
+   ]
+  },
   {
    "version": "V11175",
    "ngay": "2026-09-10",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11162_TANG_GHI_VET_3CANG_20260904/CONVERSATION_CONTEXT_V11162_20260904.md"
-   ]
-  },
-  {
-   "version": "V11161",
-   "ngay": "2026-09-04",
-   "chu_de": "KHU TRUNG V2 VA DANG KY TRUOC MT",
-   "thu_muc": "V11161_KHU_TRUNG_V2_VA_DANG_KY_TRUOC_MT_20260904",
-   "bao_cao": [
-    "V11161_KHU_TRUNG_V2_VA_DANG_KY_TRUOC_MT_20260904/REPORT_V11161.md"
-   ],
-   "ngu_canh": [
-    "V11161_KHU_TRUNG_V2_VA_DANG_KY_TRUOC_MT_20260904/CONVERSATION_CONTEXT_V11161_20260904.md"
    ]
   }
  ]
