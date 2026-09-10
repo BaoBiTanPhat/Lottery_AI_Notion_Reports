@@ -1,0 +1,507 @@
+{
+ "MN": {
+  "region": "MN",
+  "cutoff": "15:40",
+  "so_dai": 3,
+  "so_duoi": 40,
+  "duoi_thuc_te": [
+   "00",
+   "03",
+   "04",
+   "10",
+   "13",
+   "19",
+   "22",
+   "23",
+   "24",
+   "29",
+   "31",
+   "40",
+   "42",
+   "46",
+   "52",
+   "54",
+   "55",
+   "57",
+   "58",
+   "59",
+   "60",
+   "62",
+   "66",
+   "71",
+   "74",
+   "76",
+   "77",
+   "78",
+   "79",
+   "80",
+   "81",
+   "82",
+   "84",
+   "87",
+   "89",
+   "90",
+   "91",
+   "94",
+   "96",
+   "98"
+  ],
+  "duoi_dac_biet": [
+   "57",
+   "78",
+   "90"
+  ],
+  "nen_ngau_nhien_1_so": 0.4,
+  "FINAL": {
+   "bach_thu": [
+    "95"
+   ],
+   "lo2": [
+    "95",
+    "82"
+   ],
+   "lo3": [
+    "95"
+   ],
+   "xien2": [
+    "95",
+    "82"
+   ],
+   "xien3": [
+    "95",
+    "82",
+    "76"
+   ],
+   "status": {
+    "bt": "LOSE",
+    "lo2": "PARTIAL",
+    "lo3": "LOSE",
+    "xien2": "LOSE",
+    "xien3": "LOSE"
+   },
+   "model_count": 15,
+   "consensus": "moderate",
+   "top_score": 0.0754,
+   "is_fallback": 0,
+   "method": "weighted_voting_wr"
+  },
+  "bach_thu_trung": [],
+  "lo2_trung": [
+   "82"
+  ],
+  "lo3": [
+   "95"
+  ],
+  "ranked_size": 10,
+  "ranked_top8": [
+   [
+    "95",
+    0.0754,
+    3
+   ],
+   [
+    "82",
+    0.0646,
+    2
+   ],
+   [
+    "76",
+    0.0508,
+    2
+   ],
+   [
+    "14",
+    0.0496,
+    2
+   ],
+   [
+    "94",
+    0.0485,
+    3
+   ],
+   [
+    "87",
+    0.046,
+    3
+   ],
+   [
+    "85",
+    0.0348,
+    1
+   ],
+   [
+    "25",
+    0.0347,
+    1
+   ]
+  ],
+  "main_selection_reason": "max_ranked_score_after_gate_and_lane_weight",
+  "top1_reason": "selected 95 because score=0.0754, voters=3, lane_votes={'auto_daily': 3}",
+  "top2_reason": "runner-up 82 score=0.0646, voters=2, lane_votes={'auto_daily': 2}",
+  "wr_gate_threshold": 30,
+  "wr_gate_filtered": [],
+  "quality_filtered_models": [],
+  "anti_trap": "NOT_APPLICABLE",
+  "ranked_co_duoi_trung": [
+   "76",
+   "82",
+   "87",
+   "94"
+  ],
+  "vi_tri_dau_tien_trong_RANKED_CUA_HE": [
+   2,
+   "82"
+  ],
+  "he_chon_dung_top1": true,
+  "so_prediction_TRUOC_cutoff": 27,
+  "so_prediction_SAU_cutoff_DA_LOAI": 0,
+  "candidate_union_size": 22,
+  "duoi_trung_TRONG_union": [
+   "04",
+   "13",
+   "46",
+   "59",
+   "76",
+   "82",
+   "87",
+   "94",
+   "98"
+  ],
+  "coverage_union": 0.225,
+  "coverage_ranked": 0.1,
+  "ROOT_CAUSE": "RANKING_MISS",
+  "ly_do": "he chon DUNG #1 cua chinh no (95, khong trung); duoi trung dau tien la 82 o hang 2/10 => loi nam o XEP HANG, khong phai o selector"
+ },
+ "MT": {
+  "region": "MT",
+  "cutoff": "16:55",
+  "so_dai": 3,
+  "so_duoi": 47,
+  "duoi_thuc_te": [
+   "00",
+   "01",
+   "02",
+   "04",
+   "06",
+   "07",
+   "12",
+   "17",
+   "18",
+   "19",
+   "25",
+   "28",
+   "29",
+   "30",
+   "32",
+   "35",
+   "40",
+   "41",
+   "42",
+   "43",
+   "44",
+   "45",
+   "47",
+   "49",
+   "50",
+   "57",
+   "58",
+   "59",
+   "62",
+   "63",
+   "64",
+   "67",
+   "68",
+   "70",
+   "72",
+   "74",
+   "75",
+   "77",
+   "80",
+   "81",
+   "83",
+   "85",
+   "88",
+   "90",
+   "95",
+   "98",
+   "99"
+  ],
+  "duoi_dac_biet": [
+   "06",
+   "63",
+   "80"
+  ],
+  "nen_ngau_nhien_1_so": 0.47,
+  "FINAL": {
+   "bach_thu": [
+    "34"
+   ],
+   "lo2": [
+    "34",
+    "60"
+   ],
+   "lo3": [
+    "34"
+   ],
+   "xien2": [
+    "34",
+    "60"
+   ],
+   "xien3": [
+    "34",
+    "60",
+    "69"
+   ],
+   "status": {
+    "bt": "LOSE",
+    "lo2": "LOSE",
+    "lo3": "LOSE",
+    "xien2": "LOSE",
+    "xien3": "LOSE"
+   },
+   "model_count": 13,
+   "consensus": "strong",
+   "top_score": 0.1484,
+   "is_fallback": 0,
+   "method": "weighted_voting_wr"
+  },
+  "bach_thu_trung": [],
+  "lo2_trung": [],
+  "lo3": [
+   "34"
+  ],
+  "ranked_size": 10,
+  "ranked_top8": [
+   [
+    "34",
+    0.1484,
+    4
+   ],
+   [
+    "60",
+    0.0868,
+    3
+   ],
+   [
+    "69",
+    0.0716,
+    3
+   ],
+   [
+    "40",
+    0.0603,
+    1
+   ],
+   [
+    "20",
+    0.0536,
+    5
+   ],
+   [
+    "37",
+    0.0417,
+    2
+   ],
+   [
+    "01",
+    0.0394,
+    2
+   ],
+   [
+    "70",
+    0.0196,
+    2
+   ]
+  ],
+  "main_selection_reason": "max_ranked_score_after_gate_and_lane_weight",
+  "top1_reason": "selected 34 because score=0.1484, voters=4, lane_votes={'ai_chain': 1, 'auto_daily': 3}",
+  "top2_reason": "runner-up 60 score=0.0868, voters=3, lane_votes={'auto_daily': 3}",
+  "wr_gate_threshold": 28,
+  "wr_gate_filtered": [
+   "claude-opus-4-6",
+   "claude-sonnet-4-6"
+  ],
+  "quality_filtered_models": [
+   "claude-opus-4-6",
+   "claude-sonnet-4-6"
+  ],
+  "anti_trap": "FRESH",
+  "ranked_co_duoi_trung": [
+   "01",
+   "40",
+   "57",
+   "70"
+  ],
+  "vi_tri_dau_tien_trong_RANKED_CUA_HE": [
+   4,
+   "40"
+  ],
+  "he_chon_dung_top1": true,
+  "so_prediction_TRUOC_cutoff": 27,
+  "so_prediction_SAU_cutoff_DA_LOAI": 0,
+  "candidate_union_size": 18,
+  "duoi_trung_TRONG_union": [
+   "01",
+   "04",
+   "18",
+   "40",
+   "57",
+   "62",
+   "70",
+   "74",
+   "90"
+  ],
+  "coverage_union": 0.191,
+  "coverage_ranked": 0.085,
+  "ROOT_CAUSE": "RANKING_MISS",
+  "ly_do": "he chon DUNG #1 cua chinh no (34, khong trung); duoi trung dau tien la 40 o hang 4/10 => loi nam o XEP HANG, khong phai o selector"
+ },
+ "MB": {
+  "region": "MB",
+  "cutoff": "17:55",
+  "so_dai": 1,
+  "so_duoi": 24,
+  "duoi_thuc_te": [
+   "06",
+   "14",
+   "24",
+   "27",
+   "34",
+   "36",
+   "37",
+   "42",
+   "43",
+   "46",
+   "47",
+   "48",
+   "53",
+   "66",
+   "70",
+   "72",
+   "78",
+   "81",
+   "84",
+   "89",
+   "92",
+   "94",
+   "95",
+   "99"
+  ],
+  "duoi_dac_biet": [
+   "81"
+  ],
+  "nen_ngau_nhien_1_so": 0.24,
+  "FINAL": {
+   "bach_thu": [
+    "01"
+   ],
+   "lo2": [
+    "01",
+    "20"
+   ],
+   "lo3": [
+    "01"
+   ],
+   "xien2": [
+    "01",
+    "20"
+   ],
+   "xien3": [
+    "01",
+    "20",
+    "34"
+   ],
+   "status": {
+    "bt": "LOSE",
+    "lo2": "LOSE",
+    "lo3": "LOSE",
+    "xien2": "LOSE",
+    "xien3": "LOSE"
+   },
+   "model_count": 15,
+   "consensus": "strong",
+   "top_score": 0.0887,
+   "is_fallback": 0,
+   "method": "weighted_voting_wr"
+  },
+  "bach_thu_trung": [],
+  "lo2_trung": [],
+  "lo3": [
+   "01"
+  ],
+  "ranked_size": 10,
+  "ranked_top8": [
+   [
+    "01",
+    0.0887,
+    4
+   ],
+   [
+    "20",
+    0.0884,
+    3
+   ],
+   [
+    "34",
+    0.0639,
+    2
+   ],
+   [
+    "56",
+    0.0537,
+    2
+   ],
+   [
+    "02",
+    0.0468,
+    2
+   ],
+   [
+    "70",
+    0.0423,
+    1
+   ],
+   [
+    "75",
+    0.0407,
+    1
+   ],
+   [
+    "18",
+    0.0369,
+    1
+   ]
+  ],
+  "main_selection_reason": "max_ranked_score_after_gate_and_lane_weight",
+  "top1_reason": "selected 01 because score=0.0887, voters=4, lane_votes={'rerun_post_mt': 4}",
+  "top2_reason": "runner-up 20 score=0.0884, voters=3, lane_votes={'ai_chain': 3}",
+  "wr_gate_threshold": 26,
+  "wr_gate_filtered": [],
+  "quality_filtered_models": [],
+  "anti_trap": "PARTIAL_SPENT",
+  "ranked_co_duoi_trung": [
+   "34",
+   "42",
+   "70"
+  ],
+  "vi_tri_dau_tien_trong_RANKED_CUA_HE": [
+   3,
+   "34"
+  ],
+  "he_chon_dung_top1": true,
+  "so_prediction_TRUOC_cutoff": 27,
+  "so_prediction_SAU_cutoff_DA_LOAI": 0,
+  "candidate_union_size": 22,
+  "duoi_trung_TRONG_union": [
+   "06",
+   "34",
+   "42",
+   "70",
+   "99"
+  ],
+  "coverage_union": 0.208,
+  "coverage_ranked": 0.125,
+  "ROOT_CAUSE": "RANKING_MISS",
+  "ly_do": "he chon DUNG #1 cua chinh no (01, khong trung); duoi trung dau tien la 34 o hang 3/10 => loi nam o XEP HANG, khong phai o selector"
+ }
+}

@@ -1,0 +1,1351 @@
+{
+ "ICT": "2026-09-10T20:09:37.472491+07:00",
+ "candidate": 74,
+ "mutation": 48,
+ "rows": [
+  {
+   "date": "2026-06-26",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "claude-sonnet-4-6",
+    "lstm"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-sonnet-4-6, lstm"
+   }
+  },
+  {
+   "date": "2026-06-27",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "claude-sonnet-4-6",
+    "lstm"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-sonnet-4-6, lstm"
+   }
+  },
+  {
+   "date": "2026-06-28",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "claude-sonnet-4-6",
+    "lstm"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-sonnet-4-6, lstm"
+   }
+  },
+  {
+   "date": "2026-06-29",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "claude-sonnet-4-6",
+    "lstm"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-sonnet-4-6, lstm"
+   }
+  },
+  {
+   "date": "2026-07-09",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-10",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-11",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-12",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-13",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-14",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-15",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-16",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-17",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-18",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-19",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-26",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-27",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "gpt-5.4",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: gpt-5.4, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-28",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-29",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "gpt-5.4",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: gpt-5.4, meta-learning"
+   }
+  },
+  {
+   "date": "2026-07-30",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "gpt-5.4",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: gpt-5.4, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-05",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "gemini-2.5-pro",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: gemini-2.5-pro, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-06",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-09",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-08-10",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-08-11",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-08-12",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-08-14",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-08-16",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-17",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "claude-opus-4-6",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-opus-4-6, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-18",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-19",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-20",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "claude-opus-4-6",
+    "lstm"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-opus-4-6, lstm"
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-22",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-23",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-24",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-25",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-26",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-27",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-29",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-08-30",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "meta-learning"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, meta-learning"
+   }
+  },
+  {
+   "date": "2026-08-31",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-09-01",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "lstm",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: lstm, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-09-03",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-09-04",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "random-forest"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, random-forest"
+   }
+  },
+  {
+   "date": "2026-09-05",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-09-06",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "meta-learning",
+    "smart-ensemble"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: meta-learning, smart-ensemble"
+   }
+  },
+  {
+   "date": "2026-09-08",
+   "region": "MT",
+   "mc": 13,
+   "cap": [
+    "claude-opus-4-6",
+    "claude-sonnet-4-6"
+   ],
+   "eff": 15,
+   "cu": {
+    "day_status": "DEGRADED_LIVE_DAY",
+    "policy": "EXCLUDE_PRIMARY",
+    "quality": "INCOMPLETE",
+    "completed": 13,
+    "failed": 2,
+    "ratio": 0.8667,
+    "reason": "Thiếu 2 model (13/15)"
+   },
+   "moi": {
+    "day_status": "VALID_LIVE_DAY",
+    "policy": "INCLUDE",
+    "quality": "COMPLETE",
+    "completed": 13,
+    "failed": 0,
+    "ratio": 1.0,
+    "reason": "Đủ 15/15 model hợp lệ · 2 model bi TRAN CO Y (V10752), KHONG tinh la thieu: claude-opus-4-6, claude-sonnet-4-6"
+   }
+  }
+ ]
+}
