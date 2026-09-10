@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-10 20:45:46 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-11 02:02:55 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -17,28 +17,27 @@
 
 ## ⚠ QUÁ HẠN — còn treo
 
-**23 mục** quá hạn còn treo trong cửa sổ; in 14 mục cũ nhất.
+**13 mục** quá hạn còn treo trong cửa sổ; in 13 mục cũ nhất.
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
-| `FU-444` | `BC0809-2` | (CẬP NHẬT 01/09) | **QUÁ HẠN** 27/08 | `OWNER_DECISION_NEEDED` |
-| `FU-442` | `SC2608-4` | 🟡 **VÁ CỔNG A55 — ba lỗ hổng, không phải một** | **QUÁ HẠN** 27/08 | `MEASURED_ROOT_CAUSE_FOUND` |
-| `FU-441` | `KS2608` | 🔴 **BỐN HOOK CURSOR ĐÃ CHẾT 9 NGÀY VỚI PHIÊN CLAUDE CODE** | **QUÁ HẠN** 27/08 | `OWNER_DECISION_NEEDED` |
-| `FU-440` | `KS2608-1` | 🟡 **BỐN ĐƯỜNG KHÔNG CÓ AUTH mà phép đo CHƯA thấy rò** | **QUÁ HẠN** 27/08 | `OWNER_DECISION_NEEDED` |
-| `FU-436` | `SC2708` | 🔴 **RÚT LẠI — SAI CẢ HAI VẾ. Em không tra bảng override trước khi kết  | **QUÁ HẠN** 27/08 | `FALSE_NEGATIVE` |
-| `FU-437` | `UI2708` | 🔴 **RÚT LẠI — OWNER ĐÃ KÝ, EM VIẾT «KHÔNG AI KÝ»** | **QUÁ HẠN** 27/08 | `MEASURED_BUT_NOT_FIXED` |
-| `FU-437b` | `DD2708` | 🟡 **CÁNH TAY ĐỐI CHỨNG 06/11 NẰM TRÊN MỘT MÁY DUY NHẤT** | **QUÁ HẠN** 27/08 | `MEASURED_ROOT_CAUSE_FOUND` |
-| `FU-435` | `QD2708` | 🔴 **CỔNG PUBLISH «ĐÚNG 15» LÀ CỔNG GIÒN — một model chậm làm MẤT CẢ NG | **QUÁ HẠN** 27/08 | `OWNER_DECISION_NEEDED` |
-| `FU-433` | `DO2708` | 🔴 **MỌI PHÉP ĐO THƯỚC CẶP ĐANG GỘP QUA MỘT BIÊN CHẾ ĐỘ NỀN** | **QUÁ HẠN** 27/08 | `MEASURED_BUT_NOT_FIXED` |
-| `FU-286` | `DO2708` | DỜI HẠN: đo tiến cần ~140 ngày, không thể chốt 13/08 | **QUÁ HẠN** 27/08 | `MEASURED_ROOT_CAUSE` |
 | `FU-443` | `SC2608-5` | 🔴 **KHOÁ TẦNG `prepend()` — tầng SỚM, bắt đúng ca 25/08** | **QUÁ HẠN** 28/08 | `OWNER_DECISION_NEEDED` |
 | `FU-422` | `DO2908` | 🟡 **BỘ CHẤM ĐIỂM QUÉT LẠI TOÀN BỘ TỆP TRACE CHO TỪNG MODEL** | **QUÁ HẠN** 29/08 | `MEASURED_ROOT_CAUSE` |
 | `FU-432` | `DD3008` | 🔴 **BẢN ĐÓNG BĂNG ĐỐI CHỨNG THIẾU MỘT NỬA — hạn CỨNG trước 02:00 ngày  | **QUÁ HẠN** 30/08 | `MEASURED_BUT_NOT_FIXED` |
 | `FU-445` | `KS3108` | 🔴 **`DEGRADED_BODY_OVER_HTTP` CHƯA XÁC MINH** | **QUÁ HẠN** 31/08 | `AWAITING_OWNER_OK` |
+| `FU-360` | `CL1008` | 🟡 **SỬA NHÃN VỀ ĐÚNG TỪ VỰNG + ĐẶT HẠN MỚI** | **QUÁ HẠN** 31/08 | `DEPLOYED_PENDING_LIVE_VERIFY` |
+| `FU-183` | `KS0831` | Lớp V10640 MN rà âm thì tắt | **QUÁ HẠN** 31/08 | `DEPLOYED_PENDING_LIVE_VERIFY` |
+| `FU-198` | `DO0901` | So gemini-3.5 vs 3.6 | **QUÁ HẠN** 01/09 | `WAIT_LIVE` |
+| `FU-234` | `DO0905` | B2 đo 105 luật có giúp công bố | **QUÁ HẠN** 05/09 | `OWNER_LOCK` |
+| `FU-285` | `DO0709` | So bản đóng băng với bản học lại — CHẤM HẰNG THÁNG, không chờ một phát | **QUÁ HẠN** 07/09 | `WAIT_LIVE` |
+| `FU-448` | `DO0809-2` | (CẬP NHẬT 01/09 — **GỐC THẬT**) | **QUÁ HẠN** 08/09 | `OWNER_DECISION_NEEDED` |
+| `FU-447` | `BC0809` | 🟡 **16 BÁO CÁO CÓ ĐỦ NỘI DUNG NHƯNG ĐẶT TIÊU ĐỀ NGOÀI KHUNG** | **QUÁ HẠN** 08/09 | `MEASURED_BUT_NOT_FIXED` |
+| `FU-446` | `DO0809` | 🔴 **BẢNG HIỆU CHỈNH SỨC MẠNH LẠC HẬU: 15 KHOÁ / 24 MODEL** | **QUÁ HẠN** 08/09 | `OWNER_DECISION_NEEDED` |
+| `FU-449` | `KS0609` | / FU-450 (CẬP NHẬT 06/09 — **SOI TỔNG LỰC + DỌN DẸP V11166**) | **QUÁ HẠN** 09/09 | `BLOCKED` |
 
 ---
 
-**Báo cáo mới nhất:** `V11177` — DONG SC12 VA CHALLENGER (2026-09-10)
+**Báo cáo mới nhất:** `V11178` — CHALLENGER V11 LIVE OUTPUT (2026-09-11)
 
 ---
 

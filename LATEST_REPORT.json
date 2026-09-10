@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-10 20:45:46",
- "tong_thu_muc": 455,
- "latest_version": "V11177",
+ "_sinh_luc_vn": "2026-09-11 02:02:55",
+ "tong_thu_muc": 456,
+ "latest_version": "V11178",
  "latest": {
-  "version": "V11177",
-  "ngay": "2026-09-10",
-  "chu_de": "DONG SC12 VA CHALLENGER",
-  "thu_muc": "V11177_DONG_SC12_VA_CHALLENGER_20260910",
+  "version": "V11178",
+  "ngay": "2026-09-11",
+  "chu_de": "CHALLENGER V11 LIVE OUTPUT",
+  "thu_muc": "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911",
   "bao_cao": [
-   "V11177_DONG_SC12_VA_CHALLENGER_20260910/REPORT_V11177.md"
+   "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/REPORT_V11178.md"
   ],
   "ngu_canh": [
-   "V11177_DONG_SC12_VA_CHALLENGER_20260910/CONVERSATION_CONTEXT_V11177_20260910.md"
+   "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/CONVERSATION_CONTEXT_V11178_20260911.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11178",
+   "ngay": "2026-09-11",
+   "chu_de": "CHALLENGER V11 LIVE OUTPUT",
+   "thu_muc": "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911",
+   "bao_cao": [
+    "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/REPORT_V11178.md"
+   ],
+   "ngu_canh": [
+    "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/CONVERSATION_CONTEXT_V11178_20260911.md"
+   ]
+  },
   {
    "version": "V11177",
    "ngay": "2026-09-10",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11164_EOD_LIVE_CLOSURE_20260904/CONVERSATION_CONTEXT_V11164_20260904.md"
-   ]
-  },
-  {
-   "version": "V11163",
-   "ngay": "2026-09-04",
-   "chu_de": "DIEN TAP MIGRATION",
-   "thu_muc": "V11163_DIEN_TAP_MIGRATION_20260904",
-   "bao_cao": [
-    "V11163_DIEN_TAP_MIGRATION_20260904/REPORT_V11163.md"
-   ],
-   "ngu_canh": [
-    "V11163_DIEN_TAP_MIGRATION_20260904/CONVERSATION_CONTEXT_V11163_20260904.md"
    ]
   }
  ]
