@@ -391,6 +391,75 @@ crontab /root/Lottery_AI_Test/artifacts/v11178/crontab_before_X1.txt   # bật l
 
 ---
 
+# KHUNG §57.3 — CHÍN PHẦN
+
+> Thân báo cáo ở trên dùng khung 17 mục của §X. Phần này ánh xạ sang khung 9 phần bắt buộc
+> của `§57.3`, **không chép lại nội dung**. Đây là lần thứ tư `FU-447` tái phát trong loạt
+> phiên này — agent viết theo khung của prompt mà quên khung của luật. Ghi thẳng ở đây.
+
+## 3. Đào bới / phát hiện
+
+Liệt kê đủ, kể cả phép đo ra kết quả âm hoặc không kết luận được:
+
+- **§X0** preflight: chụp đủ Git hai kho · service · crontab nguyên văn + SHA · tiến trình ·
+  schema · row counts · digest lịch sử bất biến → mục 3.
+- **§X2** đọc mã nguồn tìm API circuit thật; phát hiện circuit **chỉ** áp tuyến OpenRouter và
+  là bộ nhớ **trong tiến trình** → mục 5.
+- **§X5** đo cấu trúc `final_bundles`: **588/588** bundle có `len(lo3)=3` và `lo3` luôn kết
+  thúc bằng `bach_thu` ⇒ `lo3` **chính là** 3-càng → mục 9.
+- **§X5** chấm lại 57 nhãn `lo3 WIN`: **25 thật / 32 sai**, toàn bộ tháng 03/2026 → mục 9.
+- **§X7** đo survivorship: `conditional_MRR` → `all_scheduled_MRR` lệch 21% (MT) và 42% (MB)
+  → mục 10.
+- **§X8** F4: quét **117.270** cell trên ba miền, **0** qua BH-FDR — *kết quả âm* → mục 11.
+- **§X9** F5: huấn luyện và chấm holdout, **âm cả ba miền** — *kết quả âm* → mục 12.
+- **§X9** nhánh đối chứng baseline tần suất: ≈ ngẫu nhiên — *không kết luận được gì về tín
+  hiệu, nhưng chứng minh đường ống đo đúng* → mục 12.
+- **§X6** đối chiếu hai công thức `E[RR]`: lệch 0,002–0,003 — *nhỏ nhưng sai công thức* → mục 8.
+
+## 4. Hướng xử lý và vì sao chọn
+
+- **Tắt cron bằng comment-out, không xoá dòng** — giữ nguyên văn để truy vết và để `rollback`
+  chỉ là một lệnh. Xoá sẽ mất bằng chứng cấu hình từng chạy.
+- **Đọc thẳng `_OPENROUTER_CIRCUIT_BREAKER` thay vì gọi `_openrouter_circuit_check()`** — hàm
+  đó **xoá** entry hết hạn, tức có tác dụng phụ; §X12 đòi adapter **chỉ đọc**.
+- **Chấm lại 32 nhãn `lo3` bằng phép đọc thuần thay vì xin ghi DB** — V11166 ghi việc này là
+  *bị chặn vì phải ghi production*. Đọc thuần đạt đúng mục tiêu (xác định dòng nào sai) mà
+  không cần quyền ghi.
+- **Bỏ danh sách lưu trữ chép tay trong README thay vì vá từng dòng** — nó trùng lặp
+  `REPORT_INDEX.md` (do máy sinh), đứng từ `V10861`, và liên tục kích hoạt cổng cửa-sổ-chọn.
+- **Không gọi LM/LLM** — F5 chưa pass; §X10 cấm, và gọi cũng chỉ để "có thêm dòng".
+
+## 5. Đã làm gì
+
+Xem mục 4 (cron) · 5 (circuit/retry) · 6 (validator) · 7 (canonical lineage) · 8 (thước đo) ·
+9 (ma trận official + 3-càng + 32 nhãn) · 10 (ma trận provider) · 11 (F4) · 12 (F5).
+Bảy tệp mới: `_v11182_pre_x_manifest.py` · `_v11182_retire_f1_cron.py` · `_v11182_thuoc_do.py` ·
+`_v11182_f4.py` · `_v11182_f5.py` · `_v11182_thu_x.py` · `_v11182_eod_official.py`; vá
+`_v11178_context_only_v11.py`, `_v11178_eod.py`, `_v11180_thu_w.py`.
+
+## 6. Cổng kiểm
+
+Xem mục 13 (5 bộ test) và mục 14 (zero-write). Ngoài ra: `§63` bốn mặt **ĐẠT** (seq 497) ·
+`_v11044_cong_so_hieu` **KHỚP** · `_v11085_cong_rut_lai` **SẠCH** ·
+`_v11088_cong_cua_so_chon` **SẠCH** · `_v10920_decision_ledger` không có quyết định trôi ·
+`_v11083_sinh_dieu_huong` **ĐẠT**.
+
+Hai cổng governance chặn commit **hai lần** và cả hai lần đều sửa ở **nguyên nhân**, không
+bỏ qua: `PRJ_RETRACTION` (thiếu nhãn rút lại tại chỗ gốc) và `PRJ_WINDOW` (bảng trạng thái
+một ngày bị đọc thành tuyên bố hiệu quả).
+
+## 9. Theo dõi tiếp
+
+| việc | ai chặn | chặn ở đâu |
+|---|---|---|
+| Không còn họ challenger nào đang chạy | — | **không phải việc treo**: đây là kết luận |
+| Muốn mở họ mới phải có **trục khác hẳn** bốn hướng đã chết | Owner quyết hướng | không hạn |
+| 32 nhãn `lo3` trong DB vẫn sai (nếu muốn sửa **trong DB**) | Owner | cần duyệt ghi production |
+| `BASE_D1_LIVE` chưa từng có lượt **frozen + natural** | — | cron đã tắt; chỉ mở lại khi có họ mới |
+| Legacy report debt | TanPhatAI | luồng riêng, không chặn |
+
+---
+
 ## §62 · NGUỒN BA LỚP
 
 ### `OWNER_SAID`
