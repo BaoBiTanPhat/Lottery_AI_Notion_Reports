@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-09-11 02:02:55 (giờ VN) · **456 thư mục báo cáo**
+**Sinh lúc:** 2026-09-11 19:16:44 (giờ VN) · **457 thư mục báo cáo**
 
-**Mới nhất: `V11178`** — CHALLENGER V11 LIVE OUTPUT · 2026-09-11
+**Mới nhất: `V11181`** — W FAILCLOSED NATURAL LANE · 2026-09-11
 
-- [REPORT_V11178.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/REPORT_V11178.md)
-- [CONVERSATION_CONTEXT_V11178_20260911.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/CONVERSATION_CONTEXT_V11178_20260911.md)
+- [REPORT_V11181.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11181_W_FAILCLOSED_NATURAL_LANE_20260911/REPORT_V11181.md)
+- [CONVERSATION_CONTEXT_V11181_20260911.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11181_W_FAILCLOSED_NATURAL_LANE_20260911/CONVERSATION_CONTEXT_V11181_20260911.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11181` | 2026-09-11 | W FAILCLOSED NATURAL LANE | [REPORT_V11181.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11181_W_FAILCLOSED_NATURAL_LANE_20260911/REPORT_V11181.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11181_W_FAILCLOSED_NATURAL_LANE_20260911/CONVERSATION_CONTEXT_V11181_20260911.md) | ✓ |
 | `V11178` | 2026-09-11 | CHALLENGER V11 LIVE OUTPUT | [REPORT_V11178.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/REPORT_V11178.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/CONVERSATION_CONTEXT_V11178_20260911.md) | ✓ |
 | `V11177` | 2026-09-10 | DONG SC12 VA CHALLENGER | [REPORT_V11177.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11177_DONG_SC12_VA_CHALLENGER_20260910/REPORT_V11177.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11177_DONG_SC12_VA_CHALLENGER_20260910/CONVERSATION_CONTEXT_V11177_20260910.md) | ✓ |
 | `V11176` | 2026-09-10 | RUNTIME PROOF TU NHIEN | [REPORT_V11176.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11176_RUNTIME_PROOF_TU_NHIEN_20260910/REPORT_V11176.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11176_RUNTIME_PROOF_TU_NHIEN_20260910/CONVERSATION_CONTEXT_V11176_20260910.md) | ✓ |

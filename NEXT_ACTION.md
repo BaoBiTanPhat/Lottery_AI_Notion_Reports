@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-11 02:02:55 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-11 19:16:44 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -37,7 +37,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11178` — CHALLENGER V11 LIVE OUTPUT (2026-09-11)
+**Báo cáo mới nhất:** `V11181` — W FAILCLOSED NATURAL LANE (2026-09-11)
 
 ---
 

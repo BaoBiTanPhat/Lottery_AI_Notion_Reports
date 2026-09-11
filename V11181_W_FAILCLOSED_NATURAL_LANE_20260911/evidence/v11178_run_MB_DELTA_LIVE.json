@@ -1,0 +1,1177 @@
+{
+ "ICT": "2026-09-11T17:33:02.157566+07:00",
+ "date": "2026-09-11",
+ "stage": "SAME_DAY_DELTA",
+ "execution_class": "MB_DELTA_LIVE",
+ "invocation_id": "I58e8e4ae8f06",
+ "method_version": "V11178.2",
+ "method_name": "CONTEXT_DERIVED_CANDIDATE_RANKER",
+ "code_sha256": "06109c8076081a6fdf4645d5f64f8736ecbb8a702033ffe4a837cd8353c088c4",
+ "prompt_sha256": "ff5af28f0816f613401f4941073bda905bfdf10b4b2dc153c713a65c9177dd3e",
+ "roster": [
+  "claude-opus-4-6",
+  "claude-opus-5-fast",
+  "claude-sonnet-4-6",
+  "deepseek-reasoner",
+  "deepseek-v4-pro-real",
+  "gemini-2.5-flash",
+  "gemini-2.5-pro",
+  "gemini-3.5-flash",
+  "gemini-3.6-flash",
+  "glm-5.1",
+  "glm-5.2",
+  "gpt-5-mini",
+  "gpt-5.4",
+  "gpt-5.5",
+  "gpt-5.6-sol-pro",
+  "gpt-oss-120b",
+  "grok-4.3",
+  "qwen3-max-thinking",
+  "qwen3.7-max"
+ ],
+ "roster_size": 19,
+ "roster_reconciliation": [
+  {
+   "id": "gpt-5-mini",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openai",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "claude-sonnet-4-6",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "anthropic",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "gemini-2.5-flash",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "google",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "claude-opus-4-6",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "anthropic",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "deepseek-reasoner",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "deepseek",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "gemini-2.5-pro",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "google",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "gpt-5.4",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openai",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "glm-5.1",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "glm-5.2",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "grok-4.20-multi-agent",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "grok-4.3",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "qwen3-coder",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "minimax-m2.7",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "nemotron-3-super",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "mistral-nemo",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "claude-opus-5-fast",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "gpt-5.6-sol-pro",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "kimi-k2.5",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "kimi-k2.6",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "gemma-4-26b",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "arcee-trinity",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "yi-1.5-34b-chat",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "qwen3-max-thinking",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "qwen3.7-max",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "llama-4-maverick",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "mistral-large-3",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "gpt-oss-120b",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=ACTIVE"
+  },
+  {
+   "id": "gpt-5.5",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "deepseek-v4-pro",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "deepseek",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "deepseek-v4-flash",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "deepseek",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "deepseek-v4-pro-real",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "deepseek",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "wan-2.7",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REGISTERED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REGION_NOT_ALLOWED",
+   "ly_do": "allowed_regions=[]"
+  },
+  {
+   "id": "pplx-embed-v1",
+   "class": "RERANK",
+   "role": "RERANKER",
+   "provider": "openrouter",
+   "status": "REGISTERED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "AGGREGATOR",
+   "ly_do": "vai tro tong hop, khong sinh xep hang doc lap"
+  },
+  {
+   "id": "qwen3.6-plus",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "gemini-3.1-pro",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "google",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "gemini-3-flash",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "google",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "gemma-4-31b",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "google",
+   "status": "RETIRED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=RETIRED"
+  },
+  {
+   "id": "gemini-3.5-flash",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "google",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "gemini-3.6-flash",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "google",
+   "status": "SHADOW_AUTO",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "CHALLENGER_ELIGIBLE",
+   "ly_do": "class=TOKEN role=GENERATOR status=SHADOW_AUTO"
+  },
+  {
+   "id": "o3-deep-research",
+   "class": "TOKEN",
+   "role": "GENERATOR",
+   "provider": "openrouter",
+   "status": "REMOVED",
+   "output_eligible": false,
+   "allowed_regions": [],
+   "phan_loai": "REMOVED",
+   "ly_do": "status=REMOVED"
+  },
+  {
+   "id": "cohere-rerank-4-pro",
+   "class": "RERANK",
+   "role": "RERANKER",
+   "provider": "openrouter",
+   "status": "REGISTERED",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "AGGREGATOR",
+   "ly_do": "vai tro tong hop, khong sinh xep hang doc lap"
+  },
+  {
+   "id": "meta-learning",
+   "class": "NO_TOKEN",
+   "role": "ML_PREDICTOR",
+   "provider": "local",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "ML",
+   "ly_do": "khong phai LLM — khong nhan prompt van ban"
+  },
+  {
+   "id": "lstm",
+   "class": "NO_TOKEN",
+   "role": "ML_PREDICTOR",
+   "provider": "local",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "ML",
+   "ly_do": "khong phai LLM — khong nhan prompt van ban"
+  },
+  {
+   "id": "xgboost",
+   "class": "NO_TOKEN",
+   "role": "ML_PREDICTOR",
+   "provider": "local",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "ML",
+   "ly_do": "khong phai LLM — khong nhan prompt van ban"
+  },
+  {
+   "id": "random-forest",
+   "class": "NO_TOKEN",
+   "role": "ML_PREDICTOR",
+   "provider": "local",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "ML",
+   "ly_do": "khong phai LLM — khong nhan prompt van ban"
+  },
+  {
+   "id": "smart-ensemble",
+   "class": "NO_TOKEN",
+   "role": "ENSEMBLE",
+   "provider": "local",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "NO_TOKEN",
+   "ly_do": "khong goi API token — aggregator/no-token"
+  },
+  {
+   "id": "smart-ml",
+   "class": "NO_TOKEN",
+   "role": "ENSEMBLE",
+   "provider": "local",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "NO_TOKEN",
+   "ly_do": "khong goi API token — aggregator/no-token"
+  },
+  {
+   "id": "combo-no-token",
+   "class": "NO_TOKEN",
+   "role": "ENSEMBLE",
+   "provider": "local",
+   "status": "ACTIVE",
+   "output_eligible": false,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "NO_TOKEN",
+   "ly_do": "khong goi API token — aggregator/no-token"
+  },
+  {
+   "id": "combo-super",
+   "class": "TOKEN",
+   "role": "ENSEMBLE",
+   "provider": "hybrid",
+   "status": "ACTIVE",
+   "output_eligible": true,
+   "allowed_regions": [
+    "MN",
+    "MT",
+    "MB"
+   ],
+   "phan_loai": "AGGREGATOR",
+   "ly_do": "vai tro tong hop, khong sinh xep hang doc lap"
+  }
+ ],
+ "model_timeout_s": 60,
+ "timeout_enforcement": "ORCHESTRATOR_BOUNDED_JOIN — gpt_analyzer._call_* KHONG nhan tham so timeout (5/5 ham); lane ngung cho dung han va ghi TIMEOUT, loi goi co the con lo lung trong thread",
+ "regions": {
+  "MB": {
+   "stations": [
+    "Hải Phòng"
+   ],
+   "station_set_source": "CANONICAL_STATION_SCHEDULE_VERSIONED",
+   "station_schedule": {
+    "schedule_version": "lottery_station_schedule/2026.09.11-1",
+    "schedule_sha256": "f0eb65fae10ea4010b59933f42865f9d89ca6a9bb774a72fad94389d4f500b16",
+    "provenance": "OWNER_MANDATE_W2_4+HISTORY_CONFIRMED",
+    "weekday": 4,
+    "doi_chieu": {
+     "canonical": [
+      "Hải Phòng"
+     ],
+     "provenance": "OWNER_MANDATE_W2_4+HISTORY_CONFIRMED",
+     "n_ngay_lich_su": 25,
+     "khop_lich_su": 25,
+     "ty_le": 1.0,
+     "du_mau": true,
+     "lich_su_dat": true,
+     "chot_W2_4_dat": true,
+     "chot_W2_4": [
+      "Hải Phòng"
+     ],
+     "dat": true
+    }
+   },
+   "execution_class": "MB_DELTA_LIVE",
+   "stage": "SAME_DAY_DELTA",
+   "upstream_status": {
+    "MN": {
+     "status": "COMPLETE",
+     "complete": true,
+     "expected_stations": [
+      "Bình Dương",
+      "Trà Vinh",
+      "Vĩnh Long"
+     ],
+     "present_stations": [
+      "Bình Dương",
+      "Trà Vinh",
+      "Vĩnh Long"
+     ],
+     "missing_stations": [],
+     "unexpected_stations": [],
+     "stations_missing_prizes": [],
+     "rows_after_cutoff_ignored": [],
+     "latest_available_at": "2026-09-11T16:39:40.800426+07:00",
+     "before_target_cutoff": true,
+     "target_cutoff_at": "2026-09-11T17:55:00+07:00",
+     "schedule_version": "lottery_station_schedule/2026.09.11-1",
+     "fingerprint": "922e192c7885f79c"
+    },
+    "MT": {
+     "status": "COMPLETE",
+     "complete": true,
+     "expected_stations": [
+      "Gia Lai",
+      "Ninh Thuận"
+     ],
+     "present_stations": [
+      "Gia Lai",
+      "Ninh Thuận"
+     ],
+     "missing_stations": [],
+     "unexpected_stations": [],
+     "stations_missing_prizes": [],
+     "rows_after_cutoff_ignored": [],
+     "latest_available_at": "2026-09-11T17:30:01.392539+07:00",
+     "before_target_cutoff": true,
+     "target_cutoff_at": "2026-09-11T17:55:00+07:00",
+     "schedule_version": "lottery_station_schedule/2026.09.11-1",
+     "fingerprint": "f1237c725b3cffb3"
+    }
+   },
+   "n_conditions": 30,
+   "n_live_facts": 576,
+   "n_live_facts_sent": 30,
+   "n_facts_lag0": 90,
+   "fact_loai_bo": {
+    "sau_cutoff": 0,
+    "sai_chieu": 0,
+    "khong_doc_duoc_gio": 0
+   },
+   "n_candidates": 30,
+   "n_candidates_exact_lag": 30,
+   "n_candidates_lag_mismatch": 0,
+   "n_candidates_action_eligible": 0,
+   "n_distinct_derived": 29,
+   "n_distinct_derived_exact": 29,
+   "payload_fingerprint": "a9fd54c587f4231922359e728da333894f97a70fb53dba9129582c3d60c346dc",
+   "prompt_fingerprint": "ff5af28f0816f613401f4941073bda905bfdf10b4b2dc153c713a65c9177dd3e",
+   "prereg_sha256": "7dd9c36f536526fffbf052ee4ef2a15b467baabd5af5820073069ed6d33ec630",
+   "prereg_path": "/root/Lottery_AI_Test/artifacts/v11178/prereg_2026-09-11_MB_MB_DELTA_LIVE.json",
+   "payload_bytes": 84120,
+   "contamination_errors": [],
+   "catalog_meta": {
+    "discovery_window": [
+     "2026-01-14",
+     "2026-07-12"
+    ],
+    "holdout_window": [
+     "2026-07-13",
+     "2026-09-10"
+    ],
+    "windows_overlap": false,
+    "discovery_baseline": 0.2381,
+    "holdout_baseline": 0.2365,
+    "baseline_note": "moi cua so co NEN RIENG tinh tu chinh no (§V6/RM-21)",
+    "n_cells_tested_discovery": 2304,
+    "fdr_alpha": 0.1,
+    "fdr_survivors": 0,
+    "exploratory_fallback_used": true,
+    "n_conditions_into_holdout": 30,
+    "transforms_frozen_at": "2026-09-11T01:45:00+07:00",
+    "transform_ids": [
+     "T1_identity",
+     "T2_reverse",
+     "T3_complement",
+     "T4_plus1"
+    ],
+    "prereg_sha256": "7dd9c36f536526fffbf052ee4ef2a15b467baabd5af5820073069ed6d33ec630",
+    "prereg_path": "/root/Lottery_AI_Test/artifacts/v11178/prereg_2026-09-11_MB_MB_DELTA_LIVE.json",
+    "lag0_historical_availability": {
+     "du": 152,
+     "thieu": 24
+    },
+    "status_counts": {
+     "EXPLORATORY_DISCOVERY_ONLY": 30
+    },
+    "ghi_chu": "FDR chi dung o DISCOVERY. Holdout la khoang KHONG chong lan va chi duoc doc MOT LAN de xac nhan. fdr_survivors=0 => toan bo catalog la EXPLORATORY_DISCOVERY_ONLY, action_eligible=0, KHONG duoc goi la 'validated evidence'."
+   },
+   "models": {
+    "claude-opus-5-fast": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "claude-opus-4-6": {
+     "model_decision": "INVALID_PROVENANCE",
+     "error_code": "INVALID_PROVENANCE:Cdeee089b020d!->87",
+     "diagnostic_decision": "DIAGNOSTIC_EMPTY",
+     "system_action_decision": "ABSTAIN",
+     "n_attempts": 1,
+     "attempts": [
+      "INVALID_PROVENANCE"
+     ]
+    },
+    "claude-sonnet-4-6": {
+     "model_decision": "INVALID_PROVENANCE",
+     "error_code": "INVALID_PROVENANCE:Cdeee089b020d!->87;DUPLICATE_TAIL",
+     "diagnostic_decision": "DIAGNOSTIC_EMPTY",
+     "system_action_decision": "ABSTAIN",
+     "n_attempts": 1,
+     "attempts": [
+      "INVALID_PROVENANCE"
+     ]
+    },
+    "gpt-5-mini": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 2,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "deepseek-reasoner": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "gpt-5.4": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "glm-5.1": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "glm-5.2": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_EMPTY",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 0,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [
+      "SCHEMA_VERSION_MISMATCH",
+      "BAD_DECISION:None",
+      "RANKED_EMPTY"
+     ],
+     "uncertainty": null,
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "gpt-5.5": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "deepseek-v4-pro-real": {
+     "model_decision": "ERROR",
+     "error_code": "DeepSeek thinking API error: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_er",
+     "diagnostic_decision": "DIAGNOSTIC_EMPTY",
+     "system_action_decision": "ABSTAIN",
+     "n_attempts": 2,
+     "attempts": [
+      "TIMEOUT",
+      "ERROR"
+     ]
+    },
+    "gemini-2.5-flash": {
+     "model_decision": "TIMEOUT",
+     "error_code": "TIMEOUT_ORCHESTRATOR:60s",
+     "diagnostic_decision": "DIAGNOSTIC_EMPTY",
+     "system_action_decision": "ABSTAIN",
+     "n_attempts": 2,
+     "attempts": [
+      "TIMEOUT",
+      "TIMEOUT"
+     ]
+    },
+    "gpt-5.6-sol-pro": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "gpt-oss-120b": {
+     "model_decision": "RANKED",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [
+      "DUPLICATE_TAIL"
+     ],
+     "uncertainty": "low",
+     "n_attempts": 1,
+     "attempts": [
+      "RANKED"
+     ]
+    },
+    "grok-4.3": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "qwen3-max-thinking": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [
+      "DUPLICATE_TAIL"
+     ],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "gemini-2.5-pro": {
+     "model_decision": "COOLDOWN",
+     "error_code": "Gemini API error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For m",
+     "diagnostic_decision": "DIAGNOSTIC_EMPTY",
+     "system_action_decision": "ABSTAIN",
+     "n_attempts": 2,
+     "attempts": [
+      "COOLDOWN",
+      "COOLDOWN"
+     ]
+    },
+    "gemini-3.5-flash": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "gemini-3.6-flash": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 1,
+     "attempts": [
+      "ABSTAIN"
+     ]
+    },
+    "qwen3.7-max": {
+     "model_decision": "ABSTAIN",
+     "diagnostic_decision": "DIAGNOSTIC_RANKED",
+     "system_action_decision": "ABSTAIN",
+     "n_ranked": 10,
+     "n_action_eligible": 0,
+     "action_gate_reason": "ZERO_ELIGIBLE_TAILS;NOT_VALIDATED_ON_HOLDOUT:EXPLORATORY_DISCOVERY_ONLY=30;HOLDOUT_SUPPORT",
+     "contract_errors": [],
+     "uncertainty": "high",
+     "n_attempts": 2,
+     "attempts": [
+      "TIMEOUT",
+      "ABSTAIN"
+     ]
+    }
+   },
+   "upstream_wait": {
+    "upstream_ready": true,
+    "waited_s": 0,
+    "status": {
+     "MN": {
+      "status": "COMPLETE",
+      "complete": true,
+      "expected_stations": [
+       "Bình Dương",
+       "Trà Vinh",
+       "Vĩnh Long"
+      ],
+      "present_stations": [
+       "Bình Dương",
+       "Trà Vinh",
+       "Vĩnh Long"
+      ],
+      "missing_stations": [],
+      "unexpected_stations": [],
+      "stations_missing_prizes": [],
+      "rows_after_cutoff_ignored": [],
+      "latest_available_at": "2026-09-11T16:39:40.800426+07:00",
+      "before_target_cutoff": true,
+      "target_cutoff_at": "2026-09-11T17:55:00+07:00",
+      "schedule_version": "lottery_station_schedule/2026.09.11-1",
+      "fingerprint": "922e192c7885f79c"
+     },
+     "MT": {
+      "status": "COMPLETE",
+      "complete": true,
+      "expected_stations": [
+       "Gia Lai",
+       "Ninh Thuận"
+      ],
+      "present_stations": [
+       "Gia Lai",
+       "Ninh Thuận"
+      ],
+      "missing_stations": [],
+      "unexpected_stations": [],
+      "stations_missing_prizes": [],
+      "rows_after_cutoff_ignored": [],
+      "latest_available_at": "2026-09-11T17:30:01.392539+07:00",
+      "before_target_cutoff": true,
+      "target_cutoff_at": "2026-09-11T17:55:00+07:00",
+      "schedule_version": "lottery_station_schedule/2026.09.11-1",
+      "fingerprint": "f1237c725b3cffb3"
+     }
+    },
+    "deadline": "2026-09-11T17:38:04.850121+07:00"
+   },
+   "n_attempts_written": 23,
+   "canonical": {
+    "insert": 19,
+    "upgrade": 0,
+    "giu_nguyen": 0,
+    "rows": 102
+   }
+  }
+ }
+}

@@ -1,0 +1,235 @@
+{
+ "artifact": "V11180_FREEZE_PACKET",
+ "muc": "Prompt 43 R1 §W0.A + §V12",
+ "execution_class": "MT_DELTA_LIVE",
+ "target_date": "2026-09-11",
+ "frozen_at": "2026-09-11T14:32:47.443311+07:00",
+ "freeze_deadline": "2026-09-11T16:37:00+07:00",
+ "private_commit_sha": "ece856fea70a784c4db06338983991258ec070a8",
+ "private_branch": "master",
+ "worktree_clean": true,
+ "worktree_clean_do_o": "MAY_CANONICAL (truyen vao qua --worktree-clean)",
+ "worktree_exclusions": {
+  "docs/_I2_DA_CHAY.json": "76133fe03c458bfa1c7cc24bc6f00956c941bd94709139c854bd1218e73fdbd1",
+  "docs/_LEDGER_TRANG_THAI.json": "5e72ccd623b812876c1b002f062b236616f23a4ffbe924dfaf7c7e86c7a90d1c"
+ },
+ "worktree_exclusions_ly_do": "bien lai runtime do chinh cong kiem ghi ra; KHONG phai ma nguon, KHONG anh huong output lane",
+ "vps_git_head": "68f0ea61fae30cf38e5d53516ae1a01bf09f579c",
+ "vps_git_head_ghi_chu": "VPS deploy la COPY FILE, khong phai git pull. HEAD o day KHONG phai commit canonical; bang chung dong bo la deployed_matches_repo.",
+ "cron_text": "38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45\n33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60\n30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120",
+ "cron_text_sha256": "ae66029f5afea5e808b0ba13a03eebe6a7cbc8e06703a47702a003416f6d0cee",
+ "crontab_full_sha256": "8b7c84ea2cf8ef7af5674dd07bbc1b6c8d8301917a16c71c5d884b1afbc3a06e",
+ "file_sha256_repo": {
+  "_v11178_context_only_v11.py": "06109c8076081a6fdf4645d5f64f8736ecbb8a702033ffe4a837cd8353c088c4",
+  "_v11178_ranker.py": "bef53464c797f16e02ab698dbc836165b028f339598b4ec07208a26652928ed2",
+  "_v11178_lane.sh": "1c2a7085885512ecd9a878788f179939e9d8c52b887beb8738871c1fadb6e58b",
+  "_v11178_eod.py": "31bee736c9e7d23c747b7a5073ad8bec3bd3dd457769eab379ff4416eb2d54e3",
+  "_v11178_thu_v12.py": "9ae805edc6e49a7839b0ea75558010dbc1ab252bb866007ecdbe1ecf900ad653",
+  "_v11178_thu_v2_ledger.py": "5a9a027cf9c8e4146a093169da9678922790027808f09e644eccfdebbcd094e0",
+  "_v11178_migrate_v12.py": "b4d3e101cc54204c12a914749f2ee9bdf4a30c6629b1f598ddd020cafaf46ab9",
+  "_v11180_migrate_w.py": "557e671835615e7de571c0a1a8567d05239f68a4e36363dd8aff833ca094f82d",
+  "_v11180_lich_dai.py": "9521725d04dc9c256e588ac0c79e9bbae5df9dcd552ea506625fbea9cb039f7e",
+  "_v11178_freeze.py": "63df03f9d8d44d0cfeaec7a175f39d2b62486531cbbe4852fbaec5646b76adc2"
+ },
+ "file_sha256_deployed": {
+  "_v11178_context_only_v11.py": "06109c8076081a6fdf4645d5f64f8736ecbb8a702033ffe4a837cd8353c088c4",
+  "_v11178_ranker.py": "bef53464c797f16e02ab698dbc836165b028f339598b4ec07208a26652928ed2",
+  "_v11178_lane.sh": "1c2a7085885512ecd9a878788f179939e9d8c52b887beb8738871c1fadb6e58b",
+  "_v11178_eod.py": "31bee736c9e7d23c747b7a5073ad8bec3bd3dd457769eab379ff4416eb2d54e3",
+  "_v11178_thu_v12.py": "9ae805edc6e49a7839b0ea75558010dbc1ab252bb866007ecdbe1ecf900ad653",
+  "_v11178_thu_v2_ledger.py": "5a9a027cf9c8e4146a093169da9678922790027808f09e644eccfdebbcd094e0",
+  "_v11178_migrate_v12.py": "b4d3e101cc54204c12a914749f2ee9bdf4a30c6629b1f598ddd020cafaf46ab9",
+  "_v11180_migrate_w.py": "557e671835615e7de571c0a1a8567d05239f68a4e36363dd8aff833ca094f82d",
+  "_v11180_lich_dai.py": "9521725d04dc9c256e588ac0c79e9bbae5df9dcd552ea506625fbea9cb039f7e",
+  "_v11178_freeze.py": "63df03f9d8d44d0cfeaec7a175f39d2b62486531cbbe4852fbaec5646b76adc2"
+ },
+ "deployed_matches_repo": {
+  "_v11178_context_only_v11.py": true,
+  "_v11178_ranker.py": true,
+  "_v11178_lane.sh": true,
+  "_v11178_eod.py": true,
+  "_v11178_thu_v12.py": true,
+  "_v11178_thu_v2_ledger.py": true,
+  "_v11178_migrate_v12.py": true,
+  "_v11180_migrate_w.py": true,
+  "_v11180_lich_dai.py": true,
+  "_v11178_freeze.py": true
+ },
+ "prompt_sha256": "ff5af28f0816f613401f4941073bda905bfdf10b4b2dc153c713a65c9177dd3e",
+ "payload_schema_hash": "eac1204329b395ec4abc1be04405c42b5205bec657eafa4540cba3f66415f043",
+ "migration_sha256": {
+  "v12": "b4d3e101cc54204c12a914749f2ee9bdf4a30c6629b1f598ddd020cafaf46ab9",
+  "w": "557e671835615e7de571c0a1a8567d05239f68a4e36363dd8aff833ca094f82d"
+ },
+ "condition_catalog_hash": "b4156a2348625bf359fd32a7a7b8ab247f83fcc821d142d64822121409d99733",
+ "discovery_preregistration": {
+  "MT": {
+   "path": "/root/Lottery_AI_Test/artifacts/v11178/prereg_2026-09-11_MT_MT_DELTA_LIVE.json",
+   "sha256": "b80ea48be233e38ef9432026a06649f4165a7f4042ee346d7779d96dca5ed657",
+   "ton_tai": true,
+   "artifact_sha256": "e42dfbda3973213c8cb93b6fd8b30e529e4bf4f7e66d31535f2c1bc309c93dac",
+   "n_conditions": 30,
+   "fdr_survivors": 0,
+   "status_counts": {
+    "EXPLORATORY_DISCOVERY_ONLY": 30
+   }
+  }
+ },
+ "model_registry_snapshot_sha256": "f04ab096f280b9f1bdc6dfb3ef18e4dd44081078c20647a5df543f12423c4534",
+ "roster": [
+  "claude-opus-4-6",
+  "claude-opus-5-fast",
+  "claude-sonnet-4-6",
+  "deepseek-reasoner",
+  "deepseek-v4-pro-real",
+  "gemini-2.5-flash",
+  "gemini-2.5-pro",
+  "gemini-3.5-flash",
+  "gemini-3.6-flash",
+  "glm-5.1",
+  "glm-5.2",
+  "gpt-5-mini",
+  "gpt-5.4",
+  "gpt-5.5",
+  "gpt-5.6-sol-pro",
+  "gpt-oss-120b",
+  "grok-4.3",
+  "qwen3-max-thinking",
+  "qwen3.7-max"
+ ],
+ "roster_size": 19,
+ "roster_hash": "78578dc66f7f886d43487c84d33e2e0add3b6574c8f851c1b60d3fc68aa92498",
+ "provider_route_map": {
+  "claude-opus-4-6": "anthropic",
+  "claude-opus-5-fast": "openrouter",
+  "claude-sonnet-4-6": "anthropic",
+  "deepseek-reasoner": "deepseek",
+  "deepseek-v4-pro-real": "deepseek",
+  "gemini-2.5-flash": "google",
+  "gemini-2.5-pro": "google",
+  "gemini-3.5-flash": "google",
+  "gemini-3.6-flash": "google",
+  "glm-5.1": "openrouter",
+  "glm-5.2": "openrouter",
+  "gpt-5-mini": "openai",
+  "gpt-5.4": "openai",
+  "gpt-5.5": "openrouter",
+  "gpt-5.6-sol-pro": "openrouter",
+  "gpt-oss-120b": "openrouter",
+  "grok-4.3": "openrouter",
+  "qwen3-max-thinking": "openrouter",
+  "qwen3.7-max": "openrouter"
+ },
+ "station_schedule_version": "lottery_station_schedule/2026.09.11-1",
+ "station_schedule_sha256": "f0eb65fae10ea4010b59933f42865f9d89ca6a9bb774a72fad94389d4f500b16",
+ "station_schedule_check": {
+  "DAT": true,
+  "mien": {
+   "MN": {
+    "canonical": [
+     "Bình Dương",
+     "Trà Vinh",
+     "Vĩnh Long"
+    ],
+    "provenance": "BACKEND_SCHEDULER_PY_AST",
+    "n_ngay_lich_su": 25,
+    "khop_lich_su": 25,
+    "ty_le": 1.0,
+    "du_mau": true,
+    "lich_su_dat": true,
+    "chot_W2_4_dat": true,
+    "chot_W2_4": [
+     "Bình Dương",
+     "Trà Vinh",
+     "Vĩnh Long"
+    ],
+    "dat": true
+   },
+   "MT": {
+    "canonical": [
+     "Gia Lai",
+     "Ninh Thuận"
+    ],
+    "provenance": "BACKEND_SCHEDULER_PY_AST",
+    "n_ngay_lich_su": 25,
+    "khop_lich_su": 25,
+    "ty_le": 1.0,
+    "du_mau": true,
+    "lich_su_dat": true,
+    "chot_W2_4_dat": true,
+    "chot_W2_4": [
+     "Gia Lai",
+     "Ninh Thuận"
+    ],
+    "dat": true
+   },
+   "MB": {
+    "canonical": [
+     "Hải Phòng"
+    ],
+    "provenance": "OWNER_MANDATE_W2_4+HISTORY_CONFIRMED",
+    "n_ngay_lich_su": 25,
+    "khop_lich_su": 25,
+    "ty_le": 1.0,
+    "du_mau": true,
+    "lich_su_dat": true,
+    "chot_W2_4_dat": true,
+    "chot_W2_4": [
+     "Hải Phòng"
+    ],
+    "dat": true
+   }
+  }
+ },
+ "station_schedule": {
+  "MN": {
+   "stations": [
+    "Bình Dương",
+    "Trà Vinh",
+    "Vĩnh Long"
+   ],
+   "provenance": "BACKEND_SCHEDULER_PY_AST"
+  },
+  "MT": {
+   "stations": [
+    "Gia Lai",
+    "Ninh Thuận"
+   ],
+   "provenance": "BACKEND_SCHEDULER_PY_AST"
+  },
+  "MB": {
+   "stations": [
+    "Hải Phòng"
+   ],
+   "provenance": "OWNER_MANDATE_W2_4+HISTORY_CONFIRMED"
+  }
+ },
+ "transform_hash": "00ad70efb9ddf7e77afe80aef48249597ca60a3fe43c43140f989fb45a6f4300",
+ "transform_ids": [
+  "T1_identity",
+  "T2_reverse",
+  "T3_complement",
+  "T4_plus1"
+ ],
+ "transforms_frozen_at": "2026-09-11T01:45:00+07:00",
+ "threshold_scoring_hash": "9e76463a4112de387686e4dc371ee4ed6b8852a39128166076c546b9e9766095",
+ "scorer_version": "v11178_eod_threeway/1.3.0",
+ "schema_version": "context_derived_candidate_ranker/1.2.0",
+ "method_version": "V11178.2",
+ "chinh_sach_sau_freeze": [
+  "KHONG tune theo output 11/09",
+  "KHONG them/bot transform",
+  "KHONG doi threshold",
+  "KHONG doi roster",
+  "KHONG sua candidate sau khi thay actual"
+ ],
+ "khoa_cung": {
+  "SC12": "CLOSED · DO_NOT_REOPEN",
+  "PREDICTIVE_LIFT": "NOT_PROVEN",
+  "POOL_VERDICT": "HOLD",
+  "MATERIALIZATION_OPTION": "B",
+  "OUTPUT_COUNTERFACTUAL_RANK_PRODUCTION_WRITE": "FORBIDDEN",
+  "FINAL_BUNDLES_ZERO_WRITE": true
+ },
+ "packet_sha256": "83f6805ee8e8c2dbf240cf0612e0fb436fa037050b43ff25fed5ffee707f526f"
+}

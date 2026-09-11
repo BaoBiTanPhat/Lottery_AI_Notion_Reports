@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-11 02:02:55",
- "tong_thu_muc": 456,
- "latest_version": "V11178",
+ "_sinh_luc_vn": "2026-09-11 19:16:44",
+ "tong_thu_muc": 457,
+ "latest_version": "V11181",
  "latest": {
-  "version": "V11178",
+  "version": "V11181",
   "ngay": "2026-09-11",
-  "chu_de": "CHALLENGER V11 LIVE OUTPUT",
-  "thu_muc": "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911",
+  "chu_de": "W FAILCLOSED NATURAL LANE",
+  "thu_muc": "V11181_W_FAILCLOSED_NATURAL_LANE_20260911",
   "bao_cao": [
-   "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/REPORT_V11178.md"
+   "V11181_W_FAILCLOSED_NATURAL_LANE_20260911/REPORT_V11181.md"
   ],
   "ngu_canh": [
-   "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/CONVERSATION_CONTEXT_V11178_20260911.md"
+   "V11181_W_FAILCLOSED_NATURAL_LANE_20260911/CONVERSATION_CONTEXT_V11181_20260911.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11181",
+   "ngay": "2026-09-11",
+   "chu_de": "W FAILCLOSED NATURAL LANE",
+   "thu_muc": "V11181_W_FAILCLOSED_NATURAL_LANE_20260911",
+   "bao_cao": [
+    "V11181_W_FAILCLOSED_NATURAL_LANE_20260911/REPORT_V11181.md"
+   ],
+   "ngu_canh": [
+    "V11181_W_FAILCLOSED_NATURAL_LANE_20260911/CONVERSATION_CONTEXT_V11181_20260911.md"
+   ]
+  },
   {
    "version": "V11178",
    "ngay": "2026-09-11",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11165_PURE_CONTEXT_20260904/CONVERSATION_CONTEXT_V11165_20260905.md"
-   ]
-  },
-  {
-   "version": "V11164",
-   "ngay": "2026-09-04",
-   "chu_de": "EOD LIVE CLOSURE",
-   "thu_muc": "V11164_EOD_LIVE_CLOSURE_20260904",
-   "bao_cao": [
-    "V11164_EOD_LIVE_CLOSURE_20260904/REPORT_V11164.md"
-   ],
-   "ngu_canh": [
-    "V11164_EOD_LIVE_CLOSURE_20260904/CONVERSATION_CONTEXT_V11164_20260904.md"
    ]
   }
  ]
