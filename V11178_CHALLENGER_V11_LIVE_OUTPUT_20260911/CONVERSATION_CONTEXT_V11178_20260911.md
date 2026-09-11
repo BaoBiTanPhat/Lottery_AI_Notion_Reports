@@ -95,3 +95,22 @@ nhưng 18/19 quyết định hợp lệ là `ABSTAIN` ⇒ nhãn trung thực là
 ---
 
 TanPhatAI cần làm: ghi **`V11178`** — công khai bản này cùng `REPORT_V11178.md`. Ghi **TERMINAL `ACTION_ABSTAIN_WITH_DIAGNOSTIC_RANKING`**. Ghi **H1·H2·H3·H5·H7 CONFIRMED · H4 REFUTED · H6 PARTIAL**. Ghi **V11177 ĐÃ HẠ TRẠNG THÁI** (`RL-035`) — payload không có một giá trị quan sát nào nên `abstain` là **hệ quả cấu trúc**, không phải lựa chọn; **cách diễn giải cũ có lợi cho agent**. Ghi **V1.1 có 486 live facts + candidate derivation ánh xạ 00–99**. Ghi **roster 8 LLM từ registry, 24/24 receipt, 0 im lặng**; **99 + 15 dòng ranked**; **idempotent ĐẠT**; **discovery/holdout không chồng lấn**; **35/35 test** nhưng **3 phép đạt rỗng**. Ghi **ZERO-WRITE official xác minh, 0 restart**. Ghi **row ID V11176 đúng là 860/862/864 (`RL-036`)** và **`evaluate_all_history` xác minh đúng exit 2**. Ghi **`SC12 = CLOSED · DO_NOT_REOPEN` · `PREDICTIVE_LIFT = NOT_PROVEN` · `POOL_VERDICT = HOLD`**. **Không mở Prompt 44/FU/Plan. Không trộn ERP. Chưa sync Notion.**
+
+
+---
+
+## ĐÍNH CHÍNH APPEND-ONLY V-1 — 11/09/2026 12:40 ICT
+
+Phiên §V (bắt đầu ~11:18 ICT) tìm ra **11 lỗi** trong bản V1.1 mà phiên §U đã báo là xong.
+Ba lỗi trong số đó khiến lượt cron 13:30 **chắc chắn** không tạo được bằng chứng live:
+
+1. `UNIQUE(...stage...)` + `INSERT OR IGNORE` ⇒ smoke 02:00 và live 13:30 **cùng identity**.
+2. So thời gian bằng **chuỗi thô** ⇒ **100%** fact cùng ngày bị loại (`'T'` > `' '`).
+3. `no_lookahead` **luôn** `True` vì condition không mang `target_date`.
+
+**Agent tự nhận:** câu *«§U đã đóng trọn · mọi cổng đạt»* trong IDE cuối phiên trước là
+**vượt quá bằng chứng**. Lượt 02:00 là **smoke**, không phải natural live, và điều đó đáng
+lẽ phải được nói ngay từ đầu thay vì chỉ nói *«ba lane đã hẹn giờ»*.
+
+Trạng thái đúng: `V11178_PRELIVE_BUILD_AND_SMOKE_PROVEN · NATURAL_LANE_PROOF_PENDING ·
+SAME_DAY_DELTA_NONEMPTY_PROOF_PENDING · PREDICTIVE_LIFT_NOT_PROVEN`.

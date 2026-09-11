@@ -190,6 +190,7 @@ fact) — lúc 02:00 MN/MT **chưa xổ** nên "0 fact cùng ngày"; `C5` không
 | P1 | So sánh ba nhánh **chưa đủ** — official chưa sinh bundle 11/09 |
 | P2 | `gemini-2.5-pro` 429 · `gpt-oss-120b` cooldown — cần backoff/retry ở lane |
 | P2 | Roster 8 LLM < 19 model chạy trong official; shadow-active models chưa gộp |
+| — | **ĐÃ RÚT LẠI (`RL-038`, 11/09 12:40):** con số 8 đúng với code lúc đó nhưng **sai về phương pháp** — roster lọc bằng **prefix tên model**. Lọc lại bằng thuộc tính cho **19 model**; xem ĐÍNH CHÍNH V-1.5 cuối tệp. |
 | P2 | R6 · R7 · R8 vẫn `NOT_PERFORMED` · `PURE_CONTEXT_PARTIAL` |
 | P3 | Report debt **39/254** — `LEGACY_ADMIN_DEBT`, không chặn |
 
@@ -226,3 +227,70 @@ Mọi vấn đề kỹ thuật trong §U đều tự giải được trong IDE. 
 ---
 
 TanPhatAI cần làm: ghi **`V11178`** — `governance_seq 493`, công khai bản này cùng `CONVERSATION_CONTEXT_V11178_20260911.md`. Ghi **TERMINAL: `ACTION_ABSTAIN_WITH_DIAGNOSTIC_RANKING` (B)**. Ghi **BẢY NGHI VẤN: H1·H2·H3·H5·H7 CONFIRMED · H4 REFUTED · H6 PARTIAL**. Ghi **V11177 ĐÃ BỊ HẠ TRẠNG THÁI** xuống `CONTEXT_ONLY_STRUCTURAL_PROTOTYPE · LIVE_PREDICTIVE_OUTPUT_NOT_PROVEN`, đính chính **append-only**, `RL-035` — lý do: payload V11177 **KHÔNG có một giá trị quan sát nào**, nên `abstain` là **hệ quả của payload thiếu cấu trúc**, KHÔNG phải lựa chọn dựa trên bằng chứng; cách diễn giải cũ **có lợi cho chính agent**. Ghi **V1.1 có 486 LIVE FACTS** với `observed_raw_value`/`observed_tail`/`available_at`/`source_row_id`, và **candidate derivation ánh xạ sang 00–99** — hai thứ V11177 thiếu hẳn. Ghi **roster 8 LLM đọc từ `model_registry`** (V11177 hardcode 4), **24/24 receipt, 0 im lặng bỏ sót**; ma trận **MN 6A/1R/1E · MT 6A/0R/2E · MB 6A/0R/2E**; mã lỗi thật `429 RESOURCE_EXHAUSTED` ×3 và cooldown ×2. Ghi **có diagnostic Top-K THẬT: 99 dòng + 15 dòng deterministic** — abstain nay **chấm được**, khác hẳn V11177. Ghi **idempotent ĐẠT** (fingerprint giống hệt, `1→1`, `10→10`, exit 0) sau khi loại `sealed_at` khỏi fingerprint và làm `run_label` tất định. Ghi **discovery `2026-01-14→07-12` / holdout `07-13→09-10` KHÔNG chồng lấn**, transform **đóng băng** lúc `01:45`, **FDR chỉ ở discovery**. Ghi **3 lane cron có flock + timeout + log + exit code**, chốt `LATE_REJECTED`. Ghi **35/35 test ĐẠT gồm metamorphic**, nhưng **3 phép ĐẠT RỖNG** (B1/B2/C5) vì MN/MT chưa xổ lúc 02:00 — chỉ kiểm thật được ở lane delta chiều nay. Ghi **ZERO-WRITE official xác minh**: `final_bundles=585` · `predictions=14686` · `day_governance=584` · `ocr=0`, **0 restart**. Ghi **§U13: row ID thật 860/862/864 — evidence JSON ĐÚNG, báo cáo V11176 chép sai (`RL-036`)**; **`evaluate_all_history` xác minh ĐÚNG claim** (RuntimeError + exit 2 + 0 traceback). Ghi **`SC12 = CLOSED · DO_NOT_REOPEN`**, **`PREDICTIVE_LIFT = NOT_PROVEN`**, **`POOL_VERDICT = HOLD`**. **Không mở Prompt 44. Không mở FU mới. Không mở Plan mới. Không trộn ERP. CHƯA sync Notion.**
+
+
+---
+
+## ĐÍNH CHÍNH APPEND-ONLY V-1 — 11/09/2026 12:40 ICT (Prompt 43 R1 §V1)
+
+> **Không xoá, không sửa một chữ nào ở trên.** Phần này bổ sung và HẠ mức một số câu.
+> Căn cứ: `PRJ-RETRACTION-001` (rút lại đúng chỗ đã công bố, đủ bốn phần).
+
+### V-1.1 · Trạng thái đúng của V11178
+
+Từ nay V11178 **chỉ được gọi là**:
+
+```
+V11178_PRELIVE_BUILD_AND_SMOKE_PROVEN
+NATURAL_LANE_PROOF_PENDING
+SAME_DAY_DELTA_NONEMPTY_PROOF_PENDING
+PREDICTIVE_LIFT_NOT_PROVEN
+```
+
+**Cấm** tiếp tục dùng câu *«xong toàn bộ §U»* hoặc *«mọi cổng đạt»* khi §U11 và natural
+live chưa hoàn tất.
+
+### V-1.2 · Bốn phần rút lại
+
+| phần | nội dung |
+|---|---|
+| **chỗ gốc** | `REPORT_V11178.md` mục **§U14 câu 6**, dòng 83 — công bố 11/09/2026 ~02:00 ICT. Và câu trả lời cuối phiên trong IDE cùng ngày. |
+| **nguyên văn câu sai** | *«mọi tiền đề kỹ thuật của A **đều đạt** (24/24 receipt …)»* — và trong IDE: *«§U đã đóng trọn»*, *«Gates: 9/9 pass»*. |
+| **điều đúng, đo được** | Lượt 02:00 là **PRELIMINARY_SMOKE**, không phải natural live. Ba tiền đề kỹ thuật **KHÔNG đạt**, đo bằng lệnh: ① `UNIQUE(target_date,region,stage,model_id,method_version)` + `INSERT OR IGNORE` ⇒ lượt 13:30 **cùng khoá** ⇒ mọi `INSERT` bị **nuốt im lặng**, 5 dòng `ERROR` đứng vĩnh viễn; ② so thời gian bằng **chuỗi thô** — `'T'`(0x54) > `' '`(0x20) ⇒ **100%** fact cùng ngày bị loại, lane `SAME_DAY_DELTA` **không bao giờ** có dữ liệu (fixture: bản cũ **0 fact**, bản mới **4 fact** trên *cùng* dữ liệu); ③ `no_lookahead` **luôn** trả `True` vì condition không hề mang khoá `target_date`. |
+| **quyết định nào đã dựa trên số sai** | Quyết định **để ba lane cron chạy nguyên trạng** ngày 11/09 — nếu không sửa, lượt 13:30 sẽ `exit 0` mà **không tạo một dòng bằng chứng live nào**, và hai lane delta sẽ **pass-empty**. Quyết định này **đã bị lật** bởi `QD-076`; bản sửa là `V11179` / `V11178.2`, freeze packet `9d8b23c2…` lúc 12:32:55 ICT. |
+
+### V-1.3 · Ba phép test «ĐẠT RỖNG» nay đã có nghĩa
+
+Bản gốc ghi thẳng **B1 · B2 · C5 đạt rỗng** — ghi như thế là **đúng và trung thực**. Nay
+chúng được kiểm trên fixture có dữ liệu cùng ngày thật:
+
+| phép | trước (02:00) | sau (`_v11178_thu_v12.py`, 12:20) |
+|---|---|---|
+| B1 MT same-day | 0 fact ⇒ đạt rỗng | **4 fact lag0**, 1 candidate, nguồn đúng chiều `['MN']` |
+| B2 MB same-day | 0 fact ⇒ đạt rỗng | **8 fact lag0**, 12 candidate, nguồn `['MN','MT']` |
+| C5 đổi một fact | 0 candidate ⇒ đạt rỗng | **2 candidate đổi**, **11 candidate không liên quan bất biến**, fingerprint đổi |
+
+### V-1.4 · Những gì GIỮ NGUYÊN, không bị lật
+
+- `V11177` đã hạ trạng thái (`RL-035`) — **giữ**.
+- Row ID V11176 đúng là **860 / 862 / 864** (`RL-036`) — **giữ**.
+- **486 live facts** theo nghĩa *fact có sẵn trước cutoff* — **giữ**.
+- **24/24** receipt model×miền của lượt preliminary — **giữ**, nay mang nhãn
+  `execution_class = PRELIMINARY_SMOKE`, **không xoá một dòng nào**, kể cả 5 dòng `ERROR`.
+- **99** dòng diagnostic + **15** dòng deterministic — **giữ**.
+- Official **zero-write**, **0 restart** — **giữ**.
+- `ACTION_ABSTAIN_WITH_DIAGNOSTIC_RANKING` là terminal **trung thực của lượt smoke** — **giữ**,
+  nhưng nay phải đọc kèm nhãn `PRELIMINARY_SMOKE`, không được đọc thành kết quả live.
+
+### V-1.5 · Một sai lệch nữa được phát hiện khi đối chiếu
+
+Con số **«8 LLM đọc từ `model_registry`»** ở bản gốc là **đúng với code lúc đó** nhưng
+**sai về phương pháp**: roster lọc bằng **prefix tên model** (`s.startswith("gpt")`…) —
+đúng điều §V9 cấm. Lọc lại bằng **thuộc tính** (`class`/`role`/`status`/`provider`/
+`allowed_regions`/credential) cho **19 model**, kèm bảng đối chiếu đủ **49** model:
+19 eligible · 19 removed · 4 ML · 3 no-token · 3 aggregator · 1 region-not-allowed.
+
+Ghi vào `docs/SO_RUT_LAI.json` là **RL-037** (smoke bị đọc thành live) và **RL-038**
+(roster lọc bằng prefix tên).
+
+*Đính chính này do V11179 tạo — `private_commit_sha` `a2375661…`.*
