@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-11 19:24:10",
- "tong_thu_muc": 459,
- "latest_version": "V11181",
+ "_sinh_luc_vn": "2026-09-12 00:37:56",
+ "tong_thu_muc": 460,
+ "latest_version": "V11182",
  "latest": {
-  "version": "V11181",
-  "ngay": "2026-09-11",
-  "chu_de": "W FAILCLOSED NATURAL LANE",
-  "thu_muc": "V11181_W_FAILCLOSED_NATURAL_LANE_20260911",
+  "version": "V11182",
+  "ngay": "2026-09-12",
+  "chu_de": "X RETIRE FAMILY F4 F5",
+  "thu_muc": "V11182_X_RETIRE_FAMILY_F4_F5_20260912",
   "bao_cao": [
-   "V11181_W_FAILCLOSED_NATURAL_LANE_20260911/REPORT_V11181.md"
+   "V11182_X_RETIRE_FAMILY_F4_F5_20260912/REPORT_V11182.md"
   ],
   "ngu_canh": [
-   "V11181_W_FAILCLOSED_NATURAL_LANE_20260911/CONVERSATION_CONTEXT_V11181_20260911.md"
+   "V11182_X_RETIRE_FAMILY_F4_F5_20260912/CONVERSATION_CONTEXT_V11182_20260912.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11182",
+   "ngay": "2026-09-12",
+   "chu_de": "X RETIRE FAMILY F4 F5",
+   "thu_muc": "V11182_X_RETIRE_FAMILY_F4_F5_20260912",
+   "bao_cao": [
+    "V11182_X_RETIRE_FAMILY_F4_F5_20260912/REPORT_V11182.md"
+   ],
+   "ngu_canh": [
+    "V11182_X_RETIRE_FAMILY_F4_F5_20260912/CONVERSATION_CONTEXT_V11182_20260912.md"
+   ]
+  },
   {
    "version": "V11181",
    "ngay": "2026-09-11",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11168_DONG_VIEC_DANG_DO_20260906/CONVERSATION_CONTEXT_V11168_20260906.md"
-   ]
-  },
-  {
-   "version": "V11167",
-   "ngay": "2026-09-06",
-   "chu_de": "DON NO VA DONG VIEC DANG DO",
-   "thu_muc": "V11167_DON_NO_VA_DONG_VIEC_DANG_DO_20260906",
-   "bao_cao": [
-    "V11167_DON_NO_VA_DONG_VIEC_DANG_DO_20260906/REPORT_V11167.md"
-   ],
-   "ngu_canh": [
-    "V11167_DON_NO_VA_DONG_VIEC_DANG_DO_20260906/CONVERSATION_CONTEXT_V11167_20260906.md"
    ]
   }
  ]

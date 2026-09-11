@@ -1,0 +1,149 @@
+{
+ "artifact": "F4_DISCOVERY_RESULT",
+ "family": "F4_DIGIT_ALGEBRA",
+ "prereg_sha256": "ac7a05c035899dbfd2dae623c5a6c664930b24b96e8a4cb0461fa7e3a8993840",
+ "chay_luc": "2026-09-12T00:06:07.832198+07:00",
+ "theo_mien": {
+  "MN": {
+   "nen_per_station": 0.165936,
+   "nen_region_union": 0.431167,
+   "ty_le_lech_nen": 2.598,
+   "n_ngay": 180,
+   "n_cell_tho": 56070,
+   "n_cell_du_support": 56070
+  },
+  "MT": {
+   "nen_per_station": 0.164772,
+   "nen_region_union": 0.351667,
+   "ty_le_lech_nen": 2.134,
+   "n_ngay": 180,
+   "n_cell_tho": 43380,
+   "n_cell_du_support": 43380
+  },
+  "MB": {
+   "nen_per_station": 0.238239,
+   "nen_region_union": 0.238239,
+   "ty_le_lech_nen": 1.0,
+   "n_ngay": 176,
+   "n_cell_tho": 17820,
+   "n_cell_du_support": 17820
+  }
+ },
+ "n_cell_hieu_chinh": 117270,
+ "log10_p_tot_nhat": -4.844498137401692,
+ "bonferroni_log10": -6.370216920815891,
+ "fdr_alpha": 0.1,
+ "n_qua_fdr": 0,
+ "top5": [
+  {
+   "mien": "MT",
+   "key": [
+    "Gia Lai",
+    4,
+    "MN",
+    "Đồng Nai",
+    "Giải nhất",
+    0,
+    2,
+    "D3_sum_double"
+   ],
+   "hit": 14,
+   "support": 26,
+   "rate": 0.538462,
+   "nen": 0.164772,
+   "lift_pp": 37.369,
+   "log10_p": -4.8445,
+   "log10_q_bh": -0.0763
+  },
+  {
+   "mien": "MT",
+   "key": [
+    "Thừa Thiên Huế",
+    6,
+    "MN",
+    "Bình Phước",
+    "Giải tư",
+    3,
+    1,
+    "D4_prod_diff"
+   ],
+   "hit": 14,
+   "support": 26,
+   "rate": 0.538462,
+   "nen": 0.164772,
+   "lift_pp": 37.369,
+   "log10_p": -4.8445,
+   "log10_q_bh": -0.0763
+  },
+  {
+   "mien": "MT",
+   "key": [
+    "Quảng Bình",
+    3,
+    "MB",
+    "Hà Nội",
+    "Giải bảy",
+    2,
+    7,
+    "D5_swap_sum"
+   ],
+   "hit": 13,
+   "support": 25,
+   "rate": 0.52,
+   "nen": 0.164772,
+   "lift_pp": 35.523,
+   "log10_p": -4.3248,
+   "log10_q_bh": 0.0
+  },
+  {
+   "mien": "MT",
+   "key": [
+    "Đắk Lắk",
+    1,
+    "MB",
+    "Thái Bình",
+    "Giải năm",
+    4,
+    2,
+    "D4_prod_diff"
+   ],
+   "hit": 13,
+   "support": 25,
+   "rate": 0.52,
+   "nen": 0.164772,
+   "lift_pp": 35.523,
+   "log10_p": -4.3248,
+   "log10_q_bh": 0.0
+  },
+  {
+   "mien": "MN",
+   "key": [
+    "Bình Dương",
+    4,
+    "MB",
+    "Bắc Ninh",
+    "Giải năm",
+    3,
+    2,
+    "D5_swap_sum"
+   ],
+   "hit": 13,
+   "support": 25,
+   "rate": 0.52,
+   "nen": 0.165936,
+   "lift_pp": 35.406,
+   "log10_p": -4.2916,
+   "log10_q_bh": 0.0
+  }
+ ],
+ "cong_da_kiem": {
+  "G2_nen_dung_grain": true,
+  "G4_min_support": 15,
+  "G5_test": "binomial exact mot phia, log-space",
+  "G6_multiplicity": "BH-FDR tren 117270 cell cua ca ba mien",
+  "G9_min_effect_pp": 5.0
+ },
+ "terminal": "F4_DIGIT_ALGEBRA_RETIRED_AFTER_VALID_MEASUREMENT",
+ "ly_do": "0/117270 cell qua BH-FDR alpha=0.10 o discovery. Trot G6. HOLDOUT KHONG DUOC MO — dung vinh vien theo stop_rule.",
+ "holdout_da_mo": false
+}

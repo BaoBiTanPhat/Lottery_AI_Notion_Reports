@@ -1,0 +1,54 @@
+{
+ "artifact": "F4_DIGIT_ALGEBRA_PREREG",
+ "family": "F4_DIGIT_ALGEBRA",
+ "muc": "Prompt 43 R1 §X8",
+ "lap_luc": "2026-09-12T00:05:51.942337+07:00",
+ "ly_do_do_lai": "Phep do 11/09 SAI G2 — gop 3 dai MN roi so voi nen mot dai. Trang thai truoc do dung la MEASUREMENT_INVALID_NOT_EVALUATED, KHONG phai F4_NO_SIGNAL. Xem RL-039.",
+ "feature_definitions": {
+  "D1_sum_prod": "(a,b) -> ((a+b)%10, (a*b)%10)",
+  "D2_diff_sum": "(a,b) -> (|a-b|, (a+b)%10)",
+  "D3_sum_double": "(a,b) -> ((a+b)%10, (a+b)%10)",
+  "D4_prod_diff": "(a,b) -> ((a*b)%10, |a-b|)",
+  "D5_swap_sum": "(a,b) -> (b, (a+b)%10)"
+ },
+ "source": "region × station × prize × position, duoi 2 chu so cuoi",
+ "lags": [
+  1,
+  2,
+  3,
+  7
+ ],
+ "target": "target_region × target_station × target_weekday",
+ "grain": "PER_TARGET_STATION",
+ "cutoff_semantics": "source available_at < target cutoff, parse timezone-aware Asia/Ho_Chi_Minh; discovery/holdout chi doc ngay lich su nen source luon la ngay truoc",
+ "discovery_window": [
+  "2026-01-15",
+  "2026-07-13"
+ ],
+ "holdout_window": [
+  "2026-07-14",
+  "2026-09-11"
+ ],
+ "windows_overlap": false,
+ "MIN_SUPPORT_DISCOVERY": 15,
+ "MIN_HOLDOUT_SUPPORT": 20,
+ "MIN_EFFECT_PP": 5.0,
+ "Q_MAX": 0.05,
+ "FDR_ALPHA": 0.1,
+ "multiplicity_family": "BH-FDR tren TOAN BO cell x transform x lag x weekday cua CA BA mien trong mot lan hieu chinh",
+ "wilson_rule": "Wilson 95% lower bound phai > nen CUNG GRAIN",
+ "output_metric": "ty le trung tren tung (dai dich x thu x o nguon x lag x transform)",
+ "aggregation_grain": "PER_TARGET_STATION, KHONG collapse len mien",
+ "stop_rule": "0 cell qua G6 o ca ba mien => RETIRED vinh vien, khong chay lai bang nguong khac",
+ "cam_doc": [
+  "holdout khi chon feature",
+  "ket qua 11/09",
+  "official picks",
+  "model outputs",
+  "target-day actual",
+  "result-informed ranks"
+ ],
+ "code_sha256": "90ebccb53a56a28b335adb542d410f32f3dd3694cfd67f161982d0916ae47dc6",
+ "thuoc_do_sha256": "fcc122954b9959ff284f4f6e70bcf00d770078f2d6e244c12183267eda61f375",
+ "prereg_sha256": "ac7a05c035899dbfd2dae623c5a6c664930b24b96e8a4cb0461fa7e3a8993840"
+}

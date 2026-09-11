@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-11 19:24:10 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-12 00:37:56 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -17,11 +17,10 @@
 
 ## ⚠ QUÁ HẠN — còn treo
 
-**13 mục** quá hạn còn treo trong cửa sổ; in 13 mục cũ nhất.
+**12 mục** quá hạn còn treo trong cửa sổ; in 12 mục cũ nhất.
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
-| `FU-443` | `SC2608-5` | 🔴 **KHOÁ TẦNG `prepend()` — tầng SỚM, bắt đúng ca 25/08** | **QUÁ HẠN** 28/08 | `OWNER_DECISION_NEEDED` |
 | `FU-422` | `DO2908` | 🟡 **BỘ CHẤM ĐIỂM QUÉT LẠI TOÀN BỘ TỆP TRACE CHO TỪNG MODEL** | **QUÁ HẠN** 29/08 | `MEASURED_ROOT_CAUSE` |
 | `FU-432` | `DD3008` | 🔴 **BẢN ĐÓNG BĂNG ĐỐI CHỨNG THIẾU MỘT NỬA — hạn CỨNG trước 02:00 ngày  | **QUÁ HẠN** 30/08 | `MEASURED_BUT_NOT_FIXED` |
 | `FU-445` | `KS3108` | 🔴 **`DEGRADED_BODY_OVER_HTTP` CHƯA XÁC MINH** | **QUÁ HẠN** 31/08 | `AWAITING_OWNER_OK` |
@@ -37,7 +36,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11181` — W FAILCLOSED NATURAL LANE (2026-09-11)
+**Báo cáo mới nhất:** `V11182` — X RETIRE FAMILY F4 F5 (2026-09-12)
 
 ---
 

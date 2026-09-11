@@ -1,0 +1,66 @@
+{
+ "artifact": "F5_PREREG",
+ "family": "F5_POOLED_MULTIVARIATE_CONTEXT_RANKER",
+ "muc": "Prompt 43 R1 §X9",
+ "lap_luc": "2026-09-12T00:10:35.949143+07:00",
+ "grain": "target_date × target_region × target_station × candidate_tail(00-99)",
+ "nhan": "duoi xuat hien o DUNG dai do trong ngay do",
+ "don_vi_bang_chung": "(ngay × dai) — KHONG coi 100 dong cung ngay la 100 quan sat doc lap; chung dung chung ngu canh va bi rang buoc dung M duoi trung",
+ "features": [
+  "freq30_station",
+  "freq90_station",
+  "gap_station",
+  "gap_region",
+  "freq30_digit_a",
+  "freq30_digit_b",
+  "la_kep",
+  "co_trong_D1_region",
+  "co_trong_upstream_cungngay",
+  "freq30_x_entropy",
+  "gap_x_entropy",
+  "freq30_weekday_station"
+ ],
+ "feature_cutoff_rule": "moi feature chi dung ngay TRUOC ngay dich (cua so 90 ngay) cong upstream CUNG NGAY theo chieu MT<-MN, MB<-MN,MT",
+ "cam_feature": [
+  "target actual",
+  "official BT/ranked",
+  "model prediction",
+  "TOTAL/Combo/FINAL",
+  "shortlist suy tu ket qua"
+ ],
+ "model": "sklearn LogisticRegression L2, solver=lbfgs, seed=20260912",
+ "sklearn_version": "1.7.2",
+ "numpy_version": "2.2.6",
+ "preprocessing": "StandardScaler fit CHI tren train",
+ "split": "blocked time split, KHONG shuffle, KHONG random row split",
+ "discovery_window": [
+  "2026-01-15",
+  "2026-07-13"
+ ],
+ "holdout_window": [
+  "2026-07-14",
+  "2026-09-11"
+ ],
+ "hyperparameter_grid": {
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "class_weight": [
+   null,
+   "balanced"
+  ]
+ },
+ "tuning": "nested blocked validation TRONG discovery; holdout mo DUNG MOT LAN",
+ "metric_chinh": "Hit@10 o grain (ngay × dai)",
+ "metric_phu": "MRR voi E[RR] exact khong hoan lai",
+ "nen": "exact combinatorial per (ngay × dai): 1 - C(N-M,K)/C(N,K), N=100",
+ "kiem_dinh": "Poisson-binomial chinh xac (moi ngay-dai co nen rieng)",
+ "MIN_EFFECT_PP": 5.0,
+ "Q_MAX": 0.05,
+ "pass_gate": "tung mien phai TU DAT: effect>=5pp · q<=0.05 sau hieu chinh ho · Wilson lower > nen cung grain · khong suy giam nghiem trong o strata · tai lap bit-for-bit. CAM dung ket qua pooled de keo mien truot qua cong.",
+ "code_sha256": "e75af381650005c57e2cbc79bac33481e75a7c107c95b602000462d3a94cb3bb",
+ "thuoc_do_sha256": "fcc122954b9959ff284f4f6e70bcf00d770078f2d6e244c12183267eda61f375",
+ "prereg_sha256": "f3ab052b008e2dd5cda2cd40738f21b023431f6afee498b27d61896c238bb2e3"
+}

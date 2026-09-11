@@ -1,0 +1,108 @@
+{
+ "artifact": "PRE_X_MANIFEST",
+ "muc": "Prompt 43 R1 §X0",
+ "chup_luc_vps": "2026-09-11T23:57:09+07:00",
+ "host": "lotteryai-aulb",
+ "git_canonical": {
+  "private": {
+   "branch": "fu438/admin-only-p0a",
+   "head": "302ba45172053dda01250baba0c0e02d6a9c2436",
+   "origin_master": "302ba45172053dda01250baba0c0e02d6a9c2436",
+   "origin_branch": "302ba45172053dda01250baba0c0e02d6a9c2436",
+   "master": "302ba45172053dda01250baba0c0e02d6a9c2436",
+   "chua_push": "0",
+   "worktree_pham_vi_lam_viec": "?? web/backend/_v11182_pre_x_manifest.py",
+   "untracked_ngoai_pham_vi": "229"
+  },
+  "public": {
+   "branch": "main",
+   "head": "f8e5e374e68845e644ba3bcd5d44e7410d2ffcf7",
+   "origin": "f8e5e374e68845e644ba3bcd5d44e7410d2ffcf7",
+   "chua_push": "0",
+   "worktree": "SACH"
+  }
+ },
+ "vps_git_head": "68f0ea61fae30cf38e5d53516ae1a01bf09f579c",
+ "vps_git_head_ghi_chu": "VPS deploy la COPY FILE, khong phai git pull. HEAD o day la ban CU va KHONG phai commit canonical.",
+ "service": {
+  "MainPID": "3870722",
+  "NRestarts": "0",
+  "ActiveState": "active",
+  "health": "200"
+ },
+ "crontab_sha256": "8b7c84ea2cf8ef7af5674dd07bbc1b6c8d8301917a16c71c5d884b1afbc3a06e",
+ "crontab_n_dong": 153,
+ "crontab_challenger_lines": [
+  "5 19 * * * cd /root/Lottery_AI_Test && venv/bin/python3 web/backend/_v11178_eod.py --out /root/Lottery_AI_Test/artifacts/v11178/eod_$(date +\\%F).json >> web/backend/logs/v11178_EOD.log 2>&1",
+  "38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45",
+  "33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60",
+  "30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120"
+ ],
+ "crontab_nguyen_van_sha256_tung_dong": {
+  "5 19 * * * cd /root/Lottery_AI_Test && venv/bin/python3 web/backend/_v11178_eod.py --out /root/Lottery_AI_Test/artifacts/v11178/eod_$(date +\\%F).json >> web/backend/logs/v11178_EOD.log 2>&1": "adfaa575704114bc",
+  "38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45": "872a399b11af1395",
+  "33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60": "ac0ba90a1c4a3022",
+  "30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120": "b0fcef30d54468a9"
+ },
+ "tien_trinh_challenger": "(khong co)",
+ "deployed_sha256_challenger": {
+  "_v11178_context_only_v11.py": "06109c8076081a6fdf4645d5f64f8736ecbb8a702033ffe4a837cd8353c088c4",
+  "_v11178_ranker.py": "bef53464c797f16e02ab698dbc836165b028f339598b4ec07208a26652928ed2",
+  "_v11178_lane.sh": "1c2a7085885512ecd9a878788f179939e9d8c52b887beb8738871c1fadb6e58b",
+  "_v11178_eod.py": "31bee736c9e7d23c747b7a5073ad8bec3bd3dd457769eab379ff4416eb2d54e3",
+  "_v11178_freeze.py": "63df03f9d8d44d0cfeaec7a175f39d2b62486531cbbe4852fbaec5646b76adc2",
+  "_v11178_thu_v12.py": "9ae805edc6e49a7839b0ea75558010dbc1ab252bb866007ecdbe1ecf900ad653",
+  "_v11178_thu_v2_ledger.py": "5a9a027cf9c8e4146a093169da9678922790027808f09e644eccfdebbcd094e0",
+  "_v11178_migrate_v12.py": "b4d3e101cc54204c12a914749f2ee9bdf4a30c6629b1f598ddd020cafaf46ab9",
+  "_v11180_lich_dai.py": "9521725d04dc9c256e588ac0c79e9bbae5df9dcd552ea506625fbea9cb039f7e",
+  "_v11180_migrate_w.py": "557e671835615e7de571c0a1a8567d05239f68a4e36363dd8aff833ca094f82d",
+  "_v11180_thu_w.py": "384d7c0c39c8fed4c122cefcdafaac90a09fc6f669b4989f8f653bdc9f5076a8"
+ },
+ "deployed_sha256_official": {
+  "main.py": "d59a6ae94f9c3666eace95d2e772ed39e761a1711cb726b601d753d5d8f2f4ca",
+  "scheduler.py": "2961987d8c3a6e27a962cd3bf3f76c023eebd3a224d13789117edac2b47a9e63",
+  "database.py": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+  "gpt_analyzer.py": "758c29c13185763f406ab49e65c44ad2fcf610d7fb9b4c7142fa5c705de144d6",
+  "model_registry.py": "4c84ae9a0d87fa4d43e276c377b7b11ad1f0de22cbd71d8708781771fb782b30",
+  "combo_super.py": "47047b1dc0b7e0b991022eed4d8cdfb7e7e5ed464488e6b32a84e78371eb32fd",
+  "daily_evaluation.py": "3c91aba873add9684669284fb8e880657b0bc2c289d726d5ed0f9d784b659ff6"
+ },
+ "db_path": "/root/Lottery_AI_Test/data/lottery_ai.db",
+ "db_size_bytes": 849895424,
+ "bang_v11178": [
+  "v11178_attempts",
+  "v11178_challenger_runs",
+  "v11178_challenger_runs_pre_v12",
+  "v11178_lane_fires"
+ ],
+ "official_row_counts": {
+  "predictions": 14767,
+  "final_bundles": 588,
+  "lottery_results": 15462,
+  "model_daily_eval": 14631,
+  "day_governance": 587,
+  "shadow_candidates": 39206
+ },
+ "output_counterfactual_rank_NOT_NULL": 0,
+ "challenger_row_counts": {
+  "v11178_attempts": 149,
+  "v11178_challenger_runs": 124,
+  "v11178_challenger_runs_pre_v12": 27,
+  "v11178_lane_fires": 3
+ },
+ "immutable_historical_digest": {
+  "pham_vi": "day_governance WHERE date<='2026-09-09'",
+  "n_rows": 581,
+  "sha256": "786e350c886ab040146c49a08e4abb9e5d04acb0fdf706dc8b6f837bbd2c71fa",
+  "ghi_chu": "khoa tu V11174; phai KHONG DOI sau moi thao tac §X"
+ },
+ "freeze_packets": [
+  "FREEZE_MB_DELTA_LIVE_2026-09-11.json",
+  "FREEZE_MT_DELTA_LIVE_2026-09-11.json",
+  "FREEZE_PACKET_2026-09-11.json"
+ ],
+ "eod_artifacts": [
+  "eod_2026-09-11.json"
+ ],
+ "manifest_sha256": "8d3737267f5f613566994877282ede1ac49405c35c2cd41277584e2a4333daac"
+}

@@ -1,0 +1,15 @@
+=== 5 BO TEST ===
+_v11178_thu_v12.py: TONG: 51/51 DAT
+_v11178_thu_v2_ledger.py: TONG: 16/16 DAT
+_v11180_thu_w.py: TONG: 33/33 DAT
+_v11182_thu_x.py: TONG §X11: 50/50 DAT
+_v11182_thuoc_do --tu-kiem: TONG X6: 12/12 DAT
+
+=== CRONTAB SAU ===
+# 5 19 * * * cd /root/Lottery_AI_Test && venv/bin/python3 web/backend/_v11178_eod.py --out /root/Lottery_AI_Test/artifacts/v11178/eod_$(date +\%F).json >> web/backend/logs/v11178_EOD.log 2>&1
+# 38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45
+# 33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60
+# 30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120
+
+=== 0 dong F1 dang chay ===
+0

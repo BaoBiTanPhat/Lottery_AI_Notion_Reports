@@ -1,0 +1,339 @@
+{
+ "artifact": "F5_RESULT",
+ "family": "F5_POOLED_MULTIVARIATE_CONTEXT_RANKER",
+ "prereg_sha256": "f3ab052b008e2dd5cda2cd40738f21b023431f6afee498b27d61896c238bb2e3",
+ "chay_luc": "2026-09-12T00:10:36.041468+07:00",
+ "seed": 20260912,
+ "mien": {
+  "MN": {
+   "trang_thai": "DA_CHAM",
+   "hyper_chon_trong_discovery": {
+    "C": 0.01,
+    "class_weight": "balanced",
+    "val_hit@10": 0.8309859154929577
+   },
+   "n_train_rows": 56600,
+   "n_holdout_rows": 18800,
+   "n_quan_sat_ngay_dai": 188,
+   "observed_hit@10": 0.803191,
+   "exact_random_expected_hit@10": 0.848056,
+   "effect_pp": -4.486,
+   "wilson95_lower_observed": 0.740531,
+   "wilson_lower_vuot_nen": false,
+   "poisson_binomial_p_one_sided": 0.9618207619177157,
+   "baseline_tan_suat_don_gian": {
+    "observed_hit@10": 0.81383,
+    "effect_pp_vs_random": -3.423,
+    "observed_MRR": 0.355102,
+    "delta_mo_hinh_tru_baseline_pp": -1.064,
+    "ghi_chu": "Neu baseline tan suat ~ ngau nhien thi duong ong do dung. Neu no cao bat thuong thi phai nghi ro ri."
+   },
+   "observed_MRR": 0.352442,
+   "exact_random_expected_MRR": 0.347261,
+   "delta_MRR": 0.005181,
+   "he_so": {
+    "freq30_station": 0.00761,
+    "freq90_station": -0.0398,
+    "gap_station": 0.00103,
+    "gap_region": -0.00252,
+    "freq30_digit_a": 0.01639,
+    "freq30_digit_b": 0.01129,
+    "la_kep": -0.00413,
+    "co_trong_D1_region": -0.00083,
+    "co_trong_upstream_cungngay": 0.0,
+    "freq30_x_entropy": 0.00538,
+    "gap_x_entropy": 0.00159,
+    "freq30_weekday_station": 0.03741
+   },
+   "mau_chi_tiet": [
+    {
+     "ngay": "2026-07-14",
+     "dai": "Bạc Liêu",
+     "M": 17,
+     "hit": 1,
+     "rank": 2,
+     "rr": 0.5
+    },
+    {
+     "ngay": "2026-07-14",
+     "dai": "Bến Tre",
+     "M": 15,
+     "hit": 1,
+     "rank": 1,
+     "rr": 1.0
+    },
+    {
+     "ngay": "2026-07-14",
+     "dai": "Vũng Tàu",
+     "M": 17,
+     "hit": 1,
+     "rank": 8,
+     "rr": 0.125
+    },
+    {
+     "ngay": "2026-07-15",
+     "dai": "Cần Thơ",
+     "M": 15,
+     "hit": 0,
+     "rank": null,
+     "rr": 0.0
+    },
+    {
+     "ngay": "2026-07-15",
+     "dai": "Sóc Trăng",
+     "M": 14,
+     "hit": 1,
+     "rank": 6,
+     "rr": 0.1667
+    },
+    {
+     "ngay": "2026-07-15",
+     "dai": "Đồng Nai",
+     "M": 17,
+     "hit": 1,
+     "rank": 1,
+     "rr": 1.0
+    },
+    {
+     "ngay": "2026-07-16",
+     "dai": "An Giang",
+     "M": 18,
+     "hit": 0,
+     "rank": null,
+     "rr": 0.0
+    },
+    {
+     "ngay": "2026-07-16",
+     "dai": "Bình Thuận",
+     "M": 15,
+     "hit": 1,
+     "rank": 5,
+     "rr": 0.2
+    }
+   ],
+   "q_bh_gia_dinh_ho_3_mien": 0.9759162148063746,
+   "PASS_GATE": false
+  },
+  "MT": {
+   "trang_thai": "DA_CHAM",
+   "hyper_chon_trong_discovery": {
+    "C": 0.1,
+    "class_weight": null,
+    "val_hit@10": 0.8090909090909091
+   },
+   "n_train_rows": 43800,
+   "n_holdout_rows": 14500,
+   "n_quan_sat_ngay_dai": 145,
+   "observed_hit@10": 0.813793,
+   "exact_random_expected_hit@10": 0.851361,
+   "effect_pp": -3.757,
+   "wilson95_lower_observed": 0.742633,
+   "wilson_lower_vuot_nen": false,
+   "poisson_binomial_p_one_sided": 0.9145649594523196,
+   "baseline_tan_suat_don_gian": {
+    "observed_hit@10": 0.841379,
+    "effect_pp_vs_random": -0.998,
+    "observed_MRR": 0.342159,
+    "delta_mo_hinh_tru_baseline_pp": -2.759,
+    "ghi_chu": "Neu baseline tan suat ~ ngau nhien thi duong ong do dung. Neu no cao bat thuong thi phai nghi ro ri."
+   },
+   "observed_MRR": 0.320099,
+   "exact_random_expected_MRR": 0.349808,
+   "delta_MRR": -0.02971,
+   "he_so": {
+    "freq30_station": -0.00223,
+    "freq90_station": -0.03124,
+    "gap_station": -0.00186,
+    "gap_region": -0.00814,
+    "freq30_digit_a": -0.03269,
+    "freq30_digit_b": 0.04846,
+    "la_kep": 0.01346,
+    "co_trong_D1_region": -0.0197,
+    "co_trong_upstream_cungngay": -0.02701,
+    "freq30_x_entropy": -0.00094,
+    "gap_x_entropy": -0.00465,
+    "freq30_weekday_station": 0.01042
+   },
+   "mau_chi_tiet": [
+    {
+     "ngay": "2026-07-14",
+     "dai": "Quảng Nam",
+     "M": 17,
+     "hit": 0,
+     "rank": null,
+     "rr": 0.0
+    },
+    {
+     "ngay": "2026-07-14",
+     "dai": "Đắk Lắk",
+     "M": 18,
+     "hit": 1,
+     "rank": 3,
+     "rr": 0.3333
+    },
+    {
+     "ngay": "2026-07-15",
+     "dai": "Khánh Hòa",
+     "M": 15,
+     "hit": 1,
+     "rank": 2,
+     "rr": 0.5
+    },
+    {
+     "ngay": "2026-07-15",
+     "dai": "Đà Nẵng",
+     "M": 15,
+     "hit": 1,
+     "rank": 1,
+     "rr": 1.0
+    },
+    {
+     "ngay": "2026-07-16",
+     "dai": "Bình Định",
+     "M": 17,
+     "hit": 1,
+     "rank": 5,
+     "rr": 0.2
+    },
+    {
+     "ngay": "2026-07-16",
+     "dai": "Quảng Bình",
+     "M": 17,
+     "hit": 1,
+     "rank": 2,
+     "rr": 0.5
+    },
+    {
+     "ngay": "2026-07-16",
+     "dai": "Quảng Trị",
+     "M": 15,
+     "hit": 0,
+     "rank": null,
+     "rr": 0.0
+    },
+    {
+     "ngay": "2026-07-17",
+     "dai": "Gia Lai",
+     "M": 16,
+     "hit": 0,
+     "rank": null,
+     "rr": 0.0
+    }
+   ],
+   "q_bh_gia_dinh_ho_3_mien": 0.9759162148063746,
+   "PASS_GATE": false
+  },
+  "MB": {
+   "trang_thai": "DA_CHAM",
+   "hyper_chon_trong_discovery": {
+    "C": 0.1,
+    "class_weight": null,
+    "val_hit@10": 0.9318181818181818
+   },
+   "n_train_rows": 17600,
+   "n_holdout_rows": 6000,
+   "n_quan_sat_ngay_dai": 60,
+   "observed_hit@10": 0.883333,
+   "exact_random_expected_hit@10": 0.940986,
+   "effect_pp": -5.765,
+   "wilson95_lower_observed": 0.77821,
+   "wilson_lower_vuot_nen": false,
+   "poisson_binomial_p_one_sided": 0.9759162148063746,
+   "baseline_tan_suat_don_gian": {
+    "observed_hit@10": 0.933333,
+    "effect_pp_vs_random": -0.765,
+    "observed_MRR": 0.428743,
+    "delta_mo_hinh_tru_baseline_pp": -5.0,
+    "ghi_chu": "Neu baseline tan suat ~ ngau nhien thi duong ong do dung. Neu no cao bat thuong thi phai nghi ro ri."
+   },
+   "observed_MRR": 0.464894,
+   "exact_random_expected_MRR": 0.443977,
+   "delta_MRR": 0.020917,
+   "he_so": {
+    "freq30_station": -0.01687,
+    "freq90_station": 0.01444,
+    "gap_station": 0.01005,
+    "gap_region": -0.00073,
+    "freq30_digit_a": 0.03105,
+    "freq30_digit_b": -0.01312,
+    "la_kep": -0.02913,
+    "co_trong_D1_region": -0.02476,
+    "co_trong_upstream_cungngay": 0.02316,
+    "freq30_x_entropy": -0.01053,
+    "gap_x_entropy": 0.00875,
+    "freq30_weekday_station": 0.03938
+   },
+   "mau_chi_tiet": [
+    {
+     "ngay": "2026-07-14",
+     "dai": "Quảng Ninh",
+     "M": 25,
+     "hit": 1,
+     "rank": 8,
+     "rr": 0.125
+    },
+    {
+     "ngay": "2026-07-15",
+     "dai": "Bắc Ninh",
+     "M": 24,
+     "hit": 1,
+     "rank": 1,
+     "rr": 1.0
+    },
+    {
+     "ngay": "2026-07-16",
+     "dai": "Hà Nội",
+     "M": 22,
+     "hit": 1,
+     "rank": 1,
+     "rr": 1.0
+    },
+    {
+     "ngay": "2026-07-17",
+     "dai": "Hải Phòng",
+     "M": 22,
+     "hit": 1,
+     "rank": 6,
+     "rr": 0.1667
+    },
+    {
+     "ngay": "2026-07-18",
+     "dai": "Nam Định",
+     "M": 24,
+     "hit": 1,
+     "rank": 2,
+     "rr": 0.5
+    },
+    {
+     "ngay": "2026-07-19",
+     "dai": "Thái Bình",
+     "M": 24,
+     "hit": 1,
+     "rank": 3,
+     "rr": 0.3333
+    },
+    {
+     "ngay": "2026-07-20",
+     "dai": "Hà Nội",
+     "M": 22,
+     "hit": 1,
+     "rank": 1,
+     "rr": 1.0
+    },
+    {
+     "ngay": "2026-07-21",
+     "dai": "Quảng Ninh",
+     "M": 22,
+     "hit": 1,
+     "rank": 5,
+     "rr": 0.2
+    }
+   ],
+   "q_bh_gia_dinh_ho_3_mien": 0.9759162148063746,
+   "PASS_GATE": false
+  }
+ },
+ "mien_dat_gate": [],
+ "terminal": "F5_RETIRED_NO_SIGNAL",
+ "ghi_chu_gate": "Moi mien phai TU DAT. KHONG dung ket qua pooled de keo mien truot qua cong."
+}

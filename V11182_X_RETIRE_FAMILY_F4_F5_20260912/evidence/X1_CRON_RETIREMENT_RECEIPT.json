@@ -1,0 +1,49 @@
+{
+ "artifact": "X1_CRON_RETIREMENT_RECEIPT",
+ "muc": "Prompt 43 R1 §X1",
+ "luc": "2026-09-11T23:58:25+07:00",
+ "family": "IDENTITY_REVERSE_COMPLEMENT_PLUS1",
+ "che_do": "THUC_THI",
+ "crontab_before_sha256": "6e2687ebfae9b41d0644f01475bc330f28f38a1291dad685259957973ed1945d",
+ "crontab_after_sha256": "4e16ed3d9e1f70e136a8cf1d2ec96cd80ac0f6d86c273305a859d0b97c287488",
+ "n_dong_before": 153,
+ "n_dong_after": 158,
+ "n_dong_da_tat": 4,
+ "dong_da_tat": [
+  "5 19 * * * cd /root/Lottery_AI_Test && venv/bin/python3 web/backend/_v11178_eod.py --out /root/Lottery_AI_Test/artifacts/v11178/eod_$(date +\\%F).json >> web/backend/logs/v11178_EOD.log 2>&1",
+  "38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45",
+  "33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60",
+  "30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120"
+ ],
+ "diff": [
+  "--- crontab_before",
+  "+++ crontab_after",
+  "@@ -156,6 +156,11 @@",
+  " # co deadline cung, vi do 120 ngay: MN ve sau 16:38 o 20/120 ngay, MT ve sau 17:33 o 6/120.",
+  "-5 19 * * * cd /root/Lottery_AI_Test && venv/bin/python3 web/backend/_v11178_eod.py --out /root/Lottery_AI_Test/artifacts/v11178/eod_$(date +\\%F).json >> web/backend/logs/v11178_EOD.log 2>&1",
+  "-38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45",
+  "-33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60",
+  "-30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120",
+  "+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.",
+  "+# 5 19 * * * cd /root/Lottery_AI_Test && venv/bin/python3 web/backend/_v11178_eod.py --out /root/Lottery_AI_Test/artifacts/v11178/eod_$(date +\\%F).json >> web/backend/logs/v11178_EOD.log 2>&1",
+  "+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.",
+  "+# 38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45",
+  "+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.",
+  "+# 33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60",
+  "+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.",
+  "+# 30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120",
+  " ",
+  "+# GO VE: bo dau '#' o cac dong V11178 ben duoi, hoac `crontab /root/Lottery_AI_Test/artifacts/v11178/crontab_before_X1.txt`"
+ ],
+ "rollback": "crontab /root/Lottery_AI_Test/artifacts/v11178/crontab_before_X1.txt",
+ "khong_dung_toi": "scheduler production · ai_chain · scraper · auto_verify · official bundle jobs · moi cron Lottery khac",
+ "trang_thai": "F1_PROVIDER_CRON_DISABLED_RETIRED_NO_SIGNAL",
+ "dong_dang_chay_before": 97,
+ "dong_dang_chay_after": 93,
+ "giam_dung_bang_so_tat": true,
+ "xac_minh_sau_khi_ghi": {
+  "sha256_doc_lai": "4e16ed3d9e1f70e136a8cf1d2ec96cd80ac0f6d86c273305a859d0b97c287488",
+  "khop": true,
+  "con_dong_F1_dang_chay": []
+ }
+}

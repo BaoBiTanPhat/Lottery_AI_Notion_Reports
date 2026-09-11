@@ -228,6 +228,10 @@ này bị loại sạch và lane vẫn `exit 0`.
 Ngày 11/09 có **MN 41 · MT 32 · MB 24** đuôi (trên 100) đã về. Với mật độ đó, **Top-10 chọn
 ngẫu nhiên gần như chắc chắn trúng** — nên mọi con số hit phải trừ nền `1−(1−b)^k` (`RM-18`).
 
+> **ĐÃ RÚT LẠI — `RL-040` (12/09).** Cột `E[RR]` dưới đây tính bằng công thức **có hoàn
+> lại**; Top-K là K đuôi rút **không hoàn lại** nên giá trị đúng là **0,6207 / 0,5367 /
+> 0,4487**. Xem ĐÍNH CHÍNH X-1 ở cuối tệp. Hướng kết luận không đổi.
+
 | nhánh | RR đo được | `E[RR]` ngẫu nhiên | chênh |
 |---|---|---|---|
 | `[1]` OFFICIAL MN | 0,1667 | 0,6192 | **−0,4525** |
@@ -238,7 +242,8 @@ ngẫu nhiên gần như chắc chắn trúng** — nên mọi con số hit ph�
 | `[2]` DETERMINISTIC | — | — | **0 dòng** (không điểm dương nào) |
 
 Model tốt nhất của challenger (`gpt-5.6-sol-pro`, MT, RR = 0,5000) **vẫn thấp hơn mức ngẫu
-nhiên 0,5345**. Cả official lẫn challenger đều **ở hoặc dưới ngẫu nhiên** trong ngày này.
+nhiên 0,5345** — con số này **ĐÃ RÚT LẠI** (`RL-040`), giá trị đúng là **0,5367**; kết luận
+"vẫn thấp hơn" **không đổi**. Cả official lẫn challenger đều **ở hoặc dưới ngẫu nhiên** trong ngày này.
 
 **`ONE_DAY_SCOREABLE_RECEIPT`. n = 1. Không chứng minh gì cho bên nào.**
 Không tính `would_save`/`would_break`. 3-càng **không tính** — giữ kiến trúc
@@ -326,3 +331,50 @@ Bốn họ đã thử và loại chính xác bằng điều kiện nào — xem
 ---
 
 TanPhatAI cần làm: ghi **`V11181`** — `governance_seq 496`, công khai bản này cùng `CONVERSATION_CONTEXT_V11181_20260911.md` và `NEXT_CONTEXT_ONLY_CHALLENGER_CONTRACT.md`. Ghi **TERMINAL KỸ THUẬT `UNFROZEN_NATURAL_RUN_DIAGNOSTIC_ONLY`** — lane `BASE_D1` 13:30 nổ tự nhiên nhưng **gói freeze không hợp lệ** (7/16 trường thiếu/bẩn, có `ssh_khong_ap_dung`), nên **không đóng** natural-proof gate; hai lane delta đạt `DELTA_ONLY_NATURAL_DIAGNOSTIC_RECEIPT` (§W6) — **phân loại phụ, không phải nâng cấp**. Ghi **TERMINAL DỰ BÁO `IDENTITY_REVERSE_COMPLEMENT_PLUS1_FAMILY_RETIRED_NO_SIGNAL`** (BH-FDR giữ **0/5832 · 0/3888 · 0/1944**; p tốt nhất lớn hơn Bonferroni **10×/30×/21×**) và **`NO_SUCCESSOR_PASSES_PREDEPLOY_GATE`** (4 họ thử, loại bằng `G6`/`G6`/`G9`/`G2`). Ghi **`SAME_DAY_DELTA_NONEMPTY_PROOF` ĐẠT**: MT **54** fact lag=0, MB **90** (54 MN + 36 MT), upstream MN 3/3 đài + MT 2/2 đài, MT chờ **102 giây** vì MN về `16:39:40` — **99 giây sau khi cron nổ**. Ghi **`system_action_decision = ABSTAIN` trên 38/38 receipt delta**, trong đó `MB_DELTA_LIVE` có **1 model trả `RANKED` mà hệ vẫn `ABSTAIN`** — bằng chứng sống của §W1.3. Ghi **EOD có nền đúng cho bộ-K**: official MN/MT **dưới** ngẫu nhiên (−0,45 / −0,28), MB +0,05; challenger MT/MB **dưới** ngẫu nhiên (−0,25 / −0,15); model "tốt nhất" RR 0,5000 **vẫn dưới** `E[RR]`=0,5345 ⇒ nhãn tối đa **`ONE_DAY_SCOREABLE_RECEIPT`**, n=1. Ghi **ZERO-WRITE**: `final_bundles=588` · `predictions=14.767` · `day_governance=587` đều do **production** (`weighted_voting_wr` / `ai_chain` / `auto_verify`), **0 dòng** mang dấu vết `11178`; `output_counterfactual_rank NOT NULL=0`; **0 restart**. Ghi **`RL-037` · `RL-038` · `RL-039`** — đặc biệt `RL-039`: suýt báo hai họ vô tín hiệu là *"43,1% vs nền 16,6%, p=0"*, thật ra là `RM-18` (so bộ-k với nền một-số), bằng chứng `3329/7719 = 43,1%` **trùng khít** nền gộp miền `0,4312`. Ghi **`QD-077`** với 7 mệnh đề máy kiểm được. Ghi **code đi trước tài liệu** ở phiên này: `_v11180_lich_dai.py` · `_v11180_migrate_w.py` · `_v11180_thu_w.py` · `_v11178_freeze.py` viết lại — xem `docs/SO_TUONG_TAC_OWNER.md` mục 11/09. **Không mở Prompt 44. Không mở FU mới. Không mở Plan mới. Không trộn ERP. CHƯA sync Notion — chỉ sync sau khi Owner duyệt gói delta.**
+
+
+---
+
+## ĐÍNH CHÍNH APPEND-ONLY X-1 — 12/09/2026 00:50 ICT (Prompt 43 R1 §X6 · `RL-040`)
+
+> **Không xoá, không sửa một chữ nào ở trên.** Phần này sửa **công thức** và **chữ số thứ ba**
+> của mục 12. **Hướng kết luận không đổi.**
+
+### Câu sai, nguyên văn
+
+Mục 12 ghi `E[RR]` ngẫu nhiên là **0,6192** (MN) · **0,5345** (MT) · **0,4459** (MB), tính
+bằng `Σ b(1−b)^(i−1)/i`. **Ba con số đó ĐÃ RÚT LẠI** — nêu ở đây chỉ để đối chiếu.
+
+### Điều đúng
+
+Công thức đó là mô hình **CÓ HOÀN LẠI** — mỗi hạng là một Bernoulli độc lập. Nhưng Top-K là
+**K đuôi KHÁC NHAU rút KHÔNG HOÀN LẠI** từ 100 đuôi. Nền đúng phải là tổ hợp chính xác:
+
+```
+P(hạng trúng đầu tiên = r) = [ P(N−M, r−1) / P(N, r−1) ] × M / (N−r+1)
+E[RR]                      = Σ_{r=1..K} P(R=r) / r
+```
+
+| miền | M | `E[RR]` **ĐÃ RÚT LẠI** | **`E[RR]` ĐÚNG** | observed RR | delta **ĐÃ RÚT** | **delta ĐÚNG** |
+|---|---|---|---|---|---|---|
+| MN | 41 | 0,6192 | **0,6207** | 0,1667 | −0,4525 | **−0,4541** |
+| MT | 32 | 0,5345 | **0,5367** | 0,2500 | −0,2845 | **−0,2867** |
+| MB | 24 | 0,4459 | **0,4487** | 0,5000 | +0,0541 | **+0,0513** |
+
+Challenger (trung bình): MT **−0,2515** (đã công bố −0,2494) · MB **−0,1533** (đã công bố −0,1505).
+
+### Kết luận có đổi không — KHÔNG
+
+Cả official lẫn challenger vẫn **ở hoặc dưới ngẫu nhiên**; model "tốt nhất"
+`gpt-5.6-sol-pro` RR **0,5000** vẫn **dưới** nền đúng **0,5367**. Sai ở **công thức** và ở
+**chữ số thứ ba**, không ở hướng.
+
+### Vì sao vẫn phải rút lại
+
+Công thức sai đã được trình bày như **thước chuẩn**. Với `K` lớn hơn hoặc `M` lớn hơn, sai số
+của nó tăng dần — ai dùng lại nó sẽ sai nhiều hơn chúng ta đã sai.
+
+**Tái lập:** `python3 web/backend/_v11182_thuoc_do.py` (in cạnh nhau cả hai công thức) ·
+`--tu-kiem` 12/12 ĐẠT, gồm fixture **tính tay** `N=5, M=2, K=2 → hit@2 = 7/10, E[RR] = 11/20`.
+
+*Đính chính do V11182 tạo.*
