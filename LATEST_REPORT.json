@@ -1,7 +1,7 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-11 19:16:44",
- "tong_thu_muc": 457,
+ "_sinh_luc_vn": "2026-09-11 19:24:10",
+ "tong_thu_muc": 459,
  "latest_version": "V11181",
  "latest": {
   "version": "V11181",
@@ -26,6 +26,30 @@
    ],
    "ngu_canh": [
     "V11181_W_FAILCLOSED_NATURAL_LANE_20260911/CONVERSATION_CONTEXT_V11181_20260911.md"
+   ]
+  },
+  {
+   "version": "V11180",
+   "ngay": "2026-09-11",
+   "chu_de": "W P0 ACTION GATE",
+   "thu_muc": "V11180_W_P0_ACTION_GATE_20260911",
+   "bao_cao": [
+    "V11180_W_P0_ACTION_GATE_20260911/REPORT_V11180.md"
+   ],
+   "ngu_canh": [
+    "V11180_W_P0_ACTION_GATE_20260911/CONVERSATION_CONTEXT_V11180_20260911.md"
+   ]
+  },
+  {
+   "version": "V11179",
+   "ngay": "2026-09-11",
+   "chu_de": "V PRELIVE HARDENING",
+   "thu_muc": "V11179_V_PRELIVE_HARDENING_20260911",
+   "bao_cao": [
+    "V11179_V_PRELIVE_HARDENING_20260911/REPORT_V11179.md"
+   ],
+   "ngu_canh": [
+    "V11179_V_PRELIVE_HARDENING_20260911/CONVERSATION_CONTEXT_V11179_20260911.md"
    ]
   },
   {
@@ -170,30 +194,6 @@
    ],
    "ngu_canh": [
     "V11167_DON_NO_VA_DONG_VIEC_DANG_DO_20260906/CONVERSATION_CONTEXT_V11167_20260906.md"
-   ]
-  },
-  {
-   "version": "V11166",
-   "ngay": "2026-09-05",
-   "chu_de": "TONG LUC VA DON DEP",
-   "thu_muc": "V11166_TONG_LUC_VA_DON_DEP_20260905",
-   "bao_cao": [
-    "V11166_TONG_LUC_VA_DON_DEP_20260905/REPORT_V11166.md"
-   ],
-   "ngu_canh": [
-    "V11166_TONG_LUC_VA_DON_DEP_20260905/CONVERSATION_CONTEXT_V11166_20260906.md"
-   ]
-  },
-  {
-   "version": "V11165",
-   "ngay": "2026-09-04",
-   "chu_de": "PURE CONTEXT",
-   "thu_muc": "V11165_PURE_CONTEXT_20260904",
-   "bao_cao": [
-    "V11165_PURE_CONTEXT_20260904/REPORT_V11165.md"
-   ],
-   "ngu_canh": [
-    "V11165_PURE_CONTEXT_20260904/CONVERSATION_CONTEXT_V11165_20260905.md"
    ]
   }
  ]
