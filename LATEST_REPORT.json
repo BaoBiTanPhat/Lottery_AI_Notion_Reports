@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-12 00:37:56",
- "tong_thu_muc": 460,
- "latest_version": "V11182",
+ "_sinh_luc_vn": "2026-09-13 20:13:13",
+ "tong_thu_muc": 461,
+ "latest_version": "V11183",
  "latest": {
-  "version": "V11182",
-  "ngay": "2026-09-12",
-  "chu_de": "X RETIRE FAMILY F4 F5",
-  "thu_muc": "V11182_X_RETIRE_FAMILY_F4_F5_20260912",
+  "version": "V11183",
+  "ngay": "2026-09-13",
+  "chu_de": "Y LIVE TERMINAL 13SEP",
+  "thu_muc": "V11183_Y_LIVE_TERMINAL_13SEP_20260913",
   "bao_cao": [
-   "V11182_X_RETIRE_FAMILY_F4_F5_20260912/REPORT_V11182.md"
+   "V11183_Y_LIVE_TERMINAL_13SEP_20260913/REPORT_V11183.md"
   ],
   "ngu_canh": [
-   "V11182_X_RETIRE_FAMILY_F4_F5_20260912/CONVERSATION_CONTEXT_V11182_20260912.md"
+   "V11183_Y_LIVE_TERMINAL_13SEP_20260913/CONVERSATION_CONTEXT_V11183_20260913.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11183",
+   "ngay": "2026-09-13",
+   "chu_de": "Y LIVE TERMINAL 13SEP",
+   "thu_muc": "V11183_Y_LIVE_TERMINAL_13SEP_20260913",
+   "bao_cao": [
+    "V11183_Y_LIVE_TERMINAL_13SEP_20260913/REPORT_V11183.md"
+   ],
+   "ngu_canh": [
+    "V11183_Y_LIVE_TERMINAL_13SEP_20260913/CONVERSATION_CONTEXT_V11183_20260913.md"
+   ]
+  },
   {
    "version": "V11182",
    "ngay": "2026-09-12",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11169_GOI_SUA_THUOC_DO_20260906/CONVERSATION_CONTEXT_V11169_20260906.md"
-   ]
-  },
-  {
-   "version": "V11168",
-   "ngay": "2026-09-06",
-   "chu_de": "DONG VIEC DANG DO",
-   "thu_muc": "V11168_DONG_VIEC_DANG_DO_20260906",
-   "bao_cao": [
-    "V11168_DONG_VIEC_DANG_DO_20260906/REPORT_V11168.md"
-   ],
-   "ngu_canh": [
-    "V11168_DONG_VIEC_DANG_DO_20260906/CONVERSATION_CONTEXT_V11168_20260906.md"
    ]
   }
  ]
