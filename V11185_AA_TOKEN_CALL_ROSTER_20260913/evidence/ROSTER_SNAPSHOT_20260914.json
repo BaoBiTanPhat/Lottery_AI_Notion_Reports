@@ -1,0 +1,80 @@
+{
+ "_meta": {
+  "roster_version": "token_call_roster/2026.09.14-1",
+  "owner_approval_ref": "QD-080 · §Z khoá 2-6 (13/09/2026 20:44 ICT) · §AA mục D",
+  "effective_from": "2026-09-14T00:00:00+07:00",
+  "previous_version": null,
+  "previous_behaviour": "model_registry.TOKEN_MODELS (8 direct-token LLM output-eligible) dung THANG o moi call-site scheduler.py",
+  "rollback": "python web/backend/_v11185_roster_goi_token.py --go-ve  (dat _KHAN_CAP_DUNG_TOKEN_MODELS=1, khoi phuc hanh vi truoc §AA)",
+  "ghi_chu_bang_chung": "replay V11184 tren cohort dong bang, loai ngay override: MN -0.79pp · MT +0.72pp · MB -0.74pp, p=1.0000 ca ba. DOC DUNG: cat mot nua direct LLM KHONG lam phat hien thay doi chat luong — KHONG phai 'roster moi tot hon'."
+ },
+ "mien": {
+  "MN": {
+   "ok": true,
+   "models": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "gpt-oss-120b",
+    "claude-sonnet-4-6"
+   ],
+   "core": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "gpt-oss-120b"
+   ],
+   "challenger": [
+    "claude-sonnet-4-6"
+   ],
+   "loai_bo": []
+  },
+  "MT": {
+   "ok": true,
+   "models": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "glm-5.1",
+    "gpt-oss-120b"
+   ],
+   "core": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "glm-5.1"
+   ],
+   "challenger": [
+    "gpt-oss-120b"
+   ],
+   "loai_bo": []
+  },
+  "MB": {
+   "ok": true,
+   "models": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "gpt-oss-120b",
+    "glm-5.1"
+   ],
+   "core": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "gpt-oss-120b"
+   ],
+   "challenger": [
+    "glm-5.1"
+   ],
+   "loai_bo": []
+  }
+ },
+ "ngoai_roster_goi": {
+  "gemini-2.5-pro": "khong con trong active call roster o bat ky mien nao (§AA D)",
+  "claude-sonnet-4-6@MT": "chi la CHALLENGER cua MN",
+  "claude-sonnet-4-6@MB": "chi la CHALLENGER cua MN",
+  "glm-5.1@MN": "Gate 1 coverage 89.7% < 90 o MN; la CORE cua MT va CHALLENGER cua MB"
+ },
+ "quarantined": [
+  "deepseek-reasoner",
+  "deepseek-v4-pro-real",
+  "gpt-5-mini",
+  "gpt-5.4"
+ ],
+ "config_sha256": "d9722d5182fea83505050b9e9de35f5785d6b7115518c0bc5cd29a3d3199fb59"
+}

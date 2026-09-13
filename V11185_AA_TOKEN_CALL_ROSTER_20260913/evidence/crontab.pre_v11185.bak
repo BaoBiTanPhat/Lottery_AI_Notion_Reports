@@ -1,0 +1,166 @@
+16 0 * * *  /www/server/cron/a50afd8f7d0e95dc2fd7bbbcfdcccd82 >> /www/server/cron/a50afd8f7d0e95dc2fd7bbbcfdcccd82.log 2>&1
+# V10919 2026-08-01 owner duyet cho lane nghi: V10637 lane-v2 — không được ai gọi, không UI không API
+# 30 14 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 -m lane._v10637_lane_v2_daily --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/lane_v2_daily.log 2>&1
+0 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10642_slice_health.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/slice_health.log 2>&1
+5 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10642_model_progress.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/model_progress.log 2>&1
+10 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10644_shadow_scoreboard.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/shadow_scoreboard.log 2>&1
+15 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10645_weakest_watch.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/weakest_watch.log 2>&1
+30 6 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10646_retrain_guard.py >> /root/Lottery_AI_Test/web/backend/logs/retrain_guard.log 2>&1
+5 * * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10647_system_health.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/system_health.log 2>&1
+0 7 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10648_weekly_guard.py >> /root/Lottery_AI_Test/web/backend/logs/weekly_guard.log 2>&1
+# DISABLED V10724 (unconsumed research, owner tinh gon): 20 9 * * 1 cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10655_bachthu_strength_shadow.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/bachthu_strength.log 2>&1
+# DISABLED V10724 (unconsumed research, owner tinh gon): 25 9 * * 1 cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10654_lo_selector_shadow.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/lo_selector.log 2>&1
+# DISABLED V10724 (unconsumed research, owner tinh gon): 30 9 * * 1 cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10657_total_perweekday_shadow.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/total_perweekday.log 2>&1
+35 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10658_slice_recommendation.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/slice_reco.log 2>&1
+45 14 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10660_no_lookahead_harness.py --db /root/Lottery_AI_Test/data/lottery_ai.db --days 14 >> /root/Lottery_AI_Test/web/backend/logs/no_lookahead.log 2>&1
+# DISABLED V10724 (unconsumed research, owner tinh gon): 25 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10662_reduce_cadence_plan.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/reduce_cadence_plan.log 2>&1
+15 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10661_live_edge_monitor.py --db /root/Lottery_AI_Test/data/lottery_ai.db --days 21 >> /root/Lottery_AI_Test/web/backend/logs/live_edge_monitor.log 2>&1
+30 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10662_mb_ai_limit.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/mb_ai_limit.log 2>&1
+
+# V10663 2026-06-01: slice_recommendation extra fires after MT/MB final_bundles are ready
+55 16 * * * cd /root/Lottery_AI_Test && /root/Lottery_AI_Test/venv/bin/python3 /root/Lottery_AI_Test/web/backend/_v10658_slice_recommendation.py >> /root/Lottery_AI_Test/web/backend/logs/slice_reco.log 2>&1
+55 17 * * * cd /root/Lottery_AI_Test && /root/Lottery_AI_Test/venv/bin/python3 /root/Lottery_AI_Test/web/backend/_v10658_slice_recommendation.py >> /root/Lottery_AI_Test/web/backend/logs/slice_reco.log 2>&1
+
+# V10664 2026-06-01: MT AI LIMIT planner (mirror MB; auto-excludes RECOVERING from blocked_list)
+31 9 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10664_mt_ai_limit.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/mt_ai_limit.log 2>&1
+
+
+# V10666 2026-06-01 22:55: MN AI LIMIT planner moved 09:32 -> 03:50 (BEFORE MN predict starts at 04:00)
+50 4 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10665_mn_ai_limit.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/mn_ai_limit.log 2>&1
+
+# V10677 2026-06-02 22:45: post-draw settle for experimental_preview_shadow (fix CP-66.7 evidence pipeline)
+0 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10677_postdraw_settle.py --db /root/Lottery_AI_Test/data/lottery_ai.db --days 21 >> /root/Lottery_AI_Test/web/backend/logs/postdraw_settle.log 2>&1
+# V10679 2026-06-03: FULL_POOL_D_W06 lane test for MN+MT (shadow-only, no official impact)
+# V10919 2026-08-01 owner duyet cho lane nghi: V10679 lane full-pool — không có đường lên official
+# 48 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10679_full_pool_d_w06_lane.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/v10679_lane.log 2>&1
+# V10680 2026-06-03: TOP-K strength-filtered D_w06 lane test for MN+MT (shadow-only)
+# V10919 2026-08-01 owner duyet cho lane nghi: V10680 lane top-K — không có đường lên official
+# 48 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10680_topk_strength_lane.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/v10680_lane_topk.log 2>&1
+# V10692 2026-06-03: 3-direction (BT/Lo2/Lo3) lane test MN+MT shadow-only
+# V10919 2026-08-01 owner duyet cho lane nghi: V10692 lane 3 hướng — playbook ghi rõ không promote
+# 10 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10692_mn_mt_multidir_lane.py --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/v10692_multidir.log 2>&1
+10 18 * * * /root/Lottery_AI_Test/_mb_perpos_daily.sh >> /root/Lottery_AI_Test/web/backend/logs/mb_perpos_cron.log 2>&1  # V10701-B1: d-i 23:55 -> 18:10 pre-result LIVE (sau MB predict 17:42)
+# V10696 2026-06-04: lane V10692 ch?y S?M theo t?ng mi?n (sau predict t??ng ?ng) ? KH?NG ??i 17:10
+# V10919 2026-08-01 owner duyet cho lane nghi: V10692 lane 3 hướng — playbook ghi rõ không promote
+# 30 5 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10692_mn_mt_multidir_lane.py --region MN --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/v10692_mn_early.log 2>&1
+# V10919 2026-08-01 owner duyet cho lane nghi: V10692 lane 3 hướng — playbook ghi rõ không promote
+# 45 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10692_mn_mt_multidir_lane.py --region MT --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/v10692_mt_early.log 2>&1
+# V10696 2026-06-04: V10692 MB ch?y sau MB predict 17:42
+# V10919 2026-08-01 owner duyet cho lane nghi: V10692 lane 3 hướng — playbook ghi rõ không promote
+# 39 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10692_mn_mt_multidir_lane.py --region MB --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/v10692_mb_early.log 2>&1
+# V10701-A5 2026-06-04: MB advanced lane (engine chung + FULL_POOL + TOPK), sau MB predict 17:42
+43 17 * * * /bin/bash /root/Lottery_AI_Test/web/backend/_mb_advanced_lane_daily.sh >> /root/Lottery_AI_Test/web/backend/logs/mb_advanced_lane.log 2>&1
+# V10701-M-readiness 2026-06-05: MT advanced engine lane (sau MT predict 16:42)
+48 16 * * * /bin/bash /root/Lottery_AI_Test/web/backend/_mt_advanced_lane_daily.sh >> /root/Lottery_AI_Test/web/backend/logs/mt_advanced_lane.log 2>&1
+# V10701-M5 2026-06-05: per-position live tracking matrix (read-only)
+5 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _perpos_matrix_report.py --days 60 --min-n 6 >> /root/Lottery_AI_Test/web/backend/logs/perpos_matrix.log 2>&1  # V10701-M5: per-position live matrix (read-only)
+# V10702 CP-OT2 2026-06-07: output-total screening lane (shadow)
+44 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10703_output_total_screen.py --region ALL --db /root/Lottery_AI_Test/data/lottery_ai.db >> /root/Lottery_AI_Test/web/backend/logs/v10703_screen.log 2>&1  # V10702 CP-OT2: output-total screening shadow (causal, post-predict pre-MB-result)
+# V10919 2026-08-01 owner duyet cho lane nghi: V10707 A/B doctrine MN/MT — hạn ~2 tuần từ 10/06, quá 7 tuần
+# 50 5 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10707_mnmt_doctrine_shadow.py --region MN >> /root/Lottery_AI_Test/web/backend/logs/v10707_doctrine_ab.log 2>&1  # V10707: MN doctrine A/B shadow (sau official 04:22, truoc xo 16:35)
+# V10919 2026-08-01 owner duyet cho lane nghi: V10707 A/B doctrine MN/MT — hạn ~2 tuần từ 10/06, quá 7 tuần
+# 44 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10707_mnmt_doctrine_shadow.py --region MT >> /root/Lottery_AI_Test/web/backend/logs/v10707_doctrine_ab.log 2>&1  # V10707: MT doctrine A/B shadow (sau official ~16:42, truoc xo ~17:35)
+40 5 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10708_mnmt_rule_ranker.py --region ALL >> /root/Lottery_AI_Test/web/backend/logs/v10708_ranker.log 2>&1  # V10708: MN/MT daily rule rerank (truoc doctrine A/B 05:00)
+35 20 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10708_mnmt_rule_ranker.py --region ALL >> /root/Lottery_AI_Test/web/backend/logs/v10708_ranker.log 2>&1  # V10708-EVENING: re-rank NGAY sau MRE 20:15 (du ket qua+verify+cham diem ngay) - snapshot san sang truoc moi luot AI
+# V10716: MB advanced lane chay som (card truoc xo); 5 18 la backstop
+38 17 * * * /bin/bash /root/Lottery_AI_Test/web/backend/_mb_advanced_lane_daily.sh >> /root/Lottery_AI_Test/web/backend/logs/mb_advanced_lane.log 2>&1
+25 6 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10725_champion_selector.py --recommend >> /root/Lottery_AI_Test/web/backend/logs/champion_recommend.log 2>&1
+30 22 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10730_pnl_forward_track.py >> /root/Lottery_AI_Test/web/backend/logs/pnl_forward.log 2>&1  # V10730-PB forward pnl track + EV refresh
+35 22 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10733_consensus_freeshadow_shadow.py --days 2 >> /root/Lottery_AI_Test/logs/v10733_consensus.log 2>&1
+40 22 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10737_output_final_lab_shadow.py --days 3 >> /root/Lottery_AI_Test/web/backend/logs/output_final_lab.log 2>&1
+35 5 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10737_output_final_lab_shadow.py --days 1 >> /root/Lottery_AI_Test/web/backend/logs/output_final_lab.log 2>&1  # V10737 morning MN live refresh
+55 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10737_output_final_lab_shadow.py --days 1 >> /root/Lottery_AI_Test/web/backend/logs/output_final_lab.log 2>&1  # V10737 MB live refresh
+55 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10737_output_final_lab_shadow.py --days 1 >> /root/Lottery_AI_Test/web/backend/logs/output_final_lab.log 2>&1  # V10737 MT live refresh
+45 22 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10744_rescue_candidate_monitor.py --days 3 >> /root/Lottery_AI_Test/web/backend/logs/rescue_candidate.log 2>&1
+# V10781 P5 2026-07-05: PROMPT V2 A/B shadow lane (deepseek-reasoner, 1 call/mien/ngay)
+# V10919 2026-08-01 owner duyet cho lane nghi: V10781 A/B prompt v2 — hạn trình 14/07, quá 2,5 tuần
+# 10 6 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10781_prompt_v2_lane.py --region MN >> /root/Lottery_AI_Test/web/backend/logs/v10781_pv2_lane.log 2>&1
+# V10919 2026-08-01 owner duyet cho lane nghi: V10781 A/B prompt v2 — hạn trình 14/07, quá 2,5 tuần
+# 45 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10781_prompt_v2_lane.py --region MT >> /root/Lottery_AI_Test/web/backend/logs/v10781_pv2_lane.log 2>&1
+# V10919 2026-08-01 owner duyet cho lane nghi: V10781 A/B prompt v2 — hạn trình 14/07, quá 2,5 tuần
+# 41 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10781_prompt_v2_lane.py --region MB >> /root/Lottery_AI_Test/web/backend/logs/v10781_pv2_lane.log 2>&1
+30 7 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10784_verify_0607.py >> /root/Lottery_AI_Test/artifacts/v10784/verify_0607.log 2>&1
+# V10789 K10/K13 selector shadow (owner ky 09/07/2026)
+39 15 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10789_selector_shadow.py --materialize --region MN >> /root/Lottery_AI_Test/web/backend/logs/v10789_selector.log 2>&1  # V10789 K10/K13 MN pre-draw
+46 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10789_selector_shadow.py --materialize --region MT >> /root/Lottery_AI_Test/web/backend/logs/v10789_selector.log 2>&1  # V10789 K10/K13 MT pre-draw
+40 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10789_selector_shadow.py --materialize --region MB >> /root/Lottery_AI_Test/web/backend/logs/v10789_selector.log 2>&1  # V10789 K10/K13 MB pre-draw
+30 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10789_selector_shadow.py --materialize --settle >> /root/Lottery_AI_Test/web/backend/logs/v10789_selector.log 2>&1  # V10789 K10/K13 settle + catchup
+10 8 * * 1 cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10800_timetable_selfcheck.py >> /root/Lottery_AI_Test/web/backend/logs/timetable_selfcheck.log 2>&1  # V10800: audit dinh ky moc gio + hoc tap
+5 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10801_ml_mark_ab_shadow.py --catchup 2 >> /root/Lottery_AI_Test/web/backend/logs/v10801_ml_ab.log 2>&1  # V10801: ML mark A/B shadow (D-1 vs same-day) MT+MB
+10 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10803_chase_bias_shadow.py --catchup 3 >> /root/Lottery_AI_Test/web/backend/logs/v10803_chase_bias.log 2>&1  # V10803: chase-bias shadow (duoi so vua no hom truoc) 3 mien
+# V10809 2026-07-16: shadow A/B 7 ngay (16-22/07) arm B addendum tro-mien/per-so, 5 model
+50 20 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10821_total_v2_shadow.py --catchup 3 >> /root/Lottery_AI_Test/web/backend/logs/v10821_total_v2.log 2>&1  # V10821: total-v2 shadow (coverage+rules) 3 mien
+36 15 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10822_total_v2_lane.py --region MN >> /root/Lottery_AI_Test/web/backend/logs/v10822_total_v2_lane.log 2>&1  # V10822: lane TOTAL_V2_RULES_V1 MN (truoc freeze 15:55 + cutoff /choi 16h)
+46 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10822_total_v2_lane.py --region MT >> /root/Lottery_AI_Test/web/backend/logs/v10822_total_v2_lane.log 2>&1  # V10822: lane TOTAL_V2_RULES_V1 MT (sau T-chot 16:54, truoc cutoff 17h)
+40 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10822_total_v2_lane.py --region MB >> /root/Lottery_AI_Test/web/backend/logs/v10822_total_v2_lane.log 2>&1  # V10822: lane TOTAL_V2_RULES_V1 MB (sau T-chot 17:54, truoc cutoff 18h)
+0 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10829_rule_cond_shadow.py --catchup 3 >> /root/Lottery_AI_Test/logs/v10829_rule_cond.log 2>&1  # V10829
+37 15 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10832_total_v3_cond_lane.py --region MN >> /root/Lottery_AI_Test/logs/v10832_cond_lane.log 2>&1  # V10832
+47 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10832_total_v3_cond_lane.py --region MT >> /root/Lottery_AI_Test/logs/v10832_cond_lane.log 2>&1  # V10832
+41 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10832_total_v3_cond_lane.py --region MB >> /root/Lottery_AI_Test/logs/v10832_cond_lane.log 2>&1  # V10832
+43 15 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10834_lock_freeze.py >> /root/Lottery_AI_Test/logs/v10834_lock_freeze.log 2>&1  # V10834 freeze-at-cutoff
+56 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10834_lock_freeze.py >> /root/Lottery_AI_Test/logs/v10834_lock_freeze.log 2>&1  # V10834 freeze-at-cutoff
+56 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10834_lock_freeze.py >> /root/Lottery_AI_Test/logs/v10834_lock_freeze.log 2>&1  # V10834 freeze-at-cutoff
+10 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10844_mb_whatif.py --catchup 2 >> /root/Lottery_AI_Test/logs/v10844_mb_whatif.log 2>&1  # V10844 whatif MB
+45 20 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10861_runtime_contract_audit.py >> /root/Lottery_AI_Test/web/backend/logs/v10861_output_contract.log 2>&1  # V10861 output contract audit
+20 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10869_cp_l6_lean_audit.py >> /root/Lottery_AI_Test/web/backend/logs/v10869_cp_l6_lean.log 2>&1  # V10869 CP-L6 lean audit
+25 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10871_model_quality_ledger.py >> /root/Lottery_AI_Test/logs/v10871_quality_ledger.log 2>&1
+38 15 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10872_deherd_selector.py --region MN >> /root/Lottery_AI_Test/logs/v10872_deherd.log 2>&1
+47 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10872_deherd_selector.py --region MT >> /root/Lottery_AI_Test/logs/v10872_deherd.log 2>&1
+42 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10872_deherd_selector.py --region MB >> /root/Lottery_AI_Test/logs/v10872_deherd.log 2>&1
+15 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10872_deherd_selector.py >> /root/Lottery_AI_Test/logs/v10872_deherd.log 2>&1
+5 6 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MN >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+44 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MT >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+38 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MB >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+10 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --settle --region MN >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+10 18 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --settle --region MT >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+10 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --settle --region MB >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+15 6 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MN >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+48 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MT >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+42 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MB >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1
+2 18 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10891_deadline_guard.py >> /root/Lottery_AI_Test/logs/v10891_guard.log 2>&1
+5 18 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10900_consistency_guard.py >> /root/Lottery_AI_Test/logs/v10900_consistency.log 2>&1
+52 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MT >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1  # V10977 lượt vá: official chốt trôi tới 17:44:54 ngày 03/08
+54 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MT >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1  # V10977 lượt vá: official chốt trôi tới 17:44:54 ngày 03/08
+46 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MB >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1  # V10977 lượt vá: official chốt trôi tới 17:44:54 ngày 03/08
+50 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MB >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1  # V10977 lượt vá: official chốt trôi tới 17:44:54 ngày 03/08
+54 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10879_nghiemthu_lane.py --predraw --region MB >> /root/Lottery_AI_Test/logs/v10879_nghiemthu.log 2>&1  # V10977 lượt vá: official chốt trôi tới 17:44:54 ngày 03/08
+* 5-6 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10979_early_block.py --region MN >> /root/Lottery_AI_Test/logs/v10979_early_block.log 2>&1  # V10979 bao 'da xong' ngay khi xong, khong doi het gio
+* 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10979_early_block.py --region MT >> /root/Lottery_AI_Test/logs/v10979_early_block.log 2>&1  # V10979 bao 'da xong' ngay khi xong, khong doi het gio
+* 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10979_early_block.py --region MB >> /root/Lottery_AI_Test/logs/v10979_early_block.log 2>&1  # V10979 bao 'da xong' ngay khi xong, khong doi het gio
+0 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10945_edge_gate.py >> /root/Lottery_AI_Test/logs/v10945_edge_gate.log 2>&1  # V10984 FU-244 cong loi the ghi hang ngay, sau moc FINAL
+10 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10984_ghep_lane_official.py >> /root/Lottery_AI_Test/logs/v10984_ghep_lane.log 2>&1  # V10984 FU-264 do bong ghep lane nghiem thu x official
+5 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11017_bay_dan_shadow.py >> /root/Lottery_AI_Test/logs/v11017_bay_dan.log 2>&1
+25 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11018_ma_doi_chung.py >> /root/Lottery_AI_Test/logs/v11018_ma_doi_chung.log 2>&1
+35 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11037_g2mb_lane.py >> /root/Lottery_AI_Test/web/backend/logs/v11037_g2mb_lane.log 2>&1  # V11037 lane do tien duoi G2-MB (shadow)
+40 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _materialize_gan_hoi_tu_shadow.py >> /root/Lottery_AI_Test/web/backend/logs/v11055_gan_hoi_tu.log 2>&1  # V11055 P4 gan hoi tu shadow (sau settle 21:30)
+45 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _materialize_anti_trap_shadow.py >> /root/Lottery_AI_Test/web/backend/logs/v11058_anti_trap.log 2>&1  # V11058 B1 anti-trap shadow (sau P4 21:40)
+0 6 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11059_lane_ab_3tang.py --region MN >> /root/Lottery_AI_Test/web/backend/logs/v11059_lane3tang.log 2>&1  # V11059 lane 3 tang MN (official 05:15 VN, ket qua 16:35 VN)
+15 17 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11059_lane_ab_3tang.py --region MT >> /root/Lottery_AI_Test/web/backend/logs/v11059_lane3tang.log 2>&1  # V11059 lane 3 tang MT (official 16:46 VN, ket qua 17:30 VN)
+05 18 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11059_lane_ab_3tang.py --region MB >> /root/Lottery_AI_Test/web/backend/logs/v11059_lane3tang.log 2>&1  # V11059 lane 3 tang MB (official 17:37 VN, ket qua 18:30 VN)
+50 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _materialize_do_tre_shadow.py --that >> /root/Lottery_AI_Test/web/backend/logs/v11063_do_tre.log 2>&1  # V11063 FU-283 do tre model (sau anti-trap 21:45)
+35 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11067_lay_mau_khoa_db.py --phut 90 --nhip 5 >> /root/Lottery_AI_Test/web/backend/logs/v11067_run.log 2>&1  # V11067 FU-402 lay mau khoa DB phu ca MT (16:35-16:58) va MB (17:25-17:58)
+35 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11089_cham_lane_tb.py >> /root/Lottery_AI_Test/web/backend/logs/v11089_cham_tb.log 2>&1  # V11102: cham lane T-B sau khi ca ba mien co ket qua (MB 18:31)
+15 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11137_d30_lane.py >> /root/Lottery_AI_Test/web/backend/logs/v11137_d30.log 2>&1  # V11137 D-30 hai lane shadow tien cuu (19:15, sau khi ca ba mien co ket qua)
+
+# V11177 2026-09-10 · CONTEXT_ONLY_SHADOW CHALLENGER — SHADOW ONLY.
+# Chay 13:30 ICT moi ngay: TRUOC cutoff som nhat (MN 15:40). Chi ghi shadow_candidates
+# (shadow_only=1, diagnostic_only=1, output_eligible=0). KHONG ghi final_bundles/predictions.
+
+# V11178 2026-09-11 · CONTEXT_ONLY_CHALLENGER V1.1 — SHADOW ONLY, ba lane (§U6).
+# Moi lane co LOCK (flock) + TIMEOUT + log rieng + exit code. Ghi shadow_candidates
+# (shadow_only=1, output_eligible=0) va v11178_challenger_runs. KHONG cham official.
+# V11177 (mot cron 13:30, payload KHONG co live fact) da bi go — xem RL-035.
+# V11178.2 2026-09-11 §V — CONTEXT_DERIVED_CANDIDATE_RANKER, SHADOW ONLY.
+# args: STAGE REGIONS TIMEOUT EXECUTION_CLASS WAIT_UPSTREAM_S
+# Gio no giu DUNG moc Owner khoa (13:30/16:38/17:33). Phan CHO UPSTREAM nam TRONG lane,
+# co deadline cung, vi do 120 ngay: MN ve sau 16:38 o 20/120 ngay, MT ve sau 17:33 o 6/120.
+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.
+# 5 19 * * * cd /root/Lottery_AI_Test && venv/bin/python3 web/backend/_v11178_eod.py --out /root/Lottery_AI_Test/artifacts/v11178/eod_$(date +\%F).json >> web/backend/logs/v11178_EOD.log 2>&1
+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.
+# 38 16 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MT 900 MT_DELTA_LIVE 360 45
+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.
+# 33 17 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh SAME_DAY_DELTA MB 1200 MB_DELTA_LIVE 300 60
+# V11182 2026-09-11 §X1 — TAT: family IDENTITY_REVERSE_COMPLEMENT_PLUS1 da RETIRED_NO_SIGNAL (V11181: BH-FDR giu 0/5832 · 0/3888 · 0/1944). Khong goi 19 model moi ngay cho mot family vo tin hieu. Ha tang challenger GIU NGUYEN de dung lai.
+# 30 13 * * * /root/Lottery_AI_Test/web/backend/_v11178_lane.sh BASE_D1 MN,MT,MB 3300 BASE_D1_LIVE 0 120
+
+# GO VE: bo dau '#' o cac dong V11178 ben duoi, hoac `crontab /root/Lottery_AI_Test/artifacts/v11178/crontab_before_X1.txt`
