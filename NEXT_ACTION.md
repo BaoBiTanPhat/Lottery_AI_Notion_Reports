@@ -2,15 +2,15 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-13 20:13:13 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-13 21:49:40 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
+| `FU-430` | `DO1309` | ✅ **ĐÓNG** — `RETRAIN_ACTIVATED_METRIC_NOT_COMPARABLE` (chốt 13/09, V1 | **13/09** | `` |
 | `FU-450` | `QD0409` | (CẬP NHẬT 04/09 — **DIỄN TẬP MIGRATION: KHUYẾN NGHỊ ĐỪNG ĐỔ**) | **13/09** | `OWNER_DECISION_NEEDED` |
-| `FU-430` | `DO1309` | (CẬP NHẬT 01/09) | **13/09** | `DO_TIEN_DANG_CHAY` |
-| `FU-351` | `DO0914` | MN trượt đúng MỘT BẬC — nghi bộ XẾP HẠNG, không phải bộ SINH | **14/09** | `MEASURED_BUT_NOT_FIXED` |
+| `FU-351` | `DO0914` | ⏭️ **SUPERSEDED_BY_V11183_GENERATOR_MISS** (chốt 13/09) | **14/09** | `` |
 | `FU-376` | `DD0918` | Bốn món nợ tháng 7 chưa trả | **18/09** | `AWAITING_OWNER_OK` |
 | `FU-235` | `HT0919` | B3 gỡ ép chọn từ list (sau B1+B2) | **19/09** | `OWNER_LOCK` |
 | `FU-358` | `DO2209` | `/nghiem-thu` — cửa sổ TRƯỚC đã đóng băng, mức 20pp KHÔNG đạt bằng các | **22/09** | `WAIT_LIVE` |
@@ -35,7 +35,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11183` — Y LIVE TERMINAL 13SEP (2026-09-13)
+**Báo cáo mới nhất:** `V11184` — Z MODEL LEAGUE ROSTER (2026-09-13)
 
 ---
 
