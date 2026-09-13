@@ -50,6 +50,74 @@ ngày (`scheduler.py` quanh dòng 5897), chứng minh nó lọc theo `allowed_re
 
 ---
 
+## 2b. OWNER YÊU CẦU GÌ (nguyên văn) — `PRJ-INTERACTION-LEDGER-001` · §62 lớp `OWNER_SAID`
+
+Phiên nhận **đúng một** prompt lớn §Z lúc **13/09/2026 20:44 ICT**, không có yêu cầu rời giữa phiên.
+Nguyên văn mười khoá mới:
+
+> 1. `QD-079 C1+C2+C3 = OWNER_APPROVED.`
+> 2. `WEEKLY_MODEL_LEAGUE = OWNER_APPROVED.`
+> 3. `INITIAL_LLM_ROSTER_COMPRESSION = OWNER_APPROVED.`
+> 4. Mỗi miền tối đa: 3 direct-token LLM chính; 1 direct-token LLM challenger.
+> 5. Lần đầu được phép tinh gọn roster về giới hạn trên **sau khi hoàn tất replay và rollback proof**.
+> 6. Sau lần tinh gọn đầu tiên: tối đa 1 promotion/demotion trên mỗi miền mỗi tuần; lỗi auth,
+>    billing, circuit-open hoặc model unavailable được cách ly ngay và **không tính vào giới hạn
+>    thay đổi hiệu năng**.
+> 7. Không thay công thức TOTAL.
+> 8. Không reset các trọng số hiện tại về mặc định.
+> 9. **Không coi CORE là "đã chứng minh lift"**; CORE chỉ có nghĩa là lựa chọn tốt nhất hiện có theo
+>    bằng chứng current-regime, reliability, independence và cost.
+> 10. Không cần quay lại hỏi Owner hằng tuần nếu thay đổi nằm đúng toàn bộ giới hạn đã phê duyệt.
+
+Mục tiêu, nguyên văn:
+
+> *"Chấm dứt tình trạng dùng 8 LLM token cho mỗi miền nhưng không có bảng xếp hạng hiện hành, không
+> biết model nào cứu/phá TOTAL và không có cơ chế loại bỏ."*
+>
+> *"Không được kết thúc bằng 'cần đo thêm' nếu không kèm: dữ liệu còn thiếu chính xác; người/tiến
+> trình chịu trách nhiệm; hạn cuối; terminal bắt buộc khi tới hạn."*
+>
+> *"Không dừng ở monitoring-only. Không yêu cầu Owner quyết định lại những nội dung đã được phê
+> duyệt trong §Z. Ngoài phạm vi phê duyệt, giữ nguyên production và nêu đúng blocker."*
+
+Và khoá §Z-A giữ nguyên: `SC12=CLOSED` · `PREDICTIVE_LIFT=NOT_PROVEN` · `POOL_VERDICT=HOLD` ·
+`MATERIALIZATION_OPTION=B` · `F1`–`F5` `RETIRED` · không ghi `output_counterfactual_rank` · không
+backfill · 3-càng vẫn ráp downstream prefix + BT cuối theo lane.
+
+**Điều Owner yêu cầu mà phiên CỐ Ý chưa làm, kèm lý do:** lật roster 8→4 (đã được duyệt) — chưa lật
+vì blocker chính xác ở §6.4; và train-vào-candidate-path (§G mục 3) — chưa làm vì lý do ở §8.
+
+---
+
+## 2c. ĐÀO BỚI / PHÁT HIỆN — liệt kê ĐỦ, kể cả phép đo ra kết quả âm
+
+| # | đã đào gì | kết quả |
+|---|---|---|
+| 1 | Truy `_v11183_cong_optimizer.py` trên **mọi ref** | Có ở `fu438/...` @`1f0df1e`, không có trên `master` @`c3d24bc` — master lùi đúng 2 commit. **Không mất tệp** |
+| 2 | Cấu trúc `score_breakdown` | Tự mô tả đủ; công thức xác minh bằng tay trên bundle MN 13/09 |
+| 3 | Tái lập `bach_thu` từ `score_breakdown` | **TRƯỢT 82.0/86.3/85.1%** — script tự dừng |
+| 4 | Giả thuyết *"JSON đã cũ"* | **TỰ BÁC BỎ** — `bach_thu` luôn trong `ranked_numbers`, 0/81 vắng mặt |
+| 5 | Bốn tầng ghi đè `main.py:10255/10276/10296/10316` | **Nguyên nhân thật** — 16.8% số ngày |
+| 6 | `pp1_convergence_dampener` | 18/18 ca lệch còn lại đều có pp1 event ⇒ công thức đầy đủ → **99.38%** |
+| 7 | Net rescue/break, 4 cửa sổ, 3 miền | **0/156 ô có ý nghĩa** — kết quả ÂM, ghi đủ |
+| 8 | Nền chính xác, 880 phép Poisson-binomial | **không model nào** vượt nền — kết quả ÂM |
+| 9 | Coverage Gate 1, 45 ô × 4 cửa sổ | MN 99.12% · MT 98.33% · MB 99.60% ⇒ hạ tầng **không** phải nút thắt |
+| 10 | Nguồn token/cost | `model_latency_cost_audit_daily` **chết từ 2026-05-04**; nguồn sống là `prediction_trace.jsonl` |
+| 11 | Vì sao 0/1.760 dòng có chi phí | **Lệch tên khoá** `cost_est` (`:4321`) vs `cost_estimate` (`:6865`) |
+| 12 | 502 lượt gọi không có bản ghi token | `_v11059_lane_ab_3tang.py` không qua `log_prediction_trace` |
+| 13 | Circuit breaker hiện có | **Chỉ** OpenRouter, **chỉ** trong bộ nhớ tiến trình |
+| 14 | Thông điệp lỗi thật 13/09 | `gpt-5.4` là `"You have no credits remaining"` — **bộ phân loại của tôi bỏ sót** |
+| 15 | Roster canonical | `model_registry.py:56`, **list** 49 mục; **không có** cơ chế bật/tắt bằng config |
+| 16 | `allowed_regions` có thi hành không | **CÓ**, ở `_filter_models` — nhưng mới chứng minh cho đường **bỏ phiếu** |
+| 17 | Đường ghi retrain | **Không có** bước an toàn nào: ghi thẳng, không temp, không atomic, không backup |
+| 18 | `training_lock.py` | Có sẵn, lo **tranh chấp đồng thời**, **không** lo checkpoint — bổ sung chứ không trùng |
+| 19 | Nền cho generator thuần ngữ cảnh | Kho **đã có đủ 5/5 mảnh**, hai tệp **chưa từng được git theo dõi** |
+| 20 | Cổng nhiễm bẩn thật | MN/MT/MB đều **ĐẠT, ô nhiễm=0** |
+| 21 | Replay roster tinh gọn | MN −0.79 · MT +0.72 · MB −0.74 pp, **p=1.0000 cả ba** — kết quả "không khác", ghi đủ |
+| 22 | `_MAX_VOTERS_BY_REGION` (V10752) | `{"MT": 13}` — **chỉ MT**, chính sách cố ý, không phải model hỏng |
+
+---
+
 ## 3. MA TRẬN MODEL 13/09 (§Z-C)
 
 81/81 dòng (27 model × 3 miền), 28/28 trường bắt buộc. Tái lập chính xác **MN 89 · MT 54 · MB 40**,
@@ -115,6 +183,42 @@ kiện quá hiếm. Xếp hạng model trên những con số này là đọc nh
 Nền top-1 = `M_d/100`; nền top-2 = `1 − C(100−M_d,2)/C(100,2)` **không hoàn lại**, `M_d` là số đuôi-2
 **khác nhau** của chính ngày-miền đó. Trên **880 phép kiểm Poisson-binomial chính xác**: **không một
 model nào** vượt nền.
+
+---
+
+## 4b. SỤP PHỔ HỆ — phát hiện làm đổi bức tranh Gate 3
+
+Tầng điều tra độc lập tái lập lại ma trận 13/09 và tìm ra điều mà bản đếm voter **che mất**:
+
+**Ngày 13/09 MN, BT=89 có `voter_count=4` nhưng KHÔNG phải bốn nguồn độc lập.**
+
+| voter | phổ hệ gốc thật | tỷ trọng điểm |
+|---|---|---|
+| `smart-ensemble` | xgboost + random-forest | 0.3108 |
+| `smart-ml` | xgboost + random-forest | 0.2002 |
+| `combo-super` | claude-opus-4-6 + xgboost + random-forest | 0.0986 |
+| `gemini-2.5-pro` | **Google — phổ hệ khác thật** | 0.3905 |
+
+⇒ **60.96% điểm của BT=89 truy về CÙNG một cặp ML** (xgboost + random-forest). `smart-ensemble` và
+`smart-ml` hôm đó ra **cùng một output `["59","89"]`**. Bundle đếm 4 voter; phổ hệ gốc khác nhau
+chỉ có **3**, và theo trọng số thì gần **2**.
+
+**Và không một model ML trực tiếp nào bỏ phiếu 89 trong top-2 của chính nó:**
+`meta-learning` `[52,47]` · `lstm` `[74,25]` · `xgboost` `[66,48]` · `random-forest` `[94,07]`.
+Số 89 vào bundle **chỉ qua các bộ dẫn xuất đọc top-5**. Nghĩa là **BT official ngày đó do tầng tổng
+hợp sinh ra, không do generator nào chọn** — điều này **củng cố** căn nguyên `GENERATOR_MISS`.
+
+**Không phải cá biệt:** trong 30 ngày, **21/93 cặp ngày-miền (22.6%)** có `smart-ensemble` và
+`smart-ml` chạy trên cùng bộ ML đầu vào, và trong **21/21 lần đó output trùng khớp hoàn toàn**.
+
+**Kèm một lỗi nhãn:** `analysis_text` của `smart-ensemble` ghi trường `meta_numbers`/`lstm_numbers`
+trong khi **nội dung** là top-5 của `xgboost`/`random-forest` — xác minh bằng đối chiếu byte với hai
+ảnh chụp độc lập (`combo-super.analysis_text.ml_models` và `combo-no-token.analysis_text.model_numbers`).
+Ai đọc trường đó để suy phổ hệ sẽ bị đánh lừa.
+
+**Hệ quả cho quyết định roster:** Gate 3 (diversity) phải đếm **phổ hệ GỐC**, không đếm tên voter.
+Bộ tính roster ở §6.3 chỉ áp cho **direct-token LLM** nên không bị lỗi này, nhưng bất kỳ phép đếm
+"số nguồn độc lập" nào trên **toàn bộ voter** đều đang **phóng đại**. Đã ghi thành việc treo.
 
 ---
 

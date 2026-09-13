@@ -84,6 +84,25 @@ xảy ra ở đúng 16.8% số ngày đó.
 
 ---
 
+## E2. SỤP PHỔ HỆ — ghi vào trang kiến trúc
+
+`voter_count` của bundle **phóng đại tính độc lập**. Ngày 13/09 MN, BT=89 có 4 voter nhưng
+**60.96% điểm truy về cùng cặp xgboost+random-forest** (`smart-ensemble` + `smart-ml` + phần
+`combo-super`); chỉ `gemini-2.5-pro` (39.05%) là phổ hệ khác thật.
+
+**Không model ML trực tiếp nào bỏ phiếu 89 trong top-2 của mình** — 89 vào bundle chỉ qua bộ dẫn
+xuất đọc top-5 ⇒ BT official ngày đó **do tầng tổng hợp sinh ra**, củng cố `GENERATOR_MISS`.
+
+Tần suất: **21/93 cặp ngày-miền trong 30 ngày (22.6%)**, output trùng **21/21**.
+
+**Lỗi nhãn:** `smart-ensemble.analysis_text` ghi `meta_numbers`/`lstm_numbers` nhưng nội dung là
+`xgboost`/`random-forest`. **Đừng đọc trường đó để suy phổ hệ.**
+
+⇒ Mọi phép đếm "số nguồn độc lập" trên toàn bộ voter đang **phóng đại**. Gate 3 phải đếm **phổ hệ
+GỐC**.
+
+---
+
 ## F. ROSTER ĐÃ TÍNH XONG (chưa lật) — để TanPhatAI biết trước
 
 | miền | CORE | CHALLENGER | bỏ |
