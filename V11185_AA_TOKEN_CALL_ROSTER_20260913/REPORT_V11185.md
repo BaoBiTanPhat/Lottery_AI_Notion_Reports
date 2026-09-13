@@ -247,6 +247,59 @@ Số đo THẬT sẽ đến từ natural receipt (§AA-S).**
 
 ---
 
+## 11b. HƯỚNG XỬ LÝ VÀ VÌ SAO CHỌN
+
+**Ba hướng đã cân nhắc cho việc chặn lượt gọi:**
+
+| hướng | vì sao **không** chọn / chọn |
+|---|---|
+| (a) Sửa `allowed_regions` trong `model_registry` | **Không đủ.** V11184 đã chứng minh nó chặn đường **bỏ phiếu** (`main.py:9720`) nhưng `scheduler.py` duyệt hằng số tĩnh nên vẫn gọi đủ 8. Sửa chỗ này là sửa đúng tệp nhưng sai tầng |
+| (b) Sửa trực tiếp 9 call-site, mỗi chỗ một điều kiện | **Không chọn.** Chín bản sao của cùng một chính sách là chín cơ hội để chúng trôi khỏi nhau. Và lần sau đổi roster lại phải sửa chín chỗ |
+| (c) **Một hàm SSOT, mọi call-site đọc từ đó** | **ĐÃ CHỌN.** Một nguồn quyết định, versioned, fail-closed, rollback một lệnh. Chín call-site trở thành chín *người đọc*, không còn là chín *người quyết* |
+
+**Vì sao FAIL-CLOSED chứ không fail-open:** hành vi cũ khi lỗi là "gọi hết 8" — chính là thứ §AA
+sinh ra để diệt. Một hệ fail-open sẽ âm thầm quay về hành vi cũ đúng lúc không ai nhìn. Nên khi
+không xác minh được chính sách, hàm trả **`models=[]`**, và `ML no-token` vẫn chạy bình thường.
+
+**Vì sao chặn shadow trước, tinh gọn roster sau:** đo được 60.3% token chảy vào 11 model *không
+được phép ra output*. Đó là khoản lớn hơn, và nó **không có bất kỳ đánh đổi chất lượng nào** —
+model không được ra output thì tắt nó không đổi một dòng output nào. Tinh gọn roster mới là phần
+có đánh đổi (đã replay: p=1.0000 cả ba miền).
+
+**Vì sao KHÔNG mở pure-context shadow trong cùng phiên:** ưu tiên số một của §AA là
+`UNBOUNDED_SHADOW_PROVIDER_CALLS = 0`. Mở một lane shadow mới **cùng lúc** với việc đóng lane cũ là
+tự mâu thuẫn, và sẽ làm số đo của natural receipt đầu tiên lẫn lộn hai thay đổi.
+
+**Vì sao KHÔNG đổi Combo Super:** §AA-A cấm đổi Combo semantics khi chưa chứng minh
+output-equivalent. Nó **có** gọi thêm provider, nên đếm riêng và nói thẳng, thay vì hoặc giấu hoặc
+đổi liều.
+
+---
+
+## 11c. VƯỚNG VẤP
+
+1. **Bản vá đầu của tôi làm §AA-E2 vô tác dụng hoàn toàn.** Khi vá MB rerun tôi giữ khối win-rate
+   cũ "để tham chiếu" — nhưng nó vẫn chạy `selected_models = [m[0] for m in ai_model_wrs[:3]]`,
+   tức **ghi đè** lựa chọn roster. Deploy như vậy thì roster MB rerun chỉ là trang trí. Bắt được
+   nhờ **đọc lại mã sau khi vá**, không nhờ cổng nào.
+   *Bài học: "giữ lại để tham chiếu" trong một hàm đang chạy không trung lập — nó vẫn thực thi.*
+
+2. **Bài thử của tôi đếm chuỗi thô (RM-09).** Bài `B9` báo **HỎNG** trong khi mã đã đúng, vì chuỗi
+   nó tìm còn nằm trong **chú thích của chính tôi** giải thích vì sao đã xoá. Chú thích mô tả lối
+   sai không phải lối sai. Sửa sang AST → 45/45. Đây là lỗi tôi vẫn cảnh báo người khác.
+
+3. **Một cảnh báo giả.** `_v11184_intake_model.py` báo `rc=2` trong lượt regression — thoạt nhìn là
+   hồi quy. Thật ra tệp **chưa deploy lên VPS**; `rc=2` là "file not found". Deploy xong 19/19.
+
+4. **Heredoc và `grep -c`.** `grep -c` trả mã thoát 1 khi đếm ra 0, làm một lệnh Bash báo "lỗi"
+   trong khi kết quả đúng là *không có lỗi nào*. Phải đọc kỹ trước khi kết luận.
+
+5. **Thứ tự phải đúng.** Nếu tắt cron `_v11059` *trước* khi chứng minh zero-official-impact thì đó
+   là tắt mù. Đã chứng minh trước (0 lệnh ghi bảng official; nơi đọc duy nhất là endpoint admin
+   chỉ-đọc) rồi mới tắt.
+
+---
+
 ## 12. CỔNG KIỂM
 
 | bộ thử | kết quả |
