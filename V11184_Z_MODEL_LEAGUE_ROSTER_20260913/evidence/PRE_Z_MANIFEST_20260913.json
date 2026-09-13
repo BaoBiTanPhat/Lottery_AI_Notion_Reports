@@ -1,0 +1,1134 @@
+{
+ "artifact": "PRE_Z_MANIFEST",
+ "muc": "Prompt 43 R1 §Z-B1",
+ "target_date": "2026-09-13",
+ "chup_luc_vps": "2026-09-13T20:55:23+07:00",
+ "timezone": "+07 +07:00",
+ "host": "lotteryai-aulb",
+ "db_mtime": "2026-09-13 20:55:00.057389747 +0700",
+ "db_size": 858890240,
+ "git_canonical": {
+  "private_branch": "fu438/admin-only-p0a",
+  "private_HEAD": "1f0df1e349582e946b271f621576688a6b0a9000",
+  "private_master": "1f0df1e349582e946b271f621576688a6b0a9000",
+  "private_origin_master": "1f0df1e349582e946b271f621576688a6b0a9000",
+  "private_dirty_tracked": "",
+  "private_unpushed": "0",
+  "public_branch": "main",
+  "public_HEAD": "ad774b02561b809b3d1c6d099f10ccdc77554aa7",
+  "public_unpushed": "0",
+  "public_dirty_tracked": ""
+ },
+ "vps_git_head": "68f0ea61fae30cf38e5d53516ae1a01bf09f579c",
+ "vps_git_head_ghi_chu": "VPS deploy la COPY FILE; HEAD o day KHONG phai commit canonical",
+ "service": {
+  "name": "lottery",
+  "MainPID": "3870722",
+  "NRestarts": "0",
+  "ActiveState": "active",
+  "ActiveEnterTimestamp": "Thu 2026-09-10 02:00:19 +07",
+  "MemoryCurrent": "812367872",
+  "health": "200",
+  "pm2": "(khong dung pm2)"
+ },
+ "he_thong": {
+  "uptime": "20:55:23 up 148 days, 19:48,  0 users,  load average: 0.19, 0.13, 0.10",
+  "load": "0.19 0.13 0.10 1/406 51659",
+  "mem_MB": "3911 tong, 1101 dung, 2476 kha dung",
+  "swap_MB": "0",
+  "disk": "/dev/vda1        39G   15G   24G  39% /"
+ },
+ "crontab_sha256": "4e16ed3d9e1f70e136a8cf1d2ec96cd80ac0f6d86c273305a859d0b97c287488",
+ "crontab_n_dong_dang_chay": 93,
+ "cron_tro_file_mat": [],
+ "bang_trong_yeu": {
+  "predictions": {
+   "tong": 14929,
+   "ngay_dich": 81,
+   "cot": [
+    "id",
+    "date",
+    "target_region",
+    "source_regions",
+    "ai_model",
+    "main_numbers",
+    "analysis_text",
+    "phase_type",
+    "cluster",
+    "pivot",
+    "strength",
+    "verdict",
+    "verdict_reason",
+    "status",
+    "hit_numbers",
+    "hit_level",
+    "hit_details",
+    "created_at",
+    "verified_at",
+    "pick_count",
+    "hit_count",
+    "reasoning_json",
+    "pre_result_numbers",
+    "pre_result_strength",
+    "pre_result_status",
+    "pre_result_hit_count",
+    "repredict_verdict",
+    "run_source",
+    "convergence_flag",
+    "prediction_before",
+    "verified_station_count",
+    "policy_version_ref",
+    "week_slot",
+    "context_integrity",
+    "run_id",
+    "late",
+    "reasoning_tokens"
+   ]
+  },
+  "final_bundles": {
+   "tong": 594,
+   "ngay_dich": 3,
+   "cot": [
+    "id",
+    "date",
+    "region",
+    "bach_thu",
+    "lo2",
+    "lo3",
+    "xien2",
+    "xien3",
+    "policy_version_ref",
+    "source_predictions_json",
+    "generation_method",
+    "consensus_level",
+    "model_count",
+    "top_score",
+    "is_fallback",
+    "status",
+    "notes",
+    "created_at",
+    "updated_at",
+    "bach_thu_status",
+    "lo2_status",
+    "lo3_status",
+    "xien2_status",
+    "xien3_status",
+    "verified_at",
+    "bundle_version"
+   ]
+  },
+  "lottery_results": {
+   "tong": 15477,
+   "ngay_dich": 7,
+   "cot": [
+    "id",
+    "date",
+    "region",
+    "station",
+    "prizes_json",
+    "tail_db",
+    "tail_g8",
+    "created_at"
+   ]
+  },
+  "model_daily_eval": {
+   "tong": 14793,
+   "ngay_dich": 81,
+   "cot": [
+    "id",
+    "date",
+    "region",
+    "ai_model",
+    "main_numbers",
+    "pick_count",
+    "status",
+    "hit_numbers",
+    "hit_count",
+    "bt_number",
+    "bt_hit",
+    "run_source",
+    "context_integrity",
+    "strength",
+    "created_at"
+   ]
+  },
+  "day_governance": {
+   "tong": 593,
+   "ngay_dich": 3,
+   "cot": [
+    "id",
+    "date",
+    "region",
+    "day_status",
+    "publication_status",
+    "bundle_quality",
+    "expected_model_count",
+    "completed_model_count",
+    "failed_model_count",
+    "completeness_ratio",
+    "degradation_reason",
+    "evaluation_policy",
+    "classification_source",
+    "classified_at"
+   ]
+  },
+  "shadow_candidates": {
+   "tong": 39751,
+   "ngay_dich": 275,
+   "cot": [
+    "id",
+    "date",
+    "region",
+    "weekday",
+    "station_set",
+    "output_type",
+    "method_key",
+    "method_version",
+    "run_label",
+    "candidate_tail",
+    "rank",
+    "score",
+    "source_model",
+    "source_family",
+    "run_source",
+    "evidence_json",
+    "output_eligible",
+    "diagnostic_only",
+    "shadow_only",
+    "created_at"
+   ]
+  },
+  "training_history": {
+   "tong": 300,
+   "ngay_dich": 12,
+   "cot": [
+    "id",
+    "date",
+    "region",
+    "model_type",
+    "auc",
+    "old_auc",
+    "test_loss",
+    "samples",
+    "status",
+    "created_at",
+    "backup_path",
+    "ghi_chu",
+    "nguon"
+   ]
+  },
+  "ml_retrain_guard_log": {
+   "tong": 118,
+   "ngay_dich": 2,
+   "cot": [
+    "id",
+    "run_at",
+    "newest_model_age_days",
+    "action",
+    "detail"
+   ]
+  },
+  "app_settings": {
+   "tong": 438,
+   "ngay_dich": 4,
+   "cot": [
+    "id",
+    "category",
+    "setting_key",
+    "setting_value",
+    "description",
+    "updated_at"
+   ]
+  },
+  "scheduler_logs": {
+   "tong": 291918,
+   "ngay_dich": 1129,
+   "cot": [
+    "id",
+    "log_time",
+    "log_level",
+    "message",
+    "job_name",
+    "region",
+    "date_str"
+   ]
+  },
+  "v11178_attempts": {
+   "tong": 149,
+   "ngay_dich": null,
+   "cot": [
+    "attempt_id",
+    "target_date",
+    "region",
+    "stage",
+    "execution_class",
+    "model_id",
+    "provider_family",
+    "method_version",
+    "attempt_seq",
+    "invocation_id",
+    "host",
+    "started_at",
+    "completed_at",
+    "latency_ms",
+    "outcome",
+    "error_code",
+    "retry_after_s",
+    "before_cutoff",
+    "target_cutoff_at",
+    "payload_fingerprint",
+    "prompt_fingerprint",
+    "response_fingerprint",
+    "n_ranked",
+    "contract_errors",
+    "created_at",
+    "provider_route",
+    "timeout_s",
+    "request_fingerprint",
+    "retry_ordinal"
+   ]
+  },
+  "model_latency_cost_audit_daily": {
+   "tong": 4033,
+   "ngay_dich": null,
+   "cot": [
+    "id",
+    "date",
+    "region",
+    "model_name",
+    "model_family",
+    "run_source",
+    "prediction_row_count",
+    "trace_row_count",
+    "latency_available",
+    "latency_seconds",
+    "timeout_or_fallback",
+    "token_count",
+    "cost_estimate",
+    "finish_reason",
+    "missing_reason",
+    "pruning_allowed",
+    "pruning_label",
+    "official_output",
+    "output_impact",
+    "test_only",
+    "admin_only",
+    "owner_approved",
+    "output_eligible",
+    "diagnostic_only",
+    "run_label",
+    "created_at"
+   ]
+  }
+ },
+ "bundle_official_ngay_dich": {
+  "MB": {
+   "bach_thu": "40",
+   "lo2": "[\"40\", \"98\"]",
+   "lo3": "240",
+   "trang_thai": {
+    "bt": "WIN",
+    "lo2": "PARTIAL",
+    "lo3": "WIN"
+   },
+   "model_count": 13,
+   "bundle_version": 2,
+   "generation_method": "weighted_voting_wr",
+   "created_at": "2026-09-13 17:34:22",
+   "sha256_toan_dong": "160a7fa75832074ce80b9ff35f3a8181873bcb898e3f20362e72e349597a49db",
+   "sha256_source_predictions_json": "70e2c37d195765c2696105fd7838258c9aa72949367c659bead0ffd8f4fd47c2"
+  },
+  "MN": {
+   "bach_thu": "89",
+   "lo2": "[\"89\", \"59\"]",
+   "lo3": "189",
+   "trang_thai": {
+    "bt": "WIN",
+    "lo2": "WIN",
+    "lo3": "LOSE"
+   },
+   "model_count": 14,
+   "bundle_version": 2,
+   "generation_method": "weighted_voting_wr",
+   "created_at": "2026-09-13 05:24:35",
+   "sha256_toan_dong": "a13bf9cb8742e6adf616f97e2bfc1dd2ba4acbf37df522c7b5813ed8ce704cb7",
+   "sha256_source_predictions_json": "b8a09fc4a6bf606b47416b0b41ac3c8fa495f5a41d37828ec0a39b984f028e73"
+  },
+  "MT": {
+   "bach_thu": "54",
+   "lo2": "[\"54\", \"98\"]",
+   "lo3": "854",
+   "trang_thai": {
+    "bt": "WIN",
+    "lo2": "PARTIAL",
+    "lo3": "LOSE"
+   },
+   "model_count": 12,
+   "bundle_version": 2,
+   "generation_method": "weighted_voting_wr",
+   "created_at": "2026-09-13 16:41:14",
+   "sha256_toan_dong": "156bfd59fe7afad8a17d47f509a3175ec7b28eb36df0651cf5e386d6e0617122",
+   "sha256_source_predictions_json": "4cae2d9632255fd72da8ef043b7b13eed51aad0784f805f44ad67483f5b760ff"
+  }
+ },
+ "immutable_historical_digest": {
+  "pham_vi": "day_governance date<=2026-09-09",
+  "n_rows": 581,
+  "sha256": "786e350c886ab040146c49a08e4abb9e5d04acb0fdf706dc8b6f837bbd2c71fa"
+ },
+ "output_counterfactual_rank_NOT_NULL": 0,
+ "roster": {
+  "tu_predictions_ngay_dich": {
+   "MB": {
+    "claude-opus-4-6": {
+     "ai_chain": 1
+    },
+    "claude-opus-5-fast": {
+     "shadow_auto_eval": 1
+    },
+    "claude-sonnet-4-6": {
+     "ai_chain": 1
+    },
+    "combo-no-token": {
+     "rerun_post_mt": 1
+    },
+    "combo-super": {
+     "ai_chain": 1
+    },
+    "deepseek-reasoner": {
+     "ai_chain": 1
+    },
+    "deepseek-v4-pro-real": {
+     "shadow_auto_eval": 1
+    },
+    "gemini-2.5-flash": {
+     "ai_chain": 1
+    },
+    "gemini-2.5-pro": {
+     "ai_chain": 1
+    },
+    "gemini-3.5-flash": {
+     "shadow_auto_eval": 1
+    },
+    "gemini-3.6-flash": {
+     "shadow_auto_eval": 1
+    },
+    "glm-5.1": {
+     "ai_chain": 1
+    },
+    "glm-5.2": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5-mini": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5.4": {
+     "ai_chain": 1
+    },
+    "gpt-5.5": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5.6-sol-pro": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-oss-120b": {
+     "ai_chain": 1
+    },
+    "grok-4.3": {
+     "shadow_auto_eval": 1
+    },
+    "lstm": {
+     "rerun_post_mt": 1
+    },
+    "meta-learning": {
+     "rerun_post_mt": 1
+    },
+    "qwen3-max-thinking": {
+     "shadow_auto_eval": 1
+    },
+    "qwen3.7-max": {
+     "shadow_auto_eval": 1
+    },
+    "random-forest": {
+     "rerun_post_mt": 1
+    },
+    "smart-ensemble": {
+     "rerun_post_mt": 1
+    },
+    "smart-ml": {
+     "rerun_post_mt": 1
+    },
+    "xgboost": {
+     "rerun_post_mt": 1
+    }
+   },
+   "MN": {
+    "claude-opus-4-6": {
+     "auto_daily": 1
+    },
+    "claude-opus-5-fast": {
+     "shadow_auto_eval": 1
+    },
+    "claude-sonnet-4-6": {
+     "auto_daily": 1
+    },
+    "combo-no-token": {
+     "auto_daily": 1
+    },
+    "combo-super": {
+     "auto_daily": 1
+    },
+    "deepseek-reasoner": {
+     "auto_daily": 1
+    },
+    "deepseek-v4-pro-real": {
+     "shadow_auto_eval": 1
+    },
+    "gemini-2.5-flash": {
+     "auto_daily": 1
+    },
+    "gemini-2.5-pro": {
+     "auto_daily": 1
+    },
+    "gemini-3.5-flash": {
+     "shadow_auto_eval": 1
+    },
+    "gemini-3.6-flash": {
+     "shadow_auto_eval": 1
+    },
+    "glm-5.1": {
+     "auto_daily": 1
+    },
+    "glm-5.2": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5-mini": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5.4": {
+     "auto_daily": 1
+    },
+    "gpt-5.5": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5.6-sol-pro": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-oss-120b": {
+     "auto_daily": 1
+    },
+    "grok-4.3": {
+     "shadow_auto_eval": 1
+    },
+    "lstm": {
+     "auto_daily": 1
+    },
+    "meta-learning": {
+     "auto_daily": 1
+    },
+    "qwen3-max-thinking": {
+     "shadow_auto_eval": 1
+    },
+    "qwen3.7-max": {
+     "shadow_auto_eval": 1
+    },
+    "random-forest": {
+     "auto_daily": 1
+    },
+    "smart-ensemble": {
+     "auto_daily": 1
+    },
+    "smart-ml": {
+     "auto_daily": 1
+    },
+    "xgboost": {
+     "auto_daily": 1
+    }
+   },
+   "MT": {
+    "claude-opus-4-6": {
+     "ai_chain": 1
+    },
+    "claude-opus-5-fast": {
+     "shadow_auto_eval": 1
+    },
+    "claude-sonnet-4-6": {
+     "ai_chain": 1
+    },
+    "combo-no-token": {
+     "auto_daily": 1
+    },
+    "combo-super": {
+     "ai_chain": 1
+    },
+    "deepseek-reasoner": {
+     "ai_chain": 1
+    },
+    "deepseek-v4-pro-real": {
+     "shadow_auto_eval": 1
+    },
+    "gemini-2.5-flash": {
+     "ai_chain": 1
+    },
+    "gemini-2.5-pro": {
+     "ai_chain": 1
+    },
+    "gemini-3.5-flash": {
+     "shadow_auto_eval": 1
+    },
+    "gemini-3.6-flash": {
+     "shadow_auto_eval": 1
+    },
+    "glm-5.1": {
+     "ai_chain": 1
+    },
+    "glm-5.2": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5-mini": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5.4": {
+     "ai_chain": 1
+    },
+    "gpt-5.5": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-5.6-sol-pro": {
+     "shadow_auto_eval": 1
+    },
+    "gpt-oss-120b": {
+     "ai_chain": 1
+    },
+    "grok-4.3": {
+     "shadow_auto_eval": 1
+    },
+    "lstm": {
+     "auto_daily": 1
+    },
+    "meta-learning": {
+     "auto_daily": 1
+    },
+    "qwen3-max-thinking": {
+     "shadow_auto_eval": 1
+    },
+    "qwen3.7-max": {
+     "shadow_auto_eval": 1
+    },
+    "random-forest": {
+     "auto_daily": 1
+    },
+    "smart-ensemble": {
+     "auto_daily": 1
+    },
+    "smart-ml": {
+     "auto_daily": 1
+    },
+    "xgboost": {
+     "auto_daily": 1
+    }
+   }
+  },
+  "roster_khai_bao": {
+   "gpt_analyzer.py:OPENROUTER_MODELS_SET": {
+    "dong": 125,
+    "gia_tri_tho": "'glm-5.1', 'grok-4.20-multi-agent', 'cohere-rerank-4-pro',\n    'qwen3-coder',\n    'qwen3.6-plus',\n    # 'o3-deep-research',  # REMOVED 2026-04-13 (V17.15.3"
+   },
+   "combo_super.py:ML_MODELS": {
+    "dong": 64,
+    "gia_tri_tho": "{'id': 'meta-learning', 'label': _reg_display_name('meta-learning'"
+   },
+   "combo_super.py:AI_MODELS": {
+    "dong": 74,
+    "gia_tri_tho": "{'id': 'claude-sonnet-4-6', 'label': _reg_display_name('claude-sonnet-4-6'"
+   }
+  }
+ },
+ "learned_weights": [
+  {
+   "category": "learned_weights",
+   "setting_key": "weights_MB",
+   "value_sha256": "4308a17e38aa96e4ba23ea8d3ff970ca4920f09c5b151bab7b1bb08a602c5df4",
+   "value_len": 271,
+   "value_preview": "{\"weights\": {\"convergence\": 0.1, \"trend\": 0.3, \"gan\": 0.1, \"recency\": 0.5}, \"updated_at\": \"2026-09-13T03:16:46.616768+07:00\", \"metadata\": {\"method\": \"single_bes",
+   "updated_at": "2026-09-13T03:16:46.617012+07:00"
+  },
+  {
+   "category": "learned_weights",
+   "setting_key": "weights_MT",
+   "value_sha256": "76b9a5feaae4b16557fbe41fe95a87eae3fdb0e4b8b4626bd67c46ed189b0340",
+   "value_len": 272,
+   "value_preview": "{\"weights\": {\"convergence\": 0.4, \"trend\": 0.2, \"gan\": 0.1, \"recency\": 0.3}, \"updated_at\": \"2026-09-13T03:12:13.963344+07:00\", \"metadata\": {\"method\": \"single_bes",
+   "updated_at": "2026-09-13T03:12:13.963604+07:00"
+  },
+  {
+   "category": "learned_weights",
+   "setting_key": "weights_MN",
+   "value_sha256": "9860d0b094551446201bd8ff793a69b4cbc2673f58beb231f1e963c0ea57b53f",
+   "value_len": 271,
+   "value_preview": "{\"weights\": {\"convergence\": 0.2, \"trend\": 0.5, \"gan\": 0.1, \"recency\": 0.2}, \"updated_at\": \"2026-09-13T03:06:33.908175+07:00\", \"metadata\": {\"method\": \"single_bes",
+   "updated_at": "2026-09-13T03:06:33.908462+07:00"
+  },
+  {
+   "category": "system",
+   "setting_key": "weight_optimizer_time",
+   "value_sha256": "20677a31b4a8bfb95cc367cb2dd4954e46566e4cd305f28cf756d2501ad5a895",
+   "value_len": 5,
+   "value_preview": "03:00",
+   "updated_at": "2026-04-05T11:51:30.665012+07:00"
+  },
+  {
+   "category": "system",
+   "setting_key": "weight_optimizer_day",
+   "value_sha256": "27756f050e14a1cb1c1ee867f0eace9ea4d9fcb81b8bee089469f1ebd5fd7b17",
+   "value_len": 3,
+   "value_preview": "sun",
+   "updated_at": "2026-04-05T11:51:30.657087+07:00"
+  },
+  {
+   "category": "system",
+   "setting_key": "weight_optimizer_enabled",
+   "value_sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+   "value_len": 1,
+   "value_preview": "1",
+   "updated_at": "2026-03-26 14:05:55"
+  }
+ ],
+ "cutoff_doc_tu_ma": {
+  "_v10782_freeze.py": {
+   "ton_tai": true,
+   "bien": "FREEZE_MARKS",
+   "tim_thay": true,
+   "gia_tri_tho": "\"MN\": \"15:45\", \"MT\": \"16:58\", \"MB\": \"17:58\"",
+   "dong": 32
+  },
+  "_v10759_money_board.py": {
+   "ton_tai": true,
+   "bien": "OUTPUT_DUE",
+   "tim_thay": true,
+   "gia_tri_tho": "\"MN\": \"15:45\", \"MT\": \"16:58\", \"MB\": \"17:58\"",
+   "dong": 27
+  },
+  "_v10861_runtime_contract_audit.py": {
+   "ton_tai": true,
+   "bien": "DEADLINE",
+   "tim_thay": true,
+   "gia_tri_tho": "\"MN\": \"15:45\", \"MT\": \"16:58\", \"MB\": \"17:58\"",
+   "dong": 32
+  },
+  "_v10692_mn_mt_multidir_lane.py": {
+   "ton_tai": true,
+   "bien": "OUTPUT_FREEZE_HHMM",
+   "tim_thay": true,
+   "gia_tri_tho": "\"MN\": \"15:45\", \"MT\": \"16:58\", \"MB\": \"17:58\"",
+   "dong": 77
+  }
+ },
+ "bam_khoi_TOTAL": {
+  "ham_ung_vien": [
+   "_build_public_bundle_provenance",
+   "_build_screening_scoreboard",
+   "_build_v10582_final_bundle_explainability",
+   "_bundle_cho_khach",
+   "_classify_bundle_gap",
+   "_cong_bundle_admin",
+   "_du_doan_test_scoreboard_rows",
+   "_v10519_official_bundle",
+   "_v10582_voter_class",
+   "api_generate_bundle",
+   "api_get_bundle_history",
+   "api_get_final_bundle",
+   "api_shadow_scoreboard",
+   "api_three_layer_scoreboard",
+   "api_v10605_lane_test_scoreboard",
+   "generate_final_bundle",
+   "model_ranking_api"
+  ],
+  "bam_ham": {
+   "_build_public_bundle_provenance": {
+    "sha256": "2d68234588b39e4cfafa3e2495a23c5f28c28946bafd12091523e2a194b96342",
+    "so_dong": 30,
+    "dong_bat_dau": 2663
+   },
+   "_build_screening_scoreboard": {
+    "sha256": "c0adfecd07f2c945b5cd1019b6879d8d7f0903f4a68f0289f909aa9eeee992e7",
+    "so_dong": 109,
+    "dong_bat_dau": 14676
+   },
+   "_build_v10582_final_bundle_explainability": {
+    "sha256": "31f95940dc5cd994482f11dbc999b1ca46dc34841c235aff6c9b926d9b2d21aa",
+    "so_dong": 78,
+    "dong_bat_dau": 2709
+   },
+   "_bundle_cho_khach": {
+    "sha256": "a8452a50fbfd894f620c9630374942e9dcbe875dd0a8539ba52510d796b1b4b9",
+    "so_dong": 62,
+    "dong_bat_dau": 6465
+   },
+   "_classify_bundle_gap": {
+    "sha256": "c9e0c0260d15722237583a32e8412e6b6b3667bcac478782fde27724089bb965",
+    "so_dong": 50,
+    "dong_bat_dau": 1131
+   },
+   "_cong_bundle_admin": {
+    "sha256": "9a6d4dafb52a9f4ba699b93d1e8a0b69c46d6553172d88ee2e86f18b3b0e234e",
+    "so_dong": 34,
+    "dong_bat_dau": 6432
+   },
+   "_du_doan_test_scoreboard_rows": {
+    "sha256": "1b31c37b34166b398312b21ed2cb5b477e37345776ec621f5a885ff9278b6049",
+    "so_dong": 29,
+    "dong_bat_dau": 11719
+   },
+   "_v10519_official_bundle": {
+    "sha256": "eaccfc610d497c6e9192aec50518bc9b796d1460fb6534c089940ce518fd799a",
+    "so_dong": 23,
+    "dong_bat_dau": 17805
+   },
+   "_v10582_voter_class": {
+    "sha256": "edea91be5863a50e859d4410d060f225b23ecd5610adc8176b9368c340f384ce",
+    "so_dong": 13,
+    "dong_bat_dau": 2692
+   },
+   "api_generate_bundle": {
+    "sha256": "b97939153c8a538de0bffccca16e743dc584bf8a8e4834b7d8b0cfa4a2fa77d9",
+    "so_dong": 49,
+    "dong_bat_dau": 15907
+   },
+   "api_get_bundle_history": {
+    "sha256": "6635d2a0855edee042790c8b69c90eb600961f8e26c5ae704830e05e5f530dbf",
+    "so_dong": 36,
+    "dong_bat_dau": 11253
+   },
+   "api_get_final_bundle": {
+    "sha256": "c97be3397b629fca85af74b49b74e2858c1687c1532af4ae4176bd5c0bdd3756",
+    "so_dong": 277,
+    "dong_bat_dau": 10977
+   },
+   "api_shadow_scoreboard": {
+    "sha256": "94cd9a8667f261c8c39c76715c3f2eda9ebe967a50540200a5be4948a3b9b89c",
+    "so_dong": 26,
+    "dong_bat_dau": 3382
+   },
+   "api_three_layer_scoreboard": {
+    "sha256": "e50bb3375de07fc8fd0ad0ac9196d17a531a85312c95da7dde46c2979f9e1b61",
+    "so_dong": 17,
+    "dong_bat_dau": 16667
+   },
+   "api_v10605_lane_test_scoreboard": {
+    "sha256": "eef925310b393a0e690dade2b27eb59867610546d1599bc72e601f091be6b1a3",
+    "so_dong": 167,
+    "dong_bat_dau": 16962
+   },
+   "generate_final_bundle": {
+    "sha256": "f8b6c13af0a98efbf2b5fc401c953683718c032f7667e4d39f277d0e57afe28c",
+    "so_dong": 955,
+    "dong_bat_dau": 9651
+   },
+   "model_ranking_api": {
+    "sha256": "51fe1670933195f289907ec5a1b30d084269f5fd51eb87ee121b68b682e4d7c5",
+    "so_dong": 130,
+    "dong_bat_dau": 5777
+   }
+  }
+ },
+ "model_artifacts": {
+  "_v10952_ket_qua_huan_luyen.json": {
+   "path": "/root/Lottery_AI_Test/data/models/_v10952_ket_qua_huan_luyen.json",
+   "size": 1681,
+   "mtime": "2026-09-13 02:01:35.605489770 +0700",
+   "sha256": "2c062d71636e73bd17a4a44178969771c9ac814c37ac6c1227eaebbc7c8e6d44",
+   "inode": 1806560,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "lstm_MB.pt": {
+   "path": "/root/Lottery_AI_Test/data/models/lstm_MB.pt",
+   "size": 920719,
+   "mtime": "2026-09-13 02:02:47.029923158 +0700",
+   "sha256": "510917202b3346c1d8ea37cd64e961164fbd759a2942c40e425b41e40eb892d1",
+   "inode": 1809367,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "lstm_MB_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/lstm_MB_metrics.json",
+   "size": 268,
+   "mtime": "2026-09-13 02:02:54.641969346 +0700",
+   "sha256": "671eaadd7d882e2c034509a113257778215494964c91977990964ff8d8fcdcc2",
+   "inode": 1809374,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "lstm_MN.pt": {
+   "path": "/root/Lottery_AI_Test/data/models/lstm_MN.pt",
+   "size": 920719,
+   "mtime": "2026-09-13 02:02:01.545647169 +0700",
+   "sha256": "4ea2a631a8cdd0d59353ad29e6415a85464468fb16b90b12cffd4bac3337a2d1",
+   "inode": 1809380,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "lstm_MN_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/lstm_MN_metrics.json",
+   "size": 270,
+   "mtime": "2026-09-13 02:02:10.669702532 +0700",
+   "sha256": "e0523cc0d533f78a8645c23523a7816ed9cbb65b480453c12b0e160f61349d26",
+   "inode": 1809382,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "lstm_MT.pt": {
+   "path": "/root/Lottery_AI_Test/data/models/lstm_MT.pt",
+   "size": 920719,
+   "mtime": "2026-09-13 02:02:26.901801025 +0700",
+   "sha256": "be1472c5eee455de9111bc0944cf8a09aa526867f55ac5225f7cb38bacaa499f",
+   "inode": 1809373,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "lstm_MT_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/lstm_MT_metrics.json",
+   "size": 270,
+   "mtime": "2026-09-13 02:02:34.693848305 +0700",
+   "sha256": "1db5606064a897ef2898ce8ca56fd60a0e5378f35789bf5bcaa984ccc1b2863f",
+   "inode": 1809368,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "meta_learner_MB.pkl": {
+   "path": "/root/Lottery_AI_Test/data/models/meta_learner_MB.pkl",
+   "size": 1039258,
+   "mtime": "2026-09-13 02:01:30.957461567 +0700",
+   "sha256": "44cfe75a879d92f13bc34e240c469689b94cc438235a2292aaddd12f9540dd0d",
+   "inode": 1809377,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "meta_learner_MB.pkl.bak": {
+   "path": "/root/Lottery_AI_Test/data/models/meta_learner_MB.pkl.bak",
+   "size": 1039126,
+   "mtime": "2026-07-03 06:31:20.600051735 +0700",
+   "sha256": "13329f1310c888da918e4ab992c882ec699a7332161a2e7e387a913bbb65fec8",
+   "inode": 1809376,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "meta_learner_MN.pkl": {
+   "path": "/root/Lottery_AI_Test/data/models/meta_learner_MN.pkl",
+   "size": 1041370,
+   "mtime": "2026-09-13 02:00:33.433112566 +0700",
+   "sha256": "6cdd700feb961b8bd969f784ad3a419783696aa19100fbf376e20bf23c475e91",
+   "inode": 1809386,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "meta_learner_MN.pkl.bak": {
+   "path": "/root/Lottery_AI_Test/data/models/meta_learner_MN.pkl.bak",
+   "size": 1041018,
+   "mtime": "2026-07-03 06:30:29.487741213 +0700",
+   "sha256": "95c623ffeaca9b2a2aaad18b4ed0ab5bf525afeeb00eafbc36e9e1ceb486d559",
+   "inode": 1809394,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "meta_learner_MT.pkl": {
+   "path": "/root/Lottery_AI_Test/data/models/meta_learner_MT.pkl",
+   "size": 1040516,
+   "mtime": "2026-09-13 02:01:05.069304483 +0700",
+   "sha256": "6c731e0b7349cad8eb1252dea6d96fbc63f6f55970d12db380944c353c07744d",
+   "inode": 1809372,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "meta_learner_MT.pkl.bak": {
+   "path": "/root/Lottery_AI_Test/data/models/meta_learner_MT.pkl.bak",
+   "size": 1039815,
+   "mtime": "2026-07-03 06:30:57.831913412 +0700",
+   "sha256": "7c7fdb28151cf7c5b22c85b0990102f75c0515e3523902cb0797fda58476c1fd",
+   "inode": 1809389,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MB.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MB.joblib",
+   "size": 14529017,
+   "mtime": "2026-09-13 02:01:35.577489600 +0700",
+   "sha256": "1e5d86988b6e0cc5b2c9eb21a55b2334585c8eda9025563cf329deaf6fe70f52",
+   "inode": 1809391,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MB_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MB_metrics.json",
+   "size": 880,
+   "mtime": "2026-09-13 02:01:35.581489624 +0700",
+   "sha256": "61f6bde3a0a8e254caf4f8f341480cd6acaefe60634f6057a7d7e7d2f4f78a50",
+   "inode": 1809378,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MB_scaler.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MB_scaler.joblib",
+   "size": 1287,
+   "mtime": "2026-09-13 02:01:35.581489624 +0700",
+   "sha256": "b654f62af921308bf9342b85699f0a448f13ff21ca0268e60d24440eee5ab578",
+   "inode": 1809385,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MN.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MN.joblib",
+   "size": 15109497,
+   "mtime": "2026-09-13 02:00:38.365142485 +0700",
+   "sha256": "ce6a65622cfd564ed165f8bb71b63cea2201eac19b15d1c5136f75cf504a2324",
+   "inode": 1809381,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MN_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MN_metrics.json",
+   "size": 880,
+   "mtime": "2026-09-13 02:00:38.369142509 +0700",
+   "sha256": "34df661396ae4cda879763699213dcb23f9233b37c3780b53fcaf34659930184",
+   "inode": 1809392,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MN_scaler.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MN_scaler.joblib",
+   "size": 1287,
+   "mtime": "2026-09-13 02:00:38.369142509 +0700",
+   "sha256": "81b9a5bf9f1153cf493a60991f16d7d43e0937f5a50ddf68707a413713d10c0c",
+   "inode": 1809366,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MT.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MT.joblib",
+   "size": 16290457,
+   "mtime": "2026-09-13 02:01:09.729332759 +0700",
+   "sha256": "bd06c42ac26ec6b73699e08bfac3d94c19e8b84040e8490a4609064e587cfcda",
+   "inode": 1809371,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MT_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MT_metrics.json",
+   "size": 879,
+   "mtime": "2026-09-13 02:01:09.733332784 +0700",
+   "sha256": "5ee0fd0bbadde78303a5671eca8d150b14b650ee3f551fc4223a02e6a915df81",
+   "inode": 1809375,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "random-forest_MT_scaler.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/random-forest_MT_scaler.joblib",
+   "size": 1287,
+   "mtime": "2026-09-13 02:01:09.733332784 +0700",
+   "sha256": "351e02724cbbd6de99b509878fe2151163fb47a198041d659be89ca45d4dceaa",
+   "inode": 1809390,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MB.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MB.joblib",
+   "size": 830953,
+   "mtime": "2026-09-13 02:01:31.757466421 +0700",
+   "sha256": "67caad89e3fd5f104c0259c1c16232edf4998a1cfedb9195012f51bf7704d027",
+   "inode": 1809383,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MB_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MB_metrics.json",
+   "size": 872,
+   "mtime": "2026-09-13 02:01:31.757466421 +0700",
+   "sha256": "413afaef92f125a392f0ea1133ec1f26ceedb1929ed2d16898c4ec2d8466f303",
+   "inode": 1809369,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MB_scaler.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MB_scaler.joblib",
+   "size": 1287,
+   "mtime": "2026-09-13 02:01:31.757466421 +0700",
+   "sha256": "b654f62af921308bf9342b85699f0a448f13ff21ca0268e60d24440eee5ab578",
+   "inode": 1809395,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MN.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MN.joblib",
+   "size": 812795,
+   "mtime": "2026-09-13 02:00:34.233117419 +0700",
+   "sha256": "9858115492c467beb05dd476bea11d46f96247e5d41a5477e8d03bd9a8594591",
+   "inode": 1809370,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MN_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MN_metrics.json",
+   "size": 874,
+   "mtime": "2026-09-13 02:00:34.233117419 +0700",
+   "sha256": "14a08a392de62fbb2adf094eeb7870381d9fef817854375814e7118757ec1d35",
+   "inode": 1809387,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MN_scaler.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MN_scaler.joblib",
+   "size": 1287,
+   "mtime": "2026-09-13 02:00:34.233117419 +0700",
+   "sha256": "81b9a5bf9f1153cf493a60991f16d7d43e0937f5a50ddf68707a413713d10c0c",
+   "inode": 1809388,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MT.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MT.joblib",
+   "size": 809194,
+   "mtime": "2026-09-13 02:01:05.829309095 +0700",
+   "sha256": "1f394053e4f4bc2d0a95e453defc84fcfd209b25f314f43d3afdbcde2b79b01a",
+   "inode": 1809384,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MT_metrics.json": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MT_metrics.json",
+   "size": 873,
+   "mtime": "2026-09-13 02:01:05.829309095 +0700",
+   "sha256": "eb2d8d11ba8d17ba965d20270664d563eef5cd999efa6569f92c5a24faf00801",
+   "inode": 1809393,
+   "la_symlink": false,
+   "symlink_target": null
+  },
+  "xgboost_MT_scaler.joblib": {
+   "path": "/root/Lottery_AI_Test/data/models/xgboost_MT_scaler.joblib",
+   "size": 1287,
+   "mtime": "2026-09-13 02:01:05.829309095 +0700",
+   "sha256": "351e02724cbbd6de99b509878fe2151163fb47a198041d659be89ca45d4dceaa",
+   "inode": 1809379,
+   "la_symlink": false,
+   "symlink_target": null
+  }
+ },
+ "deployed_sha256_official": {
+  "main.py": "d59a6ae94f9c3666eace95d2e772ed39e761a1711cb726b601d753d5d8f2f4ca",
+  "scheduler.py": "2961987d8c3a6e27a962cd3bf3f76c023eebd3a224d13789117edac2b47a9e63",
+  "database.py": "758cf2cf0a8a6564d7ad5c0c92aa788e9b80c78e2a0dd1adeb5539e502af09fa",
+  "gpt_analyzer.py": "758c29c13185763f406ab49e65c44ad2fcf610d7fb9b4c7142fa5c705de144d6",
+  "model_registry.py": "4c84ae9a0d87fa4d43e276c377b7b11ad1f0de22cbd71d8708781771fb782b30",
+  "combo_super.py": "47047b1dc0b7e0b991022eed4d8cdfb7e7e5ed464488e6b32a84e78371eb32fd",
+  "daily_evaluation.py": "3c91aba873add9684669284fb8e880657b0bc2c289d726d5ed0f9d784b659ff6",
+  "weight_optimizer.py": "35bd1fff09554d75de8bf6d8308b67814182f329468436c818ef0dc41a2356af",
+  "backtester.py": "35239e0924f5cb7bbe44aeab5ebb68e9635cceadc17b0c4249305d0cd28914ea",
+  "statistical_analyzer.py": "eec9ed17d14c72eebf925f3a15d5299fbed5c5106c68806ae2fe9d3d75a52ca2"
+ },
+ "active_writer": {
+  "wal_ton_tai": true,
+  "shm_ton_tai": true,
+  "tien_trinh_mo_db": "(lsof khong co hoac rong)"
+ },
+ "manifest_sha256": "da371ffe9b9f44f5d3325a9ca175bc9317e6a7a27982b4ac9ac31239beec064d"
+}

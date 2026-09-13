@@ -1,0 +1,139 @@
+{
+ "ngay": "2026-09-13",
+ "nguon": "model_registry.MODEL_REGISTRY",
+ "mien": {
+  "MN": {
+   "CORE": [
+    {
+     "id": "claude-opus-4-6",
+     "ho": "ANTHROPIC",
+     "cov30": 100.0
+    },
+    {
+     "id": "gemini-2.5-flash",
+     "ho": "GOOGLE",
+     "cov30": 100.0
+    },
+    {
+     "id": "gpt-oss-120b",
+     "ho": "OPENAI",
+     "cov30": 96.7
+    }
+   ],
+   "CHALLENGER": {
+    "id": "claude-sonnet-4-6",
+    "ho": "ANTHROPIC",
+    "cov30": 100.0
+   },
+   "BO_KHOI_ROSTER": [
+    "gemini-2.5-pro"
+   ],
+   "LOAI_BOI_GATE1": [
+    {
+     "id": "deepseek-reasoner",
+     "ly_do": "QUARANTINE_DETERMINISTIC",
+     "cov30": 86.2
+    },
+    {
+     "id": "gpt-5.4",
+     "ly_do": "QUARANTINE_DETERMINISTIC",
+     "cov30": 100.0
+    },
+    {
+     "id": "glm-5.1",
+     "ly_do": "QUARANTINE_COVERAGE",
+     "cov30": 89.7
+    }
+   ],
+   "truoc": 8,
+   "sau": 4,
+   "so_ho_doc_lap_CORE": 3
+  },
+  "MT": {
+   "CORE": [
+    {
+     "id": "claude-opus-4-6",
+     "ho": "ANTHROPIC",
+     "cov30": 100.0
+    },
+    {
+     "id": "gemini-2.5-flash",
+     "ho": "GOOGLE",
+     "cov30": 100.0
+    },
+    {
+     "id": "glm-5.1",
+     "ho": "PROV_OPENROUTER",
+     "cov30": 100.0
+    }
+   ],
+   "CHALLENGER": {
+    "id": "gpt-oss-120b",
+    "ho": "OPENAI",
+    "cov30": 93.1
+   },
+   "BO_KHOI_ROSTER": [
+    "claude-sonnet-4-6",
+    "gemini-2.5-pro"
+   ],
+   "LOAI_BOI_GATE1": [
+    {
+     "id": "deepseek-reasoner",
+     "ly_do": "QUARANTINE_DETERMINISTIC",
+     "cov30": 89.7
+    },
+    {
+     "id": "gpt-5.4",
+     "ly_do": "QUARANTINE_DETERMINISTIC",
+     "cov30": 100.0
+    }
+   ],
+   "truoc": 8,
+   "sau": 4,
+   "so_ho_doc_lap_CORE": 3
+  },
+  "MB": {
+   "CORE": [
+    {
+     "id": "claude-opus-4-6",
+     "ho": "ANTHROPIC",
+     "cov30": 100.0
+    },
+    {
+     "id": "gemini-2.5-flash",
+     "ho": "GOOGLE",
+     "cov30": 100.0
+    },
+    {
+     "id": "gpt-oss-120b",
+     "ho": "OPENAI",
+     "cov30": 100.0
+    }
+   ],
+   "CHALLENGER": {
+    "id": "glm-5.1",
+    "ho": "PROV_OPENROUTER",
+    "cov30": 96.7
+   },
+   "BO_KHOI_ROSTER": [
+    "claude-sonnet-4-6",
+    "gemini-2.5-pro"
+   ],
+   "LOAI_BOI_GATE1": [
+    {
+     "id": "deepseek-reasoner",
+     "ly_do": "QUARANTINE_DETERMINISTIC",
+     "cov30": 90.0
+    },
+    {
+     "id": "gpt-5.4",
+     "ly_do": "QUARANTINE_DETERMINISTIC",
+     "cov30": 96.7
+    }
+   ],
+   "truoc": 8,
+   "sau": 4,
+   "so_ho_doc_lap_CORE": 3
+  }
+ }
+}
