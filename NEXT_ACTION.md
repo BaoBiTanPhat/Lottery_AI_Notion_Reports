@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-13 21:49:40 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-13 22:46:28 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -35,7 +35,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11184` — Z MODEL LEAGUE ROSTER (2026-09-13)
+**Báo cáo mới nhất:** `V11185` — AA TOKEN CALL ROSTER (2026-09-13)
 
 ---
 

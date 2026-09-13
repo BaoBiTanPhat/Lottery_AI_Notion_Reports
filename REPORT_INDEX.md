@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-09-13 21:49:40 (giờ VN) · **462 thư mục báo cáo**
+**Sinh lúc:** 2026-09-13 22:46:28 (giờ VN) · **463 thư mục báo cáo**
 
-**Mới nhất: `V11184`** — Z MODEL LEAGUE ROSTER · 2026-09-13
+**Mới nhất: `V11185`** — AA TOKEN CALL ROSTER · 2026-09-13
 
-- [REPORT_V11184.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11184_Z_MODEL_LEAGUE_ROSTER_20260913/REPORT_V11184.md)
-- [CONVERSATION_CONTEXT_V11184_20260913.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11184_Z_MODEL_LEAGUE_ROSTER_20260913/CONVERSATION_CONTEXT_V11184_20260913.md)
+- [REPORT_V11185.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11185_AA_TOKEN_CALL_ROSTER_20260913/REPORT_V11185.md)
+- [CONVERSATION_CONTEXT_V11185_20260913.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11185` | 2026-09-13 | AA TOKEN CALL ROSTER | [REPORT_V11185.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11185_AA_TOKEN_CALL_ROSTER_20260913/REPORT_V11185.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md) | ✓ |
 | `V11184` | 2026-09-13 | Z MODEL LEAGUE ROSTER | [REPORT_V11184.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11184_Z_MODEL_LEAGUE_ROSTER_20260913/REPORT_V11184.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11184_Z_MODEL_LEAGUE_ROSTER_20260913/CONVERSATION_CONTEXT_V11184_20260913.md) | ✓ |
 | `V11183` | 2026-09-13 | Y LIVE TERMINAL 13SEP | [REPORT_V11183.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11183_Y_LIVE_TERMINAL_13SEP_20260913/REPORT_V11183.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11183_Y_LIVE_TERMINAL_13SEP_20260913/CONVERSATION_CONTEXT_V11183_20260913.md) | ✓ |
 | `V11182` | 2026-09-12 | X RETIRE FAMILY F4 F5 | [REPORT_V11182.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11182_X_RETIRE_FAMILY_F4_F5_20260912/REPORT_V11182.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11182_X_RETIRE_FAMILY_F4_F5_20260912/CONVERSATION_CONTEXT_V11182_20260912.md) | ✓ |

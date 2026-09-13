@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-13 21:49:40",
- "tong_thu_muc": 462,
- "latest_version": "V11184",
+ "_sinh_luc_vn": "2026-09-13 22:46:28",
+ "tong_thu_muc": 463,
+ "latest_version": "V11185",
  "latest": {
-  "version": "V11184",
+  "version": "V11185",
   "ngay": "2026-09-13",
-  "chu_de": "Z MODEL LEAGUE ROSTER",
-  "thu_muc": "V11184_Z_MODEL_LEAGUE_ROSTER_20260913",
+  "chu_de": "AA TOKEN CALL ROSTER",
+  "thu_muc": "V11185_AA_TOKEN_CALL_ROSTER_20260913",
   "bao_cao": [
-   "V11184_Z_MODEL_LEAGUE_ROSTER_20260913/REPORT_V11184.md"
+   "V11185_AA_TOKEN_CALL_ROSTER_20260913/REPORT_V11185.md"
   ],
   "ngu_canh": [
-   "V11184_Z_MODEL_LEAGUE_ROSTER_20260913/CONVERSATION_CONTEXT_V11184_20260913.md"
+   "V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11185",
+   "ngay": "2026-09-13",
+   "chu_de": "AA TOKEN CALL ROSTER",
+   "thu_muc": "V11185_AA_TOKEN_CALL_ROSTER_20260913",
+   "bao_cao": [
+    "V11185_AA_TOKEN_CALL_ROSTER_20260913/REPORT_V11185.md"
+   ],
+   "ngu_canh": [
+    "V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md"
+   ]
+  },
   {
    "version": "V11184",
    "ngay": "2026-09-13",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11171_CHUYEN_KHO_SANG_TO_CHUC_20260907/CONVERSATION_CONTEXT_V11171_20260907.md"
-   ]
-  },
-  {
-   "version": "V11170",
-   "ngay": "2026-09-06",
-   "chu_de": "MO XE NGAY LIVE",
-   "thu_muc": "V11170_MO_XE_NGAY_LIVE_20260906",
-   "bao_cao": [
-    "V11170_MO_XE_NGAY_LIVE_20260906/REPORT_V11170.md"
-   ],
-   "ngu_canh": [
-    "V11170_MO_XE_NGAY_LIVE_20260906/CONVERSATION_CONTEXT_V11170_20260906.md"
    ]
   }
  ]
