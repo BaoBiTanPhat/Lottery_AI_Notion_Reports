@@ -1,0 +1,37 @@
+========================================================================================================
+  §AC-M PREFLIGHT LUOT TU NHIEN DAU TIEN duoi V11186 — 2026-09-15T03:15:35
+========================================================================================================
+  M1   DAT   Service active va PID dung ban da deploy
+       ActiveState=active MainPID=169960 (deploy ghi 169960) NRestarts=0 len tu Mon 2026-09-14 20:06:21 +07
+  M2   DAT   Health 200
+       health=200
+  M3   DAT   SHA 5 tep deploy KHOP goi §AB
+       khop ca 5
+  M4   DAT   Khong tep nao duoc ghi SAU khi service khoi dong
+       moc service 20:06:21, moi tep deu cu hon
+  M5   DAT   Roster doc duoc ca ba mien, trong tran 4
+       token_call_roster/2026.09.14-1 · {'MN': 4, 'MT': 4, 'MB': 4}
+  M6   DAT   Cua go ve khan cap CAP 2 dang TAT
+       cua khan cap TAT (mac dinh)
+  M7   DAT   Uy quyen dispatcher: chan dung, khong chan oan
+       ngoai_roster=DENY_OUTSIDE_ROSTER · trong_roster=ALLOW · cach_ly=DENY_QUARANTINED · thieu_mien=DENY_INVALID_CONTEXT
+  M8   DAT   Combo gate CO MAT trong ma da deploy (AST, giai bi danh)
+       import as ['_v11186_gtcr'] · goi tai dong [1290]
+  M9   DAT   Uy quyen tai dispatcher CO MAT trong gpt_analyzer (AST, giai bi danh)
+       import as ['_uqg'] · goi tai dong [6807]
+  M10  DAT   Bo thu receipt 15/09 con song
+       PID 170282 song
+  M11  DAT   Khong co provider job dang bay (trace im >= 15 phut)
+       trace cuoi 2026-09-14 17:33:43 · im 581.9 phut
+  M12  DAT   Scheduler da xep lich cho ngay 2026-09-15
+       20 moc: ['next run at: 2026-09-15 00:00:00', 'next run at: 2026-09-15 00:05:00', 'next run at: 2026-09-15 00:10:00', 'next run at: 2026-09-15 00:15:00', 'next run at: 2026-09-15 00:20:00', 'next run at: 2026-09-15 00:25:00']
+  M13  DAT   Dia con >= 2.0 GB va RAM kha dung >= 200 MB
+       dia con 23.85 GB · RAM tong=3911 dung=719 kha_dung=2865 MB
+  M14  DAT   DB lanh, chua co ban ghi nao cua ngay moi
+       quick_check=ok journal=wal · {'predictions': 14965, 'final_bundles': 597, 'lottery_results': 15483, 'model_daily_eval': 14829} · predictions[2026-09-15]=0
+  M15  DAT   Trang thai cach ly doc duoc
+       4 model bi cach ly: ['deepseek-reasoner', 'deepseek-v4-pro-real', 'gpt-5-mini', 'gpt-5.4']
+--------------------------------------------------------------------------------------------------------
+  TERMINAL: V11186_FIRST_NATURAL_READY
+  KHONG restart. KHONG deploy them. Cho luot MN 05:15 chay tu nhien.
+========================================================================================================

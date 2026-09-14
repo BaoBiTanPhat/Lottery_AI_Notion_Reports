@@ -1,0 +1,36 @@
+============================================================================================================
+  TU KIEM _v11188_family_lineage
+============================================================================================================
+  DAT   A1 glm-5.1 va gpt-oss-120b cung provider=openrouter nhung KHAC ho  ZHIPU_GLM vs OPENAI_GPT
+  DAT   A2 kimi-k2.5 va qwen3-max-thinking KHAC ho                         
+  DAT   A3 llama-4-maverick va mistral-large-3 KHAC ho                     
+  DAT   B1 gpt-5.4 (openai) va gpt-5.5 (openrouter) CUNG ho                
+  DAT   B2 gpt-oss-120b cung thuoc ho OPENAI_GPT                           
+  DAT   B3 claude-opus-4-6, claude-sonnet-4-6, claude-opus-5-fast CUNG ho  
+  DAT   B4 gemini-2.5-pro va gemini-3.6-flash CUNG ho                      
+  DAT   C1 smart-ensemble la DERIVED, khong phai quan sat doc lap          
+  DAT   C2 smart-ml la DERIVED                                             
+  DAT   C3 combo-super la COMBO                                            
+  DAT   C4 xgboost la ML_BASE                                              
+  DAT   C5 claude-opus-4-6 la TOKEN_LLM                                    
+  DAT   D1 model la => KHONG_BIET, khong im lang gop vao ho nao            KHONG_BIET:model-chua-tung-thay-9000
+  DAT   D2 model rong => KHONG_BIET                                        
+  DAT   E1 roster MN 4 model nhung chi 3 HO GOC doc lap                    ho: ['ANTHROPIC_CLAUDE', 'GOOGLE_GEMINI', 'OPENAI_GPT']
+  DAT   E2 ho lon nhat la ANTHROPIC_CLAUDE chiem 2/4                       ANTHROPIC_CLAUDE 0.50
+  DAT   E3 so voter hieu dung < so model duy nhat                          hieu dung 2.67 < duy nhat 4
+  DAT   F1 roster MT 4 model = 4 ho goc doc lap                            
+  DAT   F2 MT so voter hieu dung = 4.0                                     4.0
+  DAT   F3 MT it tap trung hon MN                                          HHI MT=0.2500 < MN=0.3750
+  DAT   G1 11 voter NHUNG khong phai 11 quan sat doc lap                   duy nhat=11, ho goc doc lap=8
+  DAT   G2 DERIVED va COMBO bi loai khoi phep dem doc lap                  so ho doc lap=8, so voter hieu dung=8.0
+  DAT   G3 3 model DERIVED/COMBO co trong theo_loai                        DERIVED=['smart-ensemble', 'smart-ml'] COMBO=['combo-super']
+  DAT   H1 phan_tich_voters KHONG sua danh sach dau vao                    
+  DAT   H2 ham thuan — khong ghi DB, khong doc DB                          
+  DAT   I1 doc duoc model_registry                                         
+  DAT   I2 KHONG con model nao trong registry roi vao KHONG_BIET           []
+  DAT   I4 ba model khong sinh du doan duoc khai TUONG MINH, khong am tham thanh voter rerank/video => KHONG_DU_DOAN
+  DAT   I5 model KHONG_DU_DOAN bi loai khoi phep dem voter doc lap         1 voter that + 1 reranker => van la 1 ho doc lap
+  DAT   I3 phat hien duoc provider danh lua (>1 ho goc cung mot provider)  google: 2 ho; openrouter: 16 ho; local: 7 ho
+------------------------------------------------------------------------------------------------------------
+  TU KIEM _v11188_family_lineage: 30/30 DAT
+============================================================================================================

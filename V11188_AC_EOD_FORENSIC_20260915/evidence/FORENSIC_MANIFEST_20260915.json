@@ -1,0 +1,62 @@
+{
+ "artifact": "FORENSIC_EPOCH_MANIFEST",
+ "muc": "Prompt 43 R1 §AC-D",
+ "thoi_diem_ICT": "2026-09-15T02:26:36",
+ "thoi_diem_UTC": "2026-09-14T19:26:36",
+ "target_eod_date": "2026-09-14",
+ "first_natural_proof_date": "2026-09-15",
+ "vps_service": {
+  "MainPID": "169960",
+  "NRestarts": "0",
+  "ActiveState": "active",
+  "ActiveEnterTimestamp": "Mon 2026-09-14 20:06:21 +07"
+ },
+ "health": "200",
+ "sha_tep_deploy": {
+  "combo_super.py": "9b3fdaa263498d9b",
+  "gpt_analyzer.py": "11de9ea0530a5c0a",
+  "scheduler.py": "1cdc402ad49e9019",
+  "main.py": "5d897def9035e035",
+  "_v11185_roster_goi_token.py": "2b88d4f9ea43af28",
+  "model_registry.py": "4c84ae9a0d87fa4d",
+  "database.py": "758cf2cf0a8a6564",
+  "_v11186_receipt_roster.py": "3b0b7201ec028f57"
+ },
+ "row_counts": {
+  "predictions": 14965,
+  "final_bundles": 597,
+  "lottery_results": 15483,
+  "model_daily_eval": 14829,
+  "scheduler_logs": 293428
+ },
+ "max_date": {
+  "predictions": "2026-09-14",
+  "final_bundles": "2026-09-14",
+  "lottery_results": "2026-09-14",
+  "model_daily_eval": "2026-09-14"
+ },
+ "max_scheduler_log_vn": "2026-09-15 02:15:00",
+ "db": {
+  "quick_check": "ok",
+  "journal_mode": "wal",
+  "wal_checkpoint": "(0, 0, 0)",
+  "bytes": 863191040,
+  "wal_bytes": 0
+ },
+ "trace": {
+  "so_dong": 7076,
+  "ts_cuoi": "2026-09-14 17:33:43",
+  "sha256": "89c7db7a931150e6"
+ },
+ "crontab": {
+  "sha16": "81efcf8de5c90c62",
+  "so_dong_job": 90
+ },
+ "roster_quarantine": {
+  "quarantine_sha16": "43f7884d047a5447",
+  "khan_cap_file_ton_tai": false
+ },
+ "epoch": "14/09 tron ngay V11185 · 15/09 tron ngay V11186 (deploy 2026-09-14 20:05)",
+ "epoch_khop": true,
+ "terminal": "FORENSIC_INPUT_EPOCH_OK"
+}

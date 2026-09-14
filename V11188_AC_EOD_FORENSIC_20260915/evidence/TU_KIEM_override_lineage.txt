@@ -1,0 +1,29 @@
+====================================================================================================
+  TU KIEM _v11188_override_lineage
+====================================================================================================
+  DAT   A1 ghi duoc khi khong co override                              
+  DAT   A2 override_applied = 0                                        
+  DAT   A3 ly do that GIU NGUYEN cau cu khi khong override             
+  DAT   B1 ghi duoc khi CO override                                    
+  DAT   B2 override_applied = 1                                        
+  DAT   B3 ly do that NOI RO doi tu so nao sang so nao                 override_V10767_MB_PREVDAY_replaced_ranked0_31_with_16 · basis=ML plurality D-1
+  DAT   B4 ly do that KHAC cau gan cung dang ghi vao final_bundles     
+  DAT   B5 doc lai duoc                                                1 dong
+  DAT   B6 luu ca cau DA GHI lan cau THAT (de doi chieu)               
+  DAT   B7 phat hien xien2 lech bach_thu khi override no               xien2_dau=31 final_bt=16
+  DAT   C1 thu tu khoa KHONG lam doi bam                               
+  DAT   C2 doi mot gia tri LAM DOI bam                                 
+  DAT   C3 bam on dinh giua hai lan goi                                
+  DAT   D1 so DA DOI nhung rule=NONE => danh dau UNKNOWN, khong im lang UNKNOWN_SO_DA_DOI_NHUNG_RULE_NONE
+  DAT   D2 rule bao NO nhung so KHONG doi => ghi nhan bat thuong       RULE_BAO_NO_NHUNG_SO_KHONG_DOI
+  DAT   D3 rule_id tu bia bi tu choi, KHONG quy ve NONE                RULE_ID_KHONG_HOP_LE:'TU_BIA'
+  DAT   E1 DB khong ghi duoc => tra ve ok=False, KHONG raise           
+  DAT   E2 va noi ro da nuot loi gi                                    NUOT_LOI:OperationalError('unable to open database file')
+  DAT   F1 KHONG sua danh sach ranked cua caller                       
+  DAT   F2 ham chi tra dict quan sat, khong tra so de caller dung lam output ['ly_do', 'main_selection_reason_that', 'ok', 'override_applied', 'rule_id']
+  DAT   G1 ghi lai cung bundle KHONG de them dong                      5 -> 5
+  DAT   H1 chi tao DUNG MOT bang moi                                   ['sqlite_sequence', 'v11188_override_lineage']
+  DAT   H2 KHONG tao/dung bang khoa nao                                ['sqlite_sequence', 'v11188_override_lineage']
+----------------------------------------------------------------------------------------------------
+  TU KIEM _v11188_override_lineage: 23/23 DAT
+====================================================================================================

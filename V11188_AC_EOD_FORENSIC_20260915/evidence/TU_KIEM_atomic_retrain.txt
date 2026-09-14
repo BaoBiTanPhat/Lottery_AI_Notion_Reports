@@ -1,0 +1,48 @@
+==========================================================================================================
+  TU KIEM _v11188_atomic_retrain
+==========================================================================================================
+  DAT   A1 khong dat bien => duong ghi = ACTIVE (hanh vi hom nay)        
+  DAT   A2 khong dat bien => duong doc = ACTIVE                          
+  DAT   A3 duong ghi va duong doc TRUNG nhau khi chua bat                
+  DAT   A4 moi truong train: GHI candidate nhung DOC active              
+  DAT   A5 dat bien => hai duong TACH RA                                 
+  DAT   B1 xgboost co DU 3 tep (model + scaler + metrics)                ['xgboost_MN.joblib', 'xgboost_MN_scaler.joblib', 'xgboost_MN_metrics.json']
+  DAT   B2 lstm co 2 tep                                                 ['lstm_MB.pt', 'lstm_MB_metrics.json']
+  DAT   B3 meta-learning co 1 tep                                        
+  DAT   B4 model la => None, khong doan ten tep                          
+  DAT   C1 hon duong kim tren cung holdout => LEN                        ung vien 0.600000 > duong kim 0.550000 tren cung holdout H1 (n=60)
+  DAT   C2 KHAC holdout => KHONG LEN                                     ung vien do tren H1, duong kim do tren H2 — khong so duoc
+  DAT   C3 holdout qua ngan => KHONG LEN                                 n=10 < 30
+  DAT   C4 BANG duong kim => KHONG LEN (khong thay khi khong hon)        ung vien 0.550000 khong hon duong kim 0.550000
+  DAT   C5 module huan luyen loi => KHONG LEN du diem cao                module lstm_model bao loi khi huan luyen lstm@MB
+  DAT   C6 va ly do neu DUNG TEN MODULE hong                             
+  DAT   C7 thieu tep ung vien => KHONG LEN                               
+  DAT   C8 thieu diem => KHONG LEN (fail-closed)                         
+  DAT   C9 thieu dinh danh holdout => KHONG LEN                          
+  DAT   D1 xgboost LEN                                                   
+  DAT   D2 random-forest KHONG len (khong hon)                           
+  DAT   D3 lstm KHONG len (module loi)                                   
+  DAT   D4 ba ket qua DOC LAP — mot cai truot khong keo cai khac         
+  DAT   E1 kich hoat thanh cong                                          
+  DAT   E2 thay DU CA BA tep                                             ['xgboost_MN.joblib', 'xgboost_MN_scaler.joblib', 'xgboost_MN_metrics.json']
+  DAT   E3 ca ba tep deu la BAN MOI — khong con lai bo mix               {'xgboost_MN.joblib': 'BAN_MOI', 'xgboost_MN_scaler.joblib': 'BAN_MOI', 'xgboost_MN_metrics.json': 'BAN_MOI'}
+  DAT   E4 khong con tep .dang_vao sot lai                               
+  DAT   E5 nhat ky da duoc xoa sau khi xong                              
+  DAT   F1 thieu tep ung vien => TU CHOI kich hoat                       THIEU_TEP_UNG_VIEN:['random-forest_MN_scaler.joblib', 'random-forest_M
+  DAT   F2 ACTIVE GIU NGUYEN ban cu, khong bi dung toi                   {'random-forest_MN.joblib': 'BAN_CU_RF', 'random-forest_MN_scaler.joblib': 'BAN_CU_RF', 'random-forest_MN_metrics.json': 'BAN_CU_RF'}
+  DAT   G1 phat hien duoc nhat ky sot                                    {'model': 'lstm', 'mien': 'MB', 'tep': ['lstm_MB.pt', 'lstm_MB_metrics.json']}
+  DAT   G2 tu_sua don sach tep .dang_vao                                 ['lstm_MB.pt.dang_vao']
+  DAT   G3 tu_sua BAO CAO chu KHONG tu go ve                             
+  DAT   G4 sau tu_sua khong con nhat ky                                  
+  DAT   H1 khong truyen ham_kiem => KHONG duoc coi la dat                KHONG_KIEM_DUOC
+  DAT   H2 ham_kiem tra True => SMOKE_DAT                                
+  DAT   H3 ham_kiem tra False => SMOKE_TRUOT                             
+  DAT   H4 ham_kiem nem loi => SMOKE_NEM_LOI, khong lam sap tien trinh   
+  DAT   H5 thieu tep sau kich hoat => KHONG dat du ham_kiem tra True     
+  DAT   I1 model la => tra ve loi, KHONG raise                           
+  DAT   I2 thu muc candidate khong ton tai => tra ve loi, KHONG raise    
+  DAT   J1 khai du ba module huan luyen, dung ten trong ma               
+  DAT   K1 khoi phuc nguyen trang bien moi truong sau bo thu             
+----------------------------------------------------------------------------------------------------------
+  TU KIEM _v11188_atomic_retrain: 42/42 DAT
+==========================================================================================================
