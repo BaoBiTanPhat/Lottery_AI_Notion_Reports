@@ -167,6 +167,33 @@ thu receipt, ghi vào `artifacts/v11178/receipt_watch.log`.
 
 ---
 
+## 4b. ĐÃ LÀM GÌ — danh mục thay đổi (§57.3 mục 5)
+
+**Không có một byte nào lên VPS trong phiên này**, trừ 5 tệp backup gỡ về (phần 9 dưới đây) —
+thứ chỉ thêm vào, không đụng tiến trình đang chạy. PID 97754 · NRestarts 0 · health 200 giữ nguyên
+từ đầu tới cuối phiên.
+
+| # | thay đổi | tệp | trạng thái |
+|---|---|---|---|
+| 1 | Combo giao pool với roster **trước khi chấm điểm** (thuật toán top-N giữ nguyên) | `web/backend/combo_super.py:1270` | `STAGED` |
+| 2 | Đóng fallback `else AI_MODELS` — trước đây không có danh sách lọc thì chạy **cả 9 model** | `web/backend/combo_super.py:1115` | `STAGED` |
+| 3 | `uy_quyen_goi()` — 7 kết quả §AB-E2, fail-closed khi thiếu `target_region`/`execution_class` | `web/backend/_v11185_roster_goi_token.py` | `STAGED` |
+| 4 | Cắm guard uỷ quyền **trước** cả guard cách ly và mọi `_call_*` | `web/backend/gpt_analyzer.py::_invoke_model_api` | `STAGED` |
+| 5 | Truyền `execution_class` + `caller` từ **cả 7 call-site sống** (xác minh AST) | `scheduler.py` · `combo_super.py` · `main.py` | `STAGED` |
+| 6 | Request fingerprint 11 trường + reuse chỉ khi **giống hệt** | `gpt_analyzer.py` | `STAGED` |
+| 7 | Chuẩn hoá cost: đọc **cả** `cost_est` (`:4321`) và `cost_estimate` (`:6865`), phân biệt `ACTUAL_PROVIDER`/`UNKNOWN`, **không** biến UNKNOWN thành 0 | `gpt_analyzer.py` | `STAGED` |
+| 8 | **CẤP 2 gỡ về có expiry 24 h + ALERT stderr** (V11186b) — trước đó bật là giữ mãi | `_v11185_roster_goi_token.py` | `STAGED` |
+| 9 | **CẤP 1 gỡ về: lập 5 tệp `.pre_v11186` trên VPS**, sha256 khớp bản đang chạy cả 5 (V11186b) | `/root/Lottery_AI_Test/backups/` | **`ĐÃ LÀM TRÊN VPS`** (additive, không restart) |
+| 10 | Bộ thu receipt **chỉ đọc**, ghi `ROSTER_RECEIPTS.jsonl` | `web/backend/_v11186_receipt_roster.py` | `ĐÃ DEPLOY` (đã có từ đầu phiên) |
+| 11 | Hai tệp trạng thái runtime vào `.gitignore` (`provider_quarantine.json`, `roster_khan_cap.json`) | `.gitignore` | `ĐÃ LÀM` |
+| 12 | Đính chính bốn terminal V11185 tại **chính chỗ đã công bố** + `SO_RUT_LAI.json` | repo công khai | `ĐÃ LÀM` |
+| 13 | Bộ thử mới: `_v11186_thu_ab.py` **102/102** · `_v11186_thu_khan_cap.py` **45/45** | `web/backend/` | `ĐÃ LÀM` |
+
+**Commit:** `0a8d7f6` (V11186a) · `2d20f74` (bốn mặt quản trị, `governance_seq → 501`) ·
+`0ea1439` (V11186b). Cả ba **đều là `STAGED`** về mặt runtime.
+
+---
+
 ## 5. ĐÓNG COMBO BYPASS (§AB-D) — mã hoàn tất, staged
 
 | điểm | trước | sau |
@@ -254,7 +281,8 @@ bằng chứng đúng tầng.
 | ├ E fail-closed, không fallback 8 model | ✓ |
 | ├ F fingerprint (11 trường, mỗi trường một bài) | ✓ |
 | └ G cost (không biến UNKNOWN thành 0) | ✓ |
-| 377 bộ thử V11185 | giữ nguyên, chạy trên VPS (V11185) |
+| `_v11186_thu_khan_cap.py` (mới, V11186b) | **45/45** — cửa gỡ về CẤP 2 có expiry + alert |
+| 377 bộ thử V11185 | **đo lại trên trạng thái cách ly SỐNG**: §AA 44/44 · §Z 65/65 · roster tự-kiểm 32/32 · cách ly 23/23 · retrain 16/16 · intake 19/19 |
 
 > `_v11186_thu_ab.py` **chưa chạy được trên VPS** vì VPS còn V11185 — đó chính là **bằng chứng
 > patch chưa deploy**, đúng ý đồ. Sau deploy sẽ chạy và phải đạt 102/102 trước khi restart.
@@ -311,6 +339,29 @@ terminal."* P0 chưa deploy ⇒ chưa đóng ⇒ ba mục kia giữ `EXACT_BLOCK
    khai trước.
 5. **Lệnh kiểm của tôi in "?"** cho `cost_source` và `request_fingerprint` — nhưng đó là **kỳ vọng
    tôi đoán trong lệnh kiểm**, không phải yêu cầu. 2 lần mỗi cái là đúng.
+6. **Đường gỡ về tôi tự công bố ở §15 KHÔNG chạy được** (phát hiện V11186b, cùng ngày). §15 bảo
+   `cp backups/<tệp>.pre_v11186 …` trong khi **`/root/Lottery_AI_Test/backups/` không tồn tại trên
+   VPS** — 0 tệp. Tôi viết một runbook gỡ về mà **chưa bao giờ kiểm nó thực thi được**; đó đúng là
+   RM-15 (*"cổng không qua thử coi như KHÔNG TỒN TẠI"*) áp vào chính đường thoát hiểm. Đã lập 5 tệp
+   `.pre_v11186`, đối chiếu sha256 từng tệp với bản **đang chạy**: khớp cả 5.
+7. **Tôi suýt đọc nhầm một sai lệch môi trường thành hồi quy.** Sau khi vá `_v11185_roster_goi_token.py`,
+   `_v11185_thu_aa` ra **38/40** và tự-kiểm roster ra **30/32**. Nguyên nhân **không** phải bản vá:
+   máy local **không hề có** `data/provider_quarantine.json` (0 model cách ly) trong khi VPS có 4 —
+   hai bài đó đo đúng thứ phụ thuộc trạng thái runtime. Đồng bộ bản sống về ⇒ **44/44** và **32/32**
+   (RM-13). Bài học: đo lại trên nguồn sống **trước** khi gọi một con số là hồi quy.
+8. **Phép đếm CR của tôi đếm chữ cái `r`, không đếm ký tự CR.** `grep -c` với mẫu CR viết
+   bằng escape shell không được diễn giải, nên nó đếm mọi dòng có chữ `r` — báo
+   `combo_super.py CR=2804` trong khi tệp thật có **CR=0**. Đếm lại bằng `b.count()` trên byte
+   trong Python. Cùng họ RM-09 với mục 2, và lần này nó suýt làm tôi "sửa" một vấn đề không tồn tại.
+9. **Chính dòng mục 8 ở trên từng bị hỏng khi tôi viết nó.** Escape CR trong heredoc bị diễn giải
+   thành **ký tự CR thật**, cắt cụt dòng trong báo cáo công khai. Tôi đã có ghi nhớ đúng về bẫy này
+   và vẫn vấp. Viết lại bằng script ra tệp thay vì heredoc.
+10. **Bản đầu của báo cáo này qua cổng §57.3 nhờ một TAI NẠN.** Cổng nhận diện 9 phần bằng **tiêu
+   đề**, nhưng nó đọc cả dòng bắt đầu bằng `#` **nằm trong khối code**. Phần *"đã làm gì"* của bản
+   đầu được khớp bởi dòng chú thích bash `# Sau khi deploy (15/09), gỡ về CẤP 1…` — không phải bởi
+   một mục thật nào. Viết lại §15 làm dòng đó biến mất và cổng **lập tức báo thiếu**. Báo cáo khi ấy
+   **thật sự thiếu** mục 5 của khung; nay đã có §4b. Ghi lại vì đây là **cổng báo xanh cho một thứ
+   không tồn tại** — đúng họ RM-15, và lần này nạn nhân là chính bộ kiểm.
 
 ---
 
@@ -347,26 +398,61 @@ vẫn có pool riêng) — **mã sửa đã xong và staged**, sẽ khớp sau d
 | 6 | Family lineage observability | 20/09 | `OBSERVABILITY_FIXED_NO_SCORING_CHANGE` |
 | 7 | Retrain atomic candidate path | **19/09 23:00** | `ATOMIC_..._READY` hoặc `RETRAIN_ABORTED_FAIL_CLOSED_WITH_EXACT_MODULE` |
 | 8 | Pure-context preregistration + activate | sau `ROSTER_SYSTEM_WIDE_LIVE_PROOF_OK` | `BOUNDED_SHADOW_PREREGISTERED` |
-| 9 | Auto-rollback hai cấp (§AB-L) | cùng lúc deploy | patch rollback giữ roster 4; disaster có alert + expiry |
+| 9 | Auto-rollback hai cấp (§AB-L) | ~~cùng lúc deploy~~ | **`ĐÃ LÀM` (V11186b)** — CẤP 1 backup thật trên VPS (5 tệp, sha khớp); CẤP 2 có expiry 24 h + alert stderr, **45/45** bài thử |
+| 10 | **Cổng `_v10921_report_gate` đọc dòng `#` trong khối code như tiêu đề** ⇒ có thể báo đủ 9 phần cho báo cáo thật sự thiếu | chưa đặt hạn — **không mở FU mới** theo khoá §AB | `GATE_HEADING_FALSE_POSITIVE_GHI_NHAN` |
 
 ---
 
 ## 15. GỠ VỀ
 
+> **Sửa tại chính chỗ đã công bố (V11186b, 14/09).** Bản đầu của mục này bảo
+> `cp backups/<tệp>.pre_v11186 …` trong khi **thư mục `backups/` không tồn tại trên VPS**. Thủ tục
+> đó **không thực thi được**. Dưới đây là bản đã lập và đã đối chiếu sha.
+
+**Hiện trạng (14/09):** mã §AB **chưa deploy** — gỡ về chỉ là bỏ commit:
 ```bash
-# Mã §AB hiện CHƯA deploy — gỡ về chỉ cần bỏ commit
-git revert <commit V11186a>
+git revert 0a8d7f6 0ea1439      # V11186a + V11186b, đều STAGED
+```
 
-# Sau khi deploy (15/09), gỡ về CẤP 1 (patch rollback, GIỮ roster 4):
-cp backups/combo_super.py.pre_v11186 web/backend/combo_super.py
-cp backups/gpt_analyzer.py.pre_v11186 web/backend/gpt_analyzer.py
-cp backups/main.py.pre_v11186 web/backend/main.py
-cp backups/scheduler.py.pre_v11185 web/backend/scheduler.py   # nếu cần về trước §AA
-#   -> quay về V11185: roster 4 GIỮ, shadow paused GIỮ, quarantine GIỮ
+**Sau khi deploy (15/09) — CẤP 1, mặc định, GIỮ trần 4:**
+```bash
+ssh root@14.225.224.89 'cd /root/Lottery_AI_Test
+for f in combo_super.py gpt_analyzer.py scheduler.py main.py _v11185_roster_goi_token.py; do
+  cp -p backups/$f.pre_v11186 web/backend/$f
+done
+systemctl restart lottery'
+# -> về V11185: roster 4 GIỮ · shadow bounded GIỮ · cách ly GIỮ · KHÔNG biến nào phải đặt
+```
 
-# CẤP 2 disaster (chỉ khi mất toàn bộ token output VÀ ML-only bundle cũng hỏng):
-ssh vietnix 'systemctl set-environment LOTTERY_ROSTER_KHAN_CAP=1 && systemctl restart lottery'
-#   -> CẢNH BÁO: đưa về hành vi 8 model TRƯỚC §AA. KHÔNG được im lặng giữ trạng thái này.
+| tệp `.pre_v11186` trên VPS | sha256 (16) | đối chiếu bản đang chạy |
+|---|---|---|
+| `combo_super.py` | `47047b1dc0b7e0b9` | **khớp** |
+| `gpt_analyzer.py` | `20f3bb5305ad13d2` | **khớp** |
+| `scheduler.py` | `732e302a57e299fb` | **khớp** |
+| `main.py` | `d59a6ae94f9c3666` | **khớp** |
+| `_v11185_roster_goi_token.py` | `294ec64572e5cd9d` | **khớp** |
+
+**CẤP 2 DISASTER — CHỈ khi roster 4 không ra output VÀ ML-only cũng hỏng:**
+```bash
+ssh root@14.225.224.89 'systemctl set-environment LOTTERY_ROSTER_KHAN_CAP=1 && systemctl restart lottery'
+# -> hành vi TRƯỚC §AA (toàn bộ TOKEN_MODELS, 8 model)
+```
+
+Cấp 2 **có hạn và có alert** (§AB-L, làm ở V11186b):
+
+| | |
+|---|---|
+| hạn mặc định | **24 giờ**, đo từ **lần bật đầu tiên** (`data/roster_khan_cap.json`) ⇒ restart **không** làm đồng hồ chạy lại |
+| đổi hạn | `LOTTERY_ROSTER_KHAN_CAP_GIO=<số giờ>` hoặc `LOTTERY_ROSTER_KHAN_CAP_HET_HAN=<ISO>` |
+| viết sai hai biến trên | **TỪ CHỐI mở cửa** — §AB-E3, không suy đoán mặc định |
+| hết hạn | **tự động quay về roster bình thường (trần 4)**, *không* fail-closed — cửa này sinh ra để cứu lúc roster 4 không ra output, chặn sạch còn tệ hơn |
+| cờ còn bật sau khi hết hạn | chạy roster bình thường **nhưng** để lại `canh_bao_khan_cap` + **ALERT stderr** — im lặng ở đây mới là nguy hiểm |
+| alert | `[ROSTER_KHAN_CAP] …` ra stderr (journal), một lần mỗi tiến trình |
+| tắt gỡ về | `systemctl unset-environment LOTTERY_ROSTER_KHAN_CAP && systemctl restart lottery` |
+
+```bash
+python web/backend/_v11185_roster_goi_token.py --go-ve   # in đủ hai cấp + trạng thái hiện tại
+python web/backend/_v11186_thu_khan_cap.py               # 45/45 — RM-15
 ```
 
 **Sau receipt MN pass, roster 4 là `provisional last-known-good`.** Sau full EOD pass ba miền, nó

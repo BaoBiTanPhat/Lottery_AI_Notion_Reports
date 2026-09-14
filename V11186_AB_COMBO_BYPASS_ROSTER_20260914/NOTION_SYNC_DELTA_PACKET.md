@@ -96,3 +96,18 @@ dùng tới, **nhưng "hôm nay không dùng" ≠ "không thể dùng"**.
   đã xong — cả bốn vẫn `EXACT_BLOCKER`.
 - **Không** ghi `PURE_CONTEXT` là `RETIRED` — nó là `DEFERRED`, zero token spent.
 - **Không** nâng `PREDICTIVE_LIFT` khỏi `NOT_PROVEN`.
+
+---
+
+## G. BỔ SUNG V11186b (14/09 chiều) — ĐƯỜNG GỠ VỀ
+
+| | |
+|---|---|
+| **CẤP 1 trước đây KHÔNG chạy được** | runbook bảo `cp backups/*.pre_v11186` nhưng **`backups/` không tồn tại trên VPS** (0 tệp). Đã lập 5 tệp, sha256 khớp bản đang chạy cả 5 |
+| **CẤP 2 trước đây không có hạn** | bật `LOTTERY_ROSTER_KHAN_CAP=1` là **giữ mãi**, cảnh báo chỉ nằm trong dict trả về. Nay: hạn 24 h tính từ **lần bật đầu tiên** (restart không reset đồng hồ), hết hạn **tự quay về trần 4** (không fail-closed), ALERT ra stderr |
+| bộ thử | `_v11186_thu_khan_cap.py` **45/45** |
+| commit | `0ea1439` — **vẫn `STAGED_NOT_DEPLOYED`** |
+| VPS | V11185, PID **97754**, NRestarts **0**, health **200** — lập backup là thao tác **chỉ thêm**, không restart |
+
+**TanPhatAI không được** ghi V11186b là đã deploy, và **không được** trích §15 bản đầu của
+`REPORT_V11186.md` — bản đó mô tả một thủ tục không thực thi được, đã sửa tại chính chỗ.
