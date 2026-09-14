@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-09-14 20:16:52 (giờ VN) · **465 thư mục báo cáo**
+**Sinh lúc:** 2026-09-15 03:23:21 (giờ VN) · **466 thư mục báo cáo**
 
-**Mới nhất: `V11187`** — AB DEPLOY COMBO ROSTER · 2026-09-14
+**Mới nhất: `V11188`** — AC EOD FORENSIC · 2026-09-15
 
-- [REPORT_V11187.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11187_AB_DEPLOY_COMBO_ROSTER_20260914/REPORT_V11187.md)
-- [CONVERSATION_CONTEXT_V11187_20260914.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11187_AB_DEPLOY_COMBO_ROSTER_20260914/CONVERSATION_CONTEXT_V11187_20260914.md)
+- [REPORT_V11188.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11188_AC_EOD_FORENSIC_20260915/REPORT_V11188.md)
+- [CONVERSATION_CONTEXT_V11188_20260915.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11188_AC_EOD_FORENSIC_20260915/CONVERSATION_CONTEXT_V11188_20260915.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11188` | 2026-09-15 | AC EOD FORENSIC | [REPORT_V11188.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11188_AC_EOD_FORENSIC_20260915/REPORT_V11188.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11188_AC_EOD_FORENSIC_20260915/CONVERSATION_CONTEXT_V11188_20260915.md) | ✓ |
 | `V11187` | 2026-09-14 | AB DEPLOY COMBO ROSTER | [REPORT_V11187.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11187_AB_DEPLOY_COMBO_ROSTER_20260914/REPORT_V11187.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11187_AB_DEPLOY_COMBO_ROSTER_20260914/CONVERSATION_CONTEXT_V11187_20260914.md) | ✓ |
 | `V11186` | 2026-09-14 | AB COMBO BYPASS ROSTER | [REPORT_V11186.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11186_AB_COMBO_BYPASS_ROSTER_20260914/REPORT_V11186.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11186_AB_COMBO_BYPASS_ROSTER_20260914/CONVERSATION_CONTEXT_V11186_20260914.md) | ✓ |
 | `V11185` | 2026-09-13 | AA TOKEN CALL ROSTER | [REPORT_V11185.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11185_AA_TOKEN_CALL_ROSTER_20260913/REPORT_V11185.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md) | ✓ |

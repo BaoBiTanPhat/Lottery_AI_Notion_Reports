@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-14 20:16:52",
- "tong_thu_muc": 465,
- "latest_version": "V11187",
+ "_sinh_luc_vn": "2026-09-15 03:23:21",
+ "tong_thu_muc": 466,
+ "latest_version": "V11188",
  "latest": {
-  "version": "V11187",
-  "ngay": "2026-09-14",
-  "chu_de": "AB DEPLOY COMBO ROSTER",
-  "thu_muc": "V11187_AB_DEPLOY_COMBO_ROSTER_20260914",
+  "version": "V11188",
+  "ngay": "2026-09-15",
+  "chu_de": "AC EOD FORENSIC",
+  "thu_muc": "V11188_AC_EOD_FORENSIC_20260915",
   "bao_cao": [
-   "V11187_AB_DEPLOY_COMBO_ROSTER_20260914/REPORT_V11187.md"
+   "V11188_AC_EOD_FORENSIC_20260915/REPORT_V11188.md"
   ],
   "ngu_canh": [
-   "V11187_AB_DEPLOY_COMBO_ROSTER_20260914/CONVERSATION_CONTEXT_V11187_20260914.md"
+   "V11188_AC_EOD_FORENSIC_20260915/CONVERSATION_CONTEXT_V11188_20260915.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11188",
+   "ngay": "2026-09-15",
+   "chu_de": "AC EOD FORENSIC",
+   "thu_muc": "V11188_AC_EOD_FORENSIC_20260915",
+   "bao_cao": [
+    "V11188_AC_EOD_FORENSIC_20260915/REPORT_V11188.md"
+   ],
+   "ngu_canh": [
+    "V11188_AC_EOD_FORENSIC_20260915/CONVERSATION_CONTEXT_V11188_20260915.md"
+   ]
+  },
   {
    "version": "V11187",
    "ngay": "2026-09-14",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11174_SC12_DEPLOY_ZEROWRITE_20260910/CONVERSATION_CONTEXT_V11174_20260910.md"
-   ]
-  },
-  {
-   "version": "V11173",
-   "ngay": "2026-09-09",
-   "chu_de": "SC12 PRE DEPLOY HARDENING",
-   "thu_muc": "V11173_SC12_PRE_DEPLOY_HARDENING_20260909",
-   "bao_cao": [
-    "V11173_SC12_PRE_DEPLOY_HARDENING_20260909/REPORT_V11173.md"
-   ],
-   "ngu_canh": [
-    "V11173_SC12_PRE_DEPLOY_HARDENING_20260909/CONVERSATION_CONTEXT_V11173_20260909.md"
    ]
   }
  ]
