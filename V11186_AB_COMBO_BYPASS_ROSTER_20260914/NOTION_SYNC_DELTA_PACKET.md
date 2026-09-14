@@ -45,8 +45,12 @@
 | token | 151.015 · **cost: 0/5 dòng có** |
 | điểm mở | `claude-opus-4-6` 2 lượt — **`LUOT_THEM_CHUA_QUY_DUOC_NGUON`**, trace không ghi caller/fingerprint nên **KHÔNG đoán** |
 
-**MT và MB CHƯA CHẠY.** Bộ thu nền đang đợi trên VPS. **Không được ghi
-`ROSTER_SYSTEM_WIDE_LIVE_PROOF_OK` khi chưa đủ ba miền.**
+> ⚠️ **HẾT HIỆU LỰC — xem §H.** Câu dưới đúng lúc viết (13:xx) nhưng MT và MB **đã chạy**
+> trong ngày. Kết quả ba miền ở §H.
+
+~~**MT và MB CHƯA CHẠY.** Bộ thu nền đang đợi trên VPS.~~ **Vẫn đúng và vẫn bắt buộc:**
+**không được ghi `ROSTER_SYSTEM_WIDE_LIVE_PROOF_OK`** — ba miền nay đã đủ và kết quả là
+**`FAIL`**.
 
 ---
 
@@ -111,3 +115,29 @@ dùng tới, **nhưng "hôm nay không dùng" ≠ "không thể dùng"**.
 
 **TanPhatAI không được** ghi V11186b là đã deploy, và **không được** trích §15 bản đầu của
 `REPORT_V11186.md` — bản đó mô tả một thủ tục không thực thi được, đã sửa tại chính chỗ.
+
+---
+
+## H. KẾT QUẢ BA MIỀN 14/09 — `ROSTER_SYSTEM_WIDE_LIVE_PROOF_FAIL`
+
+| miền | terminal | ngoài roster | model chạm HTTP |
+|---|---|---|---|
+| MN | `MN_ROSTER_LIVE_PROOF_OK` 10/10 | 0 | 4 |
+| MT | `MT_ROSTER_LIVE_PROOF_OK` 10/10 | 0 | 4 |
+| **MB** | **`MB_ROSTER_LIVE_PROOF_FAIL` 8/10** | **`gemini-2.5-pro` ×1** | **5 (> trần 4)** |
+
+**Nguồn đã quy được: Combo Super.** Cửa sổ Combo MB 17:33:05→17:33:43 **chứa trọn** lượt
+`gemini-2.5-pro` 17:33:07→17:33:43. Ở MN, Combo cũng gọi thêm một lượt (`claude-opus-4-6`) nhưng
+model đó **tình cờ** nằm trong roster MN. Ở MT, Combo chạy 4 giây và **không gọi** model nào.
+
+**Mức bằng chứng: `QUY_DUOC_BANG_LONG_THOI_GIAN`** — không phải `QUY_DUOC_BANG_TRUONG_CALLER`.
+Bằng chứng dứt điểm chỉ có sau khi §AB deploy.
+
+### TanPhatAI phải ghi đúng ba điều này
+
+1. **`MODEL_OUTSIDE_ROSTER_HTTP_CALLS` có phản chứng sống.** Không được ghi `ZERO` dưới bất kỳ
+   dạng nào. Terminal đúng: `MB_NONZERO_LIVE_PROVEN` ngày 14/09.
+2. **Đây KHÔNG phải ca gỡ về.** Lỗi thuộc `combo_super.py` của **V11185**; bản vá §AB-D đóng đúng
+   chỗ đó. Gỡ về CẤP 2 đưa ngược về 8 model, **nặng hơn**. Hướng đúng là **deploy**.
+3. **"MN sạch" là may, không phải nhờ cổng.** Cùng một lỗ hổng, khác kết quả. Không được đọc
+   thành "MN đã được bảo vệ".

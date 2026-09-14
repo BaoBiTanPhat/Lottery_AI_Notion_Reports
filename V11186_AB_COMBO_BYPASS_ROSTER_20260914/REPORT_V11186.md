@@ -20,12 +20,12 @@ kịp 03:30.
 |---|---|
 | `COMBO_ROSTER_BYPASS` | **`CODE_COMPLETE_STAGED_NOT_DEPLOYED`** — đóng ở CẢ selection lẫn final HTTP dispatch trong mã; chưa deploy vì bảo vệ epoch |
 | `ALL_ACTIVE_PROVIDER_CALL_SITES` | **`INVENTORIED`** (24 tệp quét, 7 call-site sống) **`_AND_ROSTER_GATED_IN_STAGED_CODE`** |
-| `MODEL_OUTSIDE_ROSTER_HTTP_CALLS` | **`MN_ZERO_LIVE_PROVEN`** · **MT/MB PENDING** |
-| `QUARANTINED_MODEL_HTTP_CALLS` | **`MN_ZERO_LIVE_PROVEN`** · MT/MB pending |
-| `DETERMINISTIC_PROVIDER_RETRIES` | **`MN_ZERO_LIVE_PROVEN`** · MT/MB pending |
-| `UNBOUNDED_SHADOW_PROVIDER_CALLS` | **`PENDING_NATURAL_RECEIPT`** — shadow chạy post-verify, chưa tới |
-| `DIRECT_GENERATOR_ROSTER` | **`MN_MAX_4_LIVE_PROVEN`** · MT/MB pending |
-| `COMBO_EXTRA_CALLS` | **`DIFFERENT_REQUESTS_COUNTED_SEPARATELY`** — 1 lượt thêm ở MN, **chưa quy được nguồn** |
+| `MODEL_OUTSIDE_ROSTER_HTTP_CALLS` | **`MB_NONZERO_LIVE_PROVEN`** — `gemini-2.5-pro` chạm HTTP 1 lượt ở MB 17:33. MN `ZERO` · MT `ZERO` · **MB VI PHẠM** |
+| `QUARANTINED_MODEL_HTTP_CALLS` | **`ZERO_LIVE_PROVEN_CA_BA_MIEN`** |
+| `DETERMINISTIC_PROVIDER_RETRIES` | **`ZERO_LIVE_PROVEN_CA_BA_MIEN`** |
+| `UNBOUNDED_SHADOW_PROVIDER_CALLS` | **`ZERO_LIVE_PROVEN_CA_BA_MIEN`** — `SHADOW_BOUNDED_V11185 con_chay=[]` cả ba miền |
+| `DIRECT_GENERATOR_ROSTER` | MN 4 · MT 4 · **MB 5 (vượt trần 4)** ⇒ **`TRAN_BI_VUOT_O_MB_LIVE_PROVEN`** |
+| `COMBO_EXTRA_CALLS` | **`QUY_DUOC_BANG_LONG_THOI_GIAN`** — Combo gọi thêm 1 lượt ở MN (`claude-opus-4-6`, **trong** roster) và 1 lượt ở MB (`gemini-2.5-pro`, **ngoài** roster); MT Combo chạy 4 s, **không gọi** |
 | `TOKEN_REDUCTION` | **`NOT_YET_MEASURED`** — chỉ có MN, chưa đủ ba miền |
 | `COST_OBSERVABILITY` | **`EXACT_BLOCKER`** — mã chuẩn hoá đã staged, chưa deploy |
 | `OVERRIDE_LINEAGE` | **`EXACT_BLOCKER`** — không làm trong §AB theo §AB-U |
@@ -35,8 +35,10 @@ kịp 03:30.
 | `TOTAL_FORMULA` · `CURRENT_WEIGHTS` | **`UNCHANGED`** |
 | `PREDICTIVE_LIFT` · `POOL_VERDICT` · `SC12` | `NOT_PROVEN` · `HOLD` · `CLOSED_DO_NOT_REOPEN` |
 
-**Một next action duy nhất:** thu receipt MT rồi MB (bộ thu nền đã chạy sẵn trên VPS), rồi deploy
-gói §AB sau EOD.
+**Ba receipt đã thu xong. Terminal ngày 14/09: `ROSTER_SYSTEM_WIDE_LIVE_PROOF_FAIL`**
+(MN `OK` 10/10 · MT `OK` 10/10 · **MB `FAIL` 8/10**). Xem §4c.
+
+**Một next action duy nhất:** deploy gói §AB sau EOD, hiệu lực trước 04:00 ngày 15/09. Đây **không** phải ca gỡ về: lỗi nằm ở `combo_super.py` của **V11185**, và bản vá §AB-D đóng đúng chỗ đó. Gỡ về CẤP 2 sẽ đưa ngược về 8 model — **tệ hơn**.
 
 ---
 
@@ -191,6 +193,64 @@ từ đầu tới cuối phiên.
 
 **Commit:** `0a8d7f6` (V11186a) · `2d20f74` (bốn mặt quản trị, `governance_seq → 501`) ·
 `0ea1439` (V11186b). Cả ba **đều là `STAGED`** về mặt runtime.
+
+---
+
+## 4c. RECEIPT BA MIỀN 14/09 — `ROSTER_SYSTEM_WIDE_LIVE_PROOF_FAIL`
+
+| miền | terminal | ngoài roster | cách ly | model chạm HTTP | bundle |
+|---|---|---|---|---|---|
+| MN | `MN_ROSTER_LIVE_PROOF_OK` **10/10** | 0 | 0 | 4 | ACTIVE |
+| MT | `MT_ROSTER_LIVE_PROOF_OK` **10/10** | 0 | 0 | 4 | `bach_thu=20` |
+| **MB** | **`MB_ROSTER_LIVE_PROOF_FAIL` 8/10** | **`gemini-2.5-pro` ×1** | 0 | **5 (> trần 4)** | `bach_thu=16` |
+
+Hai phép trượt ở MB: *"outside-roster HTTP = 0"* và *"số model duy nhất chạm HTTP ≤ 4"*.
+Tám phép còn lại đạt: 0 cách ly · 0 dòng sau cutoff 17:58 · bundle sinh được · 0
+`TOKEN_ROSTER_INVALID` · 0 ERROR/CRITICAL · 0 traceback · health 200 · roster đọc được.
+
+### Quy nguồn: Combo Super, bằng lồng thời gian
+
+`prediction_trace.jsonl` **không** ghi `caller`, nên bộ thu receipt (đúng) chỉ ghi
+`LUOT_THEM_CHUA_QUY_DUOC_NGUON` và **không đoán**. Nguồn độc lập là `scheduler_logs`, ghi mốc
+đầu/cuối của Combo Super từng miền (`scheduler.py:5114` — Combo là bước **cuối cùng** của
+`_run_ai_models_predict`, sau cả diversity pass):
+
+| miền | cửa sổ Combo Super | lượt gọi nằm trọn trong cửa sổ | ngoài roster? |
+|---|---|---|---|
+| MN | 05:16:35 → 05:17:32 (**57 s**) | `claude-opus-4-6` 05:16:37→05:17:31 | không — **may, không phải nhờ cổng** |
+| MT | 16:43:58 → 16:44:02 (**4 s**) | không có | — |
+| MB | 17:33:05 → 17:33:43 (**38 s**) | **`gemini-2.5-pro` 17:33:07→17:33:43** | **CÓ** |
+
+Bốn lượt của chuỗi chính ở mỗi miền đều khởi động trong vòng 1–2 giây của nhau (song song);
+hai lượt Combo khởi động **sau khi chuỗi chính kết thúc**. Không lượt nào chờm cửa sổ.
+
+Bằng chứng ngoại vi thứ hai, độc lập với DB — `scraper.log` ngày 14/09:
+
+```
+17:30:24  AFC is enabled …                 <- client Google #1 (chuỗi chính)
+17:31:10  POST … gemini-2.5-flash  200 OK
+17:33:07  AFC is enabled …                 <- client Google #2, KHỞI TẠO RIÊNG
+17:33:43  POST … gemini-2.5-pro    200 OK
+17:33:44  Job "Tự động cào MT + Dự đoán MB (17:30)" executed successfully
+```
+
+**Mức bằng chứng ghi đúng tầng:** `QUY_DUOC_BANG_LONG_THOI_GIAN`, **không phải**
+`QUY_DUOC_BANG_TRUONG_CALLER`. Lồng thời gian là bằng chứng ngoại vi rất mạnh nhưng vẫn là
+ngoại vi. Bằng chứng dứt điểm chỉ có **sau khi §AB deploy**, khi mỗi lượt mang `caller` +
+`execution_class` + `request_fingerprint`. Tái lập: `evidence/_v11187_quy_nguon_combo.py`.
+
+### Điều này đổi gì
+
+1. **`MODEL_OUTSIDE_ROSTER_HTTP_CALLS` KHÔNG phải ZERO toàn hệ thống** — nay có phản chứng sống,
+   đo được, dưới chính V11185. Việc `RL-044` hạ xuống `STATIC_SCHEDULER_PROOF_ONLY` là **đúng**;
+   nếu vẫn giữ `ZERO` thì hôm nay đã là một lời nói dối có bằng chứng ngược.
+2. **§AA đóng đúng đường nó nhắm, và chỉ đường đó.** Cả 12 lượt của chuỗi chính ở ba miền đều
+   trong roster. Đường còn hở đúng là đường §AB chỉ ra: pool riêng của Combo.
+3. **MN "sạch" hôm 14/09 là may, không phải nhờ cổng.** Combo ở MN cũng gọi ngoài kiểm soát —
+   chỉ tình cờ bốc trúng `claude-opus-4-6` vốn nằm trong roster MN. Cùng một lỗ hổng, khác kết quả.
+4. **Đây không phải ca gỡ về.** Lỗi thuộc `combo_super.py` của V11185; bản vá §AB-D giao pool với
+   roster **trước khi chấm điểm** và đóng fallback `else AI_MODELS`. Gỡ về CẤP 2 đưa ngược về 8
+   model — làm nặng thêm. Hướng đúng là **deploy**.
 
 ---
 
@@ -390,7 +450,7 @@ vẫn có pool riêng) — **mã sửa đã xong và staged**, sẽ khớp sau d
 
 | # | việc | hạn | terminal bắt buộc |
 |---|---|---|---|
-| 1 | Thu receipt MT rồi MB (bộ thu nền đang chạy) | 14/09 EOD | `MT/MB_ROSTER_LIVE_PROOF_OK/FAIL` |
+| 1 | ~~Thu receipt MT rồi MB~~ | ~~14/09 EOD~~ | **`XONG`** — MT `OK` · **MB `FAIL`** ⇒ `ROSTER_SYSTEM_WIDE_LIVE_PROOF_FAIL` (§4c) |
 | 2 | **Deploy gói §AB** + chạy 102/102 trên VPS + restart | trước 04:00 **15/09** | `DEPLOYED_PENDING_NATURAL_PROOF` |
 | 3 | Receipt ba miền ngày 15/09 | 15/09 EOD | `ROSTER_SYSTEM_WIDE_LIVE_PROOF_OK` hoặc `AUTO_ROLLBACK_WITH_EXACT_REASON` |
 | 4 | Công bố token/cost **THẬT** (sau khi có ba miền) | 15/09 EOD | `TOKEN_REDUCTION = ACTUAL_MEASURED` |
