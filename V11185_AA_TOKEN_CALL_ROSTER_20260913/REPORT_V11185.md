@@ -4,6 +4,9 @@
 > **Khoá giữ nguyên:** `SC12=CLOSED` · `PREDICTIVE_LIFT=NOT_PROVEN` · `POOL_VERDICT=HOLD` ·
 > `MATERIALIZATION_OPTION=B` · `F1`–`F5` `RETIRED` · TOTAL formula và current weights **không đổi**
 
+> 🔴 **BẢN NÀY CÓ BỐN MỤC ĐÃ RÚT LẠI** — `RL-044` `RL-045` `RL-046` `RL-047`, rút ngày
+> 14/09/2026 theo §AB-B. Đọc `V11186` §2 trước khi trích bất kỳ terminal nào của bản này.
+
 ---
 
 ## 1. EXECUTIVE TERMINAL — một trang
@@ -11,10 +14,10 @@
 | terminal bắt buộc §AA-W | kết quả |
 |---|---|
 | `TOKEN_CALL_ROSTER_SSOT` | **`DEPLOYED`** |
-| `UNBOUNDED_SHADOW_PROVIDER_CALLS` | **`ZERO`** |
+| `UNBOUNDED_SHADOW_PROVIDER_CALLS` | 🔴 **ĐÃ RÚT LẠI (RL-045)** → **`DEPLOYED_PENDING_NATURAL_RECEIPT`** — chưa có lượt shadow tự nhiên nào sau deploy |
 | `INITIAL_LLM_ROSTER_COMPRESSION` | **`APPLIED_ROLLBACK_READY`** |
 | `DIRECT_OFFICIAL_GENERATOR_MODELS` | **`MAX_4_PER_REGION`** |
-| `MODEL_OUTSIDE_ROSTER_HTTP_CALLS` | **`ZERO`** (chứng minh tĩnh + guard hai tầng; số đo sống ở §AA-S) |
+| `MODEL_OUTSIDE_ROSTER_HTTP_CALLS` | 🔴 **ĐÃ RÚT LẠI (RL-044)** → **`STATIC_SCHEDULER_PROOF_ONLY · SYSTEM_WIDE_LIVE_PROOF_PENDING`** — Combo Super còn pool riêng, chưa roster-gated. Xem `V11186` §2 |
 | `DETERMINISTIC_PROVIDER_RETRIES` | **`ZERO`** |
 | `COST_OBSERVABILITY` | **`EXACT_BLOCKER`** — xem §8 |
 | `TRACE_COVERAGE` | **`ACTIVE_LANE_RETIRED`** — lane 502 lượt không trace đã tắt |
@@ -22,7 +25,7 @@
 | `OVERRIDE_LINEAGE` | **`EXACT_BLOCKER`** — xem §9 |
 | `FAMILY_LINEAGE` | **`EXACT_BLOCKER`** — xem §9 |
 | `RETRAIN_SAFETY` | **`EXACT_BLOCKER`** — vẫn là mức V11184, xem §9 |
-| `PURE_CONTEXT` | **`RETIRED_BEFORE_TOKEN_SPEND`** trong phiên này — xem §10 |
+| `PURE_CONTEXT` | 🔴 **ĐÃ RÚT LẠI (RL-046)** → **`DEFERRED_PENDING_ROSTER_LIVE_PROOF · ZERO_TOKEN_SPENT`** — hoãn theo trình tự, KHÔNG khai tử phương pháp |
 | `TOTAL_FORMULA` | **`UNCHANGED`** |
 | `CURRENT_WEIGHTS` | **`UNCHANGED`** |
 | `PREDICTIVE_LIFT` | **`NOT_PROVEN`** |
@@ -31,6 +34,10 @@
 
 **Đã activate lúc 22:36 ngày 13/09** — trước mốc 03:30/04:00 của §AA-I rất xa, và **cùng một roster
 epoch cho cả MN/MT/MB** ngày 14/09. Không có miền nào chạy roster cũ.
+
+> 🔴 **ĐÃ RÚT LẠI (RL-047):** con số dưới đây là `ESTIMATE_ONLY`, KHÔNG phải số giảm thực tế,
+> và chưa tách được lượt gọi thêm của Combo. Chỉ sau natural receipt đủ ba miền mới được
+> công bố phần trăm giảm THẬT. Xem `V11186` §2.
 
 **Ước lượng giảm chi (phương pháp tỷ lệ theo số model, trên số đo thật 30 ngày):**
 lượt gọi **2.262 → 489 (−78.4%)** · token **66.05M → 16.74M (−74.7%)**.

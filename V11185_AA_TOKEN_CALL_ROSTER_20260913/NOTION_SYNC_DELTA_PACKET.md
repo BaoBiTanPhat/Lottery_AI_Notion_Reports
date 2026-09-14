@@ -3,6 +3,9 @@
 > **Agent IDE KHÔNG ghi Notion** (§57.1) và **không tuyên bố Notion đã sync**. Gói này là đầu vào
 > cho TanPhatAI, cập nhật **sau khi** private/public/code/runtime đã khớp.
 
+> 🔴 **GÓI NÀY CÓ BỐN MỤC ĐÃ RÚT LẠI** (`RL-044`–`RL-047`, ngày 14/09/2026 theo §AB-B).
+> TanPhatAI **KHÔNG** được sync các terminal đã gạch. Đọc `V11186` §2 trước.
+
 ---
 
 ## A. MƯỜI BẢY TERMINAL §AA-W
@@ -10,10 +13,10 @@
 | terminal | giá trị |
 |---|---|
 | `TOKEN_CALL_ROSTER_SSOT` | **DEPLOYED** |
-| `UNBOUNDED_SHADOW_PROVIDER_CALLS` | **ZERO** |
+| `UNBOUNDED_SHADOW_PROVIDER_CALLS` | 🔴 **RÚT LẠI RL-045** → **DEPLOYED_PENDING_NATURAL_RECEIPT** |
 | `INITIAL_LLM_ROSTER_COMPRESSION` | **APPLIED_ROLLBACK_READY** |
 | `DIRECT_OFFICIAL_GENERATOR_MODELS` | **MAX_4_PER_REGION** |
-| `MODEL_OUTSIDE_ROSTER_HTTP_CALLS` | **ZERO** |
+| `MODEL_OUTSIDE_ROSTER_HTTP_CALLS` | 🔴 **RÚT LẠI RL-044** → **STATIC_SCHEDULER_PROOF_ONLY · SYSTEM_WIDE_LIVE_PROOF_PENDING** |
 | `DETERMINISTIC_PROVIDER_RETRIES` | **ZERO** |
 | `COST_OBSERVABILITY` | **EXACT_BLOCKER** (hạn 20/09) |
 | `TRACE_COVERAGE` | **ACTIVE_LANE_RETIRED** |
@@ -21,7 +24,7 @@
 | `OVERRIDE_LINEAGE` | **EXACT_BLOCKER** (hạn 20/09) |
 | `FAMILY_LINEAGE` | **EXACT_BLOCKER** (hạn 20/09) |
 | `RETRAIN_SAFETY` | **EXACT_BLOCKER** (hạn trước CN 20/09 02:00) |
-| `PURE_CONTEXT` | **RETIRED_BEFORE_TOKEN_SPEND** |
+| `PURE_CONTEXT` | 🔴 **RÚT LẠI RL-046** → **DEFERRED_PENDING_ROSTER_LIVE_PROOF · ZERO_TOKEN_SPENT** |
 | `TOTAL_FORMULA` | **UNCHANGED** |
 | `CURRENT_WEIGHTS` | **UNCHANGED** |
 | `PREDICTIVE_LIFT` | **NOT_PROVEN** |
@@ -63,8 +66,8 @@
 
 | | trước | sau (ước lượng) |
 |---|---|---|
-| lượt gọi provider / 30 ngày | 2.262 | ~489 (**−78.4%**) |
-| token / 30 ngày | 66,051,826 | ~16,741,700 (**−74.7%**) |
+| lượt gọi provider / 30 ngày | 2.262 | ~489 (**−78.4%**) — 🔴 **RL-047: ESTIMATE_ONLY** |
+| token / 30 ngày | 66,051,826 | ~16,741,700 (**−74.7%**) — 🔴 **RL-047: ESTIMATE_ONLY**, chưa tách Combo |
 
 **Phân rã — điều dễ đặt sai ưu tiên:** chặn shadow đóng góp **−54.8%**, tinh gọn roster chỉ
 **−19.9%**. 60.3% token của hệ vốn chảy vào model **không được phép ra output**.
