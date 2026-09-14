@@ -1,0 +1,25 @@
+====================================================================================================
+  THU NGUOC SU CO THAT: Combo Super @MB goi gemini-2.5-pro luc 17:33:07 ngay 14/09
+====================================================================================================
+  DAT   T1 uy quyen DENY dung luot da xay ra                       DENY_OUTSIDE_ROSTER · model KHONG thuoc roster ['claude-opus-4-6', 'gemini-2.5-flash', 'gpt-oss-120b', 'glm-5.1'] cua mien MB
+  DAT   T1b ly do la NGOAI ROSTER, khong phai cach ly              model KHONG thuoc roster ['claude-opus-4-6', 'gemini-2.5-flash', 'gpt-
+  DAT   T2 roster MB cho lop combo_super doc duoc                  None
+  DAT   T2b gemini-2.5-pro KHONG nam trong danh sach cho phep      ['claude-opus-4-6', 'gemini-2.5-flash', 'gpt-oss-120b', 'glm-5.1']
+  DAT   T2c danh sach cho phep dung bang roster MB that            ['claude-opus-4-6', 'gemini-2.5-flash', 'glm-5.1', 'gpt-oss-120b']
+  DAT   T2d pool Combo sau khi giao KHONG con gemini-2.5-pro       ['gemini-2.5-flash', 'claude-opus-4-6', 'glm-5.1', 'gpt-oss-120b']
+  DAT   T2e pool Combo sau khi giao KHONG con model bi cach ly nao ['deepseek-reasoner', 'deepseek-v4-pro-real', 'gpt-5-mini', 'gpt-5.4']
+  DAT   T2f pool Combo sau khi giao KHONG rong (khong chan oan ca Combo) 4 model: ['gemini-2.5-flash', 'claude-opus-4-6', 'glm-5.1', 'gpt-oss-120b']
+  DAT   T3 luot Combo @MN (trong roster) van duoc ALLOW            ALLOW · trong roster
+  DAT   T4 chuoi chinh MB: claude-opus-4-6 ALLOW                   ALLOW trong roster
+  DAT   T4 chuoi chinh MB: gemini-2.5-flash ALLOW                  ALLOW trong roster
+  DAT   T4 chuoi chinh MB: gpt-oss-120b ALLOW                      ALLOW trong roster
+  DAT   T4 chuoi chinh MB: glm-5.1 ALLOW                           ALLOW trong roster
+  DAT   T5 model bi cach ly (deepseek-reasoner) van bi chan        DENY_QUARANTINED
+  DAT   T5b chan vi ly do DUNG (cach ly hoac ngoai roster)         DENY_QUARANTINED
+  DAT   T6 thieu target_region => DENY_INVALID_CONTEXT (khong suy doan) DENY_INVALID_CONTEXT
+  DAT   T6b thieu execution_class => DENY_INVALID_CONTEXT          DENY_INVALID_CONTEXT
+----------------------------------------------------------------------------------------------------
+  KET LUAN: 17/17 DAT — ban va §AB CHAN DUNG luot da xay ra that, va KHONG chan oan
+  LUU Y: day la chung minh TREN MA DA VA o repo. No KHONG phai bang chung runtime.
+         Bang chung runtime chi co sau khi deploy + mot luot MB tu nhien ngay 15/09.
+====================================================================================================
