@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-13 22:46:28",
- "tong_thu_muc": 463,
- "latest_version": "V11185",
+ "_sinh_luc_vn": "2026-09-14 13:22:40",
+ "tong_thu_muc": 464,
+ "latest_version": "V11186",
  "latest": {
-  "version": "V11185",
-  "ngay": "2026-09-13",
-  "chu_de": "AA TOKEN CALL ROSTER",
-  "thu_muc": "V11185_AA_TOKEN_CALL_ROSTER_20260913",
+  "version": "V11186",
+  "ngay": "2026-09-14",
+  "chu_de": "AB COMBO BYPASS ROSTER",
+  "thu_muc": "V11186_AB_COMBO_BYPASS_ROSTER_20260914",
   "bao_cao": [
-   "V11185_AA_TOKEN_CALL_ROSTER_20260913/REPORT_V11185.md"
+   "V11186_AB_COMBO_BYPASS_ROSTER_20260914/REPORT_V11186.md"
   ],
   "ngu_canh": [
-   "V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md"
+   "V11186_AB_COMBO_BYPASS_ROSTER_20260914/CONVERSATION_CONTEXT_V11186_20260914.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11186",
+   "ngay": "2026-09-14",
+   "chu_de": "AB COMBO BYPASS ROSTER",
+   "thu_muc": "V11186_AB_COMBO_BYPASS_ROSTER_20260914",
+   "bao_cao": [
+    "V11186_AB_COMBO_BYPASS_ROSTER_20260914/REPORT_V11186.md"
+   ],
+   "ngu_canh": [
+    "V11186_AB_COMBO_BYPASS_ROSTER_20260914/CONVERSATION_CONTEXT_V11186_20260914.md"
+   ]
+  },
   {
    "version": "V11185",
    "ngay": "2026-09-13",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11172_TONG_LUC_NGAY_LIVE_20260908/CONVERSATION_CONTEXT_V11172_20260908.md"
-   ]
-  },
-  {
-   "version": "V11171",
-   "ngay": "2026-09-07",
-   "chu_de": "CHUYEN KHO SANG TO CHUC",
-   "thu_muc": "V11171_CHUYEN_KHO_SANG_TO_CHUC_20260907",
-   "bao_cao": [
-    "V11171_CHUYEN_KHO_SANG_TO_CHUC_20260907/REPORT_V11171.md"
-   ],
-   "ngu_canh": [
-    "V11171_CHUYEN_KHO_SANG_TO_CHUC_20260907/CONVERSATION_CONTEXT_V11171_20260907.md"
    ]
   }
  ]

@@ -2,14 +2,12 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-13 22:46:28 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-14 13:22:40 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
-| `FU-430` | `DO1309` | ✅ **ĐÓNG** — `RETRAIN_ACTIVATED_METRIC_NOT_COMPARABLE` (chốt 13/09, V1 | **13/09** | `` |
-| `FU-450` | `QD0409` | (CẬP NHẬT 04/09 — **DIỄN TẬP MIGRATION: KHUYẾN NGHỊ ĐỪNG ĐỔ**) | **13/09** | `OWNER_DECISION_NEEDED` |
 | `FU-351` | `DO0914` | ⏭️ **SUPERSEDED_BY_V11183_GENERATOR_MISS** (chốt 13/09) | **14/09** | `` |
 | `FU-376` | `DD0918` | Bốn món nợ tháng 7 chưa trả | **18/09** | `AWAITING_OWNER_OK` |
 | `FU-235` | `HT0919` | B3 gỡ ép chọn từ list (sau B1+B2) | **19/09** | `OWNER_LOCK` |
@@ -17,11 +15,10 @@
 
 ## ⚠ QUÁ HẠN — còn treo
 
-**11 mục** quá hạn còn treo trong cửa sổ; in 11 mục cũ nhất.
+**12 mục** quá hạn còn treo trong cửa sổ; in 12 mục cũ nhất.
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
-| `FU-432` | `DD3008` | 🔴 **BẢN ĐÓNG BĂNG ĐỐI CHỨNG THIẾU MỘT NỬA — hạn CỨNG trước 02:00 ngày  | **QUÁ HẠN** 30/08 | `MEASURED_BUT_NOT_FIXED` |
 | `FU-445` | `KS3108` | 🔴 **`DEGRADED_BODY_OVER_HTTP` CHƯA XÁC MINH** | **QUÁ HẠN** 31/08 | `AWAITING_OWNER_OK` |
 | `FU-360` | `CL1008` | 🟡 **SỬA NHÃN VỀ ĐÚNG TỪ VỰNG + ĐẶT HẠN MỚI** | **QUÁ HẠN** 31/08 | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-183` | `KS0831` | Lớp V10640 MN rà âm thì tắt | **QUÁ HẠN** 31/08 | `DEPLOYED_PENDING_LIVE_VERIFY` |
@@ -32,10 +29,12 @@
 | `FU-447` | `BC0809` | 🟡 **16 BÁO CÁO CÓ ĐỦ NỘI DUNG NHƯNG ĐẶT TIÊU ĐỀ NGOÀI KHUNG** | **QUÁ HẠN** 08/09 | `MEASURED_BUT_NOT_FIXED` |
 | `FU-446` | `DO0809` | 🔴 **BẢNG HIỆU CHỈNH SỨC MẠNH LẠC HẬU: 15 KHOÁ / 24 MODEL** | **QUÁ HẠN** 08/09 | `OWNER_DECISION_NEEDED` |
 | `FU-449` | `KS0609` | / FU-450 (CẬP NHẬT 06/09 — **SOI TỔNG LỰC + DỌN DẸP V11166**) | **QUÁ HẠN** 09/09 | `BLOCKED` |
+| `FU-430` | `DO1309` | ✅ **ĐÓNG** — `RETRAIN_ACTIVATED_METRIC_NOT_COMPARABLE` (chốt 13/09, V1 | **QUÁ HẠN** 13/09 | `` |
+| `FU-450` | `QD0409` | (CẬP NHẬT 04/09 — **DIỄN TẬP MIGRATION: KHUYẾN NGHỊ ĐỪNG ĐỔ**) | **QUÁ HẠN** 13/09 | `OWNER_DECISION_NEEDED` |
 
 ---
 
-**Báo cáo mới nhất:** `V11185` — AA TOKEN CALL ROSTER (2026-09-13)
+**Báo cáo mới nhất:** `V11186` — AB COMBO BYPASS ROSTER (2026-09-14)
 
 ---
 
