@@ -72,6 +72,52 @@ hàng các terminal đã chứng minh làm người đọc lướt hiểu thành
 
 ---
 
+## 2b. OWNER YÊU CẦU GÌ (nguyên văn) — §62 lớp `OWNER_SAID`
+
+Prompt §AB, mức thực thi *"CỰC GẮT · CỰC MẠNH · KHÔNG TÔ XANH · KHÔNG ĐOÁN · KHÔNG GIA HẠN MƠ HỒ"*.
+Owner **tự soi nguồn** và chỉ đúng sáu điểm V11185 chưa đóng:
+
+> *"V11185 đã đóng scheduler chính nhưng chưa chứng minh toàn hệ thống vì:
+> 1. `combo_super.py` còn pool `AI_MODELS` riêng.
+> 2. Combo tự chọn Top-N và gọi `analyze_and_predict`.
+> 3. Pool Combo còn model ngoài roster từng miền.
+> 4. `gpt_analyzer._invoke_model_api` hiện có quarantine guard nhưng chưa có roster authorization
+>    bắt buộc cho model khỏe nhưng ngoài roster.
+> 5. Ước lượng giảm 74,7% chưa tách đầy đủ Combo calls.
+> 6. Natural receipt chưa xảy ra.
+>
+> Do đó, trước khi có §AB: `MODEL_OUTSIDE_ROSTER_HTTP_CALLS=ZERO` chỉ là PREDEPLOY/STATIC CLAIM,
+> chưa phải runtime fact toàn hệ thống."*
+
+Mệnh lệnh chi phối phiên, nguyên văn:
+
+> *"Biến roster từ một danh sách chỉ lọc khi bỏ phiếu thành một chính sách được thi hành ngay
+> trước mọi HTTP provider call."*
+>
+> *"Không được để tài liệu dẫn người sau đọc sai."* (§AB-B — đính chính **trước khi làm tiếp**)
+>
+> *"Không được coi việc 'đếm Combo riêng' là đủ. Đếm riêng không thay thế việc tuân thủ roster."*
+>
+> *"Không được gọi provider tay để tạo bằng chứng."* (§AB-K)
+>
+> *"Nếu thiếu `target_region` hoặc `execution_class`: fail closed; không suy đoán mặc định;
+> không gọi HTTP."* (§AB-E3)
+>
+> *"Nếu không đạt trước 03:30: không deploy patch nửa vời; không thay code giữa MN/MT/MB; giữ
+> V11185 cho toàn ngày 14/09... Cấm: MN một version, MT/MB version khác."* (§AB-J)
+
+Và §AB-U cấm kết thúc kiểu cũ, trong đó có: *"«AST sạch nên live sạch»"* · *"«ước lượng token
+giảm» viết thành số thật"* · *"«MN pass» viết thành ba miền pass"* · *"thiếu data viết thành
+zero"* · *"static proof viết thành runtime proof"* · *"pure-context chưa chạy viết thành retired"*.
+
+**Không có yêu cầu rời nào giữa phiên.**
+
+**Điều Owner yêu cầu mà phiên CỐ Ý không làm, kèm lý do:** deploy (§AB-J cấm phá epoch — xem §1);
+override lineage · family lineage · retrain atomic (§AB-U: *"Nếu P0 chưa đóng: không mở việc
+nghiên cứu khác"*); pure-context (§AB-Q: chỉ activate **sau** `ROSTER_SYSTEM_WIDE_LIVE_PROOF_OK`).
+
+---
+
 ## 3. ĐÀO BỚI / PHÁT HIỆN
 
 | # | đã đào gì | kết quả |
