@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-09-14 13:22:40 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-09-14 20:16:52 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -34,7 +34,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11186` — AB COMBO BYPASS ROSTER (2026-09-14)
+**Báo cáo mới nhất:** `V11187` — AB DEPLOY COMBO ROSTER (2026-09-14)
 
 ---
 

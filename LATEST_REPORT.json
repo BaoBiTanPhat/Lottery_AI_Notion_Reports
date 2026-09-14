@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-14 13:22:40",
- "tong_thu_muc": 464,
- "latest_version": "V11186",
+ "_sinh_luc_vn": "2026-09-14 20:16:52",
+ "tong_thu_muc": 465,
+ "latest_version": "V11187",
  "latest": {
-  "version": "V11186",
+  "version": "V11187",
   "ngay": "2026-09-14",
-  "chu_de": "AB COMBO BYPASS ROSTER",
-  "thu_muc": "V11186_AB_COMBO_BYPASS_ROSTER_20260914",
+  "chu_de": "AB DEPLOY COMBO ROSTER",
+  "thu_muc": "V11187_AB_DEPLOY_COMBO_ROSTER_20260914",
   "bao_cao": [
-   "V11186_AB_COMBO_BYPASS_ROSTER_20260914/REPORT_V11186.md"
+   "V11187_AB_DEPLOY_COMBO_ROSTER_20260914/REPORT_V11187.md"
   ],
   "ngu_canh": [
-   "V11186_AB_COMBO_BYPASS_ROSTER_20260914/CONVERSATION_CONTEXT_V11186_20260914.md"
+   "V11187_AB_DEPLOY_COMBO_ROSTER_20260914/CONVERSATION_CONTEXT_V11187_20260914.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11187",
+   "ngay": "2026-09-14",
+   "chu_de": "AB DEPLOY COMBO ROSTER",
+   "thu_muc": "V11187_AB_DEPLOY_COMBO_ROSTER_20260914",
+   "bao_cao": [
+    "V11187_AB_DEPLOY_COMBO_ROSTER_20260914/REPORT_V11187.md"
+   ],
+   "ngu_canh": [
+    "V11187_AB_DEPLOY_COMBO_ROSTER_20260914/CONVERSATION_CONTEXT_V11187_20260914.md"
+   ]
+  },
   {
    "version": "V11186",
    "ngay": "2026-09-14",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11173_SC12_PRE_DEPLOY_HARDENING_20260909/CONVERSATION_CONTEXT_V11173_20260909.md"
-   ]
-  },
-  {
-   "version": "V11172",
-   "ngay": "2026-09-08",
-   "chu_de": "TONG LUC NGAY LIVE",
-   "thu_muc": "V11172_TONG_LUC_NGAY_LIVE_20260908",
-   "bao_cao": [
-    "V11172_TONG_LUC_NGAY_LIVE_20260908/REPORT_V11172.md"
-   ],
-   "ngu_canh": [
-    "V11172_TONG_LUC_NGAY_LIVE_20260908/CONVERSATION_CONTEXT_V11172_20260908.md"
    ]
   }
  ]
