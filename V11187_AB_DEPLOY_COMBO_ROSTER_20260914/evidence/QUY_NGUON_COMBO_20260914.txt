@@ -1,0 +1,27 @@
+====================================================================================================
+  QUY NGUON LUOT GOI — ngay 2026-09-14 · moc Combo lay tu scheduler_logs (UTC +7 theo §55)
+====================================================================================================
+  MN · Combo Super: 2026-09-14 05:16:35 -> 2026-09-14 05:17:32 (57s)
+  MT · Combo Super: 2026-09-14 16:43:58 -> 2026-09-14 16:44:02 (4s)
+  MB · Combo Super: 2026-09-14 17:33:05 -> 2026-09-14 17:33:43 (38s)
+----------------------------------------------------------------------------------------------------
+  mien model                bat dau   xong      lat      prompt   ngoai? nguon
+  MN   gemini-2.5-flash     05:15:07  05:15:47  39.2     24405           CHUOI_CHINH_HOAC_KHAC
+  MN   claude-sonnet-4-6    05:15:07  05:15:59  51.0     24411           CHUOI_CHINH_HOAC_KHAC
+  MN   claude-opus-4-6      05:15:07  05:16:03  55.7     24409           CHUOI_CHINH_HOAC_KHAC
+  MN   gpt-oss-120b         05:15:08  05:16:35  86.8     24381           CHUOI_CHINH_HOAC_KHAC
+  MN   claude-opus-4-6      05:16:37  05:17:31  53.5     24429           COMBO_SUPER
+  MT   gemini-2.5-flash     16:40:06  16:40:40  33.3     24819           CHUOI_CHINH_HOAC_KHAC
+  MT   claude-opus-4-6      16:40:06  16:41:01  54.5     24743           CHUOI_CHINH_HOAC_KHAC
+  MT   gpt-oss-120b         16:40:07  16:42:05  117.9    24790           CHUOI_CHINH_HOAC_KHAC
+  MT   glm-5.1              16:40:07  16:43:58  230.8    24747           CHUOI_CHINH_HOAC_KHAC
+  MB   gemini-2.5-flash     17:30:23  17:31:10  46.3     24959           CHUOI_CHINH_HOAC_KHAC
+  MB   claude-opus-4-6      17:30:24  17:31:12  47.9     24789           CHUOI_CHINH_HOAC_KHAC
+  MB   glm-5.1              17:30:23  17:32:03  99.4     24773           CHUOI_CHINH_HOAC_KHAC
+  MB   gpt-oss-120b         17:30:23  17:33:04  160.3    24838           CHUOI_CHINH_HOAC_KHAC
+  MB   gemini-2.5-pro       17:33:07  17:33:43  35.9     22933    NGOAI  COMBO_SUPER
+----------------------------------------------------------------------------------------------------
+  VI PHAM ROSTER: gemini-2.5-pro@MB do COMBO_SUPER goi — muc bang chung QUY_DUOC_BANG_LONG_THOI_GIAN
+  LUU Y: long thoi gian KHONG phai truong `caller`. Bang chung dut diem chi co sau khi
+         §AB deploy — moi luot se mang caller + execution_class + request_fingerprint.
+====================================================================================================

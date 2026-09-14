@@ -1,0 +1,71 @@
+{
+  "terminal": "GO",
+  "thoi_diem": "2026-09-14T20:05:05",
+  "phep": [
+    {
+      "ma": "C1",
+      "ten": "Dong ho THAT nam trong cua so deploy",
+      "dat": true,
+      "chi_tiet": "bay gio 2026-09-14 20:05:05 · cua so [09-14 20:00, 09-15 04:00)"
+    },
+    {
+      "ma": "C2",
+      "ten": "Ca BA mien da co bundle ACTIVE ngay 2026-09-14 (epoch V11185 khep tron)",
+      "dat": true,
+      "chi_tiet": "MN=1@2026-09-14 05:17:32 · MT=1@2026-09-14 16:44:02 · MB=1@2026-09-14 17:33:44"
+    },
+    {
+      "ma": "C3",
+      "ten": "KHONG co provider job dang bay (trace im >= 20 phut)",
+      "dat": true,
+      "chi_tiet": "dong trace cuoi 2026-09-14 17:33:43 · im 151.4 phut"
+    },
+    {
+      "ma": "C4",
+      "ten": "Da thu receipt TU NHIEN ca ba mien ngay 2026-09-14",
+      "dat": true,
+      "chi_tiet": "{\"MN\": \"MN_ROSTER_LIVE_PROOF_OK\", \"MT\": \"MT_ROSTER_LIVE_PROOF_OK\", \"MB\": \"MB_ROSTER_LIVE_PROOF_FAIL\"}"
+    },
+    {
+      "ma": "C5",
+      "ten": "Backup CAP 1 .pre_v11186 co DU va KHOP ban dang chay",
+      "dat": true,
+      "chi_tiet": "thieu=khong · lech=khong"
+    },
+    {
+      "ma": "C6",
+      "ten": "Service lanh TRUOC khi dong vao",
+      "dat": true,
+      "chi_tiet": "ActiveState=active · health=200 · MainPID=97754 · NRestarts=0"
+    },
+    {
+      "ma": "C7",
+      "ten": "Chup duoc moc TRUOC deploy (4 bang khoa + crontab + PID)",
+      "dat": true,
+      "chi_tiet": "bang khoa={'predictions': 14965, 'final_bundles': 597, 'lottery_results': 15483, 'model_daily_eval': 14829} · crontab 81efcf8de5c90c62 (90 dong JOB · 158 khong rong · 166 tong)"
+    }
+  ],
+  "anh_chup_truoc": {
+    "thoi_diem": "2026-09-14T20:05:05",
+    "pid_truoc": "97754",
+    "nrestarts_truoc": "0",
+    "sha_dang_chay": {
+      "combo_super.py": "47047b1dc0b7e0b9",
+      "gpt_analyzer.py": "20f3bb5305ad13d2",
+      "scheduler.py": "732e302a57e299fb",
+      "main.py": "d59a6ae94f9c3666",
+      "_v11185_roster_goi_token.py": "294ec64572e5cd9d"
+    },
+    "bang_khoa": {
+      "predictions": 14965,
+      "final_bundles": 597,
+      "lottery_results": 15483,
+      "model_daily_eval": 14829
+    },
+    "crontab_sha": "81efcf8de5c90c62",
+    "crontab_dong_job": 90,
+    "crontab_dong_khong_rong": 158,
+    "crontab_dong_tong": 166
+  },
+  "phep_chan": []
+}
