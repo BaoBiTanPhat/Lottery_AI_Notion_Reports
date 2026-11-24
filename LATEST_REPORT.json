@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-09-15 03:23:21",
- "tong_thu_muc": 466,
- "latest_version": "V11188",
+ "_sinh_luc_vn": "2026-11-24 23:34:14",
+ "tong_thu_muc": 467,
+ "latest_version": "V11189",
  "latest": {
-  "version": "V11188",
-  "ngay": "2026-09-15",
-  "chu_de": "AC EOD FORENSIC",
-  "thu_muc": "V11188_AC_EOD_FORENSIC_20260915",
+  "version": "V11189",
+  "ngay": "2026-11-24",
+  "chu_de": "KIEM TONG LUC",
+  "thu_muc": "V11189_KIEM_TONG_LUC_20261124",
   "bao_cao": [
-   "V11188_AC_EOD_FORENSIC_20260915/REPORT_V11188.md"
+   "V11189_KIEM_TONG_LUC_20261124/REPORT_V11189.md"
   ],
   "ngu_canh": [
-   "V11188_AC_EOD_FORENSIC_20260915/CONVERSATION_CONTEXT_V11188_20260915.md"
+   "V11189_KIEM_TONG_LUC_20261124/CONVERSATION_CONTEXT_V11189_20261124.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11189",
+   "ngay": "2026-11-24",
+   "chu_de": "KIEM TONG LUC",
+   "thu_muc": "V11189_KIEM_TONG_LUC_20261124",
+   "bao_cao": [
+    "V11189_KIEM_TONG_LUC_20261124/REPORT_V11189.md"
+   ],
+   "ngu_canh": [
+    "V11189_KIEM_TONG_LUC_20261124/CONVERSATION_CONTEXT_V11189_20261124.md"
+   ]
+  },
   {
    "version": "V11188",
    "ngay": "2026-09-15",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11175_KIEM_CHEO_DINH_CHINH_V11174_20260910/CONVERSATION_CONTEXT_V11175_20260910.md"
-   ]
-  },
-  {
-   "version": "V11174",
-   "ngay": "2026-09-10",
-   "chu_de": "SC12 DEPLOY ZEROWRITE",
-   "thu_muc": "V11174_SC12_DEPLOY_ZEROWRITE_20260910",
-   "bao_cao": [
-    "V11174_SC12_DEPLOY_ZEROWRITE_20260910/REPORT_V11174.md"
-   ],
-   "ngu_canh": [
-    "V11174_SC12_DEPLOY_ZEROWRITE_20260910/CONVERSATION_CONTEXT_V11174_20260910.md"
    ]
   }
  ]
