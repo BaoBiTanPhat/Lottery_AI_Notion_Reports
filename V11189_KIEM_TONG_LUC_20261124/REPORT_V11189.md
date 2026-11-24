@@ -76,6 +76,11 @@ Làn shadow im từ 14/09: **có chủ ý** — log ghi `SHADOW_BOUNDED_V11185 �
 Pool AI combo-super (7 model) còn sống: MN **2** (`gemini-2.5-flash`, `gpt-oss-120b`) < sàn §59 = 3; MT/MB
 **3** (thêm `glm-5.1`). Pool ML 4/4.
 
+> 🔴 **ĐÍNH CHÍNH 24/11 (V11190 · `RL-048`)** — câu trên ghi SAI tổng pool: *«Pool AI combo-super (7 model)»*.
+> Đúng là **9 model** (`combo_super.AI_MODELS`; agent bỏ sót `gemini-3.5-flash`, `gemini-3.6-flash`). Hai model đó
+> thuộc làn shadow bị chặn từ 14/09 nên không được gọi — số model AI **còn sống** vẫn là MN 2 · MT/MB 3, kết luận
+> thủng sàn không đổi. Không quyết định nào dựa trên con số 7. Tái lập: `print([m['id'] for m in combo_super.AI_MODELS])`.
+
 ### 3.4 Phân loại WARNING trong `scheduler_logs` (RM-09 — không đếm thô)
 0 dòng `ERROR` từ 01/11. Ba nhóm `WARNING`:
 
@@ -179,6 +184,12 @@ sao lưu từ xa · `py_compile` **trên VPS** trước khi đặt vào chỗ ·
 
 **Chưa đạt (ghi thẳng):** vá stdout mới ở tầng `DEPLOYED`; bằng chứng `RUNTIME_PROVEN` là lượt scorecard tự
 nhiên chiều 25/11 (`FU-451`).
+
+> 🔴 **ĐÍNH CHÍNH 25/11 (V11190)** — dòng K1 «**9/9** cổng commit» và các câu «cổng commit 8 → 9 cổng» ở bản này chỉ
+> đúng với hook **Cursor** (`.cursor/hooks/code_quality_guard.py`, chính là danh sách `_v11050_kiem_cong` đọc). Commit
+> từ **Claude Code** đi qua `.claude/hooks/cong_git_commit.py` — danh sách KHÁC, KHÔNG có cổng stdout: nhật ký
+> `_HOOK_DIEM_DANH.log` ghi lần commit 23:53 ngày 24/11 chạy **9 cổng con không gồm cổng mới**. V11190 đã nối cổng vào
+> hook Claude Code (commit `ff92c3e`: **10/10 cổng con**). Phần lệch còn lại giữa hai hook: `FU-457`.
 
 ## 7. Vướng vấp
 

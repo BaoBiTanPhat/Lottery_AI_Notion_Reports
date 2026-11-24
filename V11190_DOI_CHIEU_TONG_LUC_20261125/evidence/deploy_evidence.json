@@ -1,0 +1,48 @@
+{
+ "version": "V11190",
+ "tep": "web/frontend/choi.html",
+ "buoc": [
+  {
+   "buoc": "ngoài khung cấm (05:00–06:30, 15:30–18:15 VN)",
+   "ok": true,
+   "chi_tiet": "00:11"
+  },
+  {
+   "buoc": "bản local mang mốc mới",
+   "ok": true,
+   "chi_tiet": "16:58/17:58 có · 16:53/17:53 không"
+  },
+  {
+   "buoc": "service lành trước",
+   "ok": true,
+   "chi_tiet": "PID 1122833 · health 200"
+  },
+  {
+   "buoc": "sao lưu từ xa",
+   "ok": true,
+   "chi_tiet": "34ab351d1ff22ef43c913a9eb58088f355147c4338e2070975efd7dc2782f926  /root/backups/v11190_pre/choi.html"
+  },
+  {
+   "buoc": "đẩy lên /tmp",
+   "ok": true,
+   "chi_tiet": "ok"
+  },
+  {
+   "buoc": "đặt vào chỗ · sha khớp local",
+   "ok": true,
+   "chi_tiet": "8703f446fc19b19b88e8cd140eb64343d19353d327b45a33f8b8a99c58919a93  /root/Lottery_"
+  },
+  {
+   "buoc": "nội dung trên VPS",
+   "ok": true,
+   "chi_tiet": "mốc mới 3 · mốc cũ 0"
+  },
+  {
+   "buoc": "service KHÔNG restart · health 200 · /choi chặn khi chưa đăng nhập",
+   "ok": true,
+   "chi_tiet": "PID 1122833 → 1122833 · health 200 · /choi 401"
+  }
+ ],
+ "bat_dau": "2026-11-25T00:11:27+07:00",
+ "ket_thuc": "2026-11-25T00:11:31+07:00"
+}
