@@ -1,0 +1,169 @@
+{
+ "version": "V11189",
+ "files": [
+  "_materialize_adaptive_exploit_v1.py",
+  "_materialize_consensus_v1.py",
+  "_materialize_drift_monitor.py",
+  "_materialize_du_doan_test_model_budget.py",
+  "_materialize_hybrid_v1.py",
+  "_materialize_lag1_adaptive_exploit_signal_shadow.py",
+  "_v11155_vai_tro_theo_thoi_diem.py",
+  "_seed_rules.py"
+ ],
+ "steps": [
+  {
+   "buoc": "ngoài khung cấm deploy (05:00–06:30, 15:30–18:15 VN)",
+   "ok": true,
+   "chi_tiet": "23:17 VN"
+  },
+  {
+   "buoc": "service lành TRƯỚC",
+   "ok": true,
+   "chi_tiet": {
+    "svc": [
+     "169960",
+     "0",
+     "active"
+    ],
+    "health": "200",
+    "admin": "401"
+   }
+  },
+  {
+   "buoc": "có tệp cần đẩy",
+   "ok": true,
+   "chi_tiet": "8/8 tệp khác bản local"
+  },
+  {
+   "buoc": "sao lưu từ xa",
+   "ok": true,
+   "chi_tiet": "/root/backups/v11189_pre · 8"
+  },
+  {
+   "buoc": "đẩy lên /tmp",
+   "ok": true,
+   "chi_tiet": "ok"
+  },
+  {
+   "buoc": "py_compile trên VPS",
+   "ok": true,
+   "chi_tiet": "PYC_OK"
+  },
+  {
+   "buoc": "đặt vào chỗ · sha khớp local",
+   "ok": true,
+   "chi_tiet": "lệch=[]"
+  },
+  {
+   "buoc": "restart · PID đổi · health 200",
+   "ok": true,
+   "chi_tiet": "PID 169960 → 1122833 · health 200 · 11.6s"
+  },
+  {
+   "buoc": "admin chặn khi không đăng nhập",
+   "ok": true,
+   "chi_tiet": "admin=401"
+  },
+  {
+   "buoc": "4 bảng khoá PRE = POST",
+   "ok": true,
+   "chi_tiet": {
+    "predictions": "KHỚP",
+    "final_bundles": "KHỚP",
+    "lottery_results": "KHỚP",
+    "model_daily_eval": "KHỚP"
+   }
+  },
+  {
+   "buoc": "journal sau restart: 0 Traceback/ERROR",
+   "ok": true,
+   "chi_tiet": "dòng lỗi=0"
+  }
+ ],
+ "bat_dau": "2026-11-24T23:17:46+07:00",
+ "pre": {
+  "tables": {
+   "predictions": {
+    "n": 17468,
+    "max_id": 36946,
+    "sha": "bc4424189762e8ff2cb88a28"
+   },
+   "final_bundles": {
+    "n": 810,
+    "max_id": 1314,
+    "sha": "d5fe5cb453d4aa878c18726d"
+   },
+   "lottery_results": {
+    "n": 15949,
+    "max_id": 16053,
+    "sha": "6852f1c3c2ed55319327e44c"
+   },
+   "model_daily_eval": {
+    "n": 17332,
+    "max_id": 25112,
+    "sha": "db238aca818380897b1a4857"
+   }
+  },
+  "svc": [
+   "169960",
+   "0",
+   "active"
+  ],
+  "sha": {
+   "_materialize_adaptive_exploit_v1.py": "3ed372ffb777449fc6526f1318c16ec627a707e3256c48067a78186404b6d22f",
+   "_materialize_consensus_v1.py": "32dfd1b490c7a844bc4276914591422375f85e6dd12f8ea9e2755f05915d1590",
+   "_materialize_drift_monitor.py": "a806e372a87d94895e96b8bf5427ccccecb78cc484edb807eef3cbd070d75384",
+   "_materialize_du_doan_test_model_budget.py": "91d9c0068304b8209803206bb80bb78c103ff5856e61b82f8fa1e5fa8d98b917",
+   "_materialize_hybrid_v1.py": "37156c9c7e85b43ffdaf2aa8941e8c81a59a633e14a3d0d70f406be09ef7c48d",
+   "_materialize_lag1_adaptive_exploit_signal_shadow.py": "9783960d9093c2dfacc699b0d6a8d4dcf1a74ed13dd89851a3d6bc6e4b29d47f",
+   "_v11155_vai_tro_theo_thoi_diem.py": "609904e007ff9abc218f5a3774d7c05264e1bfa28da206f933e75a11db514861",
+   "_seed_rules.py": "faaa7f671f2b9bf2c623eff0180e1e7f8478e105587db527fa3bc2811ac53bac"
+  },
+  "health": "200",
+  "admin": "401"
+ },
+ "restart_giay": 11.6,
+ "post": {
+  "tables": {
+   "predictions": {
+    "n": 17468,
+    "max_id": 36946,
+    "sha": "bc4424189762e8ff2cb88a28"
+   },
+   "final_bundles": {
+    "n": 810,
+    "max_id": 1314,
+    "sha": "d5fe5cb453d4aa878c18726d"
+   },
+   "lottery_results": {
+    "n": 15949,
+    "max_id": 16053,
+    "sha": "6852f1c3c2ed55319327e44c"
+   },
+   "model_daily_eval": {
+    "n": 17332,
+    "max_id": 25112,
+    "sha": "db238aca818380897b1a4857"
+   }
+  },
+  "svc": [
+   "1122833",
+   "0",
+   "active"
+  ],
+  "sha": {
+   "_materialize_adaptive_exploit_v1.py": "41d1f7d5e9e547c09fead2aad5355c98879d3977699fd66aee193ba1b16518a2",
+   "_materialize_consensus_v1.py": "fa92205a297089bd22feb251cfd62bdbf70c9694bd94de99a9d214ae7f78ada5",
+   "_materialize_drift_monitor.py": "f2a1055153709d6e87f658e5f48b5e83c4201c048f9aa899ad3fae61d3629f34",
+   "_materialize_du_doan_test_model_budget.py": "b475fdb0b68c95ca5fdb5196299d8c5c01527df0c7abf9a6c6227b6c05a1f000",
+   "_materialize_hybrid_v1.py": "b2bcd0bd464dedbab61de530a20656945986ee6ed05273eff147dfbb03e9f3e5",
+   "_materialize_lag1_adaptive_exploit_signal_shadow.py": "98a80cee19c0d99ae800c13d2e2d21fc18814e8b4564cceffef4546137326faf",
+   "_v11155_vai_tro_theo_thoi_diem.py": "61017949719ead23778bf07051414ea95bf727a84ea38c20f0210c622e3a94d5",
+   "_seed_rules.py": "31aa8656f29e3c6dbaf09a747318a565daf103d8affbb00268bb222764f23333"
+  },
+  "health": "200",
+  "admin": "401"
+ },
+ "ket_thuc": "2026-11-24T23:18:13+07:00",
+ "ket_luan": "DEPLOYED — chờ lượt scorecard tự nhiên 25/11 (MN ~16:39 VN) để lên RUNTIME_PROVEN"
+}
