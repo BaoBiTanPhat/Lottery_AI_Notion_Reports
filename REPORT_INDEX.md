@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-11-25 21:51:17 (giờ VN) · **471 thư mục báo cáo**
+**Sinh lúc:** 2026-11-26 05:32:58 (giờ VN) · **472 thư mục báo cáo**
 
-**Mới nhất: `V11193`** — DANH GIA 25 11 OPENROUTER CHAN · 2026-11-25
+**Mới nhất: `V11194`** — FU452 DAT OPENROUTER THONG · 2026-11-26
 
-- [REPORT_V11193.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/REPORT_V11193.md)
-- [CONVERSATION_CONTEXT_V11193_20261125.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/CONVERSATION_CONTEXT_V11193_20261125.md)
+- [REPORT_V11194.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11194_FU452_DAT_OPENROUTER_THONG_20261126/REPORT_V11194.md)
+- [CONVERSATION_CONTEXT_V11194_20261126.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11194_FU452_DAT_OPENROUTER_THONG_20261126/CONVERSATION_CONTEXT_V11194_20261126.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11194` | 2026-11-26 | FU452 DAT OPENROUTER THONG | [REPORT_V11194.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11194_FU452_DAT_OPENROUTER_THONG_20261126/REPORT_V11194.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11194_FU452_DAT_OPENROUTER_THONG_20261126/CONVERSATION_CONTEXT_V11194_20261126.md) | ✓ |
 | `V11193` | 2026-11-25 | DANH GIA 25 11 OPENROUTER CHAN | [REPORT_V11193.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/REPORT_V11193.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/CONVERSATION_CONTEXT_V11193_20261125.md) | ✓ |
 | `V11192` | 2026-11-25 | NGHIEM THU LUOT THAT OPUS FU451 | [REPORT_V11192.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/REPORT_V11192.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/CONVERSATION_CONTEXT_V11192_20261125.md) | ✓ |
 | `V11191` | 2026-11-25 | NHA CACH LY CLAUDE DEEPSEEK | [REPORT_V11191.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/REPORT_V11191.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/CONVERSATION_CONTEXT_V11191_20261125.md) | ✓ |

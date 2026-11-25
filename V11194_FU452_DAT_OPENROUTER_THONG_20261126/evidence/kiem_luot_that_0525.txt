@@ -1,0 +1,25 @@
+============================================================================================
+  V11191 — kiểm lượt thật ngày 2026-11-26 (chạy lúc 05:24, giờ máy VPS)
+============================================================================================
+
+[FU-452] Dòng predictions của Claude trong ngày
+  ✓ 05:16  MN claude-opus-4-6    auto_daily  PENDING  số=["32"]                 
+  ✓ 05:16  MN claude-sonnet-4-6  auto_daily  PENDING  số=["85", "53"]           
+
+[FU-452] Model AI trong predictions theo miền (đếm model, không đếm dòng)
+  MN  4 model: claude-opus-4-6,claude-sonnet-4-6,gemini-2.5-flash,gpt-oss-120b
+
+[FU-452] Cách ly hiện tại: gpt-5-mini, gpt-5.4
+
+[FU-451a] SHADOW-PROMOTION-SCORECARD (log_time UTC → +7)
+  ✗ thiếu miền: ['MN', 'MT', 'MB']
+  'closed file' trong scheduler_logs từ 04:30 VN: 0
+
+============================================================================================
+  FU-452  Claude chạy lại thật : ĐẠT
+  FU-451a scorecard + stdout   : CHƯA ĐẠT
+============================================================================================
+exit=1
+MainPID=1122833
+
+[exited with code 0]

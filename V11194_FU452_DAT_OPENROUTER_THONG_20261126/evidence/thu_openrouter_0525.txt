@@ -1,0 +1,10 @@
+# _v11193_thu_openrouter.py — một lượt, không retry — chạy trên VPS 26/11/2026 05:25:46 (giờ VN)
+[KEY_MODE] gpt-oss-120b: DB_GENERAL (openrouter_api_key from DB)
+{
+ "luc": "2026-11-26 05:25:46",
+ "khoa_sha8": "bc9b40d3",
+ "GET_/key": {"http": 200, "than": "ok", "limit_remaining": null, "usage": 337.108280979},
+ "POST_chat_toi_thieu": {"http": 200, "giay": 1.17,
+  "than": "{\"id\":\"gen-1795645550-…\",\"object\":\"chat.completion\",\"model\":\"openai/gpt-oss-120b\",\"provider\":\"Google\",…"}
+}
+# So với 25/11 21:39: GET_/key 200 · POST_chat_toi_thieu 400 «Request path cannot be relayed» sau 0,25 s.

@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-25 21:51:17",
- "tong_thu_muc": 471,
- "latest_version": "V11193",
+ "_sinh_luc_vn": "2026-11-26 05:32:58",
+ "tong_thu_muc": 472,
+ "latest_version": "V11194",
  "latest": {
-  "version": "V11193",
-  "ngay": "2026-11-25",
-  "chu_de": "DANH GIA 25 11 OPENROUTER CHAN",
-  "thu_muc": "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125",
+  "version": "V11194",
+  "ngay": "2026-11-26",
+  "chu_de": "FU452 DAT OPENROUTER THONG",
+  "thu_muc": "V11194_FU452_DAT_OPENROUTER_THONG_20261126",
   "bao_cao": [
-   "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/REPORT_V11193.md"
+   "V11194_FU452_DAT_OPENROUTER_THONG_20261126/REPORT_V11194.md"
   ],
   "ngu_canh": [
-   "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/CONVERSATION_CONTEXT_V11193_20261125.md"
+   "V11194_FU452_DAT_OPENROUTER_THONG_20261126/CONVERSATION_CONTEXT_V11194_20261126.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11194",
+   "ngay": "2026-11-26",
+   "chu_de": "FU452 DAT OPENROUTER THONG",
+   "thu_muc": "V11194_FU452_DAT_OPENROUTER_THONG_20261126",
+   "bao_cao": [
+    "V11194_FU452_DAT_OPENROUTER_THONG_20261126/REPORT_V11194.md"
+   ],
+   "ngu_canh": [
+    "V11194_FU452_DAT_OPENROUTER_THONG_20261126/CONVERSATION_CONTEXT_V11194_20261126.md"
+   ]
+  },
   {
    "version": "V11193",
    "ngay": "2026-11-25",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11180_W_P0_ACTION_GATE_20260911/CONVERSATION_CONTEXT_V11180_20260911.md"
-   ]
-  },
-  {
-   "version": "V11179",
-   "ngay": "2026-09-11",
-   "chu_de": "V PRELIVE HARDENING",
-   "thu_muc": "V11179_V_PRELIVE_HARDENING_20260911",
-   "bao_cao": [
-    "V11179_V_PRELIVE_HARDENING_20260911/REPORT_V11179.md"
-   ],
-   "ngu_canh": [
-    "V11179_V_PRELIVE_HARDENING_20260911/CONVERSATION_CONTEXT_V11179_20260911.md"
    ]
   }
  ]

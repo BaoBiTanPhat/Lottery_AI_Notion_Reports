@@ -1,0 +1,15 @@
+claude-opus-4-6    MN ["32"] len=11711 sha8=b421e4b6 rtok=None
+    {"analysis": {"db_tails": ["02", "23", "12", "09", "48", "77"], "g8_tails": ["94", "16", "80", "60", "17"], "frequency": {"30": 3, "70": 2, "88": 2, "85": 2, "53": 2, "50": 2, "35": 2, "91": 2, "20": 2}, "cluster": "0-2-
+claude-sonnet-4-6  MN ["85", "53"] len=13580 sha8=9c8a6f46 rtok=None
+    {"analysis": {"db_tails": ["02", "23", "12", "09", "48", "77"], "g8_tails": ["91", "94", "16", "80", "60", "17"], "frequency": {"30": 2, "70": 2, "53": 1, "85": 1, "35": 1, "50": 1, "91": 1, "89": 1, "20": 1, "24": 1, "8
+gemini-2.5-flash   MN ["02", "89"] len=9674 sha8=790a26a9 rtok=6213
+    {"analysis": {"db_tails": ["02", "23", "12", "09", "48", "77"], "g8_tails": ["94", "16", "80", "60", "17"], "frequency": {"11": 2, "30": 2, "35": 2, "48": 2, "80": 2, "02": 1, "05": 1, "06": 1, "08": 1, "09": 1, "12": 1,
+gpt-oss-120b       MN ["02", "89"] len=12328 sha8=158859c9 rtok=0
+    {"analysis": {"current_week_context": "W48/WS8/MN/Thứ Năm", "phase_alignment_summary": "ACTIVE", "primary_rule_group": ["MN(D-1/T4) · Đồng Nai"], "secondary_rule_group": [], "stale_rules": [], "top_source_prizes_by_regio
+--- 25/11 vs 24/11 dong co so theo model (MN/MT/MB):
+   2026-11-24 gpt-oss-120b   co so 3/3
+   2026-11-24 glm-5.1        co so 2/2
+   2026-11-25 gpt-oss-120b   co so 0/3
+   2026-11-25 glm-5.1        co so 0/2
+   2026-11-26 gpt-oss-120b   co so 1/1
+   2026-11-26 glm-5.1        co so 0/0
