@@ -1,0 +1,151 @@
+{
+ "version": "V11191",
+ "bat_dau": "2026-11-25T13:17:13+07:00",
+ "che_do": "THU+NHA",
+ "cach_ly_truoc": [
+  "claude-opus-4-6",
+  "claude-sonnet-4-6",
+  "deepseek-reasoner",
+  "deepseek-v4-pro-real",
+  "gpt-5-mini",
+  "gpt-5.4"
+ ],
+ "roster_truoc": {
+  "MN": {
+   "core": [
+    "gemini-2.5-flash",
+    "gpt-oss-120b"
+   ],
+   "challenger": [],
+   "loai_bo": [
+    [
+     "claude-opus-4-6",
+     "PROVIDER_QUARANTINED"
+    ],
+    [
+     "claude-sonnet-4-6",
+     "PROVIDER_QUARANTINED"
+    ]
+   ]
+  },
+  "MT": {
+   "core": [
+    "gemini-2.5-flash",
+    "glm-5.1"
+   ],
+   "challenger": [
+    "gpt-oss-120b"
+   ],
+   "loai_bo": [
+    [
+     "claude-opus-4-6",
+     "PROVIDER_QUARANTINED"
+    ]
+   ]
+  },
+  "MB": {
+   "core": [
+    "gemini-2.5-flash",
+    "gpt-oss-120b"
+   ],
+   "challenger": [
+    "glm-5.1"
+   ],
+   "loai_bo": [
+    [
+     "claude-opus-4-6",
+     "PROVIDER_QUARANTINED"
+    ]
+   ]
+  }
+ },
+ "ket_qua": [
+  {
+   "model": "claude-opus-4-6",
+   "luc": "2026-11-25T13:17:13+07:00",
+   "khoa_sha8": "6f2a36e2",
+   "model_api": "claude-opus-4-6",
+   "do_tre_s": 2.03,
+   "dat": true,
+   "tra_loi": "```json\n{\"ok\": 1}\n```",
+   "tokens": 104
+  },
+  {
+   "model": "claude-sonnet-4-6",
+   "luc": "2026-11-25T13:17:15+07:00",
+   "khoa_sha8": "6f2a36e2",
+   "model_api": "claude-sonnet-4-6",
+   "do_tre_s": 1.33,
+   "dat": true,
+   "tra_loi": "```json\n{\"ok\": 1}\n```",
+   "tokens": 104
+  },
+  {
+   "model": "deepseek-reasoner",
+   "luc": "2026-11-25T13:17:16+07:00",
+   "khoa_sha8": "73055fc4",
+   "model_api": "deepseek-v4-flash",
+   "do_tre_s": 1.53,
+   "dat": true,
+   "tra_loi": "{\"ok\": 1}",
+   "tokens": 142
+  },
+  {
+   "model": "deepseek-v4-pro-real",
+   "luc": "2026-11-25T13:17:18+07:00",
+   "khoa_sha8": "73055fc4",
+   "model_api": "deepseek-v4-pro",
+   "do_tre_s": 1.47,
+   "dat": true,
+   "tra_loi": "{\"ok\": 1}",
+   "tokens": 176
+  }
+ ],
+ "da_nha": [
+  "claude-opus-4-6",
+  "claude-sonnet-4-6",
+  "deepseek-reasoner",
+  "deepseek-v4-pro-real"
+ ],
+ "giu_cach_ly": [],
+ "cach_ly_sau": [
+  "gpt-5-mini",
+  "gpt-5.4"
+ ],
+ "roster_sau": {
+  "MN": {
+   "core": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "gpt-oss-120b"
+   ],
+   "challenger": [
+    "claude-sonnet-4-6"
+   ],
+   "loai_bo": []
+  },
+  "MT": {
+   "core": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "glm-5.1"
+   ],
+   "challenger": [
+    "gpt-oss-120b"
+   ],
+   "loai_bo": []
+  },
+  "MB": {
+   "core": [
+    "claude-opus-4-6",
+    "gemini-2.5-flash",
+    "gpt-oss-120b"
+   ],
+   "challenger": [
+    "glm-5.1"
+   ],
+   "loai_bo": []
+  }
+ },
+ "ket_thuc": "2026-11-25T13:17:19+07:00"
+}

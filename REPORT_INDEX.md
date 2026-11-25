@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-11-25 00:20:26 (giờ VN) · **468 thư mục báo cáo**
+**Sinh lúc:** 2026-11-25 13:25:50 (giờ VN) · **469 thư mục báo cáo**
 
-**Mới nhất: `V11190`** — DOI CHIEU TONG LUC · 2026-11-25
+**Mới nhất: `V11191`** — NHA CACH LY CLAUDE DEEPSEEK · 2026-11-25
 
-- [REPORT_V11190.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11190_DOI_CHIEU_TONG_LUC_20261125/REPORT_V11190.md)
-- [CONVERSATION_CONTEXT_V11190_20261125.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11190_DOI_CHIEU_TONG_LUC_20261125/CONVERSATION_CONTEXT_V11190_20261125.md)
+- [REPORT_V11191.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/REPORT_V11191.md)
+- [CONVERSATION_CONTEXT_V11191_20261125.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/CONVERSATION_CONTEXT_V11191_20261125.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11191` | 2026-11-25 | NHA CACH LY CLAUDE DEEPSEEK | [REPORT_V11191.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/REPORT_V11191.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/CONVERSATION_CONTEXT_V11191_20261125.md) | ✓ |
 | `V11190` | 2026-11-25 | DOI CHIEU TONG LUC | [REPORT_V11190.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11190_DOI_CHIEU_TONG_LUC_20261125/REPORT_V11190.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11190_DOI_CHIEU_TONG_LUC_20261125/CONVERSATION_CONTEXT_V11190_20261125.md) | ✓ |
 | `V11189` | 2026-11-24 | KIEM TONG LUC | [REPORT_V11189.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11189_KIEM_TONG_LUC_20261124/REPORT_V11189.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11189_KIEM_TONG_LUC_20261124/CONVERSATION_CONTEXT_V11189_20261124.md) | ✓ |
 | `V11188` | 2026-09-15 | AC EOD FORENSIC | [REPORT_V11188.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11188_AC_EOD_FORENSIC_20260915/REPORT_V11188.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11188_AC_EOD_FORENSIC_20260915/CONVERSATION_CONTEXT_V11188_20260915.md) | ✓ |

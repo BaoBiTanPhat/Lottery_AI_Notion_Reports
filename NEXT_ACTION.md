@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-25 00:20:26 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-25 13:25:50 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -21,7 +21,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11190` — DOI CHIEU TONG LUC (2026-11-25)
+**Báo cáo mới nhất:** `V11191` — NHA CACH LY CLAUDE DEEPSEEK (2026-11-25)
 
 ---
 

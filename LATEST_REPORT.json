@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-25 00:20:26",
- "tong_thu_muc": 468,
- "latest_version": "V11190",
+ "_sinh_luc_vn": "2026-11-25 13:25:50",
+ "tong_thu_muc": 469,
+ "latest_version": "V11191",
  "latest": {
-  "version": "V11190",
+  "version": "V11191",
   "ngay": "2026-11-25",
-  "chu_de": "DOI CHIEU TONG LUC",
-  "thu_muc": "V11190_DOI_CHIEU_TONG_LUC_20261125",
+  "chu_de": "NHA CACH LY CLAUDE DEEPSEEK",
+  "thu_muc": "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125",
   "bao_cao": [
-   "V11190_DOI_CHIEU_TONG_LUC_20261125/REPORT_V11190.md"
+   "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/REPORT_V11191.md"
   ],
   "ngu_canh": [
-   "V11190_DOI_CHIEU_TONG_LUC_20261125/CONVERSATION_CONTEXT_V11190_20261125.md"
+   "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/CONVERSATION_CONTEXT_V11191_20261125.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11191",
+   "ngay": "2026-11-25",
+   "chu_de": "NHA CACH LY CLAUDE DEEPSEEK",
+   "thu_muc": "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125",
+   "bao_cao": [
+    "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/REPORT_V11191.md"
+   ],
+   "ngu_canh": [
+    "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/CONVERSATION_CONTEXT_V11191_20261125.md"
+   ]
+  },
   {
    "version": "V11190",
    "ngay": "2026-11-25",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11177_DONG_SC12_VA_CHALLENGER_20260910/CONVERSATION_CONTEXT_V11177_20260910.md"
-   ]
-  },
-  {
-   "version": "V11176",
-   "ngay": "2026-09-10",
-   "chu_de": "RUNTIME PROOF TU NHIEN",
-   "thu_muc": "V11176_RUNTIME_PROOF_TU_NHIEN_20260910",
-   "bao_cao": [
-    "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/REPORT_V11176.md"
-   ],
-   "ngu_canh": [
-    "V11176_RUNTIME_PROOF_TU_NHIEN_20260910/CONVERSATION_CONTEXT_V11176_20260910.md"
    ]
   }
  ]

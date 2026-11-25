@@ -1,0 +1,12 @@
+# chạy 25/11/2026 13:23 ICT trên VPS
+claude-opus-4-6        MN  official     => ALLOW                trong roster
+claude-opus-4-6        MT  official     => ALLOW                trong roster
+claude-opus-4-6        MB  official     => ALLOW                trong roster
+claude-sonnet-4-6      MN  official     => ALLOW                trong roster
+claude-sonnet-4-6      MT  official     => DENY_OUTSIDE_ROSTER  model KHONG thuoc roster ['claude-opus-4-6', 'gemini-2.5-flash', 'glm-
+claude-opus-4-6        MT  combo_super  => ALLOW                trong roster
+deepseek-reasoner      MN  official     => DENY_OUTSIDE_ROSTER  model KHONG thuoc roster ['claude-opus-4-6', 'gemini-2.5-flash', 'gpt-
+deepseek-reasoner      MT  combo_super  => DENY_OUTSIDE_ROSTER  model KHONG thuoc roster ['claude-opus-4-6', 'gemini-2.5-flash', 'glm-
+deepseek-v4-pro-real   MT  shadow       => DENY_OUTSIDE_ROSTER  model KHONG thuoc roster ['claude-opus-4-6', 'gemini-2.5-flash', 'glm-
+deepseek-v4-pro-real   MB  shadow       => DENY_OUTSIDE_ROSTER  model KHONG thuoc roster ['claude-opus-4-6', 'gemini-2.5-flash', 'gpt-
+gpt-5.4                MB  official     => DENY_QUARANTINED     model dang bi cach ly deterministic
