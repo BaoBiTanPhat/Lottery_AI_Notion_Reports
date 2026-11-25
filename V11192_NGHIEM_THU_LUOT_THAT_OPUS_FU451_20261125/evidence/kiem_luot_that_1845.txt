@@ -1,0 +1,31 @@
+cho 18978 giay
+============================================================================================
+  V11191 — kiểm lượt thật ngày 2026-11-25 (chạy lúc 18:45, giờ máy VPS)
+============================================================================================
+
+[FU-452] Dòng predictions của Claude trong ngày
+  ✓ 16:36  MT claude-opus-4-6    ai_chain    PARTIAL  số=["98", "24"]           
+  ✓ 17:31  MB claude-opus-4-6    ai_chain    LOSE     số=["49"]                 
+
+[FU-452] Model AI trong predictions theo miền (đếm model, không đếm dòng)
+  MB  4 model: claude-opus-4-6,gemini-2.5-flash,glm-5.1,gpt-oss-120b
+  MN  2 model: gemini-2.5-flash,gpt-oss-120b
+  MT  4 model: claude-opus-4-6,gemini-2.5-flash,glm-5.1,gpt-oss-120b
+
+[FU-452] Cách ly hiện tại: gpt-5-mini, gpt-5.4
+
+[FU-451a] SHADOW-PROMOTION-SCORECARD (log_time UTC → +7)
+  16:34 VN  🧪 [SHADOW-PROMOTION-SCORECARD] MN 2026-11-25: inserted=27
+  17:30 VN  🧪 [SHADOW-PROMOTION-SCORECARD] MT 2026-11-25: inserted=27
+  18:32 VN  🧪 [SHADOW-PROMOTION-SCORECARD] MB 2026-11-25: inserted=27
+  'closed file' trong scheduler_logs từ 04:30 VN: 0
+
+============================================================================================
+  FU-452  Claude chạy lại thật : ĐẠT
+  FU-451a scorecard + stdout   : ĐẠT
+============================================================================================
+exit=0
+journal closed file tu 04:30: 0
+1122833
+
+[exited with code 0]

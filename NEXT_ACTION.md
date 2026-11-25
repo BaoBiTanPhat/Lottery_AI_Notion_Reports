@@ -2,13 +2,14 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-25 13:25:50 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-25 18:52:42 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
-| `FU-451` | `SC2511` | Vá stdout service chết (V11189) — chờ lượt scorecard tự nhiên | **25/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
+| `FU-451` | `SC2511` | Vá stdout service chết — (a) ĐẠT lượt thật 25/11 | **25/11** | `OWNER_DECISION_NEEDED` |
+| `FU-452` | `QD2411` | Claude chạy lại sau nạp tiền — MT/MB đạt lượt thật, MN chờ 26/11 | **26/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-455` | `SC2711` | Khuyến nghị CHƠI/NGHỈ của `/choi` được ghi SAU giờ xổ | **27/11** | `MEASURED_ROOT_CAUSE` |
 
 ## ⚠ QUÁ HẠN — còn treo
@@ -21,7 +22,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11191` — NHA CACH LY CLAUDE DEEPSEEK (2026-11-25)
+**Báo cáo mới nhất:** `V11192` — NGHIEM THU LUOT THAT OPUS FU451 (2026-11-25)
 
 ---
 

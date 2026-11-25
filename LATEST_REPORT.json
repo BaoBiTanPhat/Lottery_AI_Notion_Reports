@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-25 13:25:50",
- "tong_thu_muc": 469,
- "latest_version": "V11191",
+ "_sinh_luc_vn": "2026-11-25 18:52:42",
+ "tong_thu_muc": 470,
+ "latest_version": "V11192",
  "latest": {
-  "version": "V11191",
+  "version": "V11192",
   "ngay": "2026-11-25",
-  "chu_de": "NHA CACH LY CLAUDE DEEPSEEK",
-  "thu_muc": "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125",
+  "chu_de": "NGHIEM THU LUOT THAT OPUS FU451",
+  "thu_muc": "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125",
   "bao_cao": [
-   "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/REPORT_V11191.md"
+   "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/REPORT_V11192.md"
   ],
   "ngu_canh": [
-   "V11191_NHA_CACH_LY_CLAUDE_DEEPSEEK_20261125/CONVERSATION_CONTEXT_V11191_20261125.md"
+   "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/CONVERSATION_CONTEXT_V11192_20261125.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11192",
+   "ngay": "2026-11-25",
+   "chu_de": "NGHIEM THU LUOT THAT OPUS FU451",
+   "thu_muc": "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125",
+   "bao_cao": [
+    "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/REPORT_V11192.md"
+   ],
+   "ngu_canh": [
+    "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/CONVERSATION_CONTEXT_V11192_20261125.md"
+   ]
+  },
   {
    "version": "V11191",
    "ngay": "2026-11-25",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/CONVERSATION_CONTEXT_V11178_20260911.md"
-   ]
-  },
-  {
-   "version": "V11177",
-   "ngay": "2026-09-10",
-   "chu_de": "DONG SC12 VA CHALLENGER",
-   "thu_muc": "V11177_DONG_SC12_VA_CHALLENGER_20260910",
-   "bao_cao": [
-    "V11177_DONG_SC12_VA_CHALLENGER_20260910/REPORT_V11177.md"
-   ],
-   "ngu_canh": [
-    "V11177_DONG_SC12_VA_CHALLENGER_20260910/CONVERSATION_CONTEXT_V11177_20260910.md"
    ]
   }
  ]
