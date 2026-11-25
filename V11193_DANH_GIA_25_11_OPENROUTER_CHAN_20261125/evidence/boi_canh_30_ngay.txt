@@ -1,0 +1,45 @@
+# Bảng chơi vs Dự đoán · 2026-10-27 → 2026-11-25 · thước P&L của /choi (50đ/số/đài, trả 98k)
+
+## MN — 30 ngày có kết quả · khuyến nghị đã lưu: {'CÂN NHẮC': 13, 'CHƠI': 3, 'NGHỈ': 14}
+   method đã khoá (số ngày): {'MN_BT1_OFFICIAL_V1': 30}
+   ngày ghi NGHỈ (không tính nghỉ T7): 10 — trong đó số của bảng chơi vẫn TRÚNG: 0
+| cách chơi | ngày | ngày trúng ≥1 nháy | nền ngẫu nhiên | P&L thật | kỳ vọng nếu chọn ngẫu nhiên | z so với ngẫu nhiên | vốn |
+|---|---|---|---|---|---|---|---|
+| Bảng chơi — theo khuyến nghị ⚠ (khuyến nghị ghi SAU giờ xổ) | 16 | 10 (62%) | 43% | +16.0M | -0.5M | +1.86 | 25.6M |
+| Bảng chơi — đánh đủ mọi ngày | 26 | 10 (38%) | 42% | -6.5M | -1.4M | -0.28 | 70.2M |
+| Dự đoán — lô 2 số | 30 | 25 (83%) | 68% | +17.0M | -3.4M | +0.73 | 169.2M |
+| Dự đoán — bạch thủ | 30 | 13 (43%) | 43% | -6.2M | -1.7M | -0.23 | 84.6M |
+
+## MT — 30 ngày có kết quả · khuyến nghị đã lưu: {'CHƠI': 24, 'CÂN NHẮC': 6}
+   method đã khoá (số ngày): {'MT_HYBRID_V1': 6, 'MT_HYBRID_V1 + MT_ADAPTIVE_BUDGET_SELECTOR_V1': 10, 'MT_DEHERD_V1': 7, 'MT_HYBRID_V1 + MT_SPECIALIST_ROSTER_V1': 7}
+   ngày ghi NGHỈ (không tính nghỉ T7): 0 — trong đó số của bảng chơi vẫn TRÚNG: 0
+| cách chơi | ngày | ngày trúng ≥1 nháy | nền ngẫu nhiên | P&L thật | kỳ vọng nếu chọn ngẫu nhiên | z so với ngẫu nhiên | vốn |
+|---|---|---|---|---|---|---|---|
+| Bảng chơi — theo khuyến nghị ⚠ (khuyến nghị ghi SAU giờ xổ) | 30 | 13 (43%) | 53% | -9.8M | -2.1M | -0.34 | 105.3M |
+| Bảng chơi — đánh đủ mọi ngày | 30 | 13 (43%) | 53% | -18.1M | -2.3M | -0.66 | 116.1M |
+| Dự đoán — lô 2 số | 30 | 16 (53%) | 57% | -26.7M | -2.6M | -0.96 | 129.6M |
+| Dự đoán — bạch thủ | 30 | 9 (30%) | 35% | -15.8M | -1.3M | -0.81 | 64.8M |
+
+## MB — 30 ngày có kết quả · khuyến nghị đã lưu: {'CHƠI': 17, 'CÂN NHẮC': 12, 'NGHỈ': 1}
+   method đã khoá (số ngày): {'MB_AI_CHAIN_PRESERVATION_V1 + MB_HYBRID_V1': 6, 'MB_SCREEN_RULEBH_V1': 7, 'MB_SCREEN_CHAMPION_V1 + MB_SCREEN_LEAN_V1': 14, 'MB_SCREEN_ADAPTIVE_V1': 3}
+   ngày ghi NGHỈ (không tính nghỉ T7): 1 — trong đó số của bảng chơi vẫn TRÚNG: 0
+| cách chơi | ngày | ngày trúng ≥1 nháy | nền ngẫu nhiên | P&L thật | kỳ vọng nếu chọn ngẫu nhiên | z so với ngẫu nhiên | vốn |
+|---|---|---|---|---|---|---|---|
+| Bảng chơi — theo khuyến nghị ⚠ (khuyến nghị ghi SAU giờ xổ) | 29 | 11 (38%) | 38% | -5.0M | -1.1M | -0.26 | 54.0M |
+| Bảng chơi — đánh đủ mọi ngày | 30 | 11 (37%) | 38% | -12.8M | -1.4M | -0.61 | 71.5M |
+| Dự đoán — lô 2 số | 30 | 10 (33%) | 42% | -17.3M | -1.6M | -0.80 | 81.0M |
+| Dự đoán — bạch thủ | 30 | 7 (23%) | 24% | -1.3M | -0.8M | -0.04 | 40.5M |
+
+## Gộp 3 miền
+| cách chơi | P&L thật | kỳ vọng ngẫu nhiên | z | vốn |
+|---|---|---|---|---|
+| Bảng chơi — theo khuyến nghị ⚠ (khuyến nghị ghi SAU giờ xổ) | +1.2M | -3.7M | +0.18 | 184.9M |
+| Bảng chơi — đánh đủ mọi ngày | -37.4M | -5.2M | -0.92 | 257.9M |
+| Dự đoán — lô 2 số | -27.0M | -7.6M | -0.46 | 379.8M |
+| Dự đoán — bạch thủ | -23.3M | -3.8M | -0.65 | 189.9M |
+
+## Theo tháng — gộp 3 miền (P&L thật / kỳ vọng ngẫu nhiên, triệu đồng)
+| tháng | Bảng chơi đánh đủ | Dự đoán lô 2 số | Dự đoán bạch thủ |
+|---|---|---|---|
+| 2026-10 | -5.7 / -0.7 | -14.9 / -1.3 | -12.3 / -0.6 |
+| 2026-11 | -31.6 / -4.5 | -12.1 / -6.3 | -10.9 / -3.2 |

@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-25 18:52:42",
- "tong_thu_muc": 470,
- "latest_version": "V11192",
+ "_sinh_luc_vn": "2026-11-25 21:51:17",
+ "tong_thu_muc": 471,
+ "latest_version": "V11193",
  "latest": {
-  "version": "V11192",
+  "version": "V11193",
   "ngay": "2026-11-25",
-  "chu_de": "NGHIEM THU LUOT THAT OPUS FU451",
-  "thu_muc": "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125",
+  "chu_de": "DANH GIA 25 11 OPENROUTER CHAN",
+  "thu_muc": "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125",
   "bao_cao": [
-   "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/REPORT_V11192.md"
+   "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/REPORT_V11193.md"
   ],
   "ngu_canh": [
-   "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/CONVERSATION_CONTEXT_V11192_20261125.md"
+   "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/CONVERSATION_CONTEXT_V11193_20261125.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11193",
+   "ngay": "2026-11-25",
+   "chu_de": "DANH GIA 25 11 OPENROUTER CHAN",
+   "thu_muc": "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125",
+   "bao_cao": [
+    "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/REPORT_V11193.md"
+   ],
+   "ngu_canh": [
+    "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/CONVERSATION_CONTEXT_V11193_20261125.md"
+   ]
+  },
   {
    "version": "V11192",
    "ngay": "2026-11-25",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11179_V_PRELIVE_HARDENING_20260911/CONVERSATION_CONTEXT_V11179_20260911.md"
-   ]
-  },
-  {
-   "version": "V11178",
-   "ngay": "2026-09-11",
-   "chu_de": "CHALLENGER V11 LIVE OUTPUT",
-   "thu_muc": "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911",
-   "bao_cao": [
-    "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/REPORT_V11178.md"
-   ],
-   "ngu_canh": [
-    "V11178_CHALLENGER_V11_LIVE_OUTPUT_20260911/CONVERSATION_CONTEXT_V11178_20260911.md"
    ]
   }
  ]

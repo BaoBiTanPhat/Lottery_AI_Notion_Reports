@@ -1,0 +1,25 @@
+{
+ "dns_openrouter.ai": [
+  "104.18.2.115",
+  "104.18.3.115",
+  "2606:4700::6812:273",
+  "2606:4700::6812:373"
+ ],
+ "GET_/models": {
+  "http": 200,
+  "server": "cloudflare",
+  "cf-ray": "a60169209c067eb7-HKG",
+  "via": null,
+  "than": "ok"
+ },
+ "POST_chat": {
+  "http": 400,
+  "server": "cloudflare",
+  "cf-ray": "a60169268f47b1bf-HKG",
+  "via": null,
+  "than": "{\"error\":{\"message\":\"Request path cannot be relayed\",\"code\":400}}"
+ }
+}
+== proxy trong env service:
+0
+0

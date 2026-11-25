@@ -1,0 +1,84 @@
+# Đánh giá dự đoán ngày 2026-11-25
+
+## MN — 3 đài (Cần Thơ, Sóc Trăng, Đồng Nai) · 54 giải · 45 đuôi khác nhau về
+   nền ngẫu nhiên hôm nay: 1 số trúng 45% · 2 số có ít nhất 1 trúng 70%
+
+   | bảng | số | trúng (nháy) | lời/lỗ thật | kỳ vọng nếu chọn ngẫu nhiên | vốn | giờ chốt |
+   |---|---|---|---|---|---|---|
+   | /du-doan bạch thủ | 12 | {'12': 1} | +2,200k | -54k | 2,700k | 2026-11-25 05:17:12 |
+   | /du-doan lô 2 số | 12 85 | {'12': 1, '85': 1} | +4,400k | -108k | 5,400k | 2026-11-25 05:17:12 |
+   | (bundle) | lo3=['12'] xien2=["12", "85"] | method=weighted_voting_wr · model_count=8 · fallback=0 | | | | |
+   | /choi đánh đủ | 12 | {'12': 1} | +2,200k | -54k | 2,700k | ghi 2026-11-25T18:32:36+07:00 |
+   | /choi theo khuyến nghị «CÂN NHẮC» ×0.5 | 12 | {'12': 1} | +1,100k | -27k | 1,350k | ⚠ khuyến nghị ghi lúc 18:32 |
+   /choi: method=MN_BT1_OFFICIAL_V1 · kiểu=bạch-thủ 1 số · stake=Nửa (25 điểm)
+
+   | model | đường | bạch thủ | trúng BT? | số chọn | trúng / chọn |
+   |---|---|---|---|---|---|
+   | combo-no-token | auto_daily | 12 | ✓ | 12 85 | 2/2 |
+   | gemini-2.5-flash | auto_daily | 57 | ✓ | 57 61 | 1/2 |
+   | lstm | auto_daily | 17 | ✓ | 17 03 | 1/2 |
+   | meta-learning | auto_daily | 85 | ✓ | 85 70 | 1/2 |
+   | random-forest | auto_daily | 12 | ✓ | 12 85 | 2/2 |
+   | smart-ml | auto_daily | 12 | ✓ | 12 85 | 2/2 |
+   | combo-super | auto_daily | 35 | ✗ | 35 27 | 0/2 |
+   | gpt-oss-120b | auto_daily | None | ✗ |  | 0/0 |
+   | smart-ensemble | auto_daily | 35 | ✗ | 35 12 | 1/2 |
+   | xgboost | auto_daily | 35 | ✗ | 35 12 | 1/2 |
+   ⇒ 6/10 model trúng bạch thủ · nền 45% ⇒ kỳ vọng ngẫu nhiên 4.5/10
+
+## MT — 2 đài (Khánh Hòa, Đà Nẵng) · 36 giải · 30 đuôi khác nhau về
+   nền ngẫu nhiên hôm nay: 1 số trúng 30% · 2 số có ít nhất 1 trúng 51%
+
+   | bảng | số | trúng (nháy) | lời/lỗ thật | kỳ vọng nếu chọn ngẫu nhiên | vốn | giờ chốt |
+   |---|---|---|---|---|---|---|
+   | /du-doan bạch thủ | 27 | {'27': 1} | +3,100k | -36k | 1,800k | 2026-11-25 16:37:18 |
+   | /du-doan lô 2 số | 27 93 | {'27': 1, '93': 0} | +1,300k | -72k | 3,600k | 2026-11-25 16:37:18 |
+   | (bundle) | lo3=['27'] xien2=["27", "93"] | method=weighted_voting_wr · model_count=8 · fallback=0 | | | | |
+   | /choi đánh đủ | 14 27 | {'14': 0, '27': 1} | +1,300k | -72k | 3,600k | ghi 2026-11-25T18:32:36+07:00 |
+   | /choi theo khuyến nghị «CÂN NHẮC» ×0.5 | 14 27 | {'14': 0, '27': 1} | +650k | -36k | 1,800k | ⚠ khuyến nghị ghi lúc 18:32 |
+   /choi: method=MT_HYBRID_V1 + MT_ADAPTIVE_BUDGET_SELECTOR_V1 · kiểu=song-thủ · stake=Nửa (25 điểm)
+
+   | model | đường | bạch thủ | trúng BT? | số chọn | trúng / chọn |
+   |---|---|---|---|---|---|
+   | claude-opus-4-6 | ai_chain | 98 | ✓ | 98 24 | 1/2 |
+   | combo-no-token | auto_daily | 27 | ✓ | 27 89 | 2/2 |
+   | gemini-2.5-flash | ai_chain | 89 | ✓ | 89 98 | 2/2 |
+   | meta-learning | auto_daily | 89 | ✓ | 89 58 | 2/2 |
+   | random-forest | auto_daily | 27 | ✓ | 27 94 | 2/2 |
+   | smart-ml | auto_daily | 27 | ✓ | 27 03 | 1/2 |
+   | xgboost | auto_daily | 27 | ✓ | 27 89 | 2/2 |
+   | combo-super | ai_chain | 93 | ✗ | 93 89 | 1/2 |
+   | glm-5.1 | ai_chain | None | ✗ |  | 0/0 |
+   | gpt-oss-120b | ai_chain | None | ✗ |  | 0/0 |
+   | lstm | auto_daily | 93 | ✗ | 93 54 | 0/2 |
+   | smart-ensemble | auto_daily | 93 | ✗ | 93 27 | 1/2 |
+   ⇒ 7/12 model trúng bạch thủ · nền 30% ⇒ kỳ vọng ngẫu nhiên 3.6/12
+
+## MB — 1 đài (Bắc Ninh) · 27 giải · 24 đuôi khác nhau về
+   nền ngẫu nhiên hôm nay: 1 số trúng 24% · 2 số có ít nhất 1 trúng 42%
+
+   | bảng | số | trúng (nháy) | lời/lỗ thật | kỳ vọng nếu chọn ngẫu nhiên | vốn | giờ chốt |
+   |---|---|---|---|---|---|---|
+   | /du-doan bạch thủ | 12 | {'12': 0} | -1,350k | -27k | 1,350k | 2026-11-25 17:34:13 |
+   | /du-doan lô 2 số | 12 49 | {'12': 0, '49': 0} | -2,700k | -54k | 2,700k | 2026-11-25 17:34:13 |
+   | (bundle) | lo3=['12'] xien2=["12", "49"] | method=weighted_voting_wr · model_count=7 · fallback=0 | | | | |
+   | /choi đánh đủ | 12 | {'12': 0} | -1,350k | -27k | 1,350k | ghi 2026-11-25T18:32:36+07:00 |
+   | /choi theo khuyến nghị «CHƠI» ×1.0 | 12 | {'12': 0} | -1,350k | -27k | 1,350k | ⚠ khuyến nghị ghi lúc 18:32 |
+   /choi: method=MB_SCREEN_ADAPTIVE_V1 · kiểu=song-thủ · stake=Full (50 điểm/số/đài)
+
+   | model | đường | bạch thủ | trúng BT? | số chọn | trúng / chọn |
+   |---|---|---|---|---|---|
+   | combo-super | ai_chain | 50 | ✓ | 50 70 | 1/2 |
+   | gemini-2.5-flash | ai_chain | 89 | ✓ | 89 17 | 1/2 |
+   | meta-learning | rerun_post_mt | 50 | ✓ | 50 43 | 1/2 |
+   | smart-ensemble | rerun_post_mt | 50 | ✓ | 50 12 | 1/2 |
+   | claude-opus-4-6 | ai_chain | 49 | ✗ | 49 | 0/1 |
+   | combo-no-token | rerun_post_mt | 12 | ✗ | 12 50 | 1/2 |
+   | glm-5.1 | ai_chain | None | ✗ |  | 0/0 |
+   | gpt-oss-120b | ai_chain | None | ✗ |  | 0/0 |
+   | lstm | rerun_post_mt | 12 | ✗ | 12 23 | 0/2 |
+   | random-forest | rerun_post_mt | 94 | ✗ | 94 33 | 0/2 |
+   | smart-ml | rerun_post_mt | 74 | ✗ | 74 21 | 0/2 |
+   | xgboost | rerun_post_mt | 74 | ✗ | 74 13 | 0/2 |
+   ⇒ 4/12 model trúng bạch thủ · nền 24% ⇒ kỳ vọng ngẫu nhiên 2.9/12
+
