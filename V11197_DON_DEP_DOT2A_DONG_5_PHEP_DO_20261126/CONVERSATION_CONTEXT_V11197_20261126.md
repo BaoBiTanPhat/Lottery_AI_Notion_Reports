@@ -1,4 +1,4 @@
-# CONVERSATION CONTEXT — V11197 · Dọn dẹp Đợt 2a, 26/11 ~12:35 → ~13:10 ICT
+# CONVERSATION CONTEXT — V11197 · Dọn dẹp Đợt 2a, 26/11 12:12 → 12:25 ICT
 
 ## 1. Owner nói gì — nguyên văn
 

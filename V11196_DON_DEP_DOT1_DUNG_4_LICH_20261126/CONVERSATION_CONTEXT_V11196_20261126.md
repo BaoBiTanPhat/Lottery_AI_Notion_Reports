@@ -1,4 +1,4 @@
-# CONVERSATION CONTEXT — V11196 · Dọn dẹp cuốn chiếu Đợt 1, 26/11 ~11:47 → ~12:30 ICT
+# CONVERSATION CONTEXT — V11196 · Dọn dẹp cuốn chiếu Đợt 1, 26/11 ~11:47 → 12:12 ICT
 
 ## 1. Owner nói gì — nguyên văn
 

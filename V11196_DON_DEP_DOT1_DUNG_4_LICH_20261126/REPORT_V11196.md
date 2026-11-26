@@ -1,6 +1,6 @@
 # V11196 — Dọn dẹp cuốn chiếu · Đợt 1: dừng 4 lịch chạy hết việc, không ai đọc (QD-082)
 
-> **Phiên bản:** V11196 · **Ngày:** 26/11/2026 ~12:0x → ~12:30 ICT · **Repo riêng:** `Lottery_AI_Test` commit `589487f`
+> **Phiên bản:** V11196 · **Ngày:** 26/11/2026 ~12:02 → 12:12 ICT · **Repo riêng:** `Lottery_AI_Test` commit `589487f`
 > (nhánh `fu438/admin-only-p0a` + `master`) · **governance_seq:** 511 · **Quyết định:** `QD-082` · **Tầng (RM-12):**
 > `DEPLOYED` (crontab VPS đã cài, `crontab -l` khớp) — lượt «không chạy» kiểm 27/11 · **Runtime đổi:** crontab (không restart).
 
@@ -101,5 +101,5 @@ tiền tố `# V11196 DỪNG … |` ở từng dòng. Tài liệu: `git revert 5
 
 **TanPhatAI cần làm:** cập nhật hiểu biết — từ 26/11 crontab còn 86 dòng đang bật; 4 job `_v10661` · `_perpos_matrix_report`
 · `_v10784_verify_0607` · `_v11067` đã dừng có chủ ý (QD-082), đừng đọc bảng/log của chúng thành «job chết». Theo dõi
-FU-462 (kiểm 27/11). **Code đi trước tài liệu:** crontab cài ~12:20 rồi mới ghi tài liệu ~12:25 — cùng phiên; mục sổ
+FU-462 (kiểm 27/11). **Code đi trước tài liệu:** crontab cài 12:05:11 (giờ tệp sao lưu trên VPS) rồi mới ghi tài liệu, commit 12:10:20 — cùng phiên; mục sổ
 tương ứng: `docs/SO_TUONG_TAC_OWNER.md` dòng «26/11 ~12:0x».

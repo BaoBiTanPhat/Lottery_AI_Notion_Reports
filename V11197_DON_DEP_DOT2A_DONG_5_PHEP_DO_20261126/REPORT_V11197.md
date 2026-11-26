@@ -1,6 +1,6 @@
 # V11197 — Dọn dẹp cuốn chiếu · Đợt 2a: đóng 5 phép đo đã có phán quyết rồi mới dừng lịch (QD-082)
 
-> **Phiên bản:** V11197 · **Ngày:** 26/11/2026 ~12:35 → ~13:10 ICT · **Repo riêng:** `Lottery_AI_Test` commit `d81e7b6`
+> **Phiên bản:** V11197 · **Ngày:** 26/11/2026 12:12 → 12:25 ICT · **Repo riêng:** `Lottery_AI_Test` commit `d81e7b6`
 > (nhánh `fu438/admin-only-p0a` + `master`) · **governance_seq:** 512 · **Căn cứ:** `QD-082` · **Tầng (RM-12):**
 > `DEPLOYED` (crontab VPS cài, `crontab -l` khớp) — lượt «không chạy» kiểm 27/11 · **Runtime đổi:** crontab (không restart).
 
@@ -77,6 +77,7 @@ dòng, thử rồi cài, sao lưu, không xoá.
 
 - Bộ quét bảng báo `_v11089` ghi `lottery_results` (bảng khoá) — phải đọc mã mới thấy là bảng tạm trong bài thử.
 - Ban đầu xếp cụm `/choi` vào «dễ» vì đầu ra chỉ vào panel; đọc log mới thấy số hứa hẹn chưa được đo đúng ⇒ rút ra.
+- **Đính chính giờ:** bản đầu V11196/V11197 ghi giờ ƯỚC LƯỢNG («~12:20», «~12:55», «~13:05», «~13:10») — sai so với giờ thật. Đã sửa tại chỗ theo giờ tệp sao lưu crontab trên VPS (12:05:11 · 12:15:27) và giờ commit (12:10:20 · 12:23:25).
 
 ## 8. Gỡ về
 
@@ -105,4 +106,4 @@ tố `# V11197 DỪNG … |`. Tài liệu: `git revert d81e7b6`.
 
 **TanPhatAI cần làm:** cập nhật hiểu biết — FU-264 · FU-317 · FU-367 · FU-398 đóng KHÔNG ĐẠT, FU-287 đóng ĐẠT; QD-024 vế (B) và
 QD-059 đã có kết quả cuối ghi trong sổ quyết định; crontab còn 81 dòng đang bật. Theo dõi FU-462 (27/11). **Code đi trước tài
-liệu:** crontab cài ~12:55, tài liệu ~13:05 — cùng phiên; căn cứ `docs/SO_TUONG_TAC_OWNER.md` dòng «26/11 ~12:0x».
+liệu:** crontab cài 12:15:27 (giờ tệp sao lưu trên VPS), commit tài liệu 12:23:25 — cùng phiên; căn cứ `docs/SO_TUONG_TAC_OWNER.md` dòng «26/11 ~12:0x».
