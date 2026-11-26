@@ -1,0 +1,225 @@
+########## web/backend/logs/v10789_selector.log (2026-11-25 21:30, 244K)
+[{"date": "2026-11-23", "region": "MT", "selector": "SEL_BASE_V1", "bt": "39", "n_voters": 7}, {"date": "2026-11-23", "region": "MT", "selector": "SEL_DEDUP_V1", "bt": "39", "n_voters": 7}, {"date": "2026-11-23
+[{"date": "2026-11-23", "region": "MB", "selector": "SEL_BASE_V1", "bt": "79", "n_voters": 8}, {"date": "2026-11-23", "region": "MB", "selector": "SEL_DEDUP_V1", "bt": "64", "n_voters": 8}, {"date": "2026-11-23
+[{"date": "2026-11-23", "region": "MN", "selector": "SEL_BASE_V1", "bt": "71", "n_voters": 9}, {"date": "2026-11-23", "region": "MN", "selector": "SEL_DEDUP_V1", "bt": "12", "n_voters": 9}, {"date": "2026-11-23
+{"settled": 9}
+[{"date": "2026-11-24", "region": "MN", "selector": "SEL_BASE_V1", "bt": "18", "n_voters": 9}, {"date": "2026-11-24", "region": "MN", "selector": "SEL_DEDUP_V1", "bt": "59", "n_voters": 9}, {"date": "2026-11-24
+[{"date": "2026-11-24", "region": "MT", "selector": "SEL_BASE_V1", "bt": "89", "n_voters": 10}, {"date": "2026-11-24", "region": "MT", "selector": "SEL_DEDUP_V1", "bt": "89", "n_voters": 10}, {"date": "2026-11-
+[{"date": "2026-11-24", "region": "MB", "selector": "SEL_BASE_V1", "bt": "22", "n_voters": 7}, {"date": "2026-11-24", "region": "MB", "selector": "SEL_DEDUP_V1", "bt": "35", "n_voters": 7}, {"date": "2026-11-24
+[{"date": "2026-11-24", "region": "MN", "selector": "SEL_BASE_V1", "bt": "18", "n_voters": 9}, {"date": "2026-11-24", "region": "MN", "selector": "SEL_DEDUP_V1", "bt": "59", "n_voters": 9}, {"date": "2026-11-24
+{"settled": 9}
+[{"date": "2026-11-25", "region": "MN", "selector": "SEL_BASE_V1", "bt": "12", "n_voters": 8}, {"date": "2026-11-25", "region": "MN", "selector": "SEL_DEDUP_V1", "bt": "57", "n_voters": 8}, {"date": "2026-11-25
+[{"date": "2026-11-25", "region": "MT", "selector": "SEL_BASE_V1", "bt": "27", "n_voters": 8}, {"date": "2026-11-25", "region": "MT", "selector": "SEL_DEDUP_V1", "bt": "27", "n_voters": 8}, {"date": "2026-11-25
+[{"date": "2026-11-25", "region": "MB", "selector": "SEL_BASE_V1", "bt": "12", "n_voters": 7}, {"date": "2026-11-25", "region": "MB", "selector": "SEL_DEDUP_V1", "bt": "49", "n_voters": 7}, {"date": "2026-11-25
+[{"date": "2026-11-25", "region": "MN", "selector": "SEL_BASE_V1", "bt": "12", "n_voters": 8}, {"date": "2026-11-25", "region": "MN", "selector": "SEL_DEDUP_V1", "bt": "57", "n_voters": 8}, {"date": "2026-11-25
+{"settled": 9}
+########## web/backend/logs/v10801_ml_ab.log (2026-11-25 19:05, 48K)
+[V10801] catchup 2026-11-22: {'date': '2026-11-22', 'written': 8, 'skipped': []}
+V10801_SHADOW_DONE
+[V10801] catchup 2026-11-21: {'date': '2026-11-21', 'written': 0, 'skipped': ['MT:already', 'MB:already']}
+[V10801] catchup 2026-11-22: {'date': '2026-11-22', 'written': 0, 'skipped': ['MT:already', 'MB:already']}
+[V10801] catchup 2026-11-23: {'date': '2026-11-23', 'written': 8, 'skipped': []}
+V10801_SHADOW_DONE
+[V10801] catchup 2026-11-22: {'date': '2026-11-22', 'written': 0, 'skipped': ['MT:already', 'MB:already']}
+[V10801] catchup 2026-11-23: {'date': '2026-11-23', 'written': 0, 'skipped': ['MT:already', 'MB:already']}
+[V10801] catchup 2026-11-24: {'date': '2026-11-24', 'written': 8, 'skipped': []}
+V10801_SHADOW_DONE
+[V10801] catchup 2026-11-23: {'date': '2026-11-23', 'written': 0, 'skipped': ['MT:already', 'MB:already']}
+[V10801] catchup 2026-11-24: {'date': '2026-11-24', 'written': 0, 'skipped': ['MT:already', 'MB:already']}
+[V10801] catchup 2026-11-25: {'date': '2026-11-25', 'written': 8, 'skipped': []}
+V10801_SHADOW_DONE
+########## web/backend/logs/v10803_chase_bias.log (2026-11-25 19:10, 44K)
+[V10803] catchup 2026-11-21: {'date': '2026-11-21', 'written': 3}
+[V10803] catchup 2026-11-22: {'date': '2026-11-22', 'written': 3}
+[V10803] catchup 2026-11-23: {'date': '2026-11-23', 'written': 3}
+V10803_SHADOW_DONE
+[V10803] catchup 2026-11-21: {'date': '2026-11-21', 'written': 3}
+[V10803] catchup 2026-11-22: {'date': '2026-11-22', 'written': 3}
+[V10803] catchup 2026-11-23: {'date': '2026-11-23', 'written': 3}
+[V10803] catchup 2026-11-24: {'date': '2026-11-24', 'written': 3}
+V10803_SHADOW_DONE
+[V10803] catchup 2026-11-22: {'date': '2026-11-22', 'written': 3}
+[V10803] catchup 2026-11-23: {'date': '2026-11-23', 'written': 3}
+[V10803] catchup 2026-11-24: {'date': '2026-11-24', 'written': 3}
+[V10803] catchup 2026-11-25: {'date': '2026-11-25', 'written': 3}
+V10803_SHADOW_DONE
+########## web/backend/logs/v10821_total_v2.log (2026-11-25 20:50, 16K)
+[V10821] 2026-11-21: written=3
+[V10821] 2026-11-22: written=3
+[V10821] 2026-11-20: written=3
+[V10821] 2026-11-21: written=3
+[V10821] 2026-11-22: written=3
+[V10821] 2026-11-23: written=3
+[V10821] 2026-11-21: written=3
+[V10821] 2026-11-22: written=3
+[V10821] 2026-11-23: written=3
+[V10821] 2026-11-24: written=3
+[V10821] 2026-11-22: written=3
+[V10821] 2026-11-23: written=3
+[V10821] 2026-11-24: written=3
+[V10821] 2026-11-25: written=3
+########## logs/v10829_rule_cond.log (2026-11-25 21:00, 8.0K)
+{'days': 3, 'start': '2026-11-10', 'end': '2026-11-12'}
+{'days': 3, 'start': '2026-11-11', 'end': '2026-11-13'}
+{'days': 3, 'start': '2026-11-12', 'end': '2026-11-14'}
+{'days': 3, 'start': '2026-11-13', 'end': '2026-11-15'}
+{'days': 3, 'start': '2026-11-14', 'end': '2026-11-16'}
+{'days': 3, 'start': '2026-11-15', 'end': '2026-11-17'}
+{'days': 3, 'start': '2026-11-16', 'end': '2026-11-18'}
+{'days': 3, 'start': '2026-11-17', 'end': '2026-11-19'}
+{'days': 3, 'start': '2026-11-18', 'end': '2026-11-20'}
+{'days': 3, 'start': '2026-11-19', 'end': '2026-11-21'}
+{'days': 3, 'start': '2026-11-20', 'end': '2026-11-22'}
+{'days': 3, 'start': '2026-11-21', 'end': '2026-11-23'}
+{'days': 3, 'start': '2026-11-22', 'end': '2026-11-24'}
+{'days': 3, 'start': '2026-11-23', 'end': '2026-11-25'}
+########## logs/v10844_mb_whatif.log (2026-11-25 21:10, 28K)
+[V10844] 2026-11-20: scored=1 choi=['76', '02'] ae=None v2=63 v3=None
+[V10844] 2026-11-21: scored=1 choi=['36', '15'] ae=15 v2=88 v3=None
+[V10844] 2026-11-20: scored=1 choi=['76', '02'] ae=None v2=63 v3=None
+[V10844] 2026-11-21: scored=1 choi=['36', '15'] ae=15 v2=88 v3=None
+[V10844] 2026-11-22: scored=1 choi=['43', '89'] ae=None v2=89 v3=89
+[V10844] 2026-11-21: scored=1 choi=['36', '15'] ae=15 v2=88 v3=None
+[V10844] 2026-11-22: scored=1 choi=['43', '89'] ae=None v2=89 v3=89
+[V10844] 2026-11-23: scored=1 choi=['79'] ae=89 v2=13 v3=60
+[V10844] 2026-11-22: scored=1 choi=['43', '89'] ae=None v2=89 v3=89
+[V10844] 2026-11-23: scored=1 choi=['79'] ae=89 v2=13 v3=60
+[V10844] 2026-11-24: scored=1 choi=['30', '22'] ae=32 v2=42 v3=42
+[V10844] 2026-11-23: scored=1 choi=['79'] ae=89 v2=13 v3=60
+[V10844] 2026-11-24: scored=1 choi=['30', '22'] ae=32 v2=42 v3=42
+[V10844] 2026-11-25: scored=1 choi=['12'] ae=None v2=49 v3=17
+########## logs/v10984_ghep_lane.log (2026-11-25 19:10, 1.9M)
+    toi_thieu_o_do_tien        = 60
+    toi_thieu_dai_dat          = 150
+    hon_official_pp            = 3.0
+    hon_bua_pp                 = 3.0
+    z_toi_thieu                = 2.0
+
+    Cần thêm ~578 ngày mới đủ mẫu phát hiện chênh 3.0pp
+    OFFICIAL               → không đạt ngưỡng
+    NGHIEM_THU             → không đạt ngưỡng
+    HOP_HAI_SO             → không đạt ngưỡng
+    CHI_KHI_KHOP           → không đạt ngưỡng
+    UU_TIEN_NHIEU_MODEL    → không đạt ngưỡng
+
+  đã ghi 353 dòng vào ghep_nt_official_daily (output_eligible=0, diagnostic_only=1, owner_approved=0, shadow_only=1)
+########## logs/v11017_bay_dan.log (2026-11-25 19:05, 216K)
+  2026-11-20  MB    SAU_V11016      11        8      0.73  02×3
+  2026-11-20  MN    SAU_V11016      10        6      0.60  16×5
+  2026-11-20  MT    SAU_V11016      11        8      0.73  14×2
+  2026-11-19  MB    SAU_V11016      11        7      0.64  83×3
+  2026-11-19  MN    SAU_V11016      10        6      0.60  64×3
+  2026-11-19  MT    SAU_V11016      11        7      0.64  35×3
+  2026-11-18  MB    SAU_V11016      11        7      0.64  42×3
+  2026-11-18  MN    SAU_V11016      10        5      0.50  64×4
+  2026-11-18  MT    SAU_V11016      11        5      0.45  97×5
+
+  NỀN        : n= 64 · trung bình 0.474 ± 0.087
+  SAU V11016 : n=330 · trung bình 0.608 ± 0.108
+
+  ⇒ CO_TAC_DUNG: Phân tán 0.47 → 0.61 (+0.13). Đạt ngưỡng ≥0,50 và hơn nền ≥0,05 ⇒ lời kể CÓ cắt được bầy đàn.
+########## logs/v11018_ma_doi_chung.log (2026-11-25 19:25, 52K)
+
+  phủ sóng: ML=2553 · LUẬT=4220 · LỌC=27106 / tổng 28735 dòng
+
+  ⇒ KHONG_CO_LOI_THE: 3 nguồn 42.7% vs 1 nguồn 43.1% · z=-0.11 — CHƯA vượt 1,96. Không có căn cứ tách số chính/phụ theo số nguồn.
+  đã ghi 3430 dòng · đến 2026-11-25
+
+   số nguồn      n   trúng    tỉ lệ
+          1  23993   10342   43.10%
+          2   4737    2304   48.64%
+          3    229      99   43.23%
+
+  phủ sóng: ML=2575 · LUẬT=4254 · LỌC=27325 / tổng 28959 dòng
+
+  ⇒ KHONG_CO_LOI_THE: 3 nguồn 43.2% vs 1 nguồn 43.1% · z=+0.04 — CHƯA vượt 1,96. Không có căn cứ tách số chính/phụ theo số nguồn.
+########## web/backend/logs/v11037_g2mb_lane.log (2026-11-25 19:35, 324K)
+  NHÌN LẠI (không kết luận) — 61/60 ngày
+================================================================================================
+  mã  mức                               ngày  trúng  kỳ vọng      z  ngưỡng lẻ/họ  kết luận
+  M1  MN — bạch thủ                       61      8      3.7  +2.28           7/9  VUOT_NGUONG_LE_CHUA_DU_KET_LUAN
+  M2  MT — bạch thủ                       61      2      2.9  -0.55           6/7  KHONG_CO
+  M3  MN hoặc MT — bạch thủ               61     10      6.5  +1.47         11/13  KHONG_CO
+  M4  MN — giải nhất/nhì/ba               61     19     13.8  +1.58         19/22  KHONG_CO
+  M5  MT — giải nhất/nhì/ba               61      8     10.8  -0.93         15/18  KHONG_CO
+  M6  MN hoặc MT — giải nhất/nhì/ba       61     25     22.2  +0.75         28/31  KHONG_CO
+  M7  MN — bất kỳ vị trí                  61     45     41.1  +1.06         47/50  KHONG_DUNG_DE_QUYET
+  M8  MT — bất kỳ vị trí                  61     34     35.5  -0.39         40/44  KHONG_DUNG_DE_QUYET
+  M9  MN hoặc MT — bất kỳ vị trí          61     53     52.7  +0.11         56/59  KHONG_DUNG_DE_QUYET
+
+  Đây là phần NHÌN LẠI — không được dùng để kết luận.
+########## web/backend/logs/v11089_cham_tb.log (2026-11-25 19:35, 136K)
+  TỪ CHỐI chấm            : 0
+  đọc lại TỪ DB (xác minh): 470  ✓ khớp
+  ── BA ĐIỀU KIỆN ĐĂNG KÝ TRƯỚC (11/08 · QD-059 + QD-017) — phải ĐẠT CẢ BA ──
+    ✓ số cặp BẤT ĐỒNG : 331   [QD-059 cần ≥96]
+    ✓ số NGÀY         : 34   [QD-017 cần ≥14]
+    ✗ |z| McNemar     : 0.7579   [QD-059 cần ≥1.96]
+        z = (b−c)/√(b+c) = (66−75)/√141 = -0.7579
+        b = 66 (control đúng · T-B sai) · c = 75 (T-B đúng · control sai)
+        b+c = 141 là MẪU SỐ CỦA z — KHÔNG phải cái sàn 96.
+        Ô «cùng đúng»/«cùng sai» không vào b/c: cùng kết cục thì không phân biệt được ai hơn.
+  ⛔ CHƯA ĐƯỢC PHÉP KẾT LUẬN (RM-04) — |z| 0.7579 < 1.96
+============================================================================================
+  ⚠ CHỈ ĐẾM — CẤM tổng hợp thành tỉ lệ thắng hay verdict trước 20/08 (owner ký 22:27).
+============================================================================================
+########## web/backend/logs/pnl_forward.log (2026-11-25 22:30, 12K)
+pnl_forward_track_shadow rows written: 396
+ev_song_thu_shadow refreshed
+pnl_forward_track_shadow rows written: 396
+ev_song_thu_shadow refreshed
+pnl_forward_track_shadow rows written: 396
+ev_song_thu_shadow refreshed
+pnl_forward_track_shadow rows written: 396
+ev_song_thu_shadow refreshed
+pnl_forward_track_shadow rows written: 396
+ev_song_thu_shadow refreshed
+pnl_forward_track_shadow rows written: 396
+ev_song_thu_shadow refreshed
+pnl_forward_track_shadow rows written: 396
+ev_song_thu_shadow refreshed
+########## logs/v10733_consensus.log (2026-11-25 22:35, 84K)
+MB | OFFICIAL          | 269 | 25.3% | 42.4%
+MB | CONS_FREESHADOW   | 269 | 23.0% | 39.4%
+MB | CONS_OFF_GPTOSS   | 269 | 21.9% | 39.0%
+consensus_freeshadow_shadow rows written: 27
+region | method            | n | BT-hit% | song-hit%
+MN | OFFICIAL          | 270 | 44.8% | 68.5%
+MN | CONS_FREESHADOW   | 270 | 47.8% | 69.3%
+MN | CONS_OFF_GPTOSS   | 270 | 47.4% | 69.6%
+MT | OFFICIAL          | 270 | 35.2% | 61.1%
+MT | CONS_FREESHADOW   | 270 | 41.9% | 61.1%
+MT | CONS_OFF_GPTOSS   | 270 | 41.1% | 62.2%
+MB | OFFICIAL          | 270 | 25.2% | 42.2%
+MB | CONS_FREESHADOW   | 270 | 23.3% | 39.6%
+MB | CONS_OFF_GPTOSS   | 270 | 22.2% | 39.3%
+########## web/backend/logs/output_final_lab.log (2026-11-26 05:35, 876K)
+MT | OFF_LO2 | 271 | +45,500,000 | +0.04 | 61.3%
+MT | FINAL_REGION_PRESET | 271 | +45,500,000 | +0.04 | 61.3%
+MT | OFF_LO2_LANE_BT_TOP3 | 271 | +39,800,000 | +0.03 | 62.0%
+MT | OFF_LANE_CARD_TOP4 | 271 | +33,200,000 | +0.02 | 69.4%
+MT | OFF_LANE_CARD_TOP5 | 271 | +32,200,000 | +0.02 | 69.4%
+MT | CONS_GPTOSS | 271 | +26,400,000 | +0.02 | 62.0%
+MB | LANE_LO2_OFF_BT_CAP2 | 271 | +45,850,000 | +0.10 | 30.3%
+MB | FINAL_REGION_PRESET | 271 | +45,850,000 | +0.10 | 30.3%
+MB | LANE_LO2 | 271 | +24,700,000 | +0.16 | 9.2%
+MB | INTERNAL_LANE_LO2 | 271 | +13,300,000 | +0.02 | 36.2%
+MB | INTERNAL_LANE_CARD_CAP2 | 271 | +13,300,000 | +0.02 | 36.2%
+MB | OFF_1SO | 271 | +1,650,000 | +0.00 | 25.1%
+MB | NO_PLAY | 271 | +0 | +0.00 | 0.0%
+MB | OFF_LO2_LANE_TOP3 | 271 | -6,400,000 | -0.01 | 46.1%
+########## web/backend/logs/rescue_candidate.log (2026-11-25 22:45, 648K)
+{'ai_model': 'claude-opus-4-6', 'run_source': 'ai_chain', 'n': 146, 'hit_days': 85, 'rescue_days': 30, 'avg_strength': 5.052739726027397}
+{'ai_model': 'xgboost', 'run_source': 'auto_daily', 'n': 180, 'hit_days': 107, 'rescue_days': 29, 'avg_strength': 6.176111111111114}
+
+--- MB rescue vs final ---
+{'ai_model': 'random-forest', 'run_source': 'rerun_post_mt', 'n': 234, 'hit_days': 104, 'rescue_days': 67, 'avg_strength': 4.525213675213677}
+{'ai_model': 'smart-ml', 'run_source': 'rerun_post_mt', 'n': 234, 'hit_days': 103, 'rescue_days': 61, 'avg_strength': 5.964529914529915}
+{'ai_model': 'lstm', 'run_source': 'rerun_post_mt', 'n': 234, 'hit_days': 94, 'rescue_days': 61, 'avg_strength': 5.247435897435901}
+{'ai_model': 'meta-learning', 'run_source': 'rerun_post_mt', 'n': 234, 'hit_days': 101, 'rescue_days': 60, 'avg_strength': 4.656837606837605}
+{'ai_model': 'combo-no-token', 'run_source': 'rerun_post_mt', 'n': 234, 'hit_days': 98, 'rescue_days': 60, 'avg_strength': 5.867094017094011}
+{'ai_model': 'xgboost', 'run_source': 'rerun_post_mt', 'n': 234, 'hit_days': 97, 'rescue_days': 56, 'avg_strength': 4.500427350427348}
+{'ai_model': 'smart-ensemble', 'run_source': 'rerun_post_mt', 'n': 234, 'hit_days': 92, 'rescue_days': 53, 'avg_strength': 5.227350427350427}
+{'ai_model': 'combo-super', 'run_source': 'ai_chain', 'n': 227, 'hit_days': 88, 'rescue_days': 50, 'avg_strength': 3.678414096916302}
+{'ai_model': 'gemini-2.5-flash', 'run_source': 'ai_chain', 'n': 235, 'hit_days': 91, 'rescue_days': 49, 'avg_strength': 5.709787234042554}
+{'ai_model': 'gpt-5.4', 'run_source': 'ai_chain', 'n': 161, 'hit_days': 70, 'rescue_days': 41, 'avg_strength': 5.211801242236025}

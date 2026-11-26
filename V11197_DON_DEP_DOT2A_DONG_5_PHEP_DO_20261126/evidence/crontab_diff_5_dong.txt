@@ -1,0 +1,14 @@
+131,134c131,134
+< 10 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10984_ghep_lane_official.py >> /root/Lottery_AI_Test/logs/v10984_ghep_lane.log 2>&1  # V10984 FU-264 do bong ghep lane nghiem thu x official
+< 5 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11017_bay_dan_shadow.py >> /root/Lottery_AI_Test/logs/v11017_bay_dan.log 2>&1
+< 25 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11018_ma_doi_chung.py >> /root/Lottery_AI_Test/logs/v11018_ma_doi_chung.log 2>&1
+< 35 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11037_g2mb_lane.py >> /root/Lottery_AI_Test/web/backend/logs/v11037_g2mb_lane.log 2>&1  # V11037 lane do tien duoi G2-MB (shadow)
+---
+> # V11197 DỪNG 26/11 (FU-264 KHÔNG ĐẠT — 5 cách ghép đều dưới ngưỡng, cần thêm ~578 ngày) | 10 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10984_ghep_lane_official.py >> /root/Lottery_AI_Test/logs/v10984_ghep_lane.log 2>&1  # V10984 FU-264 do bong ghep lane nghiem thu x official
+> # V11197 DỪNG 26/11 (FU-287 ĐẠT — phân tán 0,47 → 0,61; chạy tay lại sau lần đổi prompt (FU-461)) | 5 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11017_bay_dan_shadow.py >> /root/Lottery_AI_Test/logs/v11017_bay_dan.log 2>&1
+> # V11197 DỪNG 26/11 (FU-317 KHÔNG CÓ LỢI THẾ — 3 nguồn 43,2% vs 1 nguồn 43,1%, z +0,04) | 25 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11018_ma_doi_chung.py >> /root/Lottery_AI_Test/logs/v11018_ma_doi_chung.log 2>&1
+> # V11197 DỪNG 26/11 (FU-367 KHÔNG CÓ — đo tiến 109/60 ngày, 9/9 mức không đạt) | 35 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11037_g2mb_lane.py >> /root/Lottery_AI_Test/web/backend/logs/v11037_g2mb_lane.log 2>&1  # V11037 lane do tien duoi G2-MB (shadow)
+142c142
+< 35 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11089_cham_lane_tb.py >> /root/Lottery_AI_Test/web/backend/logs/v11089_cham_tb.log 2>&1  # V11102: cham lane T-B sau khi ca ba mien co ket qua (MB 18:31)
+---
+> # V11197 DỪNG 26/11 (FU-398 KHÔNG ĐẠT — |z| 0,76 < 1,96; lane nguồn tắt từ 13/09, 470/470 dòng đã chấm) | 35 19 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11089_cham_lane_tb.py >> /root/Lottery_AI_Test/web/backend/logs/v11089_cham_tb.log 2>&1  # V11102: cham lane T-B sau khi ca ba mien co ket qua (MB 18:31)

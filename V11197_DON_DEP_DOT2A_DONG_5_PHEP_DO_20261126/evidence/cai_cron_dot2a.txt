@@ -1,0 +1,4 @@
+✓ sao lưu: /root/Lottery_AI_Test/backups/crontab.pre_v11197.txt
+✓ đã cài · crontab -l khớp bản mới: True
+dang_bat=81
+9

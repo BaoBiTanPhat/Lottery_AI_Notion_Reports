@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-11-26 12:12:00 (giờ VN) · **474 thư mục báo cáo**
+**Sinh lúc:** 2026-11-26 12:25:06 (giờ VN) · **475 thư mục báo cáo**
 
-**Mới nhất: `V11196`** — DON DEP DOT1 DUNG 4 LICH · 2026-11-26
+**Mới nhất: `V11197`** — DON DEP DOT2A DONG 5 PHEP DO · 2026-11-26
 
-- [REPORT_V11196.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11196_DON_DEP_DOT1_DUNG_4_LICH_20261126/REPORT_V11196.md)
-- [CONVERSATION_CONTEXT_V11196_20261126.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11196_DON_DEP_DOT1_DUNG_4_LICH_20261126/CONVERSATION_CONTEXT_V11196_20261126.md)
+- [REPORT_V11197.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11197_DON_DEP_DOT2A_DONG_5_PHEP_DO_20261126/REPORT_V11197.md)
+- [CONVERSATION_CONTEXT_V11197_20261126.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11197_DON_DEP_DOT2A_DONG_5_PHEP_DO_20261126/CONVERSATION_CONTEXT_V11197_20261126.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11197` | 2026-11-26 | DON DEP DOT2A DONG 5 PHEP DO | [REPORT_V11197.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11197_DON_DEP_DOT2A_DONG_5_PHEP_DO_20261126/REPORT_V11197.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11197_DON_DEP_DOT2A_DONG_5_PHEP_DO_20261126/CONVERSATION_CONTEXT_V11197_20261126.md) | ✓ |
 | `V11196` | 2026-11-26 | DON DEP DOT1 DUNG 4 LICH | [REPORT_V11196.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11196_DON_DEP_DOT1_DUNG_4_LICH_20261126/REPORT_V11196.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11196_DON_DEP_DOT1_DUNG_4_LICH_20261126/CONVERSATION_CONTEXT_V11196_20261126.md) | ✓ |
 | `V11195` | 2026-11-26 | THI HANH 6A 6G QD081 | [REPORT_V11195.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11195_THI_HANH_6A_6G_QD081_20261126/REPORT_V11195.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11195_THI_HANH_6A_6G_QD081_20261126/CONVERSATION_CONTEXT_V11195_20261126.md) | ✓ |
 | `V11194` | 2026-11-26 | FU452 DAT OPENROUTER THONG | [REPORT_V11194.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11194_FU452_DAT_OPENROUTER_THONG_20261126/REPORT_V11194.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11194_FU452_DAT_OPENROUTER_THONG_20261126/CONVERSATION_CONTEXT_V11194_20261126.md) | ✓ |
