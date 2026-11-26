@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-26 13:36:55",
- "tong_thu_muc": 477,
- "latest_version": "V11199",
+ "_sinh_luc_vn": "2026-11-26 13:43:32",
+ "tong_thu_muc": 478,
+ "latest_version": "V11200",
  "latest": {
-  "version": "V11199",
+  "version": "V11200",
   "ngay": "2026-11-26",
-  "chu_de": "VA GOC PRINT CHET SAU 1920",
-  "thu_muc": "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126",
+  "chu_de": "PHUONG AN DON DEP DAY DU",
+  "thu_muc": "V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126",
   "bao_cao": [
-   "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/REPORT_V11199.md"
+   "V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/REPORT_V11200.md"
   ],
   "ngu_canh": [
-   "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/CONVERSATION_CONTEXT_V11199_20261126.md"
+   "V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/CONVERSATION_CONTEXT_V11200_20261126.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11200",
+   "ngay": "2026-11-26",
+   "chu_de": "PHUONG AN DON DEP DAY DU",
+   "thu_muc": "V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126",
+   "bao_cao": [
+    "V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/REPORT_V11200.md"
+   ],
+   "ngu_canh": [
+    "V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/CONVERSATION_CONTEXT_V11200_20261126.md"
+   ]
+  },
   {
    "version": "V11199",
    "ngay": "2026-11-26",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11186_AB_COMBO_BYPASS_ROSTER_20260914/CONVERSATION_CONTEXT_V11186_20260914.md"
-   ]
-  },
-  {
-   "version": "V11185",
-   "ngay": "2026-09-13",
-   "chu_de": "AA TOKEN CALL ROSTER",
-   "thu_muc": "V11185_AA_TOKEN_CALL_ROSTER_20260913",
-   "bao_cao": [
-    "V11185_AA_TOKEN_CALL_ROSTER_20260913/REPORT_V11185.md"
-   ],
-   "ngu_canh": [
-    "V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md"
    ]
   }
  ]

@@ -23,7 +23,7 @@ phức tạp tra soát, soi xét kỹ lưỡng  v..v...»* (QD-082). Không có 
 - Bước soát thiếu của luồng kiểm kê lập bảng «bản sao gần nhất ở đâu»: trên VPS 3 bản DB đầy đủ (30/05 330,6 MB · 11/09 12:13
   844,8 MB · 11/09 14:09 845,5 MB); ngoài VPS `live_sync` 02/09 ⇒ 76 ngày không có bản sao.
 - `/tmp/lottery_ai.db.pre_w`: 845.463.552 B, ngày 11/09, `-rw-r--r--`, nằm trong `/tmp` (`drwxrwxrwt`) ⇒ mọi tài khoản đọc
-  được; máy chạy chung aaPanel, FTP, Apache, MariaDB. Không mã/cron nào nhắc tệp. Các bản dưới `/root` được quyền thư mục
+  được; máy còn chạy các dịch vụ khác ngoài dự án. Không mã/cron nào nhắc tệp. Các bản dưới `/root` được quyền thư mục
   `/root` (`dr-xr-x---`) che. Service `lottery` chạy bằng root ⇒ `chmod 600` không ảnh hưởng gì đang chạy.
 - QD-058 (ACTIVE, 10/08) ghi diễn giải «CAM go/tat/cat bat cu co che nao — chi duoc THEM phep do», còn QD-082 ghi `thay_the=[]`
   ⇒ hai quyết định ngược nhau cùng hiệu lực.
@@ -75,7 +75,7 @@ phức tạp tra soát, soi xét kỹ lưỡng  v..v...»* (QD-082). Không có 
 | `FU-462` | kiểm 9 lịch Đợt 1 + 2a không chạy; `_v10900` không thêm LỆCH | lượt tự nhiên | 27/11 |
 | sao lưu định kỳ | lịch sao lưu ngoài VPS (tần suất, giữ mấy bản) | owner | phương án đầy đủ |
 | bản sao DB cũ | 3 bản trên VPS (≈ 2 GB) — giữ hay bỏ | owner | đợt lưu trữ |
-| SSH | tắt đăng nhập bằng mật khẩu (84.165 lần dò sai từ 22/11, 0 lần đăng nhập mật khẩu) | owner | khi anh đồng ý |
+| bảo mật máy chủ | một việc cấu hình — chi tiết chỉ ở kho riêng | owner | khi anh đồng ý |
 | restart gộp | FU-455 · FU-451 (in chết sau 19:20) · 5 job tắt còn đăng ký | agent | sáng 27/11 |
 
 ## 10. Ba lớp nguồn (§62)

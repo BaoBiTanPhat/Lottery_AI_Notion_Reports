@@ -30,7 +30,7 @@ Chạy sau khi đẩy: `_v10921_report_gate.py` ① rồi ② `V11198`. Lệnh �
 ## 6. Điều CỐ Ý không làm
 
 - Không xoá bản sao DB cũ nào (đợt lưu trữ, cần owner).
-- Không đổi cấu hình SSH (cần owner).
+- Không đổi cấu hình máy chủ (cần owner).
 
 ## 7. Câu phải nhớ
 
