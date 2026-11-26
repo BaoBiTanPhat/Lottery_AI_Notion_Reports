@@ -3,6 +3,8 @@
 > **Phiên bản:** V11192 · **Ngày:** 25/11/2026 13:37 → 18:5x ICT · **Repo riêng:** `Lottery_AI_Test` commit `15fe1c7`
 > (nhánh `fu438/admin-only-p0a` + `master`) · **governance_seq:** 507 · **Tầng (RM-12):** FU-451a `RUNTIME_PROVEN` ·
 > FU-452 `RUNTIME_PROVEN` cho MT/MB, MN chờ 26/11 · **Runtime đổi:** không — phiên chỉ đọc trên VPS.
+>
+> ⚠ **RÚT LẠI — RL-052 (26/11/2026, V11199):** «FU-451a `RUNTIME_PROVEN`» là **SAI**. Print của service vẫn chết sau 19:20 mỗi ngày (`_materialize_v94_safe_batch` / `_materialize_v95_data_integrity_audit` thay `sys.stdout` lúc import, nạp bằng `importlib` lúc 19:18/19:20; cổng V11189 mù `importlib`). Phép kiểm ở bản này chỉ soi tới 18:45. Đo 25/11 19:21–21:00: print 0 dòng. Vá ở V11199.
 
 ## 1. Tóm tắt
 

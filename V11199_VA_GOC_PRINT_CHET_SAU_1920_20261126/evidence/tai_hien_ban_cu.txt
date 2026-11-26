@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Temp\claude\a4571337a459c451\c6dde3d1-a5f3-4ecc-8e60-d05f3ac93c04\scratchpad\tai_hien_stdout.py", line 13, in <module>
+    print("OK_SAU_KHI_NAP — print v\u1eabn s\u1ed1ng sau khi n\u1ea1p c\u1ea3 hai mô-\u0111un")
+ValueError: I/O operation on closed file.

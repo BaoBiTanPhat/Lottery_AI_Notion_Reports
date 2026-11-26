@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-26 12:43:35",
- "tong_thu_muc": 476,
- "latest_version": "V11198",
+ "_sinh_luc_vn": "2026-11-26 13:36:55",
+ "tong_thu_muc": 477,
+ "latest_version": "V11199",
  "latest": {
-  "version": "V11198",
+  "version": "V11199",
   "ngay": "2026-11-26",
-  "chu_de": "DON DEP DOT0B SAO LUU NGOAI VPS",
-  "thu_muc": "V11198_DON_DEP_DOT0B_SAO_LUU_NGOAI_VPS_20261126",
+  "chu_de": "VA GOC PRINT CHET SAU 1920",
+  "thu_muc": "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126",
   "bao_cao": [
-   "V11198_DON_DEP_DOT0B_SAO_LUU_NGOAI_VPS_20261126/REPORT_V11198.md"
+   "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/REPORT_V11199.md"
   ],
   "ngu_canh": [
-   "V11198_DON_DEP_DOT0B_SAO_LUU_NGOAI_VPS_20261126/CONVERSATION_CONTEXT_V11198_20261126.md"
+   "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/CONVERSATION_CONTEXT_V11199_20261126.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11199",
+   "ngay": "2026-11-26",
+   "chu_de": "VA GOC PRINT CHET SAU 1920",
+   "thu_muc": "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126",
+   "bao_cao": [
+    "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/REPORT_V11199.md"
+   ],
+   "ngu_canh": [
+    "V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/CONVERSATION_CONTEXT_V11199_20261126.md"
+   ]
+  },
   {
    "version": "V11198",
    "ngay": "2026-11-26",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11185_AA_TOKEN_CALL_ROSTER_20260913/CONVERSATION_CONTEXT_V11185_20260913.md"
-   ]
-  },
-  {
-   "version": "V11184",
-   "ngay": "2026-09-13",
-   "chu_de": "Z MODEL LEAGUE ROSTER",
-   "thu_muc": "V11184_Z_MODEL_LEAGUE_ROSTER_20260913",
-   "bao_cao": [
-    "V11184_Z_MODEL_LEAGUE_ROSTER_20260913/REPORT_V11184.md"
-   ],
-   "ngu_canh": [
-    "V11184_Z_MODEL_LEAGUE_ROSTER_20260913/CONVERSATION_CONTEXT_V11184_20260913.md"
    ]
   }
  ]

@@ -2,12 +2,13 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-26 12:43:35 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-26 13:36:55 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
+| `FU-451` | `SC2511` | Vá stdout — (a) lỗi CÒN SÓT sau 19:20 đã vá V11199, kiểm 21:05 | **26/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-460` | `QD2611` | OpenRouter chặn gọi model từ VPS — đã tự thông lại, chờ xác nhận MT/MB | **26/11** | `WAIT_LIVE` |
 | `FU-462` | `DD2711` | Dọn dẹp cuốn chiếu (QD-082) — Đợt 0b + 1 + 2a xong, kiểm lượt không ch | **27/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-455` | `SC2711` | Khuyến nghị CHƠI/NGHỈ của `/choi` được ghi SAU giờ xổ | **27/11** | `MEASURED_ROOT_CAUSE` |
@@ -16,17 +17,15 @@
 
 ## ⚠ QUÁ HẠN — còn treo
 
-**1 mục** quá hạn còn treo trong cửa sổ; in 1 mục cũ nhất.
+**0 mục** quá hạn còn treo trong cửa sổ; in 0 mục cũ nhất.
 
-| mã | mã đọc | việc | hạn | trạng thái |
-|---|---|---|---|---|
-| `FU-451` | `SC2511` | Vá stdout service chết — (a) ĐẠT lượt thật 25/11 | **QUÁ HẠN** 25/11 | `OWNER_DECISION_NEEDED` |
+*Không có mục nào.*
 
 > ⚠ **Ngoài cửa sổ còn 156 mục quá hạn lâu hơn 14 ngày** (cũ nhất hạn 06/08/2026). `QD-066` xếp chúng vào việc *dọn sổ*, nên bảng trên không liệt kê — **không có nghĩa là hết nợ**. Danh sách đủ: `docs/FOLLOW_UP_TRACKER.md`.
 
 ---
 
-**Báo cáo mới nhất:** `V11198` — DON DEP DOT0B SAO LUU NGOAI VPS (2026-11-26)
+**Báo cáo mới nhất:** `V11199` — VA GOC PRINT CHET SAU 1920 (2026-11-26)
 
 ---
 
