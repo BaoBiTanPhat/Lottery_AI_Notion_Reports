@@ -1,0 +1,74 @@
+{
+  "sync_started_at": "2026-11-26T12:32:48.708670+07:00",
+  "vps": "<đã ẩn — không công bố địa chỉ máy chủ>",
+  "files": [
+    {
+      "label": "production_db",
+      "remote_path": "/root/Lottery_AI_Test/data/lottery_ai.db",
+      "local_path": "<repo>\\data\\lottery_ai.db",
+      "local_before": {
+        "path": "<repo>\\data\\lottery_ai.db",
+        "exists": true,
+        "backup_path": "<repo>\\artifacts\\live_sync\\20261126_123248\\before_local\\lottery_ai.db",
+        "size": 803139584,
+        "sha256": "4266e2a2032804b46c64f9bd07d53836191bce313029fc087c9ba6e1b65dd2d0"
+      },
+      "remote_live": {
+        "size": 1099997184,
+        "mtime": 1795671155
+      },
+      "remote": {
+        "frozen_path": "/tmp/_live_sync_20261126_123248_lottery_ai.db",
+        "freeze_mode": "sqlite",
+        "size": 1099997184,
+        "mtime": 1795671191,
+        "sha256": "c45e2f661e1477bc4c9db56e12fe6f890d96df51bc96278d74908e3d51579927"
+      },
+      "pulled_snapshot": {
+        "path": "E:\\Lottery_AI_Test\\artifacts\\live_sync\\20261126_123248\\from_vps\\lottery_ai.db",
+        "size": 1099997184,
+        "sha256": "c45e2f661e1477bc4c9db56e12fe6f890d96df51bc96278d74908e3d51579927"
+      },
+      "local_after": {
+        "path": "E:\\Lottery_AI_Test\\data\\lottery_ai.db",
+        "size": 1099997184,
+        "sha256": "c45e2f661e1477bc4c9db56e12fe6f890d96df51bc96278d74908e3d51579927"
+      }
+    },
+    {
+      "label": "prediction_trace",
+      "remote_path": "/root/Lottery_AI_Test/web/backend/prediction_trace.jsonl",
+      "local_path": "<repo>\\web\\backend\\prediction_trace.jsonl",
+      "local_before": {
+        "path": "<repo>\\web\\backend\\prediction_trace.jsonl",
+        "exists": true,
+        "backup_path": "<repo>\\artifacts\\live_sync\\20261126_123248\\before_local\\prediction_trace.jsonl",
+        "size": 31597913,
+        "sha256": "35b2240682d4711d1b766f7d0f562dbef2223b746d7ed974b1fcb3132df8f6d0"
+      },
+      "remote_live": {
+        "size": 40562942,
+        "mtime": 1795645059
+      },
+      "remote": {
+        "frozen_path": "/tmp/_live_sync_20261126_123248_prediction_trace.jsonl",
+        "freeze_mode": "copy",
+        "size": 40562942,
+        "mtime": 1795645059,
+        "sha256": "df13b3557c6ad3203463c65ea01654d13cace02647d44db160a28322a81dfbd3"
+      },
+      "pulled_snapshot": {
+        "path": "E:\\Lottery_AI_Test\\artifacts\\live_sync\\20261126_123248\\from_vps\\prediction_trace.jsonl",
+        "size": 40562942,
+        "sha256": "df13b3557c6ad3203463c65ea01654d13cace02647d44db160a28322a81dfbd3"
+      },
+      "local_after": {
+        "path": "E:\\Lottery_AI_Test\\web\\backend\\prediction_trace.jsonl",
+        "size": 40562942,
+        "sha256": "df13b3557c6ad3203463c65ea01654d13cace02647d44db160a28322a81dfbd3"
+      }
+    }
+  ],
+  "sync_completed_at": "2026-11-26T12:34:15.472298+07:00",
+  "status": "ok"
+}
