@@ -1,0 +1,16 @@
+17c17
+< 15 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10661_live_edge_monitor.py --db /root/Lottery_AI_Test/data/lottery_ai.db --days 21 >> /root/Lottery_AI_Test/web/backend/logs/live_edge_monitor.log 2>&1
+---
+> # V11196 DỪNG 26/11 (bảng live_edge_monitor không ai đọc ngoài chính tệp) | 15 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10661_live_edge_monitor.py --db /root/Lottery_AI_Test/data/lottery_ai.db --days 21 >> /root/Lottery_AI_Test/web/backend/logs/live_edge_monitor.log 2>&1
+56c56
+< 5 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _perpos_matrix_report.py --days 60 --min-n 6 >> /root/Lottery_AI_Test/web/backend/logs/perpos_matrix.log 2>&1  # V10701-M5: per-position live matrix (read-only)
+---
+> # V11196 DỪNG 26/11 (báo cáo .md không ai đọc) | 5 21 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _perpos_matrix_report.py --days 60 --min-n 6 >> /root/Lottery_AI_Test/web/backend/logs/perpos_matrix.log 2>&1  # V10701-M5: per-position live matrix (read-only)
+82c82
+< 30 7 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10784_verify_0607.py >> /root/Lottery_AI_Test/artifacts/v10784/verify_0607.log 2>&1
+---
+> # V11196 DỪNG 26/11 (phép kiểm chỉ cho ngày 06/07 — skip mỗi ngày từ 07/07) | 30 7 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v10784_verify_0607.py >> /root/Lottery_AI_Test/artifacts/v10784/verify_0607.log 2>&1
+141c141
+< 35 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11067_lay_mau_khoa_db.py --phut 90 --nhip 5 >> /root/Lottery_AI_Test/web/backend/logs/v11067_run.log 2>&1  # V11067 FU-402 lay mau khoa DB phu ca MT (16:35-16:58) va MB (17:25-17:58)
+---
+> # V11196 DỪNG 26/11 (FU-402 đã đủ mẫu (112.007 mẫu · 1% khoá); chính nó giữ khoá ghi mỗi 5 giây — bật lại khi thử bản vá) | 35 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11067_lay_mau_khoa_db.py --phut 90 --nhip 5 >> /root/Lottery_AI_Test/web/backend/logs/v11067_run.log 2>&1  # V11067 FU-402 lay mau khoa DB phu ca MT (16:35-16:58) va MB (17:25-17:58)

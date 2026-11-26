@@ -1,0 +1,40 @@
+============================================================================================
+  V11067 — 112007 mẫu · 1426 mẫu DB BỊ KHOÁ (1%)
+  từ 16:35:02 đến 18:04:58
+============================================================================================
+  CÁC KHOẢNG BỊ KHOÁ:
+    16:37:42 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 7}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:37:47 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 7}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:37:52 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 7}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:37:57 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 7}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:41:43 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 15}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:41:48 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 15}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:41:53 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 15}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:48:04 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 17}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    16:50:04 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 17}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    17:30:36 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    17:30:41 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    17:30:46 · database is locked · wal=0 · đếm={'MB': 7, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    17:33:57 · database is locked · wal=0 · đếm={'MB': 15, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    17:34:02 · database is locked · wal=0 · đếm={'MB': 15, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3 |                      root      F.... python3
+    17:34:07 · database is locked · wal=0 · đếm={'MB': 15, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    17:35:02 · database is locked · wal=0 · đếm={'MB': 16, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3 |                      root      F.... python3 |                      root    
+    17:35:07 · database is locked · wal=0 · đếm={'MB': 16, 'MN': 27, 'MT': 27}
+        ai mở DB: USER        PID ACCESS COMMAND | /root/Lottery_AI_Test/data/lottery_ai.db: |                      root      F.... python3
+    17:35:12 · database is locked · wal=0 · đếm={'MB': 16, 'MN': 27, 'MT': 27}

@@ -2,13 +2,14 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-26 11:04:01 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-26 12:12:00 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
 | `FU-460` | `QD2611` | OpenRouter chặn gọi model từ VPS — đã tự thông lại, chờ xác nhận MT/MB | **26/11** | `WAIT_LIVE` |
+| `FU-462` | `DD2711` | Dọn dẹp cuốn chiếu (QD-082) — Đợt 1 xong, kiểm lượt không chạy | **27/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-455` | `SC2711` | Khuyến nghị CHƠI/NGHỈ của `/choi` được ghi SAU giờ xổ | **27/11** | `MEASURED_ROOT_CAUSE` |
 | `FU-456` | `DOLX-456` | Nhãn `DO_TIEN` của luật — ĐÃ SỬA, đã đo lại; chờ lần đào 30/11 ghi nhậ | **30/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-345` | `SC0808` | A4 — lỗi gốc KHÔNG tái phát; ngưỡng 10.000 ký tự vướng ở MN — chờ owne | **03/12** | `OWNER_DECISION_NEEDED` |
@@ -25,7 +26,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11195` — THI HANH 6A 6G QD081 (2026-11-26)
+**Báo cáo mới nhất:** `V11196` — DON DEP DOT1 DUNG 4 LICH (2026-11-26)
 
 ---
 

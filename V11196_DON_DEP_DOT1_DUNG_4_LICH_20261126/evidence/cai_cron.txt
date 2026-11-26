@@ -1,0 +1,5 @@
++# V11196 DỪNG 26/11 (FU-402 đã đủ mẫu (112.007 mẫu · 1% khoá); chính nó giữ khoá ghi mỗi 5 giây — bật lại khi thử bản vá) | 35 16 * * * cd /root/Lottery_AI_Test/web/backend && /root/Lottery_AI_Test/venv/bin/python3 _v11067_lay_ma
+✓ sao lưu: /root/Lottery_AI_Test/backups/crontab.pre_v11196.txt
+✓ đã cài · crontab -l khớp bản mới: True
+4
+86
