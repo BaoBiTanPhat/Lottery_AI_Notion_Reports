@@ -1,0 +1,11 @@
+0
+6
+Nov 26 10:47:00 lotteryai-aulb python3[1122833]: 2026-11-26 10:47:00,724 - INFO - Scheduler has been shut down
+Nov 26 10:47:08 lotteryai-aulb python3[1277779]: [SCHEDULER] 🔒 V10902 T-chốt jobs: MN 15:40, MT 16:55, MB 17:55 — mốc FINAL/freeze: MN 15:45, MT 16:58,
+Nov 26 10:47:09 lotteryai-aulb python3[1277779]: 2026-11-26 10:47:09,456 - INFO - Added job "🔒 T-chốt bundle MN (15:40)" to job store "default"
+Nov 26 10:47:09 lotteryai-aulb python3[1277779]: 2026-11-26 10:47:09,456 - INFO - Added job "🔒 T-chốt bundle MT (16:55)" to job store "default"
+Nov 26 10:47:09 lotteryai-aulb python3[1277779]: 2026-11-26 10:47:09,456 - INFO - Added job "🔒 T-chốt bundle MB (17:55)" to job store "default"
+predictions          17528 a1828d2d89083f10
+final_bundles          814 729abb0cd9968a62
+lottery_results      15955 d14ffc8cc4e5810d
+model_daily_eval     17366 84417b2130a33ac1

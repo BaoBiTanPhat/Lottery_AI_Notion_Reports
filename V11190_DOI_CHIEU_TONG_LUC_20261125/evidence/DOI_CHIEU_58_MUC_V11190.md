@@ -76,7 +76,7 @@ duyệt (`FU-459`).
 | FU-331 | lần đào không xoá bằng chứng | ĐẠT | MRE 3.662 → 9.336, không giảm | `CLOSED_PASS` |
 | FU-321 | số thành lời kể | HẾT_TIỀN_ĐỀ | FU-284 đóng không kết luận | `CLOSED_REPORT` |
 | FU-291 | prompt thôi ép chọn | HẾT_TIỀN_ĐỀ | như trên | `CLOSED_REPORT` |
-| FU-345 | chuỗi lỗi bơm vào prompt | **TRƯỢT theo chữ** | 0 lượt = 64 ký tự từ 08/08 (lỗi gốc không tái phát); nhưng **177 lượt < 10.000** (MT p10 9.851 — ngưỡng không hợp MT) | chờ owner rút ngưỡng MT |
+| FU-345 | chuỗi lỗi bơm vào prompt | **TRƯỢT theo chữ** | 0 lượt = 64 ký tự từ 08/08 (lỗi gốc không tái phát); nhưng **177 lượt < 10.000** (MT p10 9.851 — ngưỡng không hợp MT) ⚠ **RÚT LẠI — RL-051 (26/11/2026, V11195):** 177 KHÔNG phải toàn MT — đo lại `_v11195_do_fu345.py`: **MT 151 · MN 26 (nhỏ nhất 9.809) · MB 0**; bỏ ngưỡng riêng MT thì MN vẫn trượt | chờ owner rút ngưỡng MT — owner duyệt MT 26/11 (QD-081 6f); câu MN trả lại owner ở FU-345 |
 | FU-328 | cổng model ra thiếu số | **TRƯỢT** | cổng chưa nối cron/panel; từ 15/09 **11 ngày** có model trả rỗng không ai được báo | `MEASURED_BUT_NOT_FIXED` |
 | FU-370 | hạn biến mất im lặng | ĐẠT | 4/4; cổng chỉ chạy tay | `CLOSED_PASS` |
 | FU-292 | canh tên đài lạ | **TRƯỢT** | chưa nối cron; **cổng không thể nổ** (cửa sổ 400 ngày chứa 30 ngày ⇒ `TEN_LA` luôn 0) | `MEASURED_BUT_NOT_FIXED` |

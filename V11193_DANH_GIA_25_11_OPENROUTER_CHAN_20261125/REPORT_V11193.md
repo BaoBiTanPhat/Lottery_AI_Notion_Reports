@@ -150,6 +150,11 @@ Bảng đầy đủ, gồm cả Sonnet MT/MB, Gemini Pro MN/MB và glm MN, nằm
 | điều đúng + phép đo | ngưỡng `FU-195` là **tỉ lệ lỗi > 6% trong 14 ngày**; đo 11–24/11: **2/28 = 7,1%** (`docs/DOI_CHIEU_58_MUC_V11190.md:36`, chấm trên DB VPS ở V11190) |
 | quyết định đã dựa trên số sai | không có — owner chưa chốt việc 6a |
 
+> ⚠ **BỔ SUNG ĐÍNH CHÍNH — RL-050 (26/11/2026, V11195):** số 89,7% **có thật**, nhưng là **độ phủ Gate 1 của
+> glm-5.1 ở MN** (`web/backend/_v11185_roster_goi_token.py:77` — lý do glm-5.1 không làm CORE MN), không phải cổng
+> đòi gỡ glm-5.1 khỏi MT. Câu nói thêm trong IDE tối 25/11 «con số sai không nằm trong tài liệu nào» cũng sai. Owner
+> chốt 6a ngày 26/11 dựa trên ngưỡng FU-195 đúng (bảng trên), không dựa trên số 89,7%.
+
 ## 4. Hướng xử lý và vì sao chọn
 
 - **Không cách ly hai model OpenRouter**, dù `QD-080` mục 6 cho phép.

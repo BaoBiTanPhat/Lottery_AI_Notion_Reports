@@ -1,0 +1,36 @@
+    A · trọng số (bạch thủ THẬT) : 259/752 = 34.4%
+    B · luật thô «nhiều phiếu»   : 281/752 = 37.4%
+    nền ngẫu nhiên đúng          : 34.3%
+    ⇒ A − B = -2.93pp   ·   A − nền = +0.16pp
+
+  ── GHÉP CẶP McNEMAR ──
+    hai luật CHỌN GIỐNG NHAU     : 490/752 = 65.2%
+    bất đồng                      : 262
+      · chỉ A trúng (trọng số CỨU): 47
+      · chỉ B trúng (trọng số HẠI): 69
+      · cả hai trúng               : 36
+      · cả hai trượt               : 110
+    VIF thực nghiệm (cụm = ngày)  : 1.176
+    z = -1.798 · p = 0.0722  ⇒ KHÔNG đủ bằng chứng
+
+  ── TỪNG MIỀN (phân tầng — gộp thô là bẫy Simpson vì nền khác nhau) ──
+    MN: 267 ngày · bất đồng  74 · A cứu 17 · A hại 21 · z=-0.49 · A 45.3% vs B 46.8%
+    MT: 243 ngày · bất đồng  86 · A cứu 12 · A hại 24 · z=-1.83 · A 33.3% vs B 38.3%
+    MB: 242 ngày · bất đồng 102 · A cứu 18 · A hại 24 · z=-0.77 · A 23.6% vs B 26.0%
+
+  ── HẠNG của bạch thủ THẬT trong bảng phiếu thô ──
+    hạng #1: 492 lần (66%) · tỉ lệ trúng 36.0%
+    hạng #2: 129 lần (17%) · tỉ lệ trúng 31.0%
+    hạng #3:  76 lần (10%) · tỉ lệ trúng 30.3%
+    hạng #4:  22 lần (3%) · tỉ lệ trúng 40.9%
+    hạng #5:  15 lần (2%) · tỉ lệ trúng 20.0%
+    hạng #6:   5 lần (1%) · tỉ lệ trúng 40.0%
+    hạng >6 :  11 lần (1%) · tỉ lệ trúng 36.4%
+
+  ── MỌI CỬA SỔ CẠNH NHAU (RM-18: cấm window-shopping) ──
+     30 ngày cuối: n= 87 · A 32.2% · B 37.9% · A−B -5.75pp · z=-1.03
+     60 ngày cuối: n=177 · A 40.7% · B 42.9% · A−B -2.26pp · z=-0.55
+     90 ngày cuối: n=267 · A 36.3% · B 39.3% · A−B -3.00pp · z=-1.03
+    120 ngày cuối: n=357 · A 36.1% · B 38.1% · A−B -1.96pp · z=-0.76
+    272 ngày cuối: n=752 · A 34.4% · B 37.4% · A−B -2.93pp · z=-1.95
+============================================================================================

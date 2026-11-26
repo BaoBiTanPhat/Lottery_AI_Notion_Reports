@@ -1,0 +1,70 @@
+================================================================================================================
+  V11195 — ĐO LẠI LUẬT TRÊN NHÃN ĐÃ SỬA · 2026-08-07 → 2026-11-25 · DB production (mode=ro)
+================================================================================================================
+  nhãn tính lại khớp cột giai_doan trong DB: 9351/9351 dòng (ĐÃ ÁP)
+  dòng đo được (có kết quả, có đuôi): 3889 · theo nhãn: {'CHUA_XAC_MINH_HOAT_DONG': 938, 'DO_TIEN': 1132, 'KHONG_XAC_MINH_DUOC': 1819}
+
+  P4' — hit_any của bộ k đuôi so với nền 1−(1−b)^k · z theo CỤM ngày-miền · VIF đo cho chính thước này
+  miền  nhóm            cửa sổ      n   cụm   trúng     nền   chênh       z    VIF  đọc (ngưỡng khai trước)
+  MN    DO_TIEN        30 ngày    103    30   83.5%   84.2%   -0.7   -0.23   0.91  KHÔNG CÓ TÍN HIỆU
+  MN    DO_TIEN        60 ngày    202    60   84.2%   84.0%   +0.2   +0.07   0.80  KHÔNG CÓ TÍN HIỆU
+  MN    DO_TIEN        90 ngày    301    90   83.4%   83.9%   -0.5   -0.22   1.09  KHÔNG CÓ TÍN HIỆU
+  MN    DO_TIEN        toàn bộ    378   111   84.1%   84.0%   +0.1   +0.07   1.12  KHÔNG CÓ TÍN HIỆU
+  MN    TRONG_CUA_SO   30 ngày     97    27   96.9%   81.6%  +15.3   +3.71   1.23  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MN    TRONG_CUA_SO   60 ngày    284    57   94.4%   79.5%  +14.9   +5.28   1.55  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MN    TRONG_CUA_SO   90 ngày    530    87   93.2%   78.4%  +14.8   +7.00   1.55  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MN    TRONG_CUA_SO   toàn bộ    730   108   92.7%   77.7%  +15.0   +7.95   1.66  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+
+  MT    DO_TIEN        30 ngày    122    30   72.1%   71.8%   +0.3   +0.07   1.39  KHÔNG CÓ TÍN HIỆU
+  MT    DO_TIEN        60 ngày    227    60   78.0%   72.6%   +5.4   +1.83   1.17  KHÔNG CÓ TÍN HIỆU
+  MT    DO_TIEN        90 ngày    329    90   77.5%   74.5%   +3.0   +1.26   1.20  KHÔNG CÓ TÍN HIỆU
+  MT    DO_TIEN        toàn bộ    408   111   77.2%   75.3%   +1.9   +0.88   1.25  KHÔNG CÓ TÍN HIỆU
+  MT    TRONG_CUA_SO   30 ngày     95    27   91.6%   68.3%  +23.2   +3.81   1.89  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MT    TRONG_CUA_SO   60 ngày    290    57   87.9%   67.3%  +20.6   +5.36   2.18  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MT    TRONG_CUA_SO   90 ngày    550    87   85.3%   65.4%  +19.9   +6.55   2.50  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MT    TRONG_CUA_SO   toàn bộ    767   108   83.8%   64.6%  +19.3   +7.26   2.62  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+
+  MB    DO_TIEN        30 ngày    102    30   40.2%   53.6%  -13.4   -2.50   1.35  KÉM NỀN
+  MB    DO_TIEN        60 ngày    180    56   46.7%   53.2%   -6.5   -1.69   1.21  KHÔNG CÓ TÍN HIỆU
+  MB    DO_TIEN        90 ngày    268    85   47.4%   52.9%   -5.5   -1.81   1.12  KHÔNG CÓ TÍN HIỆU
+  MB    DO_TIEN        toàn bộ    346   106   45.7%   52.0%   -6.3   -2.38   1.11  KÉM NỀN
+  MB    TRONG_CUA_SO   30 ngày    155    27   78.1%   48.9%  +29.2   +3.75   4.02  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MB    TRONG_CUA_SO   60 ngày    477    57   76.1%   48.7%  +27.4   +5.95   4.32  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MB    TRONG_CUA_SO   90 ngày    900    87   71.4%   47.8%  +23.6   +7.25   4.08  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+  MB    TRONG_CUA_SO   toàn bộ   1260   108   71.6%   47.5%  +24.1   +8.33   4.49  — (trong cửa sổ chọn: không dùng làm bằng chứng)
+
+  M4' — McNemar luật THẬT vs luật GIẢ tất định, cùng ngày · z theo CỤM ngày-miền
+  miền  nhóm            cửa sổ      n  b thật hơn  c giả hơn  lệch   z thô   z cụm  đọc (ngưỡng khai trước)
+  MN    DO_TIEN        30 ngày    103          10         11    21   -0.22   -0.21  CHƯA ĐỦ MẪU
+  MN    DO_TIEN        60 ngày    202          23         21    44   +0.30   +0.30  NGANG NHAU
+  MN    DO_TIEN        90 ngày    301          37         33    70   +0.48   +0.48  NGANG NHAU
+  MN    DO_TIEN        toàn bộ    378          46         40    86   +0.65   +0.64  NGANG NHAU
+  MN    TRONG_CUA_SO   30 ngày     97          17          3    20   +3.13   +2.65  —
+  MN    TRONG_CUA_SO   60 ngày    284          55         13    68   +5.09   +3.80  —
+  MN    TRONG_CUA_SO   90 ngày    530         113         29   142   +7.05   +5.11  —
+  MN    TRONG_CUA_SO   toàn bộ    730         150         41   191   +7.89   +6.03  —
+
+  MT    DO_TIEN        30 ngày    122          24         20    44   +0.60   +0.58  NGANG NHAU
+  MT    DO_TIEN        60 ngày    227          45         30    75   +1.73   +1.69  NGANG NHAU
+  MT    DO_TIEN        90 ngày    329          54         48   102   +0.59   +0.56  NGANG NHAU
+  MT    DO_TIEN        toàn bộ    408          67         57   124   +0.90   +0.85  NGANG NHAU
+  MT    TRONG_CUA_SO   30 ngày     95          27          4    31   +4.13   +3.10  —
+  MT    TRONG_CUA_SO   60 ngày    290          97         20   117   +7.12   +4.63  —
+  MT    TRONG_CUA_SO   90 ngày    550         162         53   215   +7.43   +5.23  —
+  MT    TRONG_CUA_SO   toàn bộ    767         222         72   294   +8.75   +6.05  —
+
+  MB    DO_TIEN        30 ngày    102          12         31    43   -2.90   -2.61  GIẢ HƠN
+  MB    DO_TIEN        60 ngày    180          32         43    75   -1.27   -1.14  NGANG NHAU
+  MB    DO_TIEN        90 ngày    268          51         68   119   -1.56   -1.37  NGANG NHAU
+  MB    DO_TIEN        toàn bộ    346          60         92   152   -2.60   -2.29  GIẢ HƠN
+  MB    TRONG_CUA_SO   30 ngày    155          54         17    71   +4.39   +3.01  —
+  MB    TRONG_CUA_SO   60 ngày    477         172         46   218   +8.53   +5.17  —
+  MB    TRONG_CUA_SO   90 ngày    900         300        118   418   +8.90   +5.63  —
+  MB    TRONG_CUA_SO   toàn bộ   1260         444        165   609  +11.31   +7.02  —
+
+  KẾT LUẬN THEO NGƯỠNG KHAI TRƯỚC (phần ĐO TIẾN, toàn bộ từ 07/08):
+    MN: P4' KHÔNG CÓ TÍN HIỆU (n=378) · M4' NGANG NHAU (cặp lệch=86)
+    MT: P4' KHÔNG CÓ TÍN HIỆU (n=408) · M4' NGANG NHAU (cặp lệch=124)
+    MB: P4' KÉM NỀN (n=346) · M4' GIẢ HƠN (cặp lệch=152)
+  [do] LUAT_DO_TIEN_V11195=KHONG_DAT
+================================================================================================================

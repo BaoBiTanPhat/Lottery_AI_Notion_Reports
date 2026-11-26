@@ -1,0 +1,30 @@
+============================================================================================
+  V11195 — PHÉP MÁY QD-081 (6a–6g theo khuyến nghị, owner 26/11/2026)
+============================================================================================
+  ✓ 6a  glm-5.1 vẫn CORE MT                  MT CORE = ['claude-opus-4-6', 'gemini-2.5-flash', 'glm-5.1']
+  ✓ 6c  ghi đè V10640 MN vẫn bật             OVERRIDE_CONFIG['MN']['enabled'] = True
+  ✓ 6d  anti-trap còn trong prompt           gpt_analyzer.py có «OWNER ANTI-TRAP DOCTRINE»
+  ✓ 6e  nhãn đo tiến mới qua cổng            tinh_giai_doan có mặt · cổng thoát 0
+  ✓ 6f  MT không áp 10.000, MN/MB vẫn áp     AP_NGUONG = {'MN': True, 'MT': False, 'MB': True}
+  ✓ 6g  chỗ còn lại đã chặn biên             đã vá True · cổng biên anchor thoát 0
+  · 6b  giữ trọng số chọn số — không có phép máy riêng (giữ nguyên = không đổi mã)
+============================================================================================
+  ✓ [cong] QD081_V11195=DAT
+exit=0
+     ✓ BẢNG KHÁC _v104_shadow_prompt_injection.py:303  bảng `gan_signal_shadow_v100` — CÓ chặn biên
+     ✓ BẢNG KHÁC _v11195_kiem_qd081.py:69  bảng `?` — CÓ chặn biên
+     ✓ ĐẠT     scheduler.py:7093  (có trừ 1 ngày trong tầm 14 dòng)
+     → 3 đạt · 0 vi phạm · 2 chú thích · 3 ngoài phạm vi
+       ⚠ _materialize_adaptive_exploit_v1.py:240 · bảng `lag1_adaptive_exploit_signal_shadow` · CÓ chặn biên
+       ⚠ _v104_shadow_prompt_injection.py:303 · bảng `gan_signal_shadow_v100` · CÓ chặn biên
+       ⚠ _v11195_kiem_qd081.py:69 · bảng `?` · CÓ chặn biên
+       ↑ CÙNG MẪU, BẢNG KHÁC — từ V11195 chỗ không chặn biên cũng là TRƯỢT (FU-392 đã đóng:
+         `_v104_shadow_prompt_injection.py:303` vá 26/11; job `v104_materializer` vẫn tắt từ V10659).
+============================================================================================
+  ✓ [cong] BIEN_ANCHOR_V11050=DAT — không chỗ nào chấm ngày D bằng tensor ngày D
+============================================================================================
+exit=0
+============================================================================================
+  ✓ [cong] QD081_V11195=DAT
+     → 3 đạt · 0 vi phạm · 2 chú thích · 2 ngoài phạm vi
+  ✓ [cong] BIEN_ANCHOR_V11050=DAT — không chỗ nào chấm ngày D bằng tensor ngày D

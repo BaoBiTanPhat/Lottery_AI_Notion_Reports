@@ -1,0 +1,11 @@
+# V11195 — triển khai lên VPS 26/11/2026 (giờ VN theo đồng hồ VPS)
+10:38  tải 10 tệp (LF) · md5 VPS = md5 local (bỏ CR) · py_compile OK · cổng nhãn chạy trên VPS: NHAN_DO_TIEN_V11195=DAT
+10:38:46  băm 4 bảng khoá TRƯỚC: predictions 17528 a1828d2d89083f10 · final_bundles 814 729abb0cd9968a62 · lottery_results 15955 d14ffc8cc4e5810d · model_daily_eval 17366 84417b2130a33ac1
+10:39:07  _v11195_sua_nhan_luat.py (THỬ): lịch lần đào 17 ngày — mining_log = scheduler_logs = sổ khoá, 0 ngày thiếu
+10:39:2x  _v11195_sua_nhan_luat.py --ghi: sao lưu 9.351 nhãn → backups/mre_giai_doan.pre_v11195.json · nạp 17 ngày đào · 105 khoá cho 23/11 · đổi nhãn 983 dòng
+10:39:22  băm 4 bảng khoá SAU áp nhãn: y hệt TRƯỚC · PID 1122833 · health 200
+10:47:00  tải _v10918_override_watch.py · restart `lottery` (mô-đun đã nạp trong tiến trình từ lượt gọi 24/11 23:20:24 — nginx access.log.2.gz)
+10:47:10  PID 1122833 → 1277779 · health 200 sau 10 giây · /api/admin/override-watch không đăng nhập = 401 · systemctl is-active = active
+          journal từ 10:46:55: 0 dòng traceback/error · 47 job đăng ký lại, danh sách GIỐNG HỆT lần khởi động 24/11 23:17
+          băm 4 bảng khoá sau restart: y hệt TRƯỚC
+Sao lưu trên VPS: /root/Lottery_AI_Test/backups/{_v11025_khoa_luat_ben,_v104_shadow_prompt_injection,_v11050_kiem_bien_anchor,_v11003_m4_doi_chung_luat,_v10918_override_watch}.py.pre_v11195 + mre_giai_doan.pre_v11195.json
