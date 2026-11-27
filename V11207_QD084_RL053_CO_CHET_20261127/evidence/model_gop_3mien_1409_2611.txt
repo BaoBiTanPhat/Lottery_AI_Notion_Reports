@@ -1,0 +1,14 @@
+| model | nhóm | n | #1 trúng | nền | z gộp | z MN · MT · MB |
+| claude-opus-4-6 | AI | 180 | 42.2% | 34.1% | +2.33 | MN +1.4 · MT -0.4 · MB +3.3 |
+| lstm | ML | 222 | 41.0% | 34.1% | +2.22 | MN +1.5 · MT +1.9 · MB +0.4 |
+| combo-no-token | GỘP_ML | 222 | 40.5% | 34.1% | +2.08 | MN +0.8 · MT +1.9 · MB +0.9 |
+| claude-sonnet-4-6 | AI | 60 | 55.0% | 42.9% | +1.90 | MN +1.9 · MT – · MB – |
+| smart-ml | GỘP_ML | 222 | 38.7% | 34.1% | +1.50 | MN +1.5 · MT -0.5 · MB +1.8 |
+| random-forest | ML | 222 | 38.3% | 34.1% | +1.36 | MN +1.7 · MT -0.1 · MB +0.7 |
+| gpt-oss-120b | AI | 216 | 37.0% | 34.1% | +0.94 | MN +0.3 · MT +1.2 · MB +0.0 |
+| smart-ensemble | GỘP_ML | 222 | 36.5% | 34.1% | +0.78 | MN -0.2 · MT +0.9 · MB +0.7 |
+| combo-super | LAI | 222 | 36.5% | 34.1% | +0.78 | MN +1.7 · MT -0.1 · MB -0.4 |
+| glm-5.1 | AI | 140 | 28.6% | 29.7% | -0.29 | MN – · MT +0.8 · MB -1.4 |
+| gemini-2.5-flash | AI | 221 | 30.8% | 34.1% | -1.05 | MN -0.9 · MT -0.2 · MB -0.7 |
+| meta-learning | ML | 222 | 29.7% | 34.1% | -1.38 | MN -0.7 · MT -2.3 · MB +0.7 |
+| xgboost | ML | 222 | 28.8% | 34.1% | -1.67 | MN -0.9 · MT -0.8 · MB -1.3 |

@@ -86,6 +86,8 @@ MB trả **27k** ăn **98k** → cần **27,55%**. Đánh bừa được **23,8%
 
 **Phần thiệt đã cài sẵn trong tỷ lệ ăn: khoảng 10% ở MN/MT và 14% ở MB.**
 
+> ⚠ **RÚT LẠI — RL-053 (27/11/2026, V11207):** SAI — lô trả THEO NHÁY; kỳ vọng nháy của một số = số giải/100 ⇒ thu 17.640đ / giá 18.000đ (MN/MT) · 26.460đ / 27.000đ (MB) ⇒ thiệt cài sẵn **2,0%** ở cả ba miền (`_v11207_thiet_cai_san.py`). So «≥1 nháy» (16,5% · 23,8%) với 18/98 là so hai đại lượng khác nhau. Kết luận «không hơn đánh bừa» GIỮ NGUYÊN.
+
 Muốn có lời, hệ phải hơn ngẫu nhiên ít nhất **1,9pp** (MN/MT) hoặc **3,8pp** (MB) — chỉ để hoà
 vốn, chưa nói tới lãi.
 

@@ -1,0 +1,20 @@
+roster: token_call_roster/2026.09.14-1
+
+== MN: cũ 15 → mới 11 · bỏ khỏi danh sách: ['deepseek-reasoner', 'gemini-2.5-pro', 'glm-5.1', 'gpt-5.4']
+   mới: ['claude-opus-4-6', 'claude-sonnet-4-6', 'combo-super', 'gemini-2.5-flash', 'gpt-oss-120b', 'lstm', 'meta-learning', 'random-forest', 'smart-ensemble', 'smart-ml', 'xgboost']
+   (b) dòng predictions của model bị bỏ 2026-09-14→2026-11-27: KHÔNG CÓ
+   (c) nhãn ngày: mẫu 15 → {'INCOMPLETE': 75}  ·  mẫu 11 → {'COMPLETE': 60, 'INCOMPLETE': 15}
+
+== MT: cũ 15 → mới 11 · bỏ khỏi danh sách: ['claude-sonnet-4-6', 'deepseek-reasoner', 'gemini-2.5-pro', 'gpt-5.4']
+   mới: ['claude-opus-4-6', 'combo-super', 'gemini-2.5-flash', 'glm-5.1', 'gpt-oss-120b', 'lstm', 'meta-learning', 'random-forest', 'smart-ensemble', 'smart-ml', 'xgboost']
+   (b) dòng predictions của model bị bỏ 2026-09-14→2026-11-27: KHÔNG CÓ
+   (c) nhãn ngày: mẫu 15 → {'INCOMPLETE': 75}  ·  mẫu 11 → {'COMPLETE': 56, 'INCOMPLETE': 19}
+
+== MB: cũ 15 → mới 11 · bỏ khỏi danh sách: ['claude-sonnet-4-6', 'deepseek-reasoner', 'gemini-2.5-pro', 'gpt-5.4']
+   mới: ['claude-opus-4-6', 'combo-super', 'gemini-2.5-flash', 'glm-5.1', 'gpt-oss-120b', 'lstm', 'meta-learning', 'random-forest', 'smart-ensemble', 'smart-ml', 'xgboost']
+   (b) dòng predictions của model bị bỏ 2026-09-14→2026-11-27: KHÔNG CÓ
+   (c) nhãn ngày: mẫu 15 → {'INCOMPLETE': 70, 'DEGRADED': 5}  ·  mẫu 11 → {'INCOMPLETE': 41, 'COMPLETE': 34}
+
+(d) pool AI combo-super — dòng 7 ngày của 4 tên chết: KHÔNG CÓ · ngày cuối từng có: [('deepseek-reasoner', '2026-09-13'), ('gemini-2.5-pro', '2026-09-13'), ('gemini-3.5-flash', '2026-09-13'), ('gemini-3.6-flash', '2026-09-13')]
+
+CHAY_KHO_V11207=DAT (0 dòng của model bị bỏ ⇒ phiếu công bố y hệt)
