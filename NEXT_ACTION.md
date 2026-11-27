@@ -2,17 +2,16 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-26 13:43:32 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-27 11:23:03 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
-| `FU-451` | `SC2511` | Vá stdout — (a) lỗi CÒN SÓT sau 19:20 đã vá V11199, kiểm 21:05 | **26/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
-| `FU-460` | `QD2611` | OpenRouter chặn gọi model từ VPS — đã tự thông lại, chờ xác nhận MT/MB | **26/11** | `WAIT_LIVE` |
-| `FU-462` | `DD2711` | Dọn dẹp cuốn chiếu (QD-082) — phương án đầy đủ đã phát hành; Đợt 1 + 2 | **27/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-455` | `SC2711` | Khuyến nghị CHƠI/NGHỈ của `/choi` được ghi SAU giờ xổ | **27/11** | `MEASURED_ROOT_CAUSE` |
 | `FU-456` | `DOLX-456` | Nhãn `DO_TIEN` của luật — ĐÃ SỬA, đã đo lại; chờ lần đào 30/11 ghi nhậ | **30/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
+| `FU-451` | `SC2511` | Vá stdout — (a) ĐÓNG ĐẠT (print sống sau 19:20) | **03/12** | `OWNER_DECISION_NEEDED` |
+| `FU-462` | `DD2711` | Dọn dẹp cuốn chiếu (QD-082) — Đợt 1 + 2a + 0b ĐẠT; các đợt sau chờ own | **03/12** | `AWAITING_OWNER_OK` |
 | `FU-345` | `SC0808` | A4 — lỗi gốc KHÔNG tái phát; ngưỡng 10.000 ký tự vướng ở MN — chờ owne | **03/12** | `OWNER_DECISION_NEEDED` |
 
 ## ⚠ QUÁ HẠN — còn treo
@@ -25,7 +24,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11200` — PHUONG AN DON DEP DAY DU (2026-11-26)
+**Báo cáo mới nhất:** `V11201` — KIEM BU TOI 26 11 (2026-11-27)
 
 ---
 

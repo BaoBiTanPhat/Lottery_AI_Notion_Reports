@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-11-26 13:43:32 (giờ VN) · **478 thư mục báo cáo**
+**Sinh lúc:** 2026-11-27 11:23:03 (giờ VN) · **479 thư mục báo cáo**
 
-**Mới nhất: `V11200`** — PHUONG AN DON DEP DAY DU · 2026-11-26
+**Mới nhất: `V11201`** — KIEM BU TOI 26 11 · 2026-11-27
 
-- [REPORT_V11200.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/REPORT_V11200.md)
-- [CONVERSATION_CONTEXT_V11200_20261126.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/CONVERSATION_CONTEXT_V11200_20261126.md)
+- [REPORT_V11201.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11201_KIEM_BU_TOI_26_11_20261127/REPORT_V11201.md)
+- [CONVERSATION_CONTEXT_V11201_20261127.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11201_KIEM_BU_TOI_26_11_20261127/CONVERSATION_CONTEXT_V11201_20261127.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11201` | 2026-11-27 | KIEM BU TOI 26 11 | [REPORT_V11201.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11201_KIEM_BU_TOI_26_11_20261127/REPORT_V11201.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11201_KIEM_BU_TOI_26_11_20261127/CONVERSATION_CONTEXT_V11201_20261127.md) | ✓ |
 | `V11200` | 2026-11-26 | PHUONG AN DON DEP DAY DU | [REPORT_V11200.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/REPORT_V11200.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/CONVERSATION_CONTEXT_V11200_20261126.md) | ✓ |
 | `V11199` | 2026-11-26 | VA GOC PRINT CHET SAU 1920 | [REPORT_V11199.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/REPORT_V11199.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11199_VA_GOC_PRINT_CHET_SAU_1920_20261126/CONVERSATION_CONTEXT_V11199_20261126.md) | ✓ |
 | `V11198` | 2026-11-26 | DON DEP DOT0B SAO LUU NGOAI VPS | [REPORT_V11198.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11198_DON_DEP_DOT0B_SAO_LUU_NGOAI_VPS_20261126/REPORT_V11198.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11198_DON_DEP_DOT0B_SAO_LUU_NGOAI_VPS_20261126/CONVERSATION_CONTEXT_V11198_20261126.md) | ✓ |
