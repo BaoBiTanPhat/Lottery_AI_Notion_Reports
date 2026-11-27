@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-27 15:37:42 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-27 16:51:37 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
@@ -16,6 +16,7 @@
 | `FU-462` | `DD2711` | Dọn dẹp cuốn chiếu — Đợt 1 (C) owner duyệt 27/11: 1B 1C 1E 1F 1G 1H XO | **30/11** | `AWAITING_OWNER_OK` |
 | `FU-185` | `DD0809` | Tinh gọn lane hết hạn — `.sh` lane MB: owner duyệt 1D, làm thứ Hai 30/ | **30/11** | `READY_NOT_DEPLOYED` |
 | `FU-456` | `DOLX-456` | Nhãn `DO_TIEN` của luật — ĐÃ SỬA, đã đo lại; chờ lần đào 30/11 ghi nhậ | **30/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
+| `FU-464` | `QD0312` | Bốn tháng chưa có lợi thế đo được — owner chọn hướng dùng hệ dự đoán | **03/12** | `OWNER_DECISION_NEEDED` |
 | `FU-451` | `SC2511` | Vá stdout — (a) ĐÓNG ĐẠT (print sống sau 19:20) | **03/12** | `OWNER_DECISION_NEEDED` |
 | `FU-292` | `KS1708` | Cảnh gác tên đài lạ — GIỮ MỞ `MEASURED_BUT_NOT_FIXED` (đối chiếu FU-45 | **15/12** | `MEASURED_BUT_NOT_FIXED` |
 | `FU-318` | `KS0811` | M-C canh trôi đặc trưng (PSI) — GIỮ MỞ `READY_NOT_DEPLOYED` (đối chiếu | **15/12** | `READY_NOT_DEPLOYED` |
@@ -31,7 +32,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11205` — CAU B FU345 FU459 (2026-11-27)
+**Báo cáo mới nhất:** `V11206` — DAO SAU MN BON THANG (2026-11-27)
 
 ---
 

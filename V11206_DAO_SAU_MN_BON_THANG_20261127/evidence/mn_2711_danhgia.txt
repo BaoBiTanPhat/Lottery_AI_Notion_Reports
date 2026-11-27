@@ -1,0 +1,23 @@
+# Đánh giá dự đoán ngày 2026-11-27
+
+## MN — 3 đài (Bình Dương, Trà Vinh, Vĩnh Long) · 54 giải · 37 đuôi khác nhau về
+   nền ngẫu nhiên hôm nay: 1 số trúng 37% · 2 số có ít nhất 1 trúng 61%
+
+   | bảng | số | trúng (nháy) | lời/lỗ thật | kỳ vọng nếu chọn ngẫu nhiên | vốn | giờ chốt |
+   |---|---|---|---|---|---|---|
+   | /du-doan bạch thủ | 17 | {'17': 0} | -2,700k | -54k | 2,700k | 2026-11-27 05:16:50 |
+   | /du-doan lô 2 số | 17 05 | {'17': 0, '05': 0} | -5,400k | -108k | 5,400k | 2026-11-27 05:16:50 |
+   | (bundle) | lo3=['17'] xien2=["17", "05"] | method=weighted_voting_wr · model_count=11 · fallback=0 | | | | |
+   | /choi đánh đủ | 17 | {'17': 0} | -2,700k | -54k | 2,700k | ghi 2026-11-27T16:40:43+07:00 |
+   | /choi theo khuyến nghị «NGHỈ» | không đánh | — | 0 | 0 | 0 | |
+   /choi: method=MN_BT1_OFFICIAL_V1 · kiểu=bạch-thủ 1 số · stake=Nghỉ hôm nay
+
+   | model | đường | bạch thủ | trúng BT? | số chọn | trúng / chọn |
+   |---|---|---|---|---|---|
+
+## MT — 0 đài () · 0 giải · 0 đuôi khác nhau về
+   (chưa có kết quả)
+
+## MB — 0 đài () · 0 giải · 0 đuôi khác nhau về
+   (chưa có kết quả)
+
