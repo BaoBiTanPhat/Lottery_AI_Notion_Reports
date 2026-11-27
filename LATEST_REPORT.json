@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-27 18:23:17",
- "tong_thu_muc": 485,
- "latest_version": "V11208",
+ "_sinh_luc_vn": "2026-11-27 22:17:33",
+ "tong_thu_muc": 486,
+ "latest_version": "V11209",
  "latest": {
-  "version": "V11208",
+  "version": "V11209",
   "ngay": "2026-11-27",
-  "chu_de": "DUC KET CONG THU NGHIEM",
-  "thu_muc": "V11208_DUC_KET_CONG_THU_NGHIEM_20261127",
+  "chu_de": "TINH BU SCORECARD KIEM SAU TRIEN KHAI",
+  "thu_muc": "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127",
   "bao_cao": [
-   "V11208_DUC_KET_CONG_THU_NGHIEM_20261127/REPORT_V11208.md"
+   "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/REPORT_V11209.md"
   ],
   "ngu_canh": [
-   "V11208_DUC_KET_CONG_THU_NGHIEM_20261127/CONVERSATION_CONTEXT_V11208_20261127.md"
+   "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/CONVERSATION_CONTEXT_V11209_20261127.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11209",
+   "ngay": "2026-11-27",
+   "chu_de": "TINH BU SCORECARD KIEM SAU TRIEN KHAI",
+   "thu_muc": "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127",
+   "bao_cao": [
+    "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/REPORT_V11209.md"
+   ],
+   "ngu_canh": [
+    "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/CONVERSATION_CONTEXT_V11209_20261127.md"
+   ]
+  },
   {
    "version": "V11208",
    "ngay": "2026-11-27",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11194_FU452_DAT_OPENROUTER_THONG_20261126/CONVERSATION_CONTEXT_V11194_20261126.md"
-   ]
-  },
-  {
-   "version": "V11193",
-   "ngay": "2026-11-25",
-   "chu_de": "DANH GIA 25 11 OPENROUTER CHAN",
-   "thu_muc": "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125",
-   "bao_cao": [
-    "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/REPORT_V11193.md"
-   ],
-   "ngu_canh": [
-    "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/CONVERSATION_CONTEXT_V11193_20261125.md"
    ]
   }
  ]

@@ -1,0 +1,78 @@
+V11209 — bằng chứng, chép nguyên từ đầu ra lệnh (27/11/2026, giờ VN). Đường dẫn máy chủ đã lược.
+
+=== 22:08 — trước khi ghi: vùng tính bù có bao nhiêu dòng ===
+scorecard_14/09-24/11|0
+
+=== 22:08:28 — BĂM 4 BẢNG KHOÁ [TRUOC_V11209] (_v11033_bam_4_bang.py) ===
+  predictions          rows=17574     sha256=7eff9880c31e6510c40dbd3360a7a773d066b716dab10618e4ce3a50af9641be
+  final_bundles        rows=819       sha256=93727b2acfe667bba9c52dd66276bb3bc8df92ad251fd9ad4a9b5796a6b67118
+  lottery_results      rows=15968     sha256=7667b14fdbada3e8544615441487bc11f5aa0f38531385378a6c33ac07c86220
+  model_daily_eval     rows=17438     sha256=e2a708c41cd0aa4e47ea15b8289284a6d9a3c5b9809485f86c3051dd8c1692e5
+
+=== _v11205_tinh_bu_scorecard.py --ap-dung (sha256 tệp f2672919…8411, máy dev = VPS) ===
+  tương đương: 42/42 mẫu khớp hàm gốc
+  miền-ngày: 216 · bỏ qua: 0 · dòng ghi: 5832 · dòng mang nhãn: 5832 (216 miền-ngày)
+TINH_BU_V11205=DAT
+real	0m46.412s
+
+=== 22:09:30 — BĂM 4 BẢNG KHOÁ [SAU_V11209] ===
+  predictions          rows=17574     sha256=7eff9880c31e6510c40dbd3360a7a773d066b716dab10618e4ce3a50af9641be
+  final_bundles        rows=819       sha256=93727b2acfe667bba9c52dd66276bb3bc8df92ad251fd9ad4a9b5796a6b67118
+  lottery_results      rows=15968     sha256=7667b14fdbada3e8544615441487bc11f5aa0f38531385378a6c33ac07c86220
+  model_daily_eval     rows=17438     sha256=e2a708c41cd0aa4e47ea15b8289284a6d9a3c5b9809485f86c3051dd8c1692e5
+
+=== đọc lại (RM-16): miền | số ngày | ngày đầu | ngày cuối | số dòng, vùng 14/09 → 27/11 ===
+MB|75|2026-09-14|2026-11-27|2025
+MN|75|2026-09-14|2026-11-27|2025
+MT|75|2026-09-14|2026-11-27|2025
+---thieu (co ket qua, khong co scorecard)
+(trống)
+---nhan TINH_BU_V11205: số dòng | số miền-ngày
+5832|216
+--- biên: ngày | miền | số dòng
+2026-09-13|MB|27   2026-09-13|MN|27   2026-09-13|MT|27
+2026-09-14|MB|27   2026-09-14|MN|27   2026-09-14|MT|27
+2026-11-24|MB|27   2026-11-24|MN|27   2026-11-24|MT|27
+2026-11-25|MB|27   2026-11-25|MN|27   2026-11-25|MT|27
+
+=== 18:50 — kiểm sau triển khai V11204 ===
+MB|DA_XONG_BLOCK|17:36:39|17:58|1|rc=0 …|2026-11-27T17:37:01+07:00
+MN|DA_XONG_BLOCK|05:16:50|15:45|1|rc=0 …|2026-11-27T05:17:01+07:00
+MT|DA_XONG_BLOCK|16:43:39|16:58|1|rc=1|2026-11-27T16:44:02+07:00
+final_bundles|MB|2026-11-27 17:36:39
+final_bundles|MN|2026-11-27 05:16:50
+final_bundles|MT|2026-11-27 16:43:39
+health_khong_OK|0
+crontab: 73 dòng
+
+=== lane Nghiệm Thu (v10879_nghiemthu_scoreboard): ngày | miền | bạch thủ | giờ chấm ===
+2026-11-27|MB|55|19:10:01
+2026-11-27|MN|17|17:10:02
+2026-11-27|MT|98|18:10:01
+
+=== rc=1 — lịch sử (v10979_early_block) ===
+rc1 truoc 27/11|20
+khac rc=0 (moi loai)|22   (21 rc=1 + 1 «KHÔNG gọi lane»)
+miền | ngày | có số Nghiệm Thu (giờ CHẤM, không phải giờ chốt)
+MT 2026-08-08 · MN 2026-08-10 · MN 2026-08-11 · MN 2026-08-13 · MN 2026-08-14 · MB 2026-08-18 · MT 2026-08-19 · MN 2026-08-20
+MT 2026-08-24 · MT 2026-08-25 · MT 2026-09-02 · MN 2026-09-05 · MB 2026-09-06 · MN 2026-09-08 · MN 2026-09-13 · MB 2026-09-22
+MB 2026-10-19 · MB 2026-10-30 · MT 2026-10-30 · MT 2026-11-26 · MT 2026-11-27
+⇒ 21/21 ngày có số Nghiệm Thu. 19 dòng tới 30/10 = «trượt 19 lần» của kế hoạch dọn dẹp 26/11.
+
+=== _v11209_thu_bat_loi_kich_hoat.py — máy dev ===
+ca1: rc=1 · ERR:   File "…/_v10879_nghiemthu_lane.py", line 2, in <module> |     raise sqlite3.OperationalError('database is locked') | sqlite3.OperationalError: database is locked
+ca2: rc=0 V10879_PREDRAW MT DA CHOT BT=98
+ca3: rc=2 nua chung · ERR: dong1 | dong2
+THU_V11209=3/3
+
+=== cùng bài thử — VPS ===
+ca1: rc=1 · ERR:   File "/tmp/…/_v10879_nghiemthu_lane.py", line 2, in <module> |     raise sqlite3.OperationalError('database is locked') | sqlite3.OperationalError: database is locked
+ca2: rc=0 V10879_PREDRAW MT DA CHOT BT=98
+ca3: rc=2 nua chung · ERR: dong1 | dong2
+THU_V11209_LANE=3/3
+(ca1 là lỗi GIẢ do bài thử tự ném — không phải nguyên nhân thật của rc=1)
+
+=== triển khai _v10979_early_block.py ===
+trước: sha256 a1e124f8…6215 (máy dev = VPS) — sao lưu .pre_v11209 hai bên
+sau:   sha256 2866b51b5e53421418bb5779eb28a678a36e38d85f827f555668d43f40f58889 (máy dev = VPS) · AST_OK · IMPORT_OK
+không restart: hàm sửa chỉ chạy từ 7 dòng cron; service chỉ gọi compute_view (không đổi)
