@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-27 22:17:33",
- "tong_thu_muc": 486,
- "latest_version": "V11209",
+ "_sinh_luc_vn": "2026-11-28 06:56:38",
+ "tong_thu_muc": 487,
+ "latest_version": "V11210",
  "latest": {
-  "version": "V11209",
-  "ngay": "2026-11-27",
-  "chu_de": "TINH BU SCORECARD KIEM SAU TRIEN KHAI",
-  "thu_muc": "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127",
+  "version": "V11210",
+  "ngay": "2026-11-28",
+  "chu_de": "RESTART GOP CO CHET MAU SO ROSTER",
+  "thu_muc": "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128",
   "bao_cao": [
-   "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/REPORT_V11209.md"
+   "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/REPORT_V11210.md"
   ],
   "ngu_canh": [
-   "V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/CONVERSATION_CONTEXT_V11209_20261127.md"
+   "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/CONVERSATION_CONTEXT_V11210_20261128.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11210",
+   "ngay": "2026-11-28",
+   "chu_de": "RESTART GOP CO CHET MAU SO ROSTER",
+   "thu_muc": "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128",
+   "bao_cao": [
+    "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/REPORT_V11210.md"
+   ],
+   "ngu_canh": [
+    "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/CONVERSATION_CONTEXT_V11210_20261128.md"
+   ]
+  },
   {
    "version": "V11209",
    "ngay": "2026-11-27",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11195_THI_HANH_6A_6G_QD081_20261126/CONVERSATION_CONTEXT_V11195_20261126.md"
-   ]
-  },
-  {
-   "version": "V11194",
-   "ngay": "2026-11-26",
-   "chu_de": "FU452 DAT OPENROUTER THONG",
-   "thu_muc": "V11194_FU452_DAT_OPENROUTER_THONG_20261126",
-   "bao_cao": [
-    "V11194_FU452_DAT_OPENROUTER_THONG_20261126/REPORT_V11194.md"
-   ],
-   "ngu_canh": [
-    "V11194_FU452_DAT_OPENROUTER_THONG_20261126/CONVERSATION_CONTEXT_V11194_20261126.md"
    ]
   }
  ]

@@ -1,0 +1,76 @@
+### chạy lúc 2026-11-28 06:54:25 (giờ VN) — mã đang serve PID 1516954
+
+## _v11210_kiem_fu465a.py --db (DB sống)
+  ✓ K1 MN: 11 model · thừa [] · thiếu []
+  ✓ K1 MT: 11 model · thừa [] · thiếu []
+  ✓ K1 MB: 11 model · thừa [] · thiếu []
+  ✓ K2: toàn cục 12 · còn model chết: [] · TOKEN_MODELS 8
+  ✓ K3: cửa mở ⇒ 12 (không lọc) · cờ bật cửa đóng ⇒ 11 (lọc)
+  ✓ K4: roster MN hỏng ⇒ 12 (không lọc) · miền lạ ⇒ None
+  ✓ K5: {'MN': 11, 'MT': 11, 'MB': 11, None: 12, 'XX': 12}
+  ✓ K6: 11/11 ⇒ COMPLETE (trước 11/15 ⇒ INCOMPLETE)
+     MN: 76 ngày, 809 dòng qua lọc cũ · 809 dòng qua lọc mới
+     MT: 76 ngày, 818 dòng qua lọc cũ · 818 dòng qua lọc mới
+     MB: 76 ngày, 816 dòng qua lọc cũ · 816 dòng qua lọc mới
+  ✓ K7: miền-ngày lệch: KHÔNG CÓ
+  ✓ K8: AI 5 ['claude-opus-4-6', 'claude-sonnet-4-6', 'gemini-2.5-flash', 'glm-5.1', 'gpt-oss-120b'] · ML 4
+KIEM_FU465A_V11210=DAT (10/10)
+
+## _v11210_quet_nguoc.py
+Q1 bộ output cũ → mới
+   MN: 15 → 11 · bỏ ['deepseek-reasoner', 'gemini-2.5-pro', 'glm-5.1', 'gpt-5.4'] · thêm []
+   MT: 15 → 11 · bỏ ['claude-sonnet-4-6', 'deepseek-reasoner', 'gemini-2.5-pro', 'gpt-5.4'] · thêm []
+   MB: 15 → 11 · bỏ ['claude-sonnet-4-6', 'deepseek-reasoner', 'gemini-2.5-pro', 'gpt-5.4'] · thêm []
+   toàn cục: 15 → 12 · bỏ ['deepseek-reasoner', 'gemini-2.5-pro', 'gpt-5.4'] · thêm []
+Q2 dòng predictions có số từ 14/09 của model bị bỏ (shadow lẫn official)
+   MN: 0
+   MT: 0
+   MB: 0
+Q3 dòng official cuối của 3 model chết
+   deepseek-reasoner: cuối 2026-09-11
+   gemini-2.5-pro: cuối 2026-09-13
+   gpt-5.4: cuối 2026-09-13
+Q4 phát lại bộ dò ĐÃ XONG (mã đang chạy)
+   2026-08-03 MB: CHUA_DU_KHO · model_count 14 · kho 12 · sớm None s
+   2026-11-26 MB: DA_XONG_BLOCK · model_count 8 · kho 11 · sớm 1384 s
+   2026-11-27 MT: DA_XONG_BLOCK · model_count 11 · kho 11 · sớm 861 s
+   2026-11-27 MB: DA_XONG_BLOCK · model_count 8 · kho 11 · sớm 1281 s
+Q5 sáu lane thử nghiệm — số ngày có dòng theo tháng (07→11)
+   MN: 07 31 · 08 12 · 09 5 · 10 1 · 11 1 · cuối 2026-11-02
+   MT: 07 31 · 08 26 · 09 25 · 10 30 · 11 24 · cuối 2026-11-27
+   MB: 07 31 · 08 29 · 09 29 · 10 29 · 11 27 · cuối 2026-11-27
+QUET_NGUOC_V11210=DAT (dòng của model bị bỏ từ 14/09: 0)
+
+## sha 11 tệp đang chạy
+966124fa1915093e model_registry.py
+2f99b161b151c361 database.py
+462baad1097f2c4e main.py
+4a31e1c3c129222f combo_super.py
+a6553626a8f7870b _v11185_roster_goi_token.py
+84899f93d6909bd4 _v10759_money_board.py
+f7e0d6144d032d51 scheduler.py
+be6db7a73077596c _v87_master_board.py
+41422770ff86ff41 _v10785_late_fill.py
+6ddd1735782964d9 _v10800_timetable_selfcheck.py
+1bdcb2a013569699 _v10984_kiem.py
+
+## nhật ký triển khai 28/11 (chép nguyên output lệnh, giờ VN)
+06:33:47  _v11033_bam_4_bang.py --nhan TRUOC_V11210
+  predictions          rows=17600     sha256=ecfac5873c870c52d66fc7df218d0e84366ef361b831d5acea5d24edb8e63c8b
+  final_bundles        rows=820       sha256=9d4b8ebd5742039c67afe6b1990c869cfa4133bc550af89681f698bd6293bc6b
+  lottery_results      rows=15968     sha256=7667b14fdbada3e8544615441487bc11f5aa0f38531385378a6c33ac07c86220
+  model_daily_eval     rows=17438     sha256=e2a708c41cd0aa4e47ea15b8289284a6d9a3c5b9809485f86c3051dd8c1692e5
+06:33:49  sao lưu 11 tệp -> backups/<tệp>.pre_v11210 (sha trước khi đè = sha bản sao lưu máy dev, 11/11)
+~06:34    17 tệp lên thư mục tạm, byte y hệt máy dev (diff sha rỗng), py_compile 17/17 OK
+06:35:02  tick du_doan_test_auto 06:35 đã ghi log (skip nhanh, không tiến trình con)
+06:35:40  chép 11 tệp vào web/backend, py_compile OK · systemctl restart lottery
+06:36:06  PID_SAU=1516954 (PID_TRUOC=1277779) · active · /api/health 200
+          /api/admin/play-decision-board 401 · /api/admin/rerun-drift 401 · /api/admin/cycle-scan 401
+          journal từ 06:35:30: 0 Traceback; DeprecationWarning main.py:3049/3072 = on_event của FastAPI, có ở mọi lần khởi động từ 24/11
+06:35:48  scheduler_logs: 35 dòng đăng ký job, KHÔNG dòng V81 / V101 / V104 / V105
+06:37:48  WATCHDOG_OK (startup-recovery +120s) · 06:40 / 06:45 tick bình thường
+~06:38    _v11033_bam_4_bang.py --nhan SAU_V11210 — 4 dòng y hệt TRUOC (rows + sha256)
+06:39:34  _v10920_decision_ledger.py: 1 TRÔI (QD-020 neo 03/08 MB) · 2 không kết luận (DB local cũ)
+~06:43    _v11210_so_qd020.py --ghi · _sync_live_forensic_inputs.py (snapshot 20261128_064408)
+06:48:21  _v10920_decision_ledger.py: "KHÔNG CÓ QUYẾT ĐỊNH NÀO BỊ TRÔI", 0 không kết luận
+          QD-046 trên VPS: NO_ANSWER_V11036=DAT · model rớt sàn 0 (bản local cũ báo 5 — RM-01)
