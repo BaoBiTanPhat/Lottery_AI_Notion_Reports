@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-11-27 15:11:55 (giờ VN) · **480 thư mục báo cáo**
+**Sinh lúc:** 2026-11-27 15:31:48 (giờ VN) · **481 thư mục báo cáo**
 
-**Mới nhất: `V11202`** — BAO MAT MAY CHU · 2026-11-27
+**Mới nhất: `V11204`** — DON DEP DOT1 · 2026-11-27
 
-- [REPORT_V11202.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11202_BAO_MAT_MAY_CHU_20261127/REPORT_V11202.md)
-- [CONVERSATION_CONTEXT_V11202_20261127.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11202_BAO_MAT_MAY_CHU_20261127/CONVERSATION_CONTEXT_V11202_20261127.md)
+- [REPORT_V11204.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11204_DON_DEP_DOT1_20261127/REPORT_V11204.md)
+- [CONVERSATION_CONTEXT_V11204_20261127.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11204_DON_DEP_DOT1_20261127/CONVERSATION_CONTEXT_V11204_20261127.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11204` | 2026-11-27 | DON DEP DOT1 | [REPORT_V11204.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11204_DON_DEP_DOT1_20261127/REPORT_V11204.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11204_DON_DEP_DOT1_20261127/CONVERSATION_CONTEXT_V11204_20261127.md) | ✓ |
 | `V11202` | 2026-11-27 | BAO MAT MAY CHU | [REPORT_V11202.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11202_BAO_MAT_MAY_CHU_20261127/REPORT_V11202.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11202_BAO_MAT_MAY_CHU_20261127/CONVERSATION_CONTEXT_V11202_20261127.md) | — |
 | `V11201` | 2026-11-27 | KIEM BU TOI 26 11 | [REPORT_V11201.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11201_KIEM_BU_TOI_26_11_20261127/REPORT_V11201.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11201_KIEM_BU_TOI_26_11_20261127/CONVERSATION_CONTEXT_V11201_20261127.md) | ✓ |
 | `V11200` | 2026-11-26 | PHUONG AN DON DEP DAY DU | [REPORT_V11200.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/REPORT_V11200.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11200_PHUONG_AN_DON_DEP_DAY_DU_20261126/CONVERSATION_CONTEXT_V11200_20261126.md) | ✓ |

@@ -1,0 +1,24 @@
+================================================================================================
+  D-30 PHÁN QUYẾT · PREREG fd9eda76f8f83c08… · cửa sổ chính 2026-08-31 → 2026-09-30 · alpha 0.025 · n tối thiểu 60
+================================================================================================
+
+  DIRECT_BASE_ONLY · CHÍNH (31/08→30/09)
+    loại khỏi mẫu: không
+    n=93 · lane trúng 33 (35.5%) · official trúng 29 (31.2%) · nền 33.6%
+    cặp bất đồng: lane-thắng b=13 · official-thắng c=9 · tỉ lệ bất đồng 23.7% · McNemar exact p=0.523 · n cần (MDE 5đ, power 0,80) = 897
+    ⇒ PHÁN QUYẾT: INCONCLUSIVE_EXTEND
+
+  DIRECT_BASE_ONLY · NGOÀI CỬA SỔ (01/10→nay) — không dùng phán quyết
+    loại khỏi mẫu: không
+    n=171 · lane trúng 60 (35.1%) · official trúng 70 (40.9%) · nền 34.3%
+    cặp bất đồng: lane-thắng b=15 · official-thắng c=25 · tỉ lệ bất đồng 23.4% · McNemar exact p=0.154 · n cần (MDE 5đ, power 0,80) = 887
+
+  CAP5_CANDIDATE_PRESERVING · CHÍNH (31/08→30/09)
+    loại khỏi mẫu: {'degraded': 93}
+    ⇒ PHÁN QUYẾT: INVALID_EXPERIMENT
+
+  CAP5_CANDIDATE_PRESERVING · NGOÀI CỬA SỔ (01/10→nay) — không dùng phán quyết
+    loại khỏi mẫu: {'degraded': 171}
+
+================================================================================================
+D30_PHAN_QUYET=DIRECT_BASE_ONLY:INCONCLUSIVE_EXTEND;CAP5_CANDIDATE_PRESERVING:INVALID_EXPERIMENT

@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-27 15:11:55",
- "tong_thu_muc": 480,
- "latest_version": "V11202",
+ "_sinh_luc_vn": "2026-11-27 15:31:48",
+ "tong_thu_muc": 481,
+ "latest_version": "V11204",
  "latest": {
-  "version": "V11202",
+  "version": "V11204",
   "ngay": "2026-11-27",
-  "chu_de": "BAO MAT MAY CHU",
-  "thu_muc": "V11202_BAO_MAT_MAY_CHU_20261127",
+  "chu_de": "DON DEP DOT1",
+  "thu_muc": "V11204_DON_DEP_DOT1_20261127",
   "bao_cao": [
-   "V11202_BAO_MAT_MAY_CHU_20261127/REPORT_V11202.md"
+   "V11204_DON_DEP_DOT1_20261127/REPORT_V11204.md"
   ],
   "ngu_canh": [
-   "V11202_BAO_MAT_MAY_CHU_20261127/CONVERSATION_CONTEXT_V11202_20261127.md"
+   "V11204_DON_DEP_DOT1_20261127/CONVERSATION_CONTEXT_V11204_20261127.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11204",
+   "ngay": "2026-11-27",
+   "chu_de": "DON DEP DOT1",
+   "thu_muc": "V11204_DON_DEP_DOT1_20261127",
+   "bao_cao": [
+    "V11204_DON_DEP_DOT1_20261127/REPORT_V11204.md"
+   ],
+   "ngu_canh": [
+    "V11204_DON_DEP_DOT1_20261127/CONVERSATION_CONTEXT_V11204_20261127.md"
+   ]
+  },
   {
    "version": "V11202",
    "ngay": "2026-11-27",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11189_KIEM_TONG_LUC_20261124/CONVERSATION_CONTEXT_V11189_20261124.md"
-   ]
-  },
-  {
-   "version": "V11188",
-   "ngay": "2026-09-15",
-   "chu_de": "AC EOD FORENSIC",
-   "thu_muc": "V11188_AC_EOD_FORENSIC_20260915",
-   "bao_cao": [
-    "V11188_AC_EOD_FORENSIC_20260915/REPORT_V11188.md"
-   ],
-   "ngu_canh": [
-    "V11188_AC_EOD_FORENSIC_20260915/CONVERSATION_CONTEXT_V11188_20260915.md"
    ]
   }
  ]
