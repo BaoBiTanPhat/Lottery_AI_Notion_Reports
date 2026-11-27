@@ -1,0 +1,8 @@
+{
+ "_doc": "Sổ ĐĂNG KÝ TRƯỚC cho mọi thử nghiệm / model mới (QD-084 khoản 3, owner duyệt 27/11/2026). Cổng: web/backend/_v11208_cong_thu_nghiem.py (nối cổng git commit).",
+ "_luat": "Đường dự đoán ĐÓNG BĂNG từ 27/11/2026 (QD-084 khoản 4). Thử nghiệm mới chỉ được dựng khi đã khai đủ trường dưới đây TRƯỚC ngày đầu; n cần do cổng tự tính; n cần > 120 ngày ⇒ phải có owner_duyet (mã QD). Thêm model vào registry ⇒ mục loai=model + owner_duyet.",
+ "_truong_bat_buoc": ["id", "tep", "gia_thuyet", "san_pham", "nen", "mde", "so_mien_moi_ngay", "n_can_ngay", "nguong", "ngay_bat_dau", "ngay_doc"],
+ "_vi_du_n_can": "bạch thủ nền 0,34 · MDE 0,05 · 3 miền/ngày ⇒ 718 lượt ≈ 240 ngày; một miền ⇒ 718 ngày",
+ "moc_dong_bang": "2026-11-27",
+ "thu_nghiem": []
+}

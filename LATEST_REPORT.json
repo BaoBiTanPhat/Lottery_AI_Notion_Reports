@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-27 18:13:26",
- "tong_thu_muc": 484,
- "latest_version": "V11207",
+ "_sinh_luc_vn": "2026-11-27 18:23:17",
+ "tong_thu_muc": 485,
+ "latest_version": "V11208",
  "latest": {
-  "version": "V11207",
+  "version": "V11208",
   "ngay": "2026-11-27",
-  "chu_de": "QD084 RL053 CO CHET",
-  "thu_muc": "V11207_QD084_RL053_CO_CHET_20261127",
+  "chu_de": "DUC KET CONG THU NGHIEM",
+  "thu_muc": "V11208_DUC_KET_CONG_THU_NGHIEM_20261127",
   "bao_cao": [
-   "V11207_QD084_RL053_CO_CHET_20261127/REPORT_V11207.md"
+   "V11208_DUC_KET_CONG_THU_NGHIEM_20261127/REPORT_V11208.md"
   ],
   "ngu_canh": [
-   "V11207_QD084_RL053_CO_CHET_20261127/CONVERSATION_CONTEXT_V11207_20261127.md"
+   "V11208_DUC_KET_CONG_THU_NGHIEM_20261127/CONVERSATION_CONTEXT_V11208_20261127.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11208",
+   "ngay": "2026-11-27",
+   "chu_de": "DUC KET CONG THU NGHIEM",
+   "thu_muc": "V11208_DUC_KET_CONG_THU_NGHIEM_20261127",
+   "bao_cao": [
+    "V11208_DUC_KET_CONG_THU_NGHIEM_20261127/REPORT_V11208.md"
+   ],
+   "ngu_canh": [
+    "V11208_DUC_KET_CONG_THU_NGHIEM_20261127/CONVERSATION_CONTEXT_V11208_20261127.md"
+   ]
+  },
   {
    "version": "V11207",
    "ngay": "2026-11-27",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11193_DANH_GIA_25_11_OPENROUTER_CHAN_20261125/CONVERSATION_CONTEXT_V11193_20261125.md"
-   ]
-  },
-  {
-   "version": "V11192",
-   "ngay": "2026-11-25",
-   "chu_de": "NGHIEM THU LUOT THAT OPUS FU451",
-   "thu_muc": "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125",
-   "bao_cao": [
-    "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/REPORT_V11192.md"
-   ],
-   "ngu_canh": [
-    "V11192_NGHIEM_THU_LUOT_THAT_OPUS_FU451_20261125/CONVERSATION_CONTEXT_V11192_20261125.md"
    ]
   }
  ]

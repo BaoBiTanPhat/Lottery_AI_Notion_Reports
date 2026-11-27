@@ -2,14 +2,14 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-27 18:13:26 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-27 18:23:17 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
 | `FU-455` | `SC2711` | Khuyến nghị CHƠI/NGHỈ của `/choi` được ghi SAU giờ xổ | **27/11** | `MEASURED_ROOT_CAUSE` |
-| `FU-465` | `DP2811` | Thi hành QD-084: dọn cờ chết + mẫu số theo roster | **28/11** | `READY_NOT_DEPLOYED` |
+| `FU-465` | `DP2811` | Thi hành QD-084 — (b) luật 15/15 | **28/11** | `READY_NOT_DEPLOYED` |
 | `FU-464` | `QD0312` | Owner chọn hướng 1 (QD-084): giữ làm tham khảo, ghi thẳng «chưa có lợi | **28/11** | `READY_TO_BUILD_UI_TEST_ONLY` |
 | `FU-328` | `KS0808` | Cổng canh model ra thiếu số — GIỮ MỞ `MEASURED_BUT_NOT_FIXED` (đối chi | **28/11** | `MEASURED_BUT_NOT_FIXED` |
 | `FU-255` | `DD0807` | Bảng cảnh báo `system_alerts` — owner duyệt 1J «nối» | **28/11** | `READY_NOT_DEPLOYED` |
@@ -35,7 +35,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11207` — QD084 RL053 CO CHET (2026-11-27)
+**Báo cáo mới nhất:** `V11208` — DUC KET CONG THU NGHIEM (2026-11-27)
 
 ---
 

@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-11-27 18:13:26 (giờ VN) · **484 thư mục báo cáo**
+**Sinh lúc:** 2026-11-27 18:23:17 (giờ VN) · **485 thư mục báo cáo**
 
-**Mới nhất: `V11207`** — QD084 RL053 CO CHET · 2026-11-27
+**Mới nhất: `V11208`** — DUC KET CONG THU NGHIEM · 2026-11-27
 
-- [REPORT_V11207.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11207_QD084_RL053_CO_CHET_20261127/REPORT_V11207.md)
-- [CONVERSATION_CONTEXT_V11207_20261127.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11207_QD084_RL053_CO_CHET_20261127/CONVERSATION_CONTEXT_V11207_20261127.md)
+- [REPORT_V11208.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11208_DUC_KET_CONG_THU_NGHIEM_20261127/REPORT_V11208.md)
+- [CONVERSATION_CONTEXT_V11208_20261127.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11208_DUC_KET_CONG_THU_NGHIEM_20261127/CONVERSATION_CONTEXT_V11208_20261127.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11208` | 2026-11-27 | DUC KET CONG THU NGHIEM | [REPORT_V11208.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11208_DUC_KET_CONG_THU_NGHIEM_20261127/REPORT_V11208.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11208_DUC_KET_CONG_THU_NGHIEM_20261127/CONVERSATION_CONTEXT_V11208_20261127.md) | ✓ |
 | `V11207` | 2026-11-27 | QD084 RL053 CO CHET | [REPORT_V11207.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11207_QD084_RL053_CO_CHET_20261127/REPORT_V11207.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11207_QD084_RL053_CO_CHET_20261127/CONVERSATION_CONTEXT_V11207_20261127.md) | ✓ |
 | `V11206` | 2026-11-27 | DAO SAU MN BON THANG | [REPORT_V11206.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11206_DAO_SAU_MN_BON_THANG_20261127/REPORT_V11206.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11206_DAO_SAU_MN_BON_THANG_20261127/CONVERSATION_CONTEXT_V11206_20261127.md) | ✓ |
 | `V11205` | 2026-11-27 | CAU B FU345 FU459 | [REPORT_V11205.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11205_CAU_B_FU345_FU459_20261127/REPORT_V11205.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11205_CAU_B_FU345_FU459_20261127/CONVERSATION_CONTEXT_V11205_20261127.md) | — |
