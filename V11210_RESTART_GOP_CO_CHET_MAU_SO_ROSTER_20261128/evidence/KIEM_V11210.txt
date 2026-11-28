@@ -74,3 +74,24 @@ be6db7a73077596c _v87_master_board.py
 ~06:43    _v11210_so_qd020.py --ghi · _sync_live_forensic_inputs.py (snapshot 20261128_064408)
 06:48:21  _v10920_decision_ledger.py: "KHÔNG CÓ QUYẾT ĐỊNH NÀO BỊ TRÔI", 0 không kết luận
           QD-046 trên VPS: NO_ANSWER_V11036=DAT · model rớt sàn 0 (bản local cũ báo 5 — RM-01)
+
+## phát lại trọn đường generate_final_bundle — mã CŨ (.pre_v11210) vs mã MỚI, cùng bản sao DB chụp 07:00 28/11 (_v11210_phat_lai_bundle.py)
+NAP_TU: database=/tmp/v11210_pl/cu/web/backend/database.py · main=/tmp/v11210_pl/cu/web/backend/main.py · DB=/tmp/v11210_pl/cu/data/lottery_ai.db
+NAP_TU: database=/tmp/v11210_pl/moi/web/backend/database.py · main=/tmp/v11210_pl/moi/web/backend/main.py · DB=/tmp/v11210_pl/moi/data/lottery_ai.db
+2026-11-28_MN: CŨ = MỚI (y hệt từng byte của dòng KQ_BUNDLE)
+    {'bach_thu': '79', 'lo2': '["79", "56"]', 'lo3': '879', 'xien2': '["79", "56"]', 'model_count': 11, 'consensus_level': 'moderate', 'generation_method': 'weighted_voting_wr'}
+2026-11-27_MT: CŨ = MỚI (y hệt từng byte của dòng KQ_BUNDLE)
+    {'bach_thu': '98', 'lo2': '["98", "42"]', 'lo3': '498', 'xien2': '["98", "42"]', 'model_count': 11, 'consensus_level': 'strong', 'generation_method': 'weighted_voting_wr'}
+2026-11-27_MB: CŨ = MỚI (y hệt từng byte của dòng KQ_BUNDLE)
+    {'bach_thu': '28', 'lo2': '["28", "68"]', 'lo3': '728', 'xien2': '["28", "68"]', 'model_count': 9, 'consensus_level': 'moderate', 'generation_method': 'weighted_voting_wr'}
+bundle thật trong kho (do service tạo):
+2026-11-28|MN|79|["79", "56"]|879|11
+2026-11-27|MB|28|["28", "68"]|728|8
+2026-11-27|MT|98|["98", "42"]|498|11
+đã xoá bản sao /tmp (2,2 GB)
+
+## vì sao MB 27/11 phát lại ra model_count 9, bundle thật 8 (CŨ = MỚI cùng 9 ⇒ không do V11210)
+bundle thật 17:36:39 — gate_diagnostics: glm-5.1 · random-forest · xgboost trượt cổng BT (`bt<12`, bt_rate 10.0 trên 30)
+model_daily_eval MB 27/11: glm-5.1 bt_number 34 bt_hit 1 (WIN) · random-forest bt_hit 0 · xgboost bt_hit 0
+⇒ phát lại SAU giờ xổ: cửa sổ 30 ngày đã gồm kết quả của chính 27/11, glm-5.1 lên ≥ 12% và qua cổng ⇒ 9 phiếu.
+   Số công bố (BT 28 · lô 28/68 · lô3 728) y hệt bundle thật. Phát lại sau xổ ≠ lượt sống — đúng bài học PRJ-SELECTION-WINDOW-001.

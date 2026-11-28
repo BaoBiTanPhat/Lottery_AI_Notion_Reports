@@ -52,6 +52,13 @@ cáo này.
 7. **Sáu lane thử nghiệm MN (FU-467):** tối 27/11 agent nói «dừng từ 02/11». **Sai:** lane mờ dần từ tháng 8. Số ngày có dòng theo tháng 07→11
    là MN 31 · 12 · 5 · 1 · 1, so với MT 31 · 26 · 25 · 30 · 24 và MB 31 · 29 · 29 · 29 · 27. Nguyên nhân **chưa đào**.
 8. **`system_alerts`:** dòng mới nhất 11/05 — xác nhận bảng im 6 tháng trước khi nối cảnh báo.
+9. **K7 chỉ chép lại bộ lọc — chưa phép nào chạy trọn đường ra bundle bằng mã mới.** MN 28/11 chạy 05:15 bằng mã **cũ**, nên lượt thật đầu tiên
+   trên mã mới là MT ~16:42. Phát lại `generate_final_bundle` trên **bản sao** kho (07:00), mã cũ và mã mới cùng một DB chép
+   (`_v11210_phat_lai_bundle.py`, nạp từ thư mục sao, từ chối chạy nếu trỏ vào kho thật): **MN 28/11 · MT 27/11 · MB 27/11 cũ = mới, y hệt
+   từng byte**, và trùng bundle thật — MN `79` · lô `79 56` · MT `98` · lô `98 42` · MB `28` · lô `28 68`.
+10. **MB 27/11 phát lại ra 9 phiếu, bundle thật 8** — cũ và mới **cùng** 9 ⇒ không do V11210. Lúc chốt, glm-5.1 trượt cổng BT (10% < 12%);
+    chính 27/11 glm-5.1 trúng bạch thủ (`34`) ⇒ phát lại **sau** giờ xổ thì cửa sổ 30 ngày đã gồm kết quả hôm đó, glm-5.1 qua cổng. Số công
+    bố không đổi. Phát lại sau xổ ≠ lượt sống (PRJ-SELECTION-WINDOW-001).
 
 ## 4. Hướng xử lý và vì sao chọn
 
@@ -76,6 +83,7 @@ cáo này.
 | cảnh báo thiếu output (1J · FU-328) | `system_alerts` im từ 11/05 | `OFFICIAL_MODEL_MISSING` sau 3 điểm verify | V11210 | `_v11210_thu_bao_thieu.py` 4/4 |
 | sổ quyết định | 11 phép `== 15` · neo QD-074/075 = 15 · QD-020 neo 03/08 | `== 12` · neo 12/11 (thay một phần bởi QD-084 k7) · QD-020 neo 27/11 MB; giữ `bieu_thuc_cu` | V11210 | `_v10920_decision_ledger.py` 06:48 «KHÔNG CÓ QUYẾT ĐỊNH NÀO BỊ TRÔI» |
 | quét ngược | — | `_v11210_quet_nguoc.py` (Q1–Q5) | V11210 | `QUET_NGUOC_V11210=DAT` |
+| phát lại trọn đường bundle | chưa có | `_v11210_phat_lai_bundle.py` — mã cũ vs mã mới trên bản sao kho | V11210, 28/11 07:01 | 3/3 miền-ngày cũ = mới = bundle thật; bản sao 2,2 GB đã xoá |
 | bốn mặt + theo dõi | — | seq 524; FU-465 · 455 · 454 · 328 · 255 `DEPLOYED_PENDING_LIVE_VERIFY`; FU-453 · 462 cập nhật; mở FU-466 · FU-467 | V11210 | `_v11062_nang_version.py --kiem` ĐẠT · bộ đọc FU 0 mồ côi |
 
 Bằng chứng: `evidence/KIEM_V11210.txt` (chạy lại trên VPS sau deploy + nhật ký triển khai nguyên văn).
@@ -89,6 +97,8 @@ Bằng chứng: `evidence/KIEM_V11210.txt` (chạy lại trên VPS sau deploy + 
 | PID trước / sau · health · admin | 1277779 → 1516954 · 200 · 401 ×3 |
 | `_v11033_bam_4_bang.py` TRUOC / SAU | y hệt (RM-02: chỉ chứng minh không ghi bậy, không chứng minh dữ liệu đúng) |
 | `_v11210_kiem_fu465a.py --db` | 10/10 trên mã đã triển khai |
+| `_v11210_phat_lai_bundle.py` (cũ vs mới) | MN 28/11 · MT 27/11 · MB 27/11 y hệt từng byte |
+| `_v11210_thu_fu455.py --db` trên VPS, ngày 28/11 (bản sao tạm) | 5/5 |
 | `_v10920_decision_ledger.py` | 0 TRÔI · 0 không kết luận (sau đồng bộ dữ liệu sống) |
 | `_v11062_nang_version.py --kiem` | ĐẠT |
 | cổng commit (gồm cổng thử nghiệm V11208) | qua — `2474d78` |
@@ -99,6 +109,8 @@ Bằng chứng: `evidence/KIEM_V11210.txt` (chạy lại trên VPS sau deploy + 
 - **§60.2 sót một hạng chỗ đọc:** trước deploy đã quét `kiem_code` của sổ quyết định (tìm ra 13 phép), nhưng **chưa** quét hết người đọc danh
   sách output ⇒ QD-020 TRÔI sau deploy. Quét đủ sau đó cho thấy không chỗ đọc sống nào đổi dòng (Q2 = 0). Bài học ghi ở FU-465: đổi danh sách
   dùng chung ⇒ quét **mọi** người đọc **trước** khi đẩy, không chỉ sổ.
+- Bộ thử trước deploy chép lại bộ lọc phiếu mà không chạy trọn hàm sinh bundle — bù bằng phát lại cũ/mới trên bản sao sau deploy (mục 3.9),
+  trước lượt MT thật đầu tiên.
 - Đoán đường kiểm admin `/api/admin/pnl/summary` ⇒ 404 (RM-10). Tra route thật trong `main.py` rồi kiểm lại ⇒ 401 ×3.
 - Nạp bản sao lưu `.pre_v11210` bằng `spec_from_file_location` ⇒ `None` (đuôi tệp lạ); đổi sang `SourceFileLoader`.
 - `git add` đường `artifacts/…` (bị `.gitignore`) làm lần commit đầu không chạy; bỏ tệp đó, commit lại.
@@ -139,4 +151,5 @@ Bằng chứng: `evidence/KIEM_V11210.txt` (chạy lại trên VPS sau deploy + 
 **TanPhatAI cần làm:** cập nhật trạng thái: mỗi miền bỏ phiếu và tính mẫu số 11 (toàn cục 12), ba model chết bỏ cờ chứ **không** dừng hẳn; QD-074 ·
 QD-075 bị QD-084 khoản 7 thay **một phần** (neo kế toán). Theo dõi tối 28/11: dòng chốt `/choi` ba miền, `day_governance` MN · MT COMPLETE,
 `system_alerts`. Ghi mở FU-466 (rút lại P&L theo khuyến nghị từ 28/06) và FU-467 (6 lane MN). Code đi trước tài liệu: không — mã, sổ quyết định
-và bốn mặt cùng commit `2474d78`; script quét ngược `_v11210_quet_nguoc.py` vào commit kế (chỉ đọc).
+và bốn mặt cùng commit `2474d78`; script quét ngược `_v11210_quet_nguoc.py` (`245d629`) và phát lại bundle `_v11210_phat_lai_bundle.py` (`2bbfce2`) vào
+commit kế, cả hai chỉ đọc kho thật.

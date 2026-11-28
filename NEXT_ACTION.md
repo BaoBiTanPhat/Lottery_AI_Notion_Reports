@@ -2,7 +2,7 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-28 06:56:38 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-28 07:03:53 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
