@@ -4,6 +4,10 @@
 > · **Quyết định:** QD-084 khoản 7 · QD-083 (C) Đợt 1 mục 1J · **Tầng (RM-12):** `DEPLOYED` — service khởi động lại, PID đổi, kiểm trên mã đã
 > triển khai đạt. **Chưa** `RUNTIME_PROVEN`: các điểm phải đọc trong ngày (chốt `/choi` 15:43 / 16:56 / 17:56, verify ba miền, MB_WATCHDOG
 > 17:55) chưa tới giờ.
+>
+> **Cập nhật 28/11 20:32 (V11211, thêm vào — không sửa nội dung trên):** kiểm trong ngày C1–C8 **18/18 đạt** trên dữ liệu thật ⇒ các điểm
+> trên `RUNTIME_PROVEN` cho ngày 28/11. MB hôm nay `INCOMPLETE 9/11` (mục 1 ghi «8/11 mỗi ngày» — đúng là 8–9/11 tuỳ số model trượt cổng).
+> Xem `V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/`.
 
 ## 1. Tóm tắt
 

@@ -2,20 +2,17 @@
 
 # VIỆC KẾ TIẾP — sinh từ `docs/FOLLOW_UP_TRACKER.md`
 
-**Sinh lúc:** 2026-11-28 07:03:53 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
+**Sinh lúc:** 2026-11-28 20:41:52 (giờ VN) · chỉ mục **còn treo** (bỏ mục đã đóng và luật đứng), cửa sổ **[−14, +21] ngày**
 
 ## ⏭ SẮP TỚI — từ hôm nay trở đi
 
 | mã | mã đọc | việc | hạn | trạng thái |
 |---|---|---|---|---|
-| `FU-465` | `DP2811` | Thi hành QD-084 — (a) áp mã 28/11 06:35, kiểm 10/10 trên mã đã triển k | **28/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
-| `FU-455` | `SC2711` | Khuyến nghị `/choi` ghi sau giờ xổ — ĐÃ VÁ 28/11 (bảng chốt verdict);  | **28/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
-| `FU-328` | `KS0808` | Cổng canh model ra thiếu số — ĐÃ NỐI `system_alerts` 28/11; kiểm sau b | **28/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
-| `FU-255` | `DD0807` | Bảng cảnh báo `system_alerts` — phần máy ĐÃ NỐI 28/11; phần giao diện  | **28/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
+| `FU-255` | `DD0807` | Bảng cảnh báo `system_alerts` — phần máy ĐÃ CHẠY SỐNG 28/11; giao diện | **28/11** | `AWAITING_OWNER_OK` |
 | `FU-464` | `QD0312` | Owner chọn hướng 1 (QD-084): giữ làm tham khảo, ghi thẳng «chưa có lợi | **28/11** | `READY_TO_BUILD_UI_TEST_ONLY` |
 | `FU-463` | `KS2911` | Bảo mật máy chủ — A1 + A2(a,b) XONG; mật khẩu root (owner) + P1–P3 chờ | **29/11** | `AWAITING_OWNER_OK` |
-| `FU-454` | `KS2411` | Cổng tự kiểm đỏ 16 tuần + MB_WATCHDOG báo giả — ĐÃ VÁ 28/11; kiểm MB_W | **30/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
-| `FU-462` | `DD2711` | Dọn dẹp cuốn chiếu — 1J (phần máy) | **30/11** | `AWAITING_OWNER_OK` |
+| `FU-454` | `KS2411` | Cổng tự kiểm đỏ 16 tuần + MB_WATCHDOG báo giả — MB_WATCHDOG | **30/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
+| `FU-462` | `DD2711` | Dọn dẹp cuốn chiếu — Đợt 1 đã chạy sống 28/11 (kiểm trong ngày 18/18); | **30/11** | `AWAITING_OWNER_OK` |
 | `FU-185` | `DD0809` | Tinh gọn lane hết hạn — `.sh` lane MB: owner duyệt 1D, làm thứ Hai 30/ | **30/11** | `READY_NOT_DEPLOYED` |
 | `FU-456` | `DOLX-456` | Nhãn `DO_TIEN` của luật — ĐÃ SỬA, đã đo lại; chờ lần đào 30/11 ghi nhậ | **30/11** | `DEPLOYED_PENDING_LIVE_VERIFY` |
 | `FU-131` | `DPLX-131` | Khối «Trải nghiệm hôm nay» /du-doan-test — GIỮ MỞ `BLOCKED` (agent tự  | **03/12** | `BLOCKED` |
@@ -36,7 +33,7 @@
 
 ---
 
-**Báo cáo mới nhất:** `V11210` — RESTART GOP CO CHET MAU SO ROSTER (2026-11-28)
+**Báo cáo mới nhất:** `V11211` — KIEM TRONG NGAY SAU RESTART V11210 (2026-11-28)
 
 ---
 

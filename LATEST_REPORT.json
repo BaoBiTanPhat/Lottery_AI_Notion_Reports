@@ -1,21 +1,33 @@
 {
  "_sinh_boi": "web/backend/_v11083_sinh_dieu_huong.py — CẤM sửa tay",
- "_sinh_luc_vn": "2026-11-28 07:03:53",
- "tong_thu_muc": 487,
- "latest_version": "V11210",
+ "_sinh_luc_vn": "2026-11-28 20:41:52",
+ "tong_thu_muc": 488,
+ "latest_version": "V11211",
  "latest": {
-  "version": "V11210",
+  "version": "V11211",
   "ngay": "2026-11-28",
-  "chu_de": "RESTART GOP CO CHET MAU SO ROSTER",
-  "thu_muc": "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128",
+  "chu_de": "KIEM TRONG NGAY SAU RESTART V11210",
+  "thu_muc": "V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128",
   "bao_cao": [
-   "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/REPORT_V11210.md"
+   "V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/REPORT_V11211.md"
   ],
   "ngu_canh": [
-   "V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/CONVERSATION_CONTEXT_V11210_20261128.md"
+   "V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/CONVERSATION_CONTEXT_V11211_20261128.md"
   ]
  },
  "gan_day": [
+  {
+   "version": "V11211",
+   "ngay": "2026-11-28",
+   "chu_de": "KIEM TRONG NGAY SAU RESTART V11210",
+   "thu_muc": "V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128",
+   "bao_cao": [
+    "V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/REPORT_V11211.md"
+   ],
+   "ngu_canh": [
+    "V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/CONVERSATION_CONTEXT_V11211_20261128.md"
+   ]
+  },
   {
    "version": "V11210",
    "ngay": "2026-11-28",
@@ -182,18 +194,6 @@
    ],
    "ngu_canh": [
     "V11196_DON_DEP_DOT1_DUNG_4_LICH_20261126/CONVERSATION_CONTEXT_V11196_20261126.md"
-   ]
-  },
-  {
-   "version": "V11195",
-   "ngay": "2026-11-26",
-   "chu_de": "THI HANH 6A 6G QD081",
-   "thu_muc": "V11195_THI_HANH_6A_6G_QD081_20261126",
-   "bao_cao": [
-    "V11195_THI_HANH_6A_6G_QD081_20261126/REPORT_V11195.md"
-   ],
-   "ngu_canh": [
-    "V11195_THI_HANH_6A_6G_QD081_20261126/CONVERSATION_CONTEXT_V11195_20261126.md"
    ]
   }
  ]

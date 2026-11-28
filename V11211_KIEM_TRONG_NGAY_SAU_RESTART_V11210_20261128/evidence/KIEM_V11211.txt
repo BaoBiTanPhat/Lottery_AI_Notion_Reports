@@ -1,0 +1,139 @@
+# V11211 — bằng chứng kiểm trong ngày 28/11 (chạy TRÊN VPS, chỉ đọc, DB mode=ro)
+# script: web/backend/_v11210_kiem_trong_ngay.py (commit 97788c2) · web/backend/_v11211_dem_fu453.py (commit be747cc)
+
+## lượt 16:48 (nguyên văn; dòng PID + đếm Traceback in sau)
+16:48:00
+KIỂM TRONG NGÀY V11210 — 2026-11-28 · lúc 16:48:01 (VN)
+  ✓ C1 MN [DAT] NGHỈ · Nghỉ Thứ 7 (lock tuần) · MN_BT1_OFFICIAL_V1 · chốt 15:43 (< 16:00)
+  · C1 MT [CHUA_TOI_GIO] chốt lúc 16:57
+  · C1 MB [CHUA_TOI_GIO] chốt lúc 17:57
+  · C2 [CHUA_TOI_GIO] snapshot sau xổ ~18:32
+  ✓ C3 MN [DAT] chốt 05:16 · BT 79 · 11 phiếu · incomplete_bundle=False (mã CŨ — trước restart 06:35)
+  · C3 MT [CHUA_TOI_GIO] hạn 16:58
+  · C3 MB [CHUA_TOI_GIO] hạn 17:58
+  ✓ C4 MN [DAT] COMPLETE 11/11 · output đủ hạn: 11/11
+  · C4 MT [CHUA_TOI_GIO] verify ~17:45
+  · C4 MB [CHUA_TOI_GIO] verify ~18:45
+  · C5 [CHUA_TOI_GIO] MB_WATCHDOG 17:55
+  · C6 [CHUA_TOI_GIO] watchdog 15' — đọc sau 18:00
+  ✓ C7 MN [DAT] cảnh báo không · thiếu thật không
+  · C7 MT [CHUA_TOI_GIO] verify ~17:45
+  · C7 MB [CHUA_TOI_GIO] verify ~18:45
+  · C8 [CHUA_TOI_GIO] Daily Eval 20:00
+KIEM_TRONG_NGAY_V11210=DO_DO (4 đạt · 0 trượt · 12 chưa tới giờ)
+
+1516954
+0
+
+## ghi chú: tác vụ chờ báo exit 1 do 'grep -c' trả 1 khi đếm 0 Traceback — bộ kiểm in DO_DO, 0 trượt
+
+## lượt 17:00:30 (nguyên văn) + dòng final_bundles MT hôm nay + PID + đếm Traceback
+17:00:30
+KIỂM TRONG NGÀY V11210 — 2026-11-28 · lúc 17:00:32 (VN)
+  ✓ C1 MN [DAT] NGHỈ · Nghỉ Thứ 7 (lock tuần) · MN_BT1_OFFICIAL_V1 · chốt 15:43 (< 16:00)
+  ✓ C1 MT [DAT] CHƠI · Full (50 điểm/số/đài) · MT_HYBRID_V1 + MT_ADAPTIVE_BUDGET_SELECTOR_V1 · chốt 16:56 (< 17:00)
+  · C1 MB [CHUA_TOI_GIO] chốt lúc 17:57
+  · C2 [CHUA_TOI_GIO] snapshot sau xổ ~18:32
+  ✓ C3 MN [DAT] chốt 05:16 · BT 79 · 11 phiếu · incomplete_bundle=False (mã CŨ — trước restart 06:35)
+  ✓ C3 MT [DAT] chốt 16:43 · BT 75 · 11 phiếu · incomplete_bundle=False
+  · C3 MB [CHUA_TOI_GIO] hạn 17:58
+  ✓ C4 MN [DAT] COMPLETE 11/11 · output đủ hạn: 11/11
+  · C4 MT [CHUA_TOI_GIO] verify ~17:45
+  · C4 MB [CHUA_TOI_GIO] verify ~18:45
+  · C5 [CHUA_TOI_GIO] MB_WATCHDOG 17:55
+  · C6 [CHUA_TOI_GIO] watchdog 15' — đọc sau 18:00
+  ✓ C7 MN [DAT] cảnh báo không · thiếu thật không
+  · C7 MT [CHUA_TOI_GIO] verify ~17:45
+  · C7 MB [CHUA_TOI_GIO] verify ~18:45
+  · C8 [CHUA_TOI_GIO] Daily Eval 20:00
+KIEM_TRONG_NGAY_V11210=DO_DO (6 đạt · 0 trượt · 10 chưa tới giờ)
+
+1336|2026-11-28 16:43:55|11|75|["75", "92"]|075|weighted_voting_wr|ACTIVE|0
+
+1516954
+0
+
+
+## lượt 20:30:01 — ĐỦ (nguyên văn) + PID + đếm Traceback (truy vấn system_alerts hôm nay: 0 dòng, không in gì)
+20:30:00
+KIỂM TRONG NGÀY V11210 — 2026-11-28 · lúc 20:30:01 (VN)
+  ✓ C1 MN [DAT] NGHỈ · Nghỉ Thứ 7 (lock tuần) · MN_BT1_OFFICIAL_V1 · chốt 15:43 (< 16:00)
+  ✓ C1 MT [DAT] CHƠI · Full (50 điểm/số/đài) · MT_HYBRID_V1 + MT_ADAPTIVE_BUDGET_SELECTOR_V1 · chốt 16:56 (< 17:00)
+  ✓ C1 MB [DAT] CÂN NHẮC · Nửa (25 điểm) · MB_SCREEN_ADAPTIVE_V1 · chốt 17:56 (< 18:00)
+  ✓ C2 MN [DAT] log = NGHỈ · chốt = NGHỈ
+  ✓ C2 MT [DAT] log = CHƠI · chốt = CHƠI
+  ✓ C2 MB [DAT] log = CÂN NHẮC · chốt = CÂN NHẮC
+  ✓ C3 MN [DAT] chốt 05:16 · BT 79 · 11 phiếu · incomplete_bundle=False (mã CŨ — trước restart 06:35)
+  ✓ C3 MT [DAT] chốt 16:43 · BT 75 · 11 phiếu · incomplete_bundle=False
+  ✓ C3 MB [DAT] chốt 17:34 · BT 43 · 9 phiếu · incomplete_bundle=True
+  ✓ C4 MN [DAT] COMPLETE 11/11 · output đủ hạn: 11/11
+  ✓ C4 MT [DAT] COMPLETE 11/11 · output đủ hạn: 11/11
+  ✓ C4 MB [DAT] INCOMPLETE 9/11 · output đủ hạn: 11/11
+  ✓ C5 [DAT] 1 dòng · báo incomplete 0 · MB thiếu output thật [] · «✅ [MB_WATCHDOG] 2026-11-28: prediction already complete (ai_chain=5, bundle=1)»
+  ✓ C6 [DAT] WATCHDOG_MISS shadow_after_chain hôm nay: 0
+  ✓ C7 MN [DAT] cảnh báo không · thiếu thật không
+  ✓ C7 MT [DAT] cảnh báo không · thiếu thật không
+  ✓ C7 MB [DAT] cảnh báo không · thiếu thật không
+  ✓ C8 [DAT] daily_eval_log theo miền {'MN': 1, 'MT': 1} · miền COMPLETE ['MN', 'MT']
+KIEM_TRONG_NGAY_V11210=DAT (18 đạt · 0 trượt · 0 chưa tới giờ)
+
+1516954
+0
+
+
+## system_alerts — truy vấn độc lập 20:31
+SELECT COUNT(*), MAX(created_at) FROM system_alerts
+9|2026-05-11 02:04:03          ⇒ không có dòng nào hôm nay (bảng còn 9 dòng cũ, mới nhất 11/05)
+
+## C7 — hàm cảnh báo ĐÃ được gọi (nó im khi không thiếu)
+scheduler.py:1691  _v11210_bao_thieu_model(today, "MN", _cds(today, "MN", source='auto_verify'))   (1760 MT · 1832 MB tương tự)
+day_governance 2026-11-28:
+MB|INCOMPLETE|9|11|auto_verify|2026-11-28 18:31:03
+MN|COMPLETE|11|11|auto_verify|2026-11-28 16:39:42
+MT|COMPLETE|11|11|auto_verify|2026-11-28 17:31:33
+scheduler_logs từ 06:35 VN chứa 'V11210_ALERT_ERR': 0
+scheduler_logs (UTC naive, +7 = VN): 09:40:27 «Xác minh MN: WIN» · 10:32:05 «Xác minh MT: WIN» · 11:31:37 «Xác minh MB: LOSE»
+
+## MT 28/11 — bundle thật đầu tiên trên mã mới: tập model được chấm = tập của mã cũ
+khoá model_wr theo bundle (id|date|region|model_count|total_models|khoá):
+1322|2026-11-26|MN|11|11|claude-opus-4-6,claude-sonnet-4-6,combo-no-token,combo-super,gemini-2.5-flash,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+1324|2026-11-26|MT|11|11|claude-opus-4-6,combo-no-token,combo-super,gemini-2.5-flash,glm-5.1,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+1326|2026-11-26|MB|8|8|claude-opus-4-6,combo-no-token,combo-super,gemini-2.5-flash,glm-5.1,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+1328|2026-11-27|MN|11|11|claude-opus-4-6,claude-sonnet-4-6,combo-no-token,combo-super,gemini-2.5-flash,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+1330|2026-11-27|MT|11|11|claude-opus-4-6,combo-no-token,combo-super,gemini-2.5-flash,glm-5.1,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+1332|2026-11-27|MB|8|8|claude-opus-4-6,combo-no-token,combo-super,gemini-2.5-flash,glm-5.1,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+1334|2026-11-28|MN|11|11|claude-opus-4-6,claude-sonnet-4-6,combo-no-token,combo-super,gemini-2.5-flash,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+1336|2026-11-28|MT|11|11|claude-opus-4-6,combo-no-token,combo-super,gemini-2.5-flash,glm-5.1,gpt-oss-120b,lstm,meta-learning,random-forest,smart-ensemble,smart-ml,xgboost
+(combo-no-token có WR trong chẩn đoán nhưng không bỏ phiếu — total_models 11 — đã như vậy trước V11210)
+
+tập mã cũ (backups/model_registry.py.pre_v11210) vs mã mới, giao với model có dòng predictions có số, không shadow, hôm nay:
+MN: tập mới 11 · tập cũ 15 · có dòng hôm nay 12 · cũ∩dòng = mới∩dòng: True · cũ − mới: deepseek-reasoner, gemini-2.5-pro, glm-5.1, gpt-5.4 — có dòng hôm nay: []
+MT: tập mới 11 · tập cũ 15 · có dòng hôm nay 12 · cũ∩dòng = mới∩dòng: True · cũ − mới: claude-sonnet-4-6, deepseek-reasoner, gemini-2.5-pro, gpt-5.4 — có dòng hôm nay: []
+
+## MB 28/11 — vì sao 9/11 (đúng cổng BT, không phải thiếu output)
+bundle 1338 · 17:34:52 · model_count 9 · BT 43 · lô ["43","27"] · lô3 343 · bt_gate_threshold 12
+model_exclusion_reasons: random-forest bt_gate bt<12 (bt_rate 10,0 / 30) · xgboost bt_gate bt<12 (bt_rate 10,0 / 30)
+C4: output đủ hạn 11/11
+
+## C8 / FU-453 — combo-super được chấm lại
+daily_eval_log 2026-11-28: id 810 MN combo-super ["17","07"] PARTIAL · id 809 MT combo-super ["75","33"] PARTIAL · MB không có (INCOMPLETE)
+day_governance 25–28/11 (date|region|quality|completed|expected):
+2026-11-25|MB|DEGRADED|7|15 · MN|INCOMPLETE|8|15 · MT|INCOMPLETE|8|15
+2026-11-26|MB|INCOMPLETE|8|15 · MN|INCOMPLETE|11|15 · MT|INCOMPLETE|11|15
+2026-11-27|MB|INCOMPLETE|8|15 · MN|INCOMPLETE|11|15 · MT|INCOMPLETE|11|15
+2026-11-28|MB|INCOMPLETE|9|11 · MN|COMPLETE|11|11 · MT|COMPLETE|11|11
+
+## _v11211_dem_fu453.py — 20:32:10 (nguyên văn)
+ĐẾM FU-453 — [2026-09-14, 2026-11-28) · DB /root/Lottery_AI_Test/data/lottery_ai.db (mode=ro)
+  miền  ngay  complete  co_eval  du_mau_moi  mau_so   eval cuối · nhãn ngày 2026-11-28
+  MN      75         0        0          60      11   2026-09-11 · COMPLETE 11/11 · eval 1
+  MT      75         0        0          56      11   2026-09-11 · COMPLETE 11/11 · eval 1
+  MB      75         0        0          34      11   2026-09-11 · INCOMPLETE 9/11 · eval 0
+DEM_FU453_V11211=XONG
+(du_mau_moi = completed_model_count ≥ 11: CẬN DƯỚI — classify_day_status cộng thêm model bị trần V11174)
+
+## chạy lại bộ kiểm 20:32
+KIEM_TRONG_NGAY_V11210=DAT (18 đạt · 0 trượt · 0 chưa tới giờ)
+
+## sổ quyết định — sau đồng bộ dữ liệu sống 20:33:59 (manifest artifacts/live_sync/20261128_203359)
+_v10920_decision_ledger.py 20:38:30 ⇒ «KHÔNG CÓ QUYẾT ĐỊNH NÀO BỊ TRÔI» · QD-084 🟢 khớp 1/1

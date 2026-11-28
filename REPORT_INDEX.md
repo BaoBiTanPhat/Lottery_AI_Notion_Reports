@@ -2,12 +2,12 @@
 
 # MỤC LỤC BÁO CÁO — sinh từ thư mục thật
 
-**Sinh lúc:** 2026-11-28 07:03:53 (giờ VN) · **487 thư mục báo cáo**
+**Sinh lúc:** 2026-11-28 20:41:52 (giờ VN) · **488 thư mục báo cáo**
 
-**Mới nhất: `V11210`** — RESTART GOP CO CHET MAU SO ROSTER · 2026-11-28
+**Mới nhất: `V11211`** — KIEM TRONG NGAY SAU RESTART V11210 · 2026-11-28
 
-- [REPORT_V11210.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/REPORT_V11210.md)
-- [CONVERSATION_CONTEXT_V11210_20261128.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/CONVERSATION_CONTEXT_V11210_20261128.md)
+- [REPORT_V11211.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/REPORT_V11211.md)
+- [CONVERSATION_CONTEXT_V11211_20261128.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/CONVERSATION_CONTEXT_V11211_20261128.md)
 
 ---
 
@@ -15,6 +15,7 @@
 
 | version | ngày | chủ đề | báo cáo | ngữ cảnh | evidence |
 |---|---|---|---|---|---|
+| `V11211` | 2026-11-28 | KIEM TRONG NGAY SAU RESTART V11210 | [REPORT_V11211.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/REPORT_V11211.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11211_KIEM_TRONG_NGAY_SAU_RESTART_V11210_20261128/CONVERSATION_CONTEXT_V11211_20261128.md) | ✓ |
 | `V11210` | 2026-11-28 | RESTART GOP CO CHET MAU SO ROSTER | [REPORT_V11210.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/REPORT_V11210.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11210_RESTART_GOP_CO_CHET_MAU_SO_ROSTER_20261128/CONVERSATION_CONTEXT_V11210_20261128.md) | ✓ |
 | `V11209` | 2026-11-27 | TINH BU SCORECARD KIEM SAU TRIEN KHAI | [REPORT_V11209.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/REPORT_V11209.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11209_TINH_BU_SCORECARD_KIEM_SAU_TRIEN_KHAI_20261127/CONVERSATION_CONTEXT_V11209_20261127.md) | ✓ |
 | `V11208` | 2026-11-27 | DUC KET CONG THU NGHIEM | [REPORT_V11208.md](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11208_DUC_KET_CONG_THU_NGHIEM_20261127/REPORT_V11208.md) | [ngữ cảnh](https://raw.githubusercontent.com/BaoBiTanPhat/Lottery_AI_Notion_Reports/main/V11208_DUC_KET_CONG_THU_NGHIEM_20261127/CONVERSATION_CONTEXT_V11208_20261127.md) | ✓ |
